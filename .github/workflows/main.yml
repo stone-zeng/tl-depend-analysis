@@ -1,0 +1,18 @@
+name: build
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build TeX Live Dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: python main.py
+      - uses: actions/upload-artifact@v3
+        with:
+          name: tl-dependencies
+          path: data/tl-dependencies.json
