@@ -11,7 +11,9 @@ jobs:
           python-version: '3.10'
       - uses: xu-cheng/texlive-action/full@v1
         with:
-          run: python main.py
+          run: |
+            ./download.sh --mirror=https://mirrors.rit.edu/CTAN
+            python main.py
       - uses: actions/upload-artifact@v3
         with:
           name: tl-dependencies
