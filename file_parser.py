@@ -22,7 +22,7 @@ class Parser:
     def __init__(self, path: str):
         self.path = path
         self.state = State()
-        self.dep: set[str] = set()
+        self.depend: set[str] = set()
 
     def parse(self):
         try:
@@ -40,14 +40,14 @@ class Parser:
     def _parse_lua(self, fp: TextIO):
         for line in fp:
             if match := LUA_MODULE_PATTERN.findall(line):
-                self.dep.add(match[0])
+                self.depend.add(match[0])
 
     def _parse_tex(self, fp: TextIO):
         for line in fp:
             if line.rstrip() == '\\endinput':
                 return
             if not line.startswith('%'):
-                self.dep.update(self._parse_tex_line(line))
+                self.depend.update(self._parse_tex_line(line))
 
     def _parse_tex_line(self, line: str) -> list[str]:
         if self.state.stack == '':
@@ -82,7 +82,9 @@ class Parser:
     def _parse_tex_match(match: list[str], suffix: str) -> list[str]:
         res = []
         for m in match:
-            res.extend(s + suffix for s in map(str.strip, m.split(',')) if Parser._is_valid_name(s))
+            res.extend(s + suffix
+                       for s in map(str.strip, m.split(','))
+                       if Parser._is_valid_name(s))
         return res
 
     @staticmethod
@@ -141,7 +143,7 @@ def _main():
 
     parser = Parser(sys.argv[1])
     parser.parse()
-    for d in sorted(parser.dep):
+    for d in sorted(parser.depend):
         print(d)
 
 

@@ -9,7 +9,7 @@ from file_parser import Parser
 
 
 TLPDB_PATH = 'data/texlive.tlpdb'
-TL_DEPENDENCIES_PATH = 'data/tl-dependencies.json'
+TL_DEPEND_PATH = 'data/tl-depend.json'
 
 TEXMFDIST_PATH = subprocess.run(
     ['kpsewhich', '-var-value', 'TEXMFDIST'],
@@ -40,7 +40,7 @@ class PackageEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, o)
 
 
-class TLDependencies:
+class TLDepend:
 
     def __init__(self):
         self.packages: list[Package] = []
@@ -97,15 +97,15 @@ class TLDependencies:
                     else:
                         self.file_mappings[name] = package.name
 
-    def get_dependencies(self):
+    def get_depend(self):
         for package in self.packages:
             depend: set[str] = set()
             for file in package.runfiles:
-                depend.update(self._get_dependencies_from_file(file))
+                depend.update(self._get_depend_from_file(file))
             depend.discard(package.name)
             package.depend = sorted(depend)
 
-    def _get_dependencies_from_file(self, file: str):
+    def _get_depend_from_file(self, file: str):
         depend: set[str] = set()
         if file.startswith('RELOC') or file.startswith('texmf-dist'):
             _, path = file.split('/', maxsplit=1)
@@ -114,7 +114,7 @@ class TLDependencies:
             fullpath = os.path.join(TEXMFDIST_PATH, path)
             parser = Parser(fullpath)
             parser.parse()
-            for d in parser.dep:
+            for d in parser.depend:
                 try:
                     depend.add(self.file_mappings[d])
                 except KeyError:
@@ -123,11 +123,11 @@ class TLDependencies:
 
 
 def main():
-    analyzer = TLDependencies()
+    analyzer = TLDepend()
     analyzer.parse_tlpdb()
     analyzer.get_file_mappings()
-    analyzer.get_dependencies()
-    with open(TL_DEPENDENCIES_PATH, 'w', encoding='utf-8') as fp:
+    analyzer.get_depend()
+    with open(TL_DEPEND_PATH, 'w', encoding='utf-8') as fp:
         json.dump(analyzer.packages, fp, cls=PackageEncoder, indent=2)
 
 
