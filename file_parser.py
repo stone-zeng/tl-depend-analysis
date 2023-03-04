@@ -44,7 +44,7 @@ class Parser:
 
     def _parse_tex(self, fp: TextIO):
         for line in fp:
-            if line.strip() == '\\endinput':
+            if line.rstrip() == '\\endinput':
                 return
             if not line.startswith('%'):
                 self.dep.update(self._parse_tex_line(line))
@@ -132,3 +132,18 @@ class State:
         self.braces_open = False
         self.brackets_count = 0
         self.brackets_open = False
+
+
+def _main():
+    if len(sys.argv) < 2:
+        print('Usage: python file_parser.py <file>', file=sys.stderr)
+        sys.exit(1)
+
+    parser = Parser(sys.argv[1])
+    parser.parse()
+    for d in sorted(parser.dep):
+        print(d)
+
+
+if __name__ == '__main__':
+    _main()
