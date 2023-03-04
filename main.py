@@ -53,7 +53,8 @@ class TLDependencies:
             lines = item.split('\n')
             _, name = lines[0].split()
             if not name.startswith('00') and '.' not in name:
-                self.packages.append(Package(name=name, depend=[], **self._parse_tlpdb_item(lines)))
+                self.packages.append(
+                    Package(name=name, depend=[], **self._parse_tlpdb_item(lines)))
 
     @staticmethod
     def _parse_tlpdb_item(lines: list[str]):
@@ -101,6 +102,7 @@ class TLDependencies:
             depend: set[str] = set()
             for file in package.runfiles:
                 depend.update(self._get_dependencies_from_file(file))
+            depend.discard(package.name)
             package.depend = sorted(depend)
 
     def _get_dependencies_from_file(self, file: str):
