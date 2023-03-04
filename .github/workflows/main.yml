@@ -13,7 +13,10 @@ jobs:
         run: ./download.sh --mirror=https://mirrors.rit.edu/CTAN
       - uses: xu-cheng/texlive-action/full@v1
         with:
-          run: python main.py
+          run: |
+            tlmgr update --self --all --mirror=https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
+            tlmgr --version
+            python main.py
       - uses: actions/upload-artifact@v3
         with:
           name: tl-dependencies
