@@ -13,4 +13,8 @@ curl -o texlive.tlpdb.sha512 $MIRROR/systems/texlive/tlnet/tlpkg/texlive.tlpdb.s
 sha512sum -c texlive.tlpdb.sha512
 rm texlive.tlpdb.sha512
 
+if [ ! -d data ]; then
+    mkdir data
+fi
+
 mv texlive.tlpdb data/
