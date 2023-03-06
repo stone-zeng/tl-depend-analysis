@@ -1,9 +1,7 @@
 if [ -z "$1" ]; then
     MIRROR=https://mirror.ctan.org
 else
-    IFS="="
-    read -ra ADDR <<< "$1"
-    MIRROR=${ADDR[1]}
+    MIRROR=$1
 fi
 
 curl -o texlive.tlpdb.xz $MIRROR/systems/texlive/tlnet/tlpkg/texlive.tlpdb.xz
