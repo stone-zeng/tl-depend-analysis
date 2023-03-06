@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: '3.10'
       - name: Download TLPDB 📦
-        run: ./download.sh http://dante.ctan.org/tex-archive
+        run: ./download.sh https://mirrors.rit.edu/CTAN
       - name: Update TeX Live ⚙️
         run: |
-          tlmgr update --self --all --repository=http://dante.ctan.org/tex-archive/systems/texlive/tlnet
+          tlmgr update --self --all --repository=https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
           tlmgr conf
       - name: Build 🔧
         run: python main.py
