@@ -28,6 +28,8 @@ jobs:
       - name: Prepare data file 📚
         run: |
           mv data/tl-depend.json .
+          echo ${{ github.workspace }}
+          git config --global --add safe.directory ${{ github.workspace }}
           git fetch -v
           git checkout data --
           mv tl-depend.json data
