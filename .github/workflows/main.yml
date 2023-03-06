@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - dev
+  schedule:
+    - cron: 0 0 * * 0
 jobs:
   build:
     runs-on: ubuntu-latest
