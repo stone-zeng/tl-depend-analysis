@@ -90,8 +90,8 @@ class TLDepend:
             for file in package.runfiles:
                 if file.startswith('RELOC') or file.startswith('texmf-dist'):
                     _, path = file.split('/', maxsplit=1)
-                    if path.startswith('fonts'):
-                        continue
+                    # if path.startswith('fonts'):
+                    #     continue
                     if (name := os.path.basename(path)) in self.file_mappings:
                         print('Duplicate file:', file, file=sys.stderr)
                     else:

@@ -15,6 +15,11 @@ PACKAGE_PATTERN = re.compile(r'''
     (?:\[.*\]\s*)?
     \{\s*(.+?)\s*\}
 ''', re.VERBOSE)
+USEFONT_PATTERN = re.compile(r'''
+    \\usefont\s*
+    \{\s*(.+?)\s*\}\s*
+    \{\s*(.+?)\s*\}
+''', re.VERBOSE)
 
 
 class Parser:
@@ -55,17 +60,24 @@ class Parser:
             # - \LoadClass[...]{class}
             # - \documentclass[...]{class}
             if match := CLASS_PATTERN.findall(line):
-                return self._parse_tex_match(match, suffix='.cls')
+                return self._parse_cls_sty_match(match, suffix='.cls')
 
             # Packages (single line)
             # - \RequirePackage[...]{package}
             # - \usepackage[...]{package}
             if match := PACKAGE_PATTERN.findall(line):
-                return self._parse_tex_match(match, suffix='.sty')
+                return self._parse_cls_sty_match(match, suffix='.sty')
 
             # Packages (multiple line)
             if '\\RequirePackage' in line or '\\usepackage' in line:
                 self.state.update(line.split('%')[0].strip())
+
+            if match := USEFONT_PATTERN.findall(line):
+                return self._parse_font_match(match)
+                # for m in match:
+                #     encoding, family = m
+                #     if self._is_valid_name(encoding) and self._is_valid_name(family):
+                #         print(f'{encoding.strip()}{family.strip()}.fd'.lower())
 
             return []
 
@@ -74,17 +86,26 @@ class Parser:
         if self.state.is_braces_closed():
             match = PACKAGE_PATTERN.findall(self.state.stack)
             self.state.reset()
-            return self._parse_tex_match(match, suffix='.sty')
+            return self._parse_cls_sty_match(match, suffix='.sty')
 
         return []
 
     @staticmethod
-    def _parse_tex_match(match: list[str], suffix: str) -> list[str]:
+    def _parse_cls_sty_match(match: list[str], suffix: str) -> list[str]:
         res = []
         for m in match:
-            res.extend(s + suffix
-                       for s in map(str.strip, m.split(','))
-                       if Parser._is_valid_name(s))
+            for s in map(str.strip, m.split(',')):
+                if Parser._is_valid_name(s):
+                    res.append(s + suffix)
+        return res
+
+    @staticmethod
+    def _parse_font_match(match: list[str]) -> list[str]:
+        res = []
+        for m in match:
+            encoding, family = m
+            if Parser._is_valid_name(encoding) and Parser._is_valid_name(family):
+                res.append(f'{encoding.strip()}{family.strip()}.fd'.lower())
         return res
 
     @staticmethod
