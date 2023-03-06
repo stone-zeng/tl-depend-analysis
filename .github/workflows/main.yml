@@ -3,10 +3,13 @@ on:
   push:
     branches:
       - main
+      - dev
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build TeX Live Dependencies
+    container:
+      image: texlive/texlive:latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
@@ -15,14 +18,13 @@ jobs:
         with:
           python-version: '3.10'
       - name: Download TLPDB 📦
-        run: ./download.sh --mirror=https://mirrors.rit.edu/CTAN
+        run: ./download.sh --mirror=http://dante.ctan.org/tex-archive
+      - name: Update TeX Live ⚙️
+        run: |
+          tlmgr update --self --all --repository=http://dante.ctan.org/tex-archive/systems/texlive/tlnet
+          tlmgr conf
       - name: Build 🔧
-        uses: xu-cheng/texlive-action/full@v1
-        with:
-          run: |
-            tlmgr update --self --all --repository=https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
-            tlmgr conf
-            python main.py
+        run: python main.py
       - name: Prepare data file 📚
         run: |
           mv data/tl-depend.json .
