@@ -853,7 +853,9 @@
   },
   {
     "name": "amsmath",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -1468,7 +1470,9 @@
   },
   {
     "name": "ascmac",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -1745,7 +1749,9 @@
   },
   {
     "name": "auncial-new",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -3021,7 +3027,9 @@
   },
   {
     "name": "beton",
-    "depend": [],
+    "depend": [
+      "concmath"
+    ],
     "tl_depend": []
   },
   {
@@ -4303,7 +4311,9 @@
   },
   {
     "name": "bookhands",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -10337,6 +10347,7 @@
       "nl-interval",
       "nndraw",
       "numericplots",
+      "outilsgeomtikz",
       "pb-diagram",
       "penrose",
       "petri-nets",
@@ -14196,7 +14207,8 @@
   {
     "name": "ean13isbn",
     "depend": [
-      "kvoptions"
+      "kvoptions",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -15629,7 +15641,9 @@
   },
   {
     "name": "euler",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -15645,6 +15659,7 @@
     "name": "eulerpx",
     "depend": [
       "amsmath",
+      "eulervm",
       "newpx",
       "xkeyval"
     ],
@@ -16243,6 +16258,7 @@
       "pgfopts",
       "tagging",
       "tcolorbox",
+      "tex-gyre",
       "tools",
       "xcolor",
       "xcomment"
@@ -16353,6 +16369,7 @@
       "latex",
       "linegoal",
       "listings",
+      "lm",
       "ltxcmds",
       "ltxnew",
       "makecell",
@@ -16363,6 +16380,7 @@
       "needspace",
       "oberdiek",
       "pdftexcmds",
+      "psnfss",
       "relsize",
       "titlesec",
       "tocloft",
@@ -17025,7 +17043,8 @@
   {
     "name": "fncychap",
     "depend": [
-      "graphics"
+      "graphics",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -18849,7 +18868,8 @@
     "name": "gs1",
     "depend": [
       "l3kernel",
-      "l3packages"
+      "l3packages",
+      "ocr-latex"
     ],
     "tl_depend": []
   },
@@ -19049,6 +19069,7 @@
     "name": "ha-prosper",
     "depend": [
       "amsfonts",
+      "avantgar",
       "multido",
       "psnfss",
       "pst-grad",
@@ -20036,6 +20057,7 @@
       "kvdefinekeys",
       "kvoptions",
       "kvsetkeys",
+      "latex",
       "ltxcmds",
       "pdftexcmds"
     ],
@@ -23237,7 +23259,8 @@
   {
     "name": "latex-amsmath-dev",
     "depend": [
-      "amsmath"
+      "amsmath",
+      "latex"
     ],
     "tl_depend": []
   },
@@ -24009,7 +24032,8 @@
   {
     "name": "lgrmath",
     "depend": [
-      "kvoptions"
+      "kvoptions",
+      "mlmodern"
     ],
     "tl_depend": []
   },
@@ -25721,7 +25745,8 @@
   {
     "name": "makebarcode",
     "depend": [
-      "kvoptions"
+      "kvoptions",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -26316,7 +26341,9 @@
   },
   {
     "name": "mdwtools",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -26788,6 +26815,7 @@
       "etoolbox",
       "graphics",
       "iftex",
+      "latex",
       "luaotfload",
       "luatexbase",
       "xcolor"
@@ -26918,6 +26946,7 @@
       "draftwatermark",
       "embrac",
       "enumitem",
+      "eulervm",
       "fancyhdr",
       "float",
       "geometry",
@@ -28377,6 +28406,7 @@
     "name": "newtxsf",
     "depend": [
       "amsmath",
+      "newtx",
       "xkeyval"
     ],
     "tl_depend": []
@@ -29550,7 +29580,9 @@
   },
   {
     "name": "otibet",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
@@ -29592,6 +29624,16 @@
   {
     "name": "outerhbox",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "outilsgeomtikz",
+    "depend": [
+      "pgf",
+      "simplekv",
+      "units",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -29812,6 +29854,7 @@
       "lastpage",
       "latex",
       "multido",
+      "psnfss",
       "ragged2e",
       "setspace",
       "textpos",
@@ -29937,6 +29980,7 @@
     "name": "pas-tableur",
     "depend": [
       "pgf",
+      "psnfss",
       "xkeyval",
       "xstring"
     ],
@@ -33265,7 +33309,8 @@
   {
     "name": "pxrubrica",
     "depend": [
-      "graphics"
+      "graphics",
+      "lm"
     ],
     "tl_depend": []
   },
@@ -33876,6 +33921,7 @@
       "boxedminipage",
       "geometry",
       "latex",
+      "psnfss",
       "tools"
     ],
     "tl_depend": []
@@ -36678,7 +36724,9 @@
     "depend": [
       "etex-pkg",
       "graphics",
-      "iftex"
+      "iftex",
+      "latex",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -36938,6 +36986,8 @@
     "depend": [
       "fp",
       "l3packages",
+      "lm",
+      "psnfss",
       "xstring"
     ],
     "tl_depend": []
@@ -41355,7 +41405,8 @@
     "name": "uni-titlepage",
     "depend": [
       "graphics",
-      "koma-script"
+      "koma-script",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -43583,6 +43634,7 @@
     "name": "xymtex",
     "depend": [
       "eepic",
+      "latex",
       "pgf",
       "pst-coil",
       "pstricks",
