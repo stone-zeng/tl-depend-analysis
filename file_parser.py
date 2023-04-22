@@ -4,8 +4,14 @@ import sys
 from typing import TextIO
 
 
-LUA_MODULE_PATTERN = re.compile(r'\brequire\s*\(?\s*(?:"|\')(.+?)(?:"|\')')
-LUALIBS_MODULE_PATTERN = re.compile(r'loadmodule\s*\(*\s*(?:"|\')(.+\.lua)(?:"|\')')
+LUA_MODULE_PATTERN = re.compile(r'''
+    \brequire\s*
+    \(?\s*["'](.+?)["']
+''', re.VERBOSE)
+LUALIBS_MODULE_PATTERN = re.compile(r'''
+    loadmodule\s*
+    \(*\s*["'](.+\.lua)["']
+''', re.VERBOSE)
 CLASS_PATTERN = re.compile(r'''
     \\(?:LoadClass|LoadClassWithOptions|documentclass)\s*
     (?:\[.*\]\s*)?
@@ -44,21 +50,30 @@ class Parser:
             print('File not found:', self.path, file=sys.stderr)
 
     def _parse_lua(self, fp: TextIO):
+        comment_flag = False
         for line in fp:
-            if line.lstrip().startswith('--'):
+            line = line.strip()
+            if line.startswith('--[['):
+                comment_flag = True
                 continue
-            elif match := LUA_MODULE_PATTERN.findall(line):
-                self.depend.add(match[0] + ".lua")
-            elif match := LUALIBS_MODULE_PATTERN.findall(line):
-                self.depend.add(match[0])
+            if line.endswith(']]') or line.endswith(']]--'):
+                comment_flag = False
+                continue
+            if not comment_flag and not line.startswith('--'):
+                self.depend.update(self._parse_lua_line(line))
+
+    def _parse_lua_line(self, line: str) -> list[str]:
+        if match := LUA_MODULE_PATTERN.findall(line):
+            return [match[0] + '.lua']
+        if match := LUALIBS_MODULE_PATTERN.findall(line):
+            return [match[0]]
+        return []
 
     def _parse_tex(self, fp: TextIO):
         for line in fp:
-            if line.lstrip().startswith('%'):
-                continue
-            elif line.rstrip() == '\\endinput':
+            if line.rstrip() == '\\endinput':
                 return
-            else:
+            if not line.strip().startswith('%'):
                 self.depend.update(self._parse_tex_line(line))
 
     def _parse_tex_line(self, line: str) -> list[str]:
@@ -81,10 +96,6 @@ class Parser:
 
             if match := USEFONT_PATTERN.findall(line):
                 return self._parse_font_match(match)
-                # for m in match:
-                #     encoding, family = m
-                #     if self._is_valid_name(encoding) and self._is_valid_name(family):
-                #         print(f'{encoding.strip()}{family.strip()}.fd'.lower())
 
             return []
 
