@@ -505,6 +505,7 @@
     "name": "afthesis",
     "depend": [
       "caption",
+      "latex",
       "ulem"
     ],
     "tl_depend": []
@@ -4443,6 +4444,7 @@
       "fontspec",
       "iftex",
       "latex",
+      "mwcls",
       "polyglossia",
       "textcase",
       "ulem"
@@ -5489,7 +5491,6 @@
     "depend": [
       "accents",
       "amsmath",
-      "etex-pkg",
       "framed",
       "latex",
       "mhchem",
@@ -6100,18 +6101,15 @@
   {
     "name": "cleanthesis",
     "depend": [
-      "bera",
       "biblatex",
       "blindtext",
       "caption",
       "csquotes",
       "enumitem",
-      "fourier",
       "graphics",
       "hyperref",
       "koma-script",
       "latex",
-      "libertine",
       "listings",
       "lm",
       "microtype",
@@ -6422,7 +6420,6 @@
       "pdftexcmds",
       "pgfopts",
       "ragged2e",
-      "superiors",
       "tools",
       "translations",
       "trimspaces",
@@ -12652,6 +12649,7 @@
       "graphics",
       "hyperref",
       "lastpage",
+      "latex",
       "libertine",
       "needspace",
       "newenviron",
@@ -13270,7 +13268,6 @@
       "booktabs",
       "caption",
       "cleveref",
-      "cmap",
       "comment",
       "csquotes",
       "datetime2",
@@ -13897,6 +13894,7 @@
       "iftex",
       "kvoptions",
       "latex",
+      "memoir",
       "oberdiek",
       "refcount",
       "xifthen",
@@ -13943,7 +13941,6 @@
       "biblatex",
       "csquotes",
       "datetime2",
-      "dejavu",
       "embedfile",
       "enumitem",
       "environ",
@@ -14859,6 +14856,7 @@
   {
     "name": "elteiktdk",
     "depend": [
+      "elteikthesis",
       "psnfss"
     ],
     "tl_depend": []
@@ -15841,7 +15839,6 @@
     "name": "exam",
     "depend": [
       "graphics",
-      "hyperref",
       "latex"
     ],
     "tl_depend": []
@@ -15932,9 +15929,7 @@
   },
   {
     "name": "examplep",
-    "depend": [
-      "latex"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -16277,6 +16272,7 @@
   {
     "name": "fancyslides",
     "depend": [
+      "beamer",
       "framed",
       "pgf"
     ],
@@ -16582,14 +16578,11 @@
     "depend": [
       "adjustbox",
       "amsmath",
-      "arydshln",
       "babel",
       "bookmark",
       "booktabs",
       "caption",
-      "carlisle",
       "courier-scaled",
-      "dashrule",
       "enumitem",
       "eurosym",
       "fancyhdr",
@@ -16616,7 +16609,6 @@
       "tabulary",
       "tools",
       "url",
-      "wrapfig",
       "xcolor"
     ],
     "tl_depend": []
@@ -18655,7 +18647,8 @@
     "name": "gradstudentresume",
     "depend": [
       "anysize",
-      "hyperref"
+      "hyperref",
+      "latex"
     ],
     "tl_depend": []
   },
@@ -22778,7 +22771,6 @@
   {
     "name": "knitting",
     "depend": [
-      "changepage",
       "graphics"
     ],
     "tl_depend": []
@@ -24069,7 +24061,6 @@
       "latex",
       "libertine",
       "listings",
-      "lua-typo",
       "mathtools",
       "microtype",
       "ninecolors",
@@ -24452,11 +24443,9 @@
     "depend": [
       "amsfonts",
       "gb4e",
-      "linguex",
       "pbox",
       "relsize",
       "stmaryrd",
-      "tipa",
       "ulem",
       "was"
     ],
@@ -25206,9 +25195,7 @@
   },
   {
     "name": "lua-uni-algos",
-    "depend": [
-      "luatodonotes"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -25305,8 +25292,7 @@
   {
     "name": "luafindfont",
     "depend": [
-      "lualibs",
-      "xindex"
+      "lualibs"
     ],
     "tl_depend": [
       "luafindfont.ARCH"
@@ -25425,9 +25411,7 @@
   },
   {
     "name": "lualibs",
-    "depend": [
-      "context"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -26178,6 +26162,7 @@
     "name": "matc3mem",
     "depend": [
       "amscls",
+      "memoir",
       "shadethm",
       "xcolor"
     ],
@@ -26477,6 +26462,7 @@
       "hypdoc",
       "iftex",
       "kantlipsum",
+      "koma-script",
       "kvoptions",
       "l3kernel",
       "l3packages",
@@ -26548,6 +26534,7 @@
       "amsmath",
       "anysize",
       "background",
+      "beamer",
       "booktabs",
       "cancel",
       "graphics",
@@ -26646,6 +26633,7 @@
       "babel",
       "geometry",
       "jurabib",
+      "koma-script",
       "latex",
       "microtype",
       "ragged2e",
@@ -27635,7 +27623,6 @@
       "pgf",
       "randomlist",
       "tools",
-      "translations",
       "translator",
       "varwidth",
       "xkeyval",
@@ -28538,7 +28525,6 @@
   {
     "name": "newpx",
     "depend": [
-      "amscls",
       "amsmath",
       "carlisle",
       "etoolbox",
@@ -30829,10 +30815,8 @@
       "atveryend",
       "everyshi",
       "fp",
-      "geometry",
       "graphics",
       "pdftexcmds",
-      "textpos",
       "tools",
       "xcolor"
     ],
@@ -30991,14 +30975,12 @@
     "depend": [
       "atveryend",
       "fp",
-      "geometry",
       "graphics",
       "hyperref",
       "listings",
       "luatexbase",
       "pdftexcmds",
       "pgf",
-      "textpos",
       "tools"
     ],
     "tl_depend": [
@@ -33312,7 +33294,6 @@
       "booktabs",
       "caption",
       "eso-pic",
-      "eulervm",
       "everyshi",
       "fancyvrb",
       "footmisc",
@@ -34018,7 +33999,6 @@
       "ntheorem",
       "stix2-type1",
       "tabu",
-      "titlesec",
       "tools",
       "unicode-math",
       "xcolor",
@@ -34118,7 +34098,6 @@
   {
     "name": "rec-thy",
     "depend": [
-      "amsfonts",
       "amsmath",
       "bigfoot",
       "enumitem",
@@ -36657,7 +36636,6 @@
     "name": "simurgh",
     "depend": [
       "auxhook",
-      "context",
       "fontspec",
       "geometry",
       "graphics",
@@ -41154,6 +41132,7 @@
       "graphbox",
       "graphics",
       "iftex",
+      "koma-script",
       "l3kernel",
       "l3packages",
       "latex",
@@ -41173,7 +41152,6 @@
       "amsmath",
       "bookmark",
       "fancyhdr",
-      "geometry",
       "graphics",
       "hyperref",
       "latex",
@@ -43570,7 +43548,6 @@
       "imakeidx",
       "latex",
       "lualibs",
-      "luatodonotes",
       "xkeyval"
     ],
     "tl_depend": [
@@ -44145,6 +44122,7 @@
       "hyperref",
       "iftex",
       "latex",
+      "mwcls",
       "placeins",
       "polyglossia",
       "titlesec",
