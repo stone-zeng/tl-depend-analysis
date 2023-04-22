@@ -28,6 +28,8 @@ jobs:
           mktexlsr
           tlmgr update --self --all --repository=https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
           tlmgr conf
+      - name: Test 🧪
+        run: python -m unittest tests/file_parser_test.py
       - name: Build 🔧
         run: python main.py
       - name: Prepare data file 📚

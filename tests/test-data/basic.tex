@@ -1,0 +1,18 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath,amsfonts}
+\usepackage[no-math]{fontspec}
+
+\RequirePackage[
+  linkcolor=blue,
+  citecolor=green,
+]{hyperref}
+
+\RequirePackage{expl3}[2023/01/01]
+
+\RequirePackageWithOptions { natbib }
+
+\newcommand{\tikzimport}[1]{
+  \usepackage{tikz-#1}
+}
