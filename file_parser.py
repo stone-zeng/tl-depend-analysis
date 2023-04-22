@@ -4,7 +4,7 @@ import sys
 from typing import TextIO
 
 
-LUA_MODULE_PATTERN = re.compile(r'require\s*\(?\s*(?:"|\')(.+?)(?:"|\')')
+LUA_MODULE_PATTERN = re.compile(r'\brequire\s*\(?\s*(?:"|\')(.+?)(?:"|\')')
 LUALIBS_MODULE_PATTERN = re.compile(r'loadmodule\s*\(*\s*(?:"|\')(.+\.lua)(?:"|\')')
 CLASS_PATTERN = re.compile(r'''
     \\(?:LoadClass|documentclass)\s*
@@ -45,7 +45,9 @@ class Parser:
 
     def _parse_lua(self, fp: TextIO):
         for line in fp:
-            if match := LUA_MODULE_PATTERN.findall(line):
+            if line.lstrip().startswith('--'):
+                continue
+            elif match := LUA_MODULE_PATTERN.findall(line):
                 self.depend.add(match[0] + ".lua")
             elif match := LUALIBS_MODULE_PATTERN.findall(line):
                 self.depend.add(match[0])
