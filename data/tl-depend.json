@@ -5938,6 +5938,11 @@
       "filehook",
       "l3kernel",
       "l3packages",
+      "lua-uca",
+      "lua-uni-algos",
+      "lualibs",
+      "luatodonotes",
+      "luaxml",
       "url"
     ],
     "tl_depend": [
@@ -25186,7 +25191,9 @@
   },
   {
     "name": "lua-uca",
-    "depend": [],
+    "depend": [
+      "lua-uni-algos"
+    ],
     "tl_depend": []
   },
   {
@@ -25199,7 +25206,9 @@
   },
   {
     "name": "lua-uni-algos",
-    "depend": [],
+    "depend": [
+      "luatodonotes"
+    ],
     "tl_depend": []
   },
   {
@@ -25227,7 +25236,8 @@
   {
     "name": "luabibentry",
     "depend": [
-      "iftex"
+      "iftex",
+      "lualibs"
     ],
     "tl_depend": []
   },
@@ -25294,7 +25304,10 @@
   },
   {
     "name": "luafindfont",
-    "depend": [],
+    "depend": [
+      "lualibs",
+      "xindex"
+    ],
     "tl_depend": [
       "luafindfont.ARCH"
     ]
@@ -25412,7 +25425,9 @@
   },
   {
     "name": "lualibs",
-    "depend": [],
+    "depend": [
+      "context"
+    ],
     "tl_depend": []
   },
   {
@@ -25477,7 +25492,11 @@
   {
     "name": "luaotfload",
     "depend": [
-      "context"
+      "context",
+      "lua-alt-getopt",
+      "lua-uni-algos",
+      "lualibs",
+      "luatodonotes"
     ],
     "tl_depend": [
       "lm",
@@ -25508,7 +25527,9 @@
   },
   {
     "name": "luapstricks",
-    "depend": [],
+    "depend": [
+      "luatodonotes"
+    ],
     "tl_depend": []
   },
   {
@@ -25597,6 +25618,7 @@
       "latex",
       "listings",
       "ltxcmds",
+      "lualibs",
       "luaotfload",
       "luatexbase",
       "pdftexcmds",
@@ -25617,6 +25639,7 @@
     "depend": [
       "cjk-ko",
       "fontspec",
+      "lua-uni-algos",
       "luatexbase"
     ],
     "tl_depend": []
@@ -25642,6 +25665,7 @@
       "iftex",
       "latex",
       "luacode",
+      "lualibs",
       "pgf",
       "soul",
       "soulpos",
@@ -25881,7 +25905,10 @@
   },
   {
     "name": "make4ht",
-    "depend": [],
+    "depend": [
+      "context",
+      "luaxml"
+    ],
     "tl_depend": [
       "make4ht.ARCH",
       "tex4ht"
@@ -27061,22 +27088,30 @@
   },
   {
     "name": "minim-math",
-    "depend": [],
+    "depend": [
+      "minim"
+    ],
     "tl_depend": []
   },
   {
     "name": "minim-mp",
-    "depend": [],
+    "depend": [
+      "minim"
+    ],
     "tl_depend": []
   },
   {
     "name": "minim-pdf",
-    "depend": [],
+    "depend": [
+      "minim"
+    ],
     "tl_depend": []
   },
   {
     "name": "minim-xmp",
-    "depend": [],
+    "depend": [
+      "minim"
+    ],
     "tl_depend": []
   },
   {
@@ -29467,6 +29502,7 @@
     "depend": [
       "l3packages",
       "luacode",
+      "luaxml",
       "xkeyval"
     ],
     "tl_depend": []
@@ -30705,7 +30741,8 @@
   {
     "name": "penlight",
     "depend": [
-      "luacode"
+      "luacode",
+      "luakeys"
     ],
     "tl_depend": []
   },
@@ -31359,6 +31396,8 @@
       "etoolbox",
       "iftex",
       "luacode",
+      "luakeys",
+      "lualibs",
       "pgf",
       "pgfopts"
     ],
@@ -33568,7 +33607,8 @@
     "depend": [
       "atveryend",
       "kvoptions",
-      "l3kernel"
+      "l3kernel",
+      "lualibs"
     ],
     "tl_depend": []
   },
@@ -36617,6 +36657,7 @@
     "name": "simurgh",
     "depend": [
       "auxhook",
+      "context",
       "fontspec",
       "geometry",
       "graphics",
@@ -36624,6 +36665,7 @@
       "iftex",
       "latex",
       "ltxcmds",
+      "lualibs",
       "microtype",
       "minted",
       "pdftexcmds",
@@ -37128,7 +37170,8 @@
     "depend": [
       "atbegshi",
       "iftex",
-      "luatexbase"
+      "luatexbase",
+      "luaxml"
     ],
     "tl_depend": []
   },
@@ -38737,7 +38780,9 @@
     "depend": [
       "etoolbox",
       "graphics",
-      "kvoptions"
+      "kvoptions",
+      "luaxml",
+      "make4ht"
     ],
     "tl_depend": [
       "make4ht",
@@ -41754,6 +41799,7 @@
   {
     "name": "uninormalize",
     "depend": [
+      "context",
       "kvoptions",
       "luacode",
       "luatexbase"
@@ -43523,6 +43569,8 @@
     "depend": [
       "imakeidx",
       "latex",
+      "lualibs",
+      "luatodonotes",
       "xkeyval"
     ],
     "tl_depend": [
@@ -43939,6 +43987,7 @@
     "depend": [
       "etoolbox",
       "luacode",
+      "markdown",
       "penlight",
       "tools"
     ],
