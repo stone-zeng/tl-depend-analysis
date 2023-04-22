@@ -7,7 +7,7 @@ from typing import TextIO
 LUA_MODULE_PATTERN = re.compile(r'\brequire\s*\(?\s*(?:"|\')(.+?)(?:"|\')')
 LUALIBS_MODULE_PATTERN = re.compile(r'loadmodule\s*\(*\s*(?:"|\')(.+\.lua)(?:"|\')')
 CLASS_PATTERN = re.compile(r'''
-    \\(?:LoadClass|documentclass)\s*
+    \\(?:LoadClass|LoadClassWithOptions|documentclass)\s*
     (?:\[.*\]\s*)?
     \{\s*(.+?)\s*\}
 ''', re.VERBOSE)
