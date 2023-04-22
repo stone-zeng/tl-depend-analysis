@@ -23,6 +23,9 @@ jobs:
         run: ./download.sh https://mirrors.rit.edu/CTAN
       - name: Update TeX Live ⚙️
         run: |
+          mkdir -p $(kpsewhich -var-brace-value TEXMFSYSCONFIG)/web2c
+          sed -r 's/^([^#])/#! \1/' $(kpsewhich fmtutil.cnf) > $(kpsewhich -var-brace-value TEXMFSYSCONFIG)/web2c/fmtutil.cnf
+          mktexlsr
           tlmgr update --self --all --repository=https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
           tlmgr conf
       - name: Build 🔧
