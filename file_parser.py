@@ -128,7 +128,11 @@ class Parser:
 
     @staticmethod
     def _is_valid_name(name: str) -> bool:
-        return '\\' not in name and '#' not in name and not name.startswith('.')
+        return (
+            name != ''
+            and '\\' not in name and '#' not in name
+            and not name.startswith('.')
+        )
 
 
 class State:
