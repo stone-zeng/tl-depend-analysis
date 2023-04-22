@@ -54,9 +54,11 @@ class Parser:
 
     def _parse_tex(self, fp: TextIO):
         for line in fp:
-            if line.rstrip() == '\\endinput':
+            if line.lstrip().startswith('%'):
+                continue
+            elif line.rstrip() == '\\endinput':
                 return
-            if not line.startswith('%'):
+            else:
                 self.depend.update(self._parse_tex_line(line))
 
     def _parse_tex_line(self, line: str) -> list[str]:
