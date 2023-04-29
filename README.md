@@ -7,7 +7,7 @@ This repository contains the data and scripts used to analyze the dependency of 
 Related works:
 
 - [texliveonfly](https://ctan.org/pkg/texliveonfly): On-the-fly download of missing TEX live packages
-- [texuse](https://github.com/lvjr/texuse): Install TeX packages and their dependencies
+- [texfindpkg](https://ctan.org/pkg/texfindpkg): Install TeX packages and their dependencies
 
 ## License
 
