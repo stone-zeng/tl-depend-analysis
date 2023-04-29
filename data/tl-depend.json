@@ -6899,9 +6899,11 @@
       "context-animation",
       "context-annotation",
       "context-bnf",
+      "context-calendar-examples",
       "context-chromato",
       "context-cmscbf",
       "context-cmttbf",
+      "context-collating-marks",
       "context-construction-plan",
       "context-cyrillicnumbers",
       "context-degrade",
@@ -6917,6 +6919,7 @@
       "context-lettrine",
       "context-mathsets",
       "context-notes-zh-cn",
+      "context-pocketdiary",
       "context-rst",
       "context-ruby",
       "context-simplefonts",
@@ -11561,6 +11564,13 @@
     ]
   },
   {
+    "name": "context-calendar-examples",
+    "depend": [],
+    "tl_depend": [
+      "context"
+    ]
+  },
+  {
     "name": "context-chromato",
     "depend": [],
     "tl_depend": [
@@ -11576,6 +11586,13 @@
   },
   {
     "name": "context-cmttbf",
+    "depend": [],
+    "tl_depend": [
+      "context"
+    ]
+  },
+  {
+    "name": "context-collating-marks",
     "depend": [],
     "tl_depend": [
       "context"
@@ -11682,6 +11699,13 @@
   },
   {
     "name": "context-notes-zh-cn",
+    "depend": [],
+    "tl_depend": [
+      "context"
+    ]
+  },
+  {
+    "name": "context-pocketdiary",
     "depend": [],
     "tl_depend": [
       "context"
@@ -30964,7 +30988,11 @@
       "needspace",
       "pgf",
       "pgfornament",
+      "relsize",
+      "tcolorbox",
+      "textpos",
       "tools",
+      "unicode-math",
       "xcolor",
       "xpatch"
     ],
