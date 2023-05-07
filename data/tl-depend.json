@@ -7418,6 +7418,7 @@
       "othello",
       "othelloboard",
       "pas-crosswords",
+      "playcards",
       "psgo",
       "realtranspose",
       "reverxii",
@@ -10486,6 +10487,7 @@
       "tikz-timing",
       "tikz-trackschematic",
       "tikz-truchet",
+      "tikz3d-fr",
       "tikzbricks",
       "tikzcodeblocks",
       "tikzducks",
@@ -31632,6 +31634,16 @@
     "tl_depend": []
   },
   {
+    "name": "playcards",
+    "depend": [
+      "contour",
+      "graphics",
+      "pgf",
+      "simplekv"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "playfair",
     "depend": [
       "fontaxes",
@@ -39894,6 +39906,17 @@
     "depend": [
       "latex",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikz3d-fr",
+    "depend": [
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "xint",
+      "xstring"
     ],
     "tl_depend": []
   },
