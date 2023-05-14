@@ -6491,6 +6491,16 @@
     "tl_depend": []
   },
   {
+    "name": "codedescribe",
+    "depend": [
+      "l3kernel",
+      "listings",
+      "scontents",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "codedoc",
     "depend": [
       "latex"
@@ -8474,6 +8484,7 @@
       "cntformats",
       "cntperchap",
       "codebox",
+      "codedescribe",
       "codedoc",
       "codehigh",
       "codepage",
@@ -9507,6 +9518,7 @@
       "stack",
       "stackengine",
       "standalone",
+      "starray",
       "stdclsdv",
       "stdpage",
       "stealcaps",
@@ -9647,7 +9659,9 @@
       "underoverlap",
       "undolabl",
       "uni-titlepage",
+      "unicode-math-input",
       "unicodefonttable",
+      "unifront",
       "unisc",
       "unitconv",
       "units",
@@ -9926,6 +9940,7 @@
       "spacekern",
       "spelling",
       "stricttex",
+      "sympycalc",
       "texfindpkg",
       "truthtable",
       "tsvtemplate",
@@ -10215,6 +10230,7 @@
       "gmp",
       "hatching",
       "hershey-mp",
+      "huffman",
       "latexmp",
       "mcf2graph",
       "metago",
@@ -20372,6 +20388,11 @@
     "tl_depend": []
   },
   {
+    "name": "huffman",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "hulipsum",
     "depend": [],
     "tl_depend": []
@@ -29029,7 +29050,9 @@
       "ragged2e",
       "setspace",
       "soul",
+      "tools",
       "upquote",
+      "url",
       "xcolor"
     ],
     "tl_depend": []
@@ -37466,6 +37489,13 @@
     "tl_depend": []
   },
   {
+    "name": "starray",
+    "depend": [
+      "l3kernel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "startex",
     "depend": [],
     "tl_depend": []
@@ -38068,6 +38098,13 @@
   {
     "name": "symbol",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "sympycalc",
+    "depend": [
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -41771,6 +41808,18 @@
     ]
   },
   {
+    "name": "unicode-math-input",
+    "depend": [
+      "iftex",
+      "l3kernel",
+      "l3packages"
+    ],
+    "tl_depend": [
+      "iftex",
+      "l3packages"
+    ]
+  },
+  {
     "name": "unicodefonttable",
     "depend": [
       "booktabs",
@@ -41799,6 +41848,14 @@
       "latex",
       "lm",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "unifront",
+    "depend": [
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
