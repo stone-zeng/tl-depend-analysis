@@ -6495,6 +6495,7 @@
     "depend": [
       "l3kernel",
       "listings",
+      "psnfss",
       "scontents",
       "xcolor"
     ],
@@ -8188,6 +8189,7 @@
       "lshort-portuguese",
       "numberpt",
       "ordinalpt",
+      "ptlatexcommands",
       "xypic-tut-pt"
     ]
   },
@@ -8874,6 +8876,7 @@
       "glossaries-irish",
       "glossaries-italian",
       "glossaries-magyar",
+      "glossaries-norsk",
       "glossaries-nynorsk",
       "glossaries-polish",
       "glossaries-portuges",
@@ -18498,6 +18501,11 @@
     "tl_depend": []
   },
   {
+    "name": "glossaries-norsk",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "glossaries-nynorsk",
     "depend": [],
     "tl_depend": []
@@ -23223,7 +23231,6 @@
       "colortbl",
       "csquotes",
       "enumitem",
-      "etex-pkg",
       "fancyvrb",
       "graphics",
       "hologo",
@@ -24288,6 +24295,7 @@
       "fontspec",
       "iftex",
       "latex",
+      "newunicodechar",
       "unicode-math",
       "xkeyval"
     ],
@@ -33478,6 +33486,17 @@
     "name": "ptext",
     "depend": [
       "bidi"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "ptlatexcommands",
+    "depend": [
+      "algorithms",
+      "amsmath",
+      "biblatex",
+      "graphics",
+      "latex"
     ],
     "tl_depend": []
   },
