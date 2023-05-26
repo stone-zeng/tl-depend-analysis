@@ -1224,6 +1224,7 @@
   {
     "name": "arabic-book",
     "depend": [
+      "amiri",
       "amsmath",
       "caption",
       "collcell",
@@ -2937,12 +2938,15 @@
       "fontspec",
       "geometry",
       "graphics",
+      "kpfonts-otf",
+      "lm-math",
       "lua-widow-control",
       "nowidow",
       "projlib",
       "psnfss",
       "regexpatch",
       "silence",
+      "tex-gyre-math",
       "tikz-cd",
       "tools",
       "unicode-math",
@@ -4603,8 +4607,10 @@
       "hyperref",
       "iftex",
       "kvoptions",
+      "libertinus-fonts",
       "lineno",
       "listings",
+      "lm-math",
       "mhchem",
       "multirow",
       "pdfpages",
@@ -6935,6 +6941,7 @@
       "context-ruby",
       "context-simplefonts",
       "context-simpleslides",
+      "context-sudoku",
       "context-texlive",
       "context-title",
       "context-transliterator",
@@ -8536,6 +8543,7 @@
       "copyedit",
       "copyrightbox",
       "coseoul",
+      "counterz",
       "counttexruns",
       "courseoutline",
       "coursepaper",
@@ -9174,6 +9182,7 @@
       "moresize",
       "moreverb",
       "morewrites",
+      "movement-arrows",
       "movie15",
       "mparhack",
       "mpostinl",
@@ -11471,6 +11480,7 @@
   {
     "name": "concmath-otf",
     "depend": [
+      "cm-unicode",
       "iftex",
       "unicode-math",
       "xkeyval"
@@ -11761,6 +11771,13 @@
     ]
   },
   {
+    "name": "context-sudoku",
+    "depend": [],
+    "tl_depend": [
+      "context"
+    ]
+  },
+  {
     "name": "context-texlive",
     "depend": [],
     "tl_depend": []
@@ -12011,6 +12028,14 @@
     "name": "coseoul",
     "depend": [
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "counterz",
+    "depend": [
+      "etoolbox",
+      "makecmds"
     ],
     "tl_depend": []
   },
@@ -12515,6 +12540,7 @@
       "ms",
       "platex-tools",
       "siunitx",
+      "tex-gyre-math",
       "threeparttable",
       "tools",
       "unicode-math",
@@ -13265,6 +13291,7 @@
     "depend": [
       "iftex",
       "latex",
+      "tex-gyre-math",
       "unicode-math",
       "xkeyval"
     ],
@@ -14027,7 +14054,8 @@
       "hologo",
       "iftex",
       "tools",
-      "unicode-math"
+      "unicode-math",
+      "xits"
     ],
     "tl_depend": []
   },
@@ -14253,8 +14281,6 @@
       "amsfonts",
       "amsmath",
       "etoolbox",
-      "l3kernel",
-      "l3packages",
       "mathtools",
       "pgf",
       "pgfopts",
@@ -14684,6 +14710,8 @@
       "fontspec",
       "geometry",
       "graphics",
+      "kpfonts-otf",
+      "lm-math",
       "lua-widow-control",
       "minimalist",
       "nowidow",
@@ -14692,6 +14720,7 @@
       "psnfss",
       "regexpatch",
       "silence",
+      "tex-gyre-math",
       "tikz-cd",
       "tools",
       "unicode-math",
@@ -15933,12 +15962,14 @@
     "depend": [
       "amscls",
       "amsmath",
+      "asana-math",
       "ctex",
       "enumitem",
       "etoolbox",
       "fancyhdr",
       "filehook",
       "fontspec",
+      "garamond-math",
       "geometry",
       "graphics",
       "hyperref",
@@ -15950,6 +15981,7 @@
       "psnfss",
       "tabularray",
       "tcolorbox",
+      "tex-gyre-math",
       "tikzpagenodes",
       "unicode-math",
       "varwidth",
@@ -16538,6 +16570,7 @@
       "hyperref",
       "l3kernel",
       "l3packages",
+      "libertinus-fonts",
       "listings",
       "luatex85",
       "makecell",
@@ -16552,6 +16585,7 @@
       "unicode-math",
       "xcolor",
       "xcolor-material",
+      "xits",
       "xunicode",
       "zref"
     ],
@@ -16874,6 +16908,7 @@
   {
     "name": "firamath-otf",
     "depend": [
+      "firamath",
       "iftex",
       "latex",
       "unicode-math",
@@ -16917,6 +16952,7 @@
       "iftex",
       "latex",
       "ltxcmds",
+      "tex-gyre-math",
       "xpatch"
     ],
     "tl_depend": []
@@ -17344,10 +17380,30 @@
   {
     "name": "fontsetup",
     "depend": [
+      "cabin",
+      "cm-unicode",
+      "concmath-otf",
+      "ebgaramond",
+      "fira",
+      "firamath",
       "fontspec",
+      "garamond-math",
+      "gfsartemisia",
+      "gfsdidot",
+      "gfsneohellenic",
+      "gfsneohellenicmath",
       "iftex",
+      "inconsolata",
+      "kerkis",
       "latex",
+      "libertinus-fonts",
       "libertinus-otf",
+      "newcomputermodern",
+      "oldstandard",
+      "stix2-otf",
+      "talos",
+      "tex-gyre-math",
+      "txfontsb",
       "ucharclasses",
       "unicode-math",
       "xcharter-math"
@@ -18244,6 +18300,7 @@
     "name": "gfsneohellenicmath",
     "depend": [
       "fontspec",
+      "gfsneohellenic",
       "unicode-math"
     ],
     "tl_depend": []
@@ -20054,6 +20111,7 @@
       "kvsetkeys",
       "l3packages",
       "listings",
+      "lm-math",
       "multirow",
       "natbib",
       "notoccite",
@@ -20357,31 +20415,37 @@
       "xcolor"
     ],
     "tl_depend": [
+      "anyfontsize",
       "biblatex",
-      "cjk",
+      "catchfile",
+      "changepage",
       "currfile",
       "datetime",
       "enumitem",
+      "environ",
       "fancyhdr",
+      "ffcode",
+      "filehook",
+      "fmtcount",
+      "fontsize",
       "footmisc",
       "geometry",
-      "graphics",
       "hyperref",
-      "l3packages",
       "lastpage",
       "libertine",
       "makecell",
       "microtype",
-      "minted",
+      "pagecolor",
       "paralist",
       "pgf",
+      "pgfopts",
+      "ragged2e",
       "setspace",
       "svg",
-      "tcolorbox",
       "textpos",
       "titling",
-      "tools",
-      "ulem",
+      "transparent",
+      "trimspaces",
       "wrapfig",
       "xcolor"
     ]
@@ -20510,7 +20574,8 @@
       "hologo",
       "l3kernel",
       "tools",
-      "unicode-math"
+      "unicode-math",
+      "xits"
     ],
     "tl_depend": []
   },
@@ -23345,6 +23410,7 @@
     "depend": [
       "amsfonts",
       "amsmath",
+      "arimo",
       "authorindex",
       "babel",
       "biblatex",
@@ -23354,6 +23420,7 @@
       "chngcntr",
       "colortbl",
       "datetime",
+      "dejavu",
       "epigraph",
       "etoolbox",
       "fancyvrb",
@@ -23367,6 +23434,7 @@
       "koma-script",
       "kvoptions",
       "l3packages",
+      "libertinus-fonts",
       "lineno",
       "mdframed",
       "metalogo",
@@ -23388,6 +23456,7 @@
       "url",
       "xcolor",
       "xecjk",
+      "xits",
       "xpatch",
       "xstring"
     ],
@@ -23791,7 +23860,6 @@
     "depend": [
       "doctools",
       "etoolbox",
-      "filecontents",
       "framed",
       "kvoptions",
       "listings",
@@ -23972,12 +24040,15 @@
       "fontspec",
       "geometry",
       "graphics",
+      "kpfonts-otf",
+      "lm-math",
       "lua-widow-control",
       "nowidow",
       "projlib",
       "psnfss",
       "regexpatch",
       "silence",
+      "tex-gyre-math",
       "tikz-cd",
       "tools",
       "unicode-math",
@@ -24295,6 +24366,7 @@
       "fontspec",
       "iftex",
       "latex",
+      "libertinus-fonts",
       "newunicodechar",
       "unicode-math",
       "xkeyval"
@@ -24488,6 +24560,7 @@
     "depend": [
       "etoolbox",
       "finstrut",
+      "kvoptions",
       "ltabptch",
       "tools"
     ],
@@ -27737,6 +27810,15 @@
     "tl_depend": []
   },
   {
+    "name": "movement-arrows",
+    "depend": [
+      "etoolbox",
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "movie15",
     "depend": [
       "everyshi",
@@ -27908,6 +27990,7 @@
       "hyperref",
       "latex",
       "leipzig",
+      "newcomputermodern",
       "tipa"
     ],
     "tl_depend": []
@@ -28822,7 +28905,8 @@
       "tcolorbox",
       "tools",
       "unicode-math",
-      "xcolor"
+      "xcolor",
+      "xits"
     ],
     "tl_depend": []
   },
@@ -29444,6 +29528,7 @@
       "kvoptions",
       "kvsetkeys",
       "letltxmacro",
+      "lm-math",
       "ltxcmds",
       "parallel",
       "pdfcol",
@@ -30021,6 +30106,8 @@
     "depend": [
       "iftex",
       "latex",
+      "libertinus-fonts",
+      "tex-gyre-math",
       "unicode-math",
       "xkeyval"
     ],
@@ -31018,6 +31105,8 @@
   {
     "name": "pgfornament-han",
     "depend": [
+      "erewhon-math",
+      "lm-math",
       "needspace",
       "pgf",
       "pgfornament",
@@ -32231,6 +32320,8 @@
   {
     "name": "proflycee",
     "depend": [
+      "amsfonts",
+      "cancel",
       "csvsimple",
       "fancyvrb",
       "fontawesome5",
@@ -32242,6 +32333,7 @@
       "listofitems",
       "mathtools",
       "minted",
+      "nicematrix",
       "oberdiek",
       "pgf",
       "piton",
@@ -34533,6 +34625,7 @@
       "psnfss",
       "sourcecodepro",
       "stmaryrd",
+      "tex-gyre",
       "xcolor"
     ],
     "tl_depend": []
@@ -35497,6 +35590,8 @@
     "depend": [
       "iftex",
       "latex",
+      "libertinus-fonts",
+      "tex-gyre-math",
       "unicode-math",
       "xkeyval"
     ],
@@ -36550,10 +36645,12 @@
       "datetime2",
       "fontspec",
       "geometry",
+      "gnu-freefont",
       "graphics",
       "hyperref",
       "hyphenat",
       "latex",
+      "tinos",
       "xltxtra",
       "xunicode"
     ],
@@ -36569,6 +36666,7 @@
       "arydshln",
       "babel",
       "booktabs",
+      "carlito",
       "cite",
       "datetime2",
       "environ",
@@ -36582,6 +36680,7 @@
       "lm",
       "multirow",
       "setspace",
+      "tinos",
       "titlesec",
       "tools",
       "underscore",
@@ -36697,6 +36796,8 @@
       "fontspec",
       "geometry",
       "graphics",
+      "kpfonts-otf",
+      "lm-math",
       "lua-widow-control",
       "minimalist",
       "nowidow",
@@ -36705,6 +36806,7 @@
       "psnfss",
       "regexpatch",
       "silence",
+      "tex-gyre-math",
       "tikz-cd",
       "tools",
       "unicode-math",
@@ -38692,6 +38794,8 @@
     "depend": [
       "iftex",
       "latex",
+      "libertinus-fonts",
+      "tex-gyre-math",
       "unicode-math",
       "xkeyval"
     ],
@@ -41819,6 +41923,7 @@
       "l3kernel",
       "l3packages",
       "latex",
+      "lm-math",
       "lualatex-math"
     ],
     "tl_depend": [
@@ -44194,14 +44299,15 @@
       "microtype",
       "paralist",
       "pgf",
+      "pgfopts",
       "setspace",
       "soul",
+      "textpos",
       "titlesec",
       "ulem",
       "wrapfig",
       "xcolor",
-      "xifthen",
-      "xkeyval"
+      "xifthen"
     ],
     "tl_depend": [
       "anyfontsize",
