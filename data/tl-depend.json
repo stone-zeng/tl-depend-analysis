@@ -270,6 +270,7 @@
       "totpages",
       "xcolor",
       "xkeyval",
+      "xpatch",
       "xstring",
       "zref"
     ],
@@ -1301,7 +1302,9 @@
   },
   {
     "name": "archaeologie",
-    "depend": [],
+    "depend": [
+      "ulem"
+    ],
     "tl_depend": []
   },
   {
@@ -3273,12 +3276,18 @@
   },
   {
     "name": "biblatex-abnt",
-    "depend": [],
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-ajc2020unofficial",
-    "depend": [],
+    "depend": [
+      "shortmathj"
+    ],
     "tl_depend": []
   },
   {
@@ -3308,12 +3317,19 @@
   },
   {
     "name": "biblatex-arthistory-bonn",
-    "depend": [],
+    "depend": [
+      "csquotes",
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-bath",
-    "depend": [],
+    "depend": [
+      "etoolbox",
+      "xpatch",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -3323,7 +3339,9 @@
   },
   {
     "name": "biblatex-bookinother",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3354,6 +3372,8 @@
       "etoolbox",
       "hyperref",
       "kvoptions",
+      "l3kernel",
+      "l3packages",
       "listings",
       "refcount",
       "xcolor",
@@ -3363,13 +3383,17 @@
   },
   {
     "name": "biblatex-claves",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-cv",
     "depend": [
       "biblatex",
+      "datenumber",
+      "fp",
       "l3kernel",
       "l3packages",
       "totcount",
@@ -3404,17 +3428,24 @@
   },
   {
     "name": "biblatex-fiwi",
-    "depend": [],
+    "depend": [
+      "ragged2e"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-gb7714-2015",
-    "depend": [],
+    "depend": [
+      "mfirstuc",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-german-legal",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3434,7 +3465,9 @@
   },
   {
     "name": "biblatex-ijsra",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3478,7 +3511,9 @@
   },
   {
     "name": "biblatex-manuscripts-philology",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3488,7 +3523,9 @@
   },
   {
     "name": "biblatex-morenames",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3537,7 +3574,9 @@
   },
   {
     "name": "biblatex-nottsclassic",
-    "depend": [],
+    "depend": [
+      "csquotes"
+    ],
     "tl_depend": []
   },
   {
@@ -3551,7 +3590,12 @@
   },
   {
     "name": "biblatex-oxref",
-    "depend": [],
+    "depend": [
+      "etoolbox",
+      "graphics",
+      "xpatch",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -3578,7 +3622,9 @@
   },
   {
     "name": "biblatex-realauthor",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -3610,12 +3656,16 @@
   },
   {
     "name": "biblatex-socialscienceshuberlin",
-    "depend": [],
+    "depend": [
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-software",
-    "depend": [],
+    "depend": [
+      "xurl"
+    ],
     "tl_depend": []
   },
   {
@@ -3633,12 +3683,17 @@
   },
   {
     "name": "biblatex-subseries",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-swiss-legal",
-    "depend": [],
+    "depend": [
+      "amsfonts",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -3655,12 +3710,16 @@
   },
   {
     "name": "biblatex-unified",
-    "depend": [],
+    "depend": [
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
     "name": "biblatex-vancouver",
-    "depend": [],
+    "depend": [
+      "latex"
+    ],
     "tl_depend": []
   },
   {
