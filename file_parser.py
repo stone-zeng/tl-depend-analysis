@@ -27,6 +27,16 @@ USEFONT_PATTERN = re.compile(r'''
     \{\s*(.+?)\s*\}\s*
     \{\s*(.+?)\s*\}
 ''', re.VERBOSE)
+FONTSPEC_PATTERN = re.compile(r'''
+    \\(?:setmainfont|setsansfont|setmonofont|setmathfont|fontspec)\s*
+    (?:\[.*\]\s*)?
+    \{\s*(.+?)\s*\}
+''', re.VERBOSE)
+
+MULTILINE_PATTERNS = list(map(re.compile, [
+    r'\\(?:RequirePackage|usepackage)',
+    r'\\(?:setmainfont|setsansfont|setmonofont|setmathfont|fontspec)',
+]))
 
 
 class Parser:
@@ -82,48 +92,71 @@ class Parser:
             # - \LoadClass[...]{class}
             # - \documentclass[...]{class}
             if match := CLASS_PATTERN.findall(line):
-                return self._parse_cls_sty_match(match, suffix='.cls')
+                return self._parse_cls_sty_match(match, ext='.cls')
 
             # Packages (single line)
             # - \RequirePackage[...]{package}
             # - \usepackage[...]{package}
             if match := PACKAGE_PATTERN.findall(line):
-                return self._parse_cls_sty_match(match, suffix='.sty')
+                return self._parse_cls_sty_match(match, ext='.sty')
 
-            # Packages (multiple line)
-            if '\\RequirePackage' in line or '\\usepackage' in line:
-                self.state.update(line.split('%')[0].strip())
-
+            # Type1 fonts
+            # - \usefont{encoding}{family}{series}{shape}
             if match := USEFONT_PATTERN.findall(line):
-                return self._parse_font_match(match)
+                return self._parse_usefont_match(match)
+
+            # OpenType fonts
+            # - \set(main|sans|mono|math)font[...]{font}
+            # - \fontspec[...]{font}
+            if match := FONTSPEC_PATTERN.findall(line):
+                return self._parse_fontspec_match(match)
+
+            # Multiline cases
+            if any(pattern.search(line) for pattern in MULTILINE_PATTERNS):
+                self.state.update(line.split('%')[0].strip())
 
             return []
 
         self.state.update(line.split('%')[0].strip())
 
         if self.state.is_braces_closed():
-            match = PACKAGE_PATTERN.findall(self.state.stack)
+            stack = self.state.stack
             self.state.reset()
-            return self._parse_cls_sty_match(match, suffix='.sty')
+
+            if match := PACKAGE_PATTERN.findall(stack):
+                return self._parse_cls_sty_match(match, ext='.sty')
+
+            if match := FONTSPEC_PATTERN.findall(stack):
+                return self._parse_fontspec_match(match)
 
         return []
 
     @staticmethod
-    def _parse_cls_sty_match(match: list[str], suffix: str) -> list[str]:
+    def _parse_cls_sty_match(match: list[str], ext: str) -> list[str]:
         res = []
         for m in match:
             for s in map(str.strip, m.split(',')):
                 if Parser._is_valid_name(s):
-                    res.append(s + suffix)
+                    res.append(s + ext)
         return res
 
     @staticmethod
-    def _parse_font_match(match: list[str]) -> list[str]:
+    def _parse_usefont_match(match: list[tuple[str, str]]) -> list[str]:
         res = []
         for m in match:
             encoding, family = m
             if Parser._is_valid_name(encoding) and Parser._is_valid_name(family):
-                res.append(f'{encoding.strip()}{family.strip()}.fd'.lower())
+                res.append(f'{encoding}{family}.fd'.lower())
+        return res
+
+    @staticmethod
+    def _parse_fontspec_match(match: list[str]) -> list[str]:
+        res = []
+        for m in match:
+            if Parser._is_valid_name(m):
+                if '.otf' in m or '.ttf' in m:
+                    res.append(m)
+                # TODO: support fonts without extension
         return res
 
     @staticmethod

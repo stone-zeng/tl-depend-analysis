@@ -15,6 +15,10 @@ class Test(unittest.TestCase):
         expect = {'beamer.cls', 'geometry.sty', 'tikz.sty', 'tikz-cd.sty', 'tabularx.sty', 'tabulary.sty', 'natbib.sty'}
         self._test('comments.tex', expect)
 
+    def test_tex_fonts(self):
+        expect = {'lmroman10-regular.otf', 'NotoSans-Regular.ttf', 'texgyrecursor-regular.otf', 'IBMPlexSerif-Bold.otf', 'XITSMath-Regular.otf'}
+        self._test('fonts.tex', expect)
+
     def test_lua(self):
         expect = {'module-1.lua', 'module-7.lua', 'module-8.lua'}
         self._test('basic.lua', expect)
