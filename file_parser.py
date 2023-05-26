@@ -50,7 +50,7 @@ class Parser:
         try:
             with open(self.path, 'r', encoding='utf-8', errors='replace') as fp:
                 match os.path.splitext(self.path)[1]:
-                    case '.tex' | '.ltx' | '.cls' | '.sty' | '.def' | '.clo':
+                    case '.tex' | '.ltx' | '.cls' | '.sty' | '.def' | '.clo' | '.bbx' | '.cbx':  # noqa: E501
                         self._parse_tex(fp)
                     case '.lua':
                         self._parse_lua(fp)
