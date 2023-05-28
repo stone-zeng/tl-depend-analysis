@@ -23723,7 +23723,9 @@
       "amsmath",
       "bigfoot",
       "etoolbox",
+      "graphics",
       "hyperref",
+      "l3experimental",
       "l3packages",
       "pdfmanagement-testphase",
       "tagpdf"
