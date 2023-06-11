@@ -988,6 +988,11 @@
     "tl_depend": []
   },
   {
+    "name": "antique-spanish-units",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "antomega",
     "depend": [
       "graphics",
@@ -8263,6 +8268,7 @@
     "name": "collection-langspanish",
     "depend": [],
     "tl_depend": [
+      "antique-spanish-units",
       "babel-catalan",
       "babel-galician",
       "babel-spanish",
@@ -8809,6 +8815,7 @@
       "examdesign",
       "example",
       "examplep",
+      "examz",
       "exceltex",
       "excludeonly",
       "exercise",
@@ -9424,6 +9431,7 @@
       "preview",
       "printlen",
       "probsoln",
+      "profmaquette",
       "program",
       "progress",
       "progressbar",
@@ -10480,7 +10488,6 @@
       "numericplots",
       "outilsgeomtikz",
       "pb-diagram",
-      "penrose",
       "petri-nets",
       "pgf",
       "pgf-blur",
@@ -10598,6 +10605,7 @@
       "tikztosvg",
       "tikzviolinplots",
       "tile-graphic",
+      "tilings",
       "timing-diagrams",
       "tipfr",
       "tkz-base",
@@ -10977,6 +10985,7 @@
       "jmlr",
       "jnuexam",
       "jourcl",
+      "jourrr",
       "jpsj",
       "jwjournal",
       "kdgdocs",
@@ -16068,6 +16077,16 @@
   {
     "name": "examplep",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "examz",
+    "depend": [
+      "counterz",
+      "environ",
+      "exam",
+      "xpatch"
+    ],
     "tl_depend": []
   },
   {
@@ -21949,7 +21968,14 @@
       "xcolor"
     ],
     "tl_depend": [
-      "siunitx"
+      "booktabs",
+      "l3kernel",
+      "l3packages",
+      "siunitx",
+      "siunitx",
+      "tools",
+      "translations",
+      "xcolor"
     ]
   },
   {
@@ -22508,6 +22534,24 @@
       "lipsum",
       "orcidlink",
       "parskip"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "jourrr",
+    "depend": [
+      "babel",
+      "bookmark",
+      "fancyhdr",
+      "fontawesome5",
+      "geometry",
+      "graphics",
+      "isodate",
+      "latex",
+      "parskip",
+      "tools",
+      "wasysym",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -23715,7 +23759,13 @@
   {
     "name": "latex-lab",
     "depend": [
+      "amsmath",
       "bigfoot",
+      "etoolbox",
+      "graphics",
+      "hyperref",
+      "l3experimental",
+      "l3packages",
       "pdfmanagement-testphase",
       "tagpdf"
     ],
@@ -23731,6 +23781,7 @@
       "hyperref",
       "l3experimental",
       "l3packages",
+      "latex-lab",
       "pdfmanagement-testphase",
       "tagpdf"
     ],
@@ -29003,10 +29054,12 @@
     "name": "njuthesis",
     "depend": [
       "amsmath",
+      "background",
       "biblatex",
       "booktabs",
       "caption",
       "circledtext",
+      "codehigh",
       "ctex",
       "emptypage",
       "fancyhdr",
@@ -29014,6 +29067,7 @@
       "graphics",
       "hyperref",
       "l3packages",
+      "listings",
       "lua-ul",
       "njuvisual",
       "ntheorem",
@@ -29021,7 +29075,8 @@
       "setspace",
       "tabularray",
       "unicode-math",
-      "xecjk"
+      "xecjk",
+      "zhlineskip"
     ],
     "tl_depend": []
   },
@@ -30942,13 +30997,6 @@
     "tl_depend": []
   },
   {
-    "name": "penrose",
-    "depend": [
-      "spath3"
-    ],
-    "tl_depend": []
-  },
-  {
     "name": "perception",
     "depend": [],
     "tl_depend": []
@@ -32075,6 +32123,7 @@
   {
     "name": "postit",
     "depend": [
+      "oberdiek",
       "simplekv",
       "tcolorbox",
       "xstring"
@@ -32423,6 +32472,20 @@
       "xint",
       "xkeyval",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "profmaquette",
+    "depend": [
+      "datatool",
+      "listofitems",
+      "simplekv",
+      "tcolorbox",
+      "tools",
+      "varwidth",
+      "xint",
+      "xlop"
     ],
     "tl_depend": []
   },
@@ -40360,6 +40423,13 @@
       "multido",
       "tools",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tilings",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
