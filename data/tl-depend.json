@@ -2965,6 +2965,64 @@
     ]
   },
   {
+    "name": "beautybook",
+    "depend": [
+      "adjustbox",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "anyfontsize",
+      "bclogo",
+      "biblatex",
+      "bropd",
+      "caption",
+      "colortbl",
+      "ctex",
+      "dashrule",
+      "ean13isbn",
+      "enumitem",
+      "epigraph-keys",
+      "etoolbox",
+      "extarrows",
+      "fitbox",
+      "fontawesome5",
+      "fontsize",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "imakeidx",
+      "jknapltx",
+      "koma-script",
+      "lastpage",
+      "latex",
+      "ninecolors",
+      "paracol",
+      "pgf",
+      "pgfornament",
+      "pgfornament-han",
+      "pgfplots",
+      "physics",
+      "psnfss",
+      "tabularray",
+      "tcolorbox",
+      "thmtools",
+      "tikz-cd",
+      "tikz-imagelabels",
+      "titlesec",
+      "todonotes",
+      "tools",
+      "ulem",
+      "varwidth",
+      "xcolor",
+      "xecjk",
+      "xkeyval",
+      "xpatch",
+      "zhlipsum",
+      "zhnumber"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beebe",
     "depend": [],
     "tl_depend": []
@@ -3825,6 +3883,11 @@
     "tl_depend": [
       "bibtexu.ARCH"
     ]
+  },
+  {
+    "name": "bibtools",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "bibtopic",
@@ -4855,7 +4918,6 @@
       "pdftexcmds",
       "plautopatch",
       "polyglossia",
-      "pxbase",
       "pxchfon",
       "pxjahyper",
       "tools",
@@ -6777,6 +6839,7 @@
       "biblatex2bibitem",
       "biblist",
       "bibtexperllibs",
+      "bibtools",
       "bibtopic",
       "bibtopicprefix",
       "bibunits",
@@ -7502,6 +7565,7 @@
       "pas-crosswords",
       "playcards",
       "psgo",
+      "quizztex",
       "realtranspose",
       "reverxii",
       "rubik",
@@ -8451,6 +8515,7 @@
       "beamerthemenord",
       "bearwear",
       "beaulivre",
+      "beautybook",
       "beton",
       "bewerbung",
       "bez123",
@@ -9494,6 +9559,7 @@
       "romanbarpagenumber",
       "romanneg",
       "romannum",
+      "rorlink",
       "rotfloat",
       "rotpages",
       "roundbox",
@@ -9966,6 +10032,7 @@
       "luacolor",
       "luacomplex",
       "luagcd",
+      "luahttp",
       "luahyphenrules",
       "luaimageembed",
       "luaindex",
@@ -25566,6 +25633,16 @@
     ]
   },
   {
+    "name": "luahttp",
+    "depend": [
+      "iftex",
+      "l3packages",
+      "luapackageloader",
+      "url"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luahyphenrules",
     "depend": [],
     "tl_depend": []
@@ -29262,6 +29339,7 @@
       "ragged2e",
       "setspace",
       "soul",
+      "subfigure",
       "tools",
       "upquote",
       "url",
@@ -32126,6 +32204,7 @@
       "oberdiek",
       "simplekv",
       "tcolorbox",
+      "varwidth",
       "xstring"
     ],
     "tl_depend": []
@@ -34117,6 +34196,11 @@
     "tl_depend": []
   },
   {
+    "name": "quizztex",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "quotchap",
     "depend": [
       "graphics"
@@ -34950,6 +35034,14 @@
     "name": "romannum",
     "depend": [
       "stdclsdv"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "rorlink",
+    "depend": [
+      "hyperref",
+      "pgf"
     ],
     "tl_depend": []
   },
