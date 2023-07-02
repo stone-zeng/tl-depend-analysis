@@ -706,11 +706,12 @@
     "depend": [
       "algorithmicx",
       "amsfonts",
-      "amsmath",
       "fancyvrb",
-      "listings",
+      "latex",
+      "pgf",
+      "pgfopts",
       "ragged2e",
-      "tcolorbox",
+      "varwidth",
       "xcolor"
     ],
     "tl_depend": []
@@ -6003,7 +6004,10 @@
     "name": "churchslavonic",
     "depend": [
       "etoolbox",
+      "graphics",
+      "iftex",
       "intcalc",
+      "luacolor",
       "xcolor"
     ],
     "tl_depend": [
@@ -7567,6 +7571,7 @@
       "quizztex",
       "realtranspose",
       "reverxii",
+      "rouequestions",
       "rubik",
       "schwalbe-chess",
       "scrabble",
@@ -8007,6 +8012,7 @@
       "profcollege",
       "proflabo",
       "proflycee",
+      "profsio",
       "tabvar",
       "tdsfrmath",
       "texlive-fr",
@@ -10760,6 +10766,7 @@
       "metatex",
       "midnight",
       "mkpattern",
+      "mlawriter",
       "modulus",
       "multido",
       "namedef",
@@ -12513,7 +12520,6 @@
       "atbegshi",
       "atveryend",
       "cm",
-      "cslatex.ARCH",
       "csplain",
       "everyshi",
       "firstaid",
@@ -22313,7 +22319,7 @@
       "cyrillic",
       "dehyph",
       "ec",
-      "etexcmds",
+      "etoolbox",
       "everyshi",
       "fancyhdr",
       "firstaid",
@@ -27661,6 +27667,11 @@
     "tl_depend": []
   },
   {
+    "name": "mlawriter",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "mleftright",
     "depend": [
       "infwarerr",
@@ -32588,6 +32599,18 @@
     "tl_depend": []
   },
   {
+    "name": "profsio",
+    "depend": [
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "tabularray",
+      "xint",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "program",
     "depend": [],
     "tl_depend": []
@@ -35060,7 +35083,9 @@
   {
     "name": "rorlink",
     "depend": [
+      "etoolbox",
       "hyperref",
+      "l3packages",
       "pgf"
     ],
     "tl_depend": []
@@ -35090,6 +35115,16 @@
       "graphics",
       "latex",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "rouequestions",
+    "depend": [
+      "latex",
+      "listofitems",
+      "pgf",
+      "simplekv"
     ],
     "tl_depend": []
   },
@@ -41539,6 +41574,7 @@
     "name": "typeoutfileinfo",
     "depend": [],
     "tl_depend": [
+      "fileinfo",
       "typeoutfileinfo.ARCH"
     ]
   },
