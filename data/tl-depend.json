@@ -2842,6 +2842,11 @@
     "tl_depend": []
   },
   {
+    "name": "beamertheme-rainbow",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "beamertheme-saintpetersburg",
     "depend": [
       "fira",
@@ -8507,6 +8512,7 @@
       "beamertheme-npbt",
       "beamertheme-phnompenh",
       "beamertheme-pure-minimalistic",
+      "beamertheme-rainbow",
       "beamertheme-saintpetersburg",
       "beamertheme-simpledarkblue",
       "beamertheme-simpleplus",
@@ -8902,6 +8908,7 @@
       "extract",
       "facsimile",
       "factura",
+      "fail-fast",
       "familytree",
       "fancyhandout",
       "fancylabel",
@@ -10056,6 +10063,7 @@
       "luaoptions",
       "luaotfload",
       "luapackageloader",
+      "luaplot",
       "luaprogtable",
       "luaquotes",
       "luarandom",
@@ -16408,6 +16416,11 @@
   },
   {
     "name": "facture-belge-simple-sans-tva",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "fail-fast",
     "depend": [],
     "tl_depend": []
   },
@@ -25818,6 +25831,16 @@
     ]
   },
   {
+    "name": "luaplot",
+    "depend": [
+      "luacode",
+      "luamplib",
+      "pgf",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luaprogtable",
     "depend": [
       "iftex",
@@ -29584,7 +29607,6 @@
     "name": "numerica",
     "depend": [
       "amsmath",
-      "etoolbox",
       "l3packages",
       "mathtools"
     ],
@@ -32601,11 +32623,15 @@
   {
     "name": "profsio",
     "depend": [
+      "iftex",
       "listofitems",
+      "luacode",
+      "nicematrix",
       "pgf",
       "simplekv",
       "tabularray",
       "xint",
+      "xkeyval",
       "xstring"
     ],
     "tl_depend": []
@@ -33337,7 +33363,9 @@
     "name": "pst-math",
     "depend": [
       "iftex",
+      "multido",
       "pst-calculate",
+      "pstricks",
       "xstring"
     ],
     "tl_depend": []
