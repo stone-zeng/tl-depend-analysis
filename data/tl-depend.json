@@ -7588,6 +7588,7 @@
       "sudokubundle",
       "tangramtikz",
       "wargame",
+      "wordle",
       "xq",
       "xskak"
     ]
@@ -19790,6 +19791,7 @@
       "amsmath",
       "everyhook",
       "glossaries-extra",
+      "kvoptions",
       "l3packages",
       "tools"
     ],
@@ -19897,6 +19899,7 @@
     "name": "hep-reference",
     "depend": [
       "cleveref",
+      "etoolbox",
       "footnotebackref",
       "hyperref"
     ],
@@ -43532,6 +43535,16 @@
     "tl_depend": [
       "wordcount.ARCH"
     ]
+  },
+  {
+    "name": "wordle",
+    "depend": [
+      "l3kernel",
+      "pgf",
+      "simplekv",
+      "xstring"
+    ],
+    "tl_depend": []
   },
   {
     "name": "wordlike",
