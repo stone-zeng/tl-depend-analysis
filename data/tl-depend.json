@@ -4232,7 +4232,6 @@
   {
     "name": "blowup",
     "depend": [
-      "atbegshi",
       "graphics",
       "iftex",
       "koma-script"
@@ -7380,6 +7379,7 @@
       "quattrocento",
       "raleway",
       "recycle",
+      "rit-fonts",
       "roboto",
       "romande",
       "rosario",
@@ -10221,6 +10221,7 @@
       "gu",
       "helmholtz-ellis-ji-notation",
       "hep",
+      "hep-graphic",
       "hep-reference",
       "hepnames",
       "hepparticles",
@@ -19837,6 +19838,18 @@
       "slantsc",
       "units",
       "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hep-graphic",
+    "depend": [
+      "kvoptions",
+      "l3packages",
+      "pgf",
+      "pgfplots",
+      "standalone",
+      "tikz-feynman"
     ],
     "tl_depend": []
   },
@@ -35004,6 +35017,16 @@
     "tl_depend": []
   },
   {
+    "name": "rit-fonts",
+    "depend": [
+      "iftex",
+      "latex",
+      "polyglossia",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "rjlparshap",
     "depend": [
       "arrayjobx",
@@ -35155,7 +35178,8 @@
       "latex",
       "listofitems",
       "pgf",
-      "simplekv"
+      "simplekv",
+      "tkz-euclide"
     ],
     "tl_depend": []
   },
@@ -44544,8 +44568,9 @@
     "name": "yamlvars",
     "depend": [
       "etoolbox",
+      "lua-tinyyaml",
       "luacode",
-      "markdown",
+      "luakeys",
       "penlight",
       "tools"
     ],
