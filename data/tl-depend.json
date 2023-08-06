@@ -9622,6 +9622,7 @@
       "sepfootnotes",
       "seqsplit",
       "sesstime",
+      "setspaceenhanced",
       "sf298",
       "sffms",
       "sfmath",
@@ -10305,6 +10306,7 @@
       "pythonhighlight",
       "qsharp",
       "quickreaction",
+      "quiver",
       "rank-2-roots",
       "rbt-mathnotes",
       "rec-thy",
@@ -14162,7 +14164,6 @@
   {
     "name": "dtk",
     "depend": [
-      "anonymouspro",
       "atveryend",
       "babel",
       "biblatex",
@@ -14179,11 +14180,8 @@
       "hvqrurl",
       "iftex",
       "koma-script",
-      "latex",
-      "libertine",
       "libertinus-otf",
-      "lstaddons",
-      "luatex85",
+      "listings",
       "marginnote",
       "microtype",
       "newunicodechar",
@@ -17553,6 +17551,9 @@
       "cm-unicode",
       "concmath-otf",
       "ebgaramond",
+      "erewhon",
+      "erewhon-math",
+      "euler-math",
       "fira",
       "firamath",
       "fontspec",
@@ -17565,7 +17566,6 @@
       "inconsolata",
       "kerkis",
       "latex",
-      "libertinus-fonts",
       "libertinus-otf",
       "newcomputermodern",
       "oldstandard",
@@ -20570,11 +20570,13 @@
     "depend": [
       "anyfontsize",
       "biblatex",
+      "caption",
       "changepage",
       "currfile",
       "datetime",
       "enumitem",
       "fancyhdr",
+      "float",
       "fontsize",
       "footmisc",
       "geometry",
@@ -20600,6 +20602,7 @@
     "tl_depend": [
       "anyfontsize",
       "biblatex",
+      "caption",
       "catchfile",
       "changepage",
       "currfile",
@@ -20616,16 +20619,21 @@
       "hyperref",
       "lastpage",
       "libertine",
+      "listings",
+      "listingsutf8",
       "makecell",
       "microtype",
       "pagecolor",
       "paralist",
+      "pdfcol",
       "pgf",
       "pgfopts",
       "ragged2e",
       "setspace",
       "svg",
+      "tcolorbox",
       "textpos",
+      "tikzfill",
       "titling",
       "transparent",
       "trimspaces",
@@ -34284,6 +34292,14 @@
     "tl_depend": []
   },
   {
+    "name": "quiver",
+    "depend": [
+      "amsfonts",
+      "tikz-cd"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "quiz2socrative",
     "depend": [
       "etoolbox",
@@ -36590,6 +36606,13 @@
   {
     "name": "setspace",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "setspaceenhanced",
+    "depend": [
+      "setspace"
+    ],
     "tl_depend": []
   },
   {
