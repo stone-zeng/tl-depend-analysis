@@ -373,6 +373,13 @@
     "tl_depend": []
   },
   {
+    "name": "addtoluatexpath",
+    "depend": [
+      "luacode"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "adfathesis",
     "depend": [
       "harvard",
@@ -1076,6 +1083,7 @@
       "fancyhdr",
       "float",
       "geometry",
+      "gettitlestring",
       "graphics",
       "latex",
       "lm",
@@ -5038,6 +5046,18 @@
     ]
   },
   {
+    "name": "cahierprof",
+    "depend": [
+      "colortbl",
+      "geometry",
+      "latex",
+      "microtype",
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "caladea",
     "depend": [
       "fontspec",
@@ -7997,7 +8017,9 @@
       "bib-fr",
       "bibleref-french",
       "booktabs-fr",
+      "cahierprof",
       "collection-basic",
+      "couleurs-fr",
       "droit-fr",
       "e-french",
       "epslatex-fr",
@@ -10012,6 +10034,7 @@
     "depend": [],
     "tl_depend": [
       "addliga",
+      "addtoluatexpath",
       "auto-pst-pdf-lua",
       "barracuda",
       "bezierplot",
@@ -10715,6 +10738,7 @@
       "venndiagram",
       "visualpstricks",
       "wheelchart",
+      "wordcloud",
       "worldflags",
       "xistercian",
       "xpicture",
@@ -11166,6 +11190,7 @@
       "sr-vorl",
       "srdp-mathematik",
       "stellenbosch",
+      "stellenbosch-2",
       "suftesi",
       "sugconf",
       "tabriz-thesis",
@@ -12181,6 +12206,13 @@
     "name": "coseoul",
     "depend": [
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "couleurs-fr",
+    "depend": [
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -20590,6 +20622,7 @@
       "pagecolor",
       "paralist",
       "pgf",
+      "pgfopts",
       "ragged2e",
       "setspace",
       "svg",
@@ -26966,13 +26999,15 @@
   {
     "name": "memoir",
     "depend": [
-      "etex-pkg",
-      "etoolbox",
+      "booktabs",
+      "hyperref",
       "iftex",
+      "l3packages",
       "latex",
       "mparhack",
       "textcase",
-      "tools"
+      "tools",
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -32616,13 +32651,10 @@
     "depend": [
       "amsfonts",
       "cancel",
-      "csvsimple",
       "fancyvrb",
       "fontawesome5",
       "hologo",
       "iftex",
-      "l3kernel",
-      "l3packages",
       "latex",
       "listofitems",
       "mathtools",
@@ -32651,10 +32683,10 @@
     "depend": [
       "datatool",
       "listofitems",
+      "modulus",
       "simplekv",
       "tcolorbox",
       "tools",
-      "varwidth",
       "xint",
       "xlop"
     ],
@@ -38099,6 +38131,20 @@
     "tl_depend": []
   },
   {
+    "name": "stellenbosch-2",
+    "depend": [
+      "eso-pic",
+      "etoolbox",
+      "geometry",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "natbib",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "step",
     "depend": [
       "fontaxes",
@@ -38920,6 +38966,7 @@
     "name": "tagpdf",
     "depend": [
       "etoolbox",
+      "latex-lab",
       "pdfmanagement-testphase",
       "xpatch"
     ],
@@ -43596,6 +43643,13 @@
     "tl_depend": []
   },
   {
+    "name": "wordcloud",
+    "depend": [
+      "luamplib"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "wordcount",
     "depend": [
       "latex"
@@ -43668,10 +43722,8 @@
   {
     "name": "writeongrid",
     "depend": [
-      "l3packages",
       "pgf",
       "simplekv",
-      "xcolor",
       "xstring"
     ],
     "tl_depend": []
