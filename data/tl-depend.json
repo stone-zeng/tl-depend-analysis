@@ -898,6 +898,7 @@
       "cm",
       "hyphen-base",
       "knuth-lib",
+      "pdftex",
       "plain",
       "tex"
     ]
@@ -7634,6 +7635,7 @@
       "eledform",
       "eledmac",
       "expex",
+      "expex-glossonly",
       "gb4e",
       "gmverse",
       "jura",
@@ -8039,6 +8041,7 @@
       "lshort-french",
       "mafr",
       "matapli",
+      "panneauxroute",
       "profcollege",
       "proflabo",
       "proflycee",
@@ -8279,11 +8282,13 @@
       "cjhebrew",
       "collection-basic",
       "ctib",
+      "culmus",
       "ebong",
       "ethiop",
       "ethiop-t1",
       "fc",
       "fonts-tlwg",
+      "hebrew-fonts",
       "hindawi-latex-template",
       "hyphen-afrikaans",
       "hyphen-armenian",
@@ -8975,8 +8980,10 @@
       "flexipage",
       "flipbook",
       "flippdf",
+      "floatbytocbasic",
       "floatflt",
       "floatrow",
+      "floatrowbytocbasic",
       "flowfram",
       "fmp",
       "fmtcount",
@@ -9169,6 +9176,7 @@
       "jlabels",
       "jmsdelim",
       "jobname-suffix",
+      "joinbox",
       "jslectureplanner",
       "jumplines",
       "jvlisting",
@@ -9245,6 +9253,7 @@
       "locality",
       "logbox",
       "logical-markup-utils",
+      "logoetalab",
       "logpap",
       "longfbox",
       "longfigure",
@@ -9722,7 +9731,6 @@
       "subfigure",
       "subfiles",
       "subfloat",
-      "substitutefont",
       "substr",
       "supertabular",
       "suppose",
@@ -12592,9 +12600,11 @@
       "hyphen-base",
       "luatex",
       "luatex85",
+      "pdftex",
       "plain",
       "tex",
-      "tex-ini-files"
+      "tex-ini-files",
+      "xetex"
     ]
   },
   {
@@ -12799,6 +12809,11 @@
     "depend": [
       "units"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "culmus",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -16317,6 +16332,17 @@
     "tl_depend": []
   },
   {
+    "name": "expex-glossonly",
+    "depend": [
+      "covington",
+      "expex",
+      "gb4e",
+      "linguex",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "expkv-bundle",
     "depend": [],
     "tl_depend": []
@@ -17328,6 +17354,17 @@
     "tl_depend": []
   },
   {
+    "name": "floatbytocbasic",
+    "depend": [
+      "float",
+      "floatrowbytocbasic",
+      "koma-script",
+      "l3packages",
+      "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "floatflt",
     "depend": [],
     "tl_depend": []
@@ -17339,6 +17376,16 @@
       "fancybox",
       "graphics",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "floatrowbytocbasic",
+    "depend": [
+      "floatrow",
+      "koma-script",
+      "l3kernel",
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -19774,6 +19821,11 @@
     "tl_depend": []
   },
   {
+    "name": "hebrew-fonts",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "hecthese",
     "depend": [
       "amsmath",
@@ -19923,7 +19975,6 @@
       "latex",
       "mnsymbol",
       "pdftexcmds",
-      "substitutefont",
       "tools",
       "xstring"
     ],
@@ -22656,6 +22707,15 @@
     "tl_depend": []
   },
   {
+    "name": "joinbox",
+    "depend": [
+      "graphics",
+      "l3kernel",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "josefin",
     "depend": [
       "fontaxes",
@@ -25130,6 +25190,15 @@
     "tl_depend": []
   },
   {
+    "name": "logoetalab",
+    "depend": [
+      "graphics",
+      "simplekv",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "logpap",
     "depend": [
       "graphics",
@@ -25153,7 +25222,8 @@
     "tl_depend": [
       "cm",
       "hyphen-base",
-      "lollipop.ARCH"
+      "lollipop.ARCH",
+      "tex"
     ]
   },
   {
@@ -28219,6 +28289,7 @@
     "depend": [],
     "tl_depend": [
       "mptopdf.ARCH",
+      "pdftex",
       "plain"
     ]
   },
@@ -30496,6 +30567,13 @@
     "tl_depend": []
   },
   {
+    "name": "panneauxroute",
+    "depend": [
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "paper",
     "depend": [],
     "tl_depend": []
@@ -32687,6 +32765,7 @@
       "simplekv",
       "tcolorbox",
       "tools",
+      "varwidth",
       "xint",
       "xlop"
     ],
@@ -34348,7 +34427,15 @@
   },
   {
     "name": "quizztex",
-    "depend": [],
+    "depend": [
+      "fontawesome5",
+      "oberdiek",
+      "pgf",
+      "simplekv",
+      "tools",
+      "varwidth",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -37921,7 +38008,6 @@
       "pstricks-add",
       "setspace",
       "spreadtab",
-      "substitutefont",
       "tools",
       "trimspaces",
       "varwidth",
@@ -38417,11 +38503,6 @@
     "tl_depend": []
   },
   {
-    "name": "substitutefont",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "substr",
     "depend": [],
     "tl_depend": []
@@ -38478,7 +38559,6 @@
       "newpx",
       "newtx",
       "psnfss",
-      "substitutefont",
       "titlesec",
       "tools",
       "xkeyval",
@@ -39719,6 +39799,7 @@
       "cm",
       "hyphen-base",
       "knuth-lib",
+      "pdftex",
       "plain",
       "tex",
       "texsis.ARCH"
