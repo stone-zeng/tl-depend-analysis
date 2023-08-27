@@ -7701,6 +7701,7 @@
       "lshort-persian",
       "luabidi",
       "na-box",
+      "parsianfonts",
       "persian-bib",
       "quran",
       "sexam",
@@ -10085,7 +10086,6 @@
       "luaimageembed",
       "luaindex",
       "luainputenc",
-      "luaintro",
       "luakeys",
       "lualatex-doc",
       "lualatex-math",
@@ -10124,6 +10124,7 @@
       "pdfarticle",
       "pdfextra",
       "penlight",
+      "penlightplus",
       "piton",
       "placeat",
       "plantuml",
@@ -25820,11 +25821,6 @@
     "tl_depend": []
   },
   {
-    "name": "luaintro",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "luajittex",
     "depend": [],
     "tl_depend": [
@@ -25956,8 +25952,7 @@
       "context",
       "lua-alt-getopt",
       "lua-uni-algos",
-      "lualibs",
-      "luatodonotes"
+      "lualibs"
     ],
     "tl_depend": [
       "lm",
@@ -26176,6 +26171,7 @@
       "luakeys",
       "makecell",
       "multirow",
+      "penlightplus",
       "tools",
       "xcolor"
     ],
@@ -26749,7 +26745,9 @@
   },
   {
     "name": "mathfont",
-    "depend": [],
+    "depend": [
+      "luaotfload"
+    ],
     "tl_depend": []
   },
   {
@@ -29064,10 +29062,13 @@
       "fontaxes",
       "fontspec",
       "iftex",
+      "kvoptions",
       "latex",
       "mweights",
       "oberdiek",
       "realscripts",
+      "trimspaces",
+      "unicode-math",
       "xkeyval",
       "xstring"
     ],
@@ -29756,23 +29757,19 @@
     "name": "numerica",
     "depend": [
       "amsmath",
-      "l3packages",
       "mathtools"
     ],
     "tl_depend": []
   },
   {
     "name": "numerica-plus",
-    "depend": [
-      "numerica"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
     "name": "numerica-tables",
     "depend": [
-      "booktabs",
-      "numerica"
+      "booktabs"
     ],
     "tl_depend": []
   },
@@ -30684,6 +30681,11 @@
     "tl_depend": []
   },
   {
+    "name": "parsianfonts",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "parskip",
     "depend": [
       "etoolbox",
@@ -31277,6 +31279,15 @@
   {
     "name": "penlight",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "penlightplus",
+    "depend": [
+      "luacode",
+      "luakeys",
+      "penlight"
+    ],
     "tl_depend": []
   },
   {
@@ -43317,15 +43328,10 @@
     "name": "verifiche",
     "depend": [
       "amsfonts",
-      "amsmath",
-      "booktabs",
       "enumitem",
-      "graphics",
       "l3packages",
       "pgf",
-      "siunitx",
       "ulem",
-      "xcolor",
       "xkeyval"
     ],
     "tl_depend": []
@@ -44747,7 +44753,8 @@
       "etoolbox",
       "lua-tinyyaml",
       "luacode",
-      "luakeys"
+      "luakeys",
+      "penlightplus"
     ],
     "tl_depend": []
   },
