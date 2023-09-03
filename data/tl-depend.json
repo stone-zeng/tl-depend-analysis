@@ -7348,6 +7348,7 @@
       "mdputu",
       "mdsymbol",
       "merriweather",
+      "metsymb",
       "miama",
       "mintspirit",
       "missaali",
@@ -7701,7 +7702,6 @@
       "lshort-persian",
       "luabidi",
       "na-box",
-      "parsianfonts",
       "persian-bib",
       "quran",
       "sexam",
@@ -8724,6 +8724,7 @@
       "cprotectinside",
       "crbox",
       "create-theorem",
+      "creationboites",
       "crefthe",
       "crossreference",
       "crossreftools",
@@ -9112,6 +9113,7 @@
       "hhtensor",
       "hideanswer",
       "highlightlatex",
+      "highlightx",
       "histogr",
       "hitec",
       "hitreport",
@@ -9174,6 +9176,7 @@
       "isotope",
       "issuulinks",
       "iwhdp",
+      "iwonamath",
       "jlabels",
       "jmsdelim",
       "jobname-suffix",
@@ -12390,6 +12393,16 @@
     "tl_depend": [
       "crefthe"
     ]
+  },
+  {
+    "name": "creationboites",
+    "depend": [
+      "fontawesome5",
+      "simplekv",
+      "tcolorbox",
+      "xstring"
+    ],
+    "tl_depend": []
   },
   {
     "name": "crefthe",
@@ -20254,6 +20267,16 @@
     "tl_depend": []
   },
   {
+    "name": "highlightx",
+    "depend": [
+      "pgf",
+      "simplekv",
+      "soul",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "hindawi-latex-template",
     "depend": [],
     "tl_depend": []
@@ -20483,8 +20506,8 @@
   {
     "name": "hobby",
     "depend": [
-      "l3kernel",
-      "l3packages"
+      "l3experimental",
+      "l3kernel"
     ],
     "tl_depend": []
   },
@@ -20797,6 +20820,7 @@
   {
     "name": "hvextern",
     "depend": [
+      "comment",
       "fancyvrb",
       "filemod",
       "graphics",
@@ -22387,6 +22411,13 @@
   {
     "name": "iwona",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "iwonamath",
+    "depend": [
+      "l3packages"
+    ],
     "tl_depend": []
   },
   {
@@ -27322,6 +27353,11 @@
     "tl_depend": []
   },
   {
+    "name": "metsymb",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "mex",
     "depend": [],
     "tl_depend": [
@@ -30681,11 +30717,6 @@
     "tl_depend": []
   },
   {
-    "name": "parsianfonts",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "parskip",
     "depend": [
       "etoolbox",
@@ -31284,6 +31315,7 @@
   {
     "name": "penlightplus",
     "depend": [
+      "etoolbox",
       "luacode",
       "luakeys",
       "penlight"
@@ -31916,7 +31948,6 @@
     "depend": [
       "footnotehyper",
       "l3packages",
-      "luacode",
       "luatexbase",
       "mdwtools"
     ],
@@ -34107,6 +34138,7 @@
     "name": "pxchfon",
     "depend": [
       "atbegshi",
+      "graphics",
       "pxufont"
     ],
     "tl_depend": []
@@ -42005,7 +42037,6 @@
       "caption",
       "fancyhdr",
       "geometry",
-      "l3packages",
       "latex",
       "parskip",
       "setspace"
