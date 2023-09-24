@@ -10291,6 +10291,7 @@
       "interval",
       "ionumbers",
       "isomath",
+      "isphysicalmath",
       "jkmath",
       "jupynotex",
       "karnaugh",
@@ -22399,6 +22400,11 @@
   },
   {
     "name": "isotope",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "isphysicalmath",
     "depend": [],
     "tl_depend": []
   },
@@ -35337,6 +35343,7 @@
   {
     "name": "robust-externalize",
     "depend": [
+      "etoolbox",
       "graphics",
       "pgf",
       "tools",
