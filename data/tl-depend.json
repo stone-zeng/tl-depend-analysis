@@ -9136,6 +9136,7 @@
       "hitreport",
       "hletter",
       "hobsub",
+      "homework",
       "hpsdiss",
       "href-ul",
       "hrefhide",
@@ -9435,6 +9436,7 @@
       "nolbreaks",
       "nomencl",
       "nomentbl",
+      "non-decimal-units",
       "nonfloat",
       "nonumonpart",
       "nopageno",
@@ -20594,6 +20596,18 @@
     "tl_depend": []
   },
   {
+    "name": "homework",
+    "depend": [
+      "einfart",
+      "lastpage",
+      "minimalist",
+      "projlib"
+    ],
+    "tl_depend": [
+      "einfart"
+    ]
+  },
+  {
     "name": "hook-pre-commit-pkg",
     "depend": [],
     "tl_depend": []
@@ -29571,6 +29585,17 @@
       "latex",
       "nomencl",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "non-decimal-units",
+    "depend": [
+      "bigintcalc",
+      "etoolbox",
+      "latex",
+      "pgf",
+      "pgfopts"
     ],
     "tl_depend": []
   },
@@ -42260,6 +42285,7 @@
       "graphics",
       "hyperref",
       "jknapltx",
+      "l3kernel",
       "latex",
       "listings",
       "lm",
@@ -42277,6 +42303,7 @@
       "showlabels",
       "silence",
       "soul",
+      "starray",
       "steinmetz",
       "titlesec",
       "tools",
