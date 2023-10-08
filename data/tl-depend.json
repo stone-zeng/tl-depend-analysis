@@ -2999,8 +2999,8 @@
       "amsfonts",
       "amsmath",
       "anyfontsize",
+      "appendix",
       "bclogo",
-      "biblatex",
       "bropd",
       "caption",
       "colortbl",
@@ -3013,7 +3013,6 @@
       "extarrows",
       "fitbox",
       "fontawesome5",
-      "fontsize",
       "geometry",
       "graphics",
       "hyperref",
@@ -3022,13 +3021,14 @@
       "koma-script",
       "lastpage",
       "latex",
+      "microtype",
       "ninecolors",
       "paracol",
       "pgf",
       "pgfornament",
       "pgfornament-han",
       "pgfplots",
-      "physics",
+      "psnfss",
       "stix",
       "tabularray",
       "tcolorbox",
@@ -3040,11 +3040,10 @@
       "tools",
       "ulem",
       "varwidth",
+      "was",
       "xcolor",
-      "xecjk",
       "xkeyval",
       "xpatch",
-      "zhlipsum",
       "zhnumber"
     ],
     "tl_depend": []
@@ -4092,7 +4091,6 @@
       "amscls",
       "amsfonts",
       "amsmath",
-      "biblatex",
       "booktabs",
       "caption",
       "ctex",
@@ -4100,36 +4098,24 @@
       "enumitem",
       "etoolbox",
       "fancyhdr",
-      "float",
       "fmtcount",
-      "fontspec",
       "geometry",
       "graphics",
       "hyperref",
-      "iftex",
-      "jknapltx",
-      "kvoptions",
+      "ifplatform",
       "l3kernel",
       "l3packages",
-      "latex",
       "listings",
-      "mhchem",
       "multirow",
       "pdfpages",
       "pgf",
       "psnfss",
       "setspace",
-      "siunitx",
-      "subfigure",
-      "threeparttable",
       "titlesec",
       "tools",
       "unicode-math",
-      "was",
-      "wrapfig",
       "xcolor",
-      "xecjk",
-      "xltxtra"
+      "xecjk"
     ],
     "tl_depend": []
   },
@@ -6102,6 +6088,16 @@
     "depend": [
       "pgf",
       "siunitx",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "circularglyphs",
+    "depend": [
+      "pgf",
+      "simplekv",
+      "tools",
       "xstring"
     ],
     "tl_depend": []
@@ -10558,6 +10554,7 @@
       "chemfig",
       "circuit-macros",
       "circuitikz",
+      "circularglyphs",
       "coffeestains",
       "collection-basic",
       "combinedgraphics",
@@ -20601,7 +20598,8 @@
       "einfart",
       "lastpage",
       "minimalist",
-      "projlib"
+      "projlib",
+      "tools"
     ],
     "tl_depend": [
       "einfart"
@@ -32974,7 +32972,7 @@
       "regexpatch",
       "relsize",
       "scontents",
-      "setspace",
+      "setspaceenhanced",
       "silence",
       "ulem",
       "xcolor"
