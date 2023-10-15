@@ -468,6 +468,13 @@
     "tl_depend": []
   },
   {
+    "name": "advice",
+    "depend": [
+      "collargs"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "ae",
     "depend": [
       "latex"
@@ -6728,6 +6735,14 @@
     "tl_depend": []
   },
   {
+    "name": "collargs",
+    "depend": [
+      "etoolbox",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "collcell",
     "depend": [
       "etoolbox",
@@ -6996,6 +7011,7 @@
       "dvipng",
       "dvipos",
       "dvisvgm",
+      "easydtx",
       "findhyph",
       "fragmaster",
       "git-latexdiff",
@@ -7076,40 +7092,20 @@
     "tl_depend": [
       "collection-basic",
       "context",
-      "context-account",
-      "context-algorithmic",
-      "context-animation",
-      "context-annotation",
-      "context-bnf",
       "context-calendar-examples",
-      "context-chromato",
-      "context-cmscbf",
-      "context-cmttbf",
       "context-collating-marks",
-      "context-construction-plan",
       "context-cyrillicnumbers",
-      "context-degrade",
-      "context-fancybreak",
       "context-filter",
-      "context-french",
-      "context-fullpage",
-      "context-gantt",
       "context-gnuplot",
       "context-handlecsv",
-      "context-layout",
       "context-letter",
       "context-mathsets",
       "context-notes-zh-cn",
       "context-pocketdiary",
-      "context-rst",
-      "context-ruby",
-      "context-simplefonts",
       "context-simpleslides",
       "context-sudoku",
       "context-texlive",
-      "context-title",
       "context-transliterator",
-      "context-typearea",
       "context-typescripts",
       "context-vim",
       "context-visualcounter",
@@ -7661,6 +7657,7 @@
       "liturg",
       "metrix",
       "nnext",
+      "opbible",
       "parallel",
       "parrun",
       "phonrule",
@@ -10620,6 +10617,7 @@
       "maker",
       "makeshape",
       "mathspic",
+      "memoize",
       "mercatormap",
       "milsymb",
       "miniplot",
@@ -10717,6 +10715,7 @@
       "tikz-nfold",
       "tikz-opm",
       "tikz-optics",
+      "tikz-osci",
       "tikz-page",
       "tikz-palattice",
       "tikz-planets",
@@ -10785,6 +10784,7 @@
     "tl_depend": [
       "abbr",
       "abstyles",
+      "advice",
       "apnum",
       "autoaligne",
       "barr",
@@ -10793,6 +10793,7 @@
       "c-pascal",
       "catcodes",
       "chronosys",
+      "collargs",
       "collection-basic",
       "colorsep",
       "compare",
@@ -10807,6 +10808,7 @@
       "epigram",
       "epsf",
       "epsf-dvipdfmx",
+      "etoolbox-generic",
       "expex-acro",
       "expkv-bundle",
       "fenixpar",
@@ -11780,63 +11782,7 @@
     ]
   },
   {
-    "name": "context-account",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-algorithmic",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-animation",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-annotation",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-bnf",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
     "name": "context-calendar-examples",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-chromato",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-cmscbf",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-cmttbf",
     "depend": [],
     "tl_depend": [
       "context"
@@ -11850,28 +11796,7 @@
     ]
   },
   {
-    "name": "context-construction-plan",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
     "name": "context-cyrillicnumbers",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-degrade",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-fancybreak",
     "depend": [],
     "tl_depend": [
       "context"
@@ -11885,28 +11810,6 @@
     ]
   },
   {
-    "name": "context-french",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-fullpage",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-gantt",
-    "depend": [],
-    "tl_depend": [
-      "context",
-      "hatching"
-    ]
-  },
-  {
     "name": "context-gnuplot",
     "depend": [],
     "tl_depend": [
@@ -11915,13 +11818,6 @@
   },
   {
     "name": "context-handlecsv",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-layout",
     "depend": [],
     "tl_depend": [
       "context"
@@ -11956,27 +11852,6 @@
     ]
   },
   {
-    "name": "context-rst",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-ruby",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-simplefonts",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
     "name": "context-simpleslides",
     "depend": [],
     "tl_depend": [
@@ -11996,21 +11871,7 @@
     "tl_depend": []
   },
   {
-    "name": "context-title",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
     "name": "context-transliterator",
-    "depend": [],
-    "tl_depend": [
-      "context"
-    ]
-  },
-  {
-    "name": "context-typearea",
     "depend": [],
     "tl_depend": [
       "context"
@@ -14596,6 +14457,13 @@
     "tl_depend": []
   },
   {
+    "name": "easydtx",
+    "depend": [],
+    "tl_depend": [
+      "easydtx.ARCH"
+    ]
+  },
+  {
     "name": "easyfig",
     "depend": [
       "adjustbox",
@@ -15995,6 +15863,11 @@
   },
   {
     "name": "etoolbox-de",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "etoolbox-generic",
     "depend": [],
     "tl_depend": []
   },
@@ -21729,7 +21602,6 @@
       "xkeyval"
     ],
     "tl_depend": [
-      "tools",
       "xkeyval"
     ]
   },
@@ -26178,6 +26050,7 @@
       "filehook",
       "fontspec",
       "iftex",
+      "infwarerr",
       "jsclasses",
       "l3kernel",
       "l3packages",
@@ -27184,6 +27057,18 @@
     "name": "memoirchapterstyles",
     "depend": [],
     "tl_depend": []
+  },
+  {
+    "name": "memoize",
+    "depend": [
+      "advice",
+      "etoolbox",
+      "pdftexcmds",
+      "pgfopts"
+    ],
+    "tl_depend": [
+      "memoize.ARCH"
+    ]
   },
   {
     "name": "memory",
@@ -29589,11 +29474,8 @@
   {
     "name": "non-decimal-units",
     "depend": [
-      "bigintcalc",
-      "etoolbox",
-      "latex",
-      "pgf",
-      "pgfopts"
+      "l3kernel",
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -30236,6 +30118,11 @@
       "preprint",
       "psnfss"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "opbible",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -32872,6 +32759,7 @@
       "listofitems",
       "mathtools",
       "minted",
+      "modulus",
       "nicematrix",
       "oberdiek",
       "pgf",
@@ -40653,6 +40541,15 @@
     "name": "tikz-optics",
     "depend": [
       "etoolbox"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikz-osci",
+    "depend": [
+      "pgf",
+      "pgfplots",
+      "xcolor"
     ],
     "tl_depend": []
   },
