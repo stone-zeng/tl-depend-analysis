@@ -498,6 +498,13 @@
     "tl_depend": []
   },
   {
+    "name": "affilauthor",
+    "depend": [
+      "marvosym"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "afm2pl",
     "depend": [],
     "tl_depend": [
@@ -1360,6 +1367,14 @@
       "amsfonts",
       "bera",
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "argumentation",
+    "depend": [
+      "options",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -4360,7 +4375,8 @@
     "depend": [
       "ifsym",
       "latex",
-      "pgf"
+      "pgf",
+      "relsize"
     ],
     "tl_depend": []
   },
@@ -7929,6 +7945,7 @@
       "patgen2-tutorial",
       "pictexsum",
       "plain-doc",
+      "quran-en",
       "short-math-guide",
       "simplified-latex",
       "svg-inkscape",
@@ -8503,6 +8520,7 @@
       "adjustbox",
       "adrconv",
       "advdate",
+      "affilauthor",
       "akktex",
       "akletter",
       "alchemist",
@@ -8522,6 +8540,7 @@
       "apptools",
       "arabicfront",
       "arcs",
+      "argumentation",
       "arraycols",
       "arrayjobx",
       "arraysort",
@@ -9194,6 +9213,7 @@
       "invoice",
       "invoice-class",
       "invoice2",
+      "ipsum",
       "iso",
       "iso10303",
       "isodate",
@@ -9281,6 +9301,7 @@
       "listlbls",
       "listliketab",
       "listofsymbols",
+      "litetable",
       "lkproof",
       "lmake",
       "locality",
@@ -9452,6 +9473,7 @@
       "nonumonpart",
       "nopageno",
       "normalcolor",
+      "notebeamer",
       "notes",
       "notespages",
       "notestex",
@@ -9594,6 +9616,7 @@
       "pygmentex",
       "python",
       "pythonimmediate",
+      "q-and-a",
       "qcm",
       "qstest",
       "qsymbols",
@@ -10095,6 +10118,7 @@
       "emoji",
       "emojicite",
       "enigma",
+      "gitinfo-lua",
       "innerscript",
       "interpreter",
       "kanaparser",
@@ -10364,6 +10388,7 @@
       "physunits",
       "pinoutikz",
       "pm-isomath",
+      "pmdraw",
       "polexpr",
       "prftree",
       "principia",
@@ -10674,6 +10699,7 @@
       "pixelart",
       "pixelarttikz",
       "pmgraph",
+      "polyhedra",
       "postage",
       "postit",
       "prerex",
@@ -18626,6 +18652,14 @@
     "tl_depend": []
   },
   {
+    "name": "gitinfo-lua",
+    "depend": [
+      "luacode",
+      "pgfopts"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "gitinfo2",
     "depend": [
       "eso-pic",
@@ -22239,6 +22273,15 @@
     "tl_depend": []
   },
   {
+    "name": "ipsum",
+    "depend": [
+      "simplekv",
+      "xint",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "is-bst",
     "depend": [],
     "tl_depend": []
@@ -25074,6 +25117,21 @@
       "latex",
       "nomencl",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "litetable",
+    "depend": [
+      "ctex",
+      "etoolbox",
+      "fontawesome5",
+      "fontspec",
+      "iftex",
+      "kvoptions",
+      "newtx",
+      "psnfss",
+      "standalone"
     ],
     "tl_depend": []
   },
@@ -29608,6 +29666,20 @@
     "tl_depend": []
   },
   {
+    "name": "notebeamer",
+    "depend": [
+      "ctex",
+      "etoolbox",
+      "fontawesome5",
+      "graphics",
+      "hyperref",
+      "kvoptions",
+      "l3packages",
+      "standalone"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "notes",
     "depend": [
       "graphics"
@@ -32328,6 +32400,14 @@
     "tl_depend": []
   },
   {
+    "name": "pmdraw",
+    "depend": [
+      "graphics",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pmgraph",
     "depend": [],
     "tl_depend": []
@@ -32442,6 +32522,18 @@
       "makecmds",
       "xkeyval"
     ]
+  },
+  {
+    "name": "polyhedra",
+    "depend": [
+      "l3packages",
+      "pgf",
+      "tikz-3dplot",
+      "xcolor",
+      "xcolor-solarized",
+      "xstring"
+    ],
+    "tl_depend": []
   },
   {
     "name": "polynom",
@@ -32914,6 +33006,7 @@
       "ebgaramond",
       "ebgaramond-maths",
       "eulervm",
+      "fontsetup",
       "fontspec",
       "jknapltx",
       "latex",
@@ -34345,6 +34438,19 @@
     ]
   },
   {
+    "name": "q-and-a",
+    "depend": [
+      "einfart",
+      "enumitem",
+      "minimalist",
+      "projlib",
+      "tcolorbox"
+    ],
+    "tl_depend": [
+      "einfart"
+    ]
+  },
+  {
     "name": "qcircuit",
     "depend": [
       "iftex",
@@ -34578,6 +34684,15 @@
   },
   {
     "name": "quran-de",
+    "depend": [
+      "quran",
+      "xkeyval",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "quran-en",
     "depend": [
       "quran",
       "xkeyval",
@@ -35333,8 +35448,12 @@
   {
     "name": "robust-externalize",
     "depend": [
+      "atveryend",
+      "etl",
       "etoolbox",
       "graphics",
+      "iftex",
+      "l3packages",
       "pgf",
       "tools",
       "xsim"
@@ -42541,6 +42660,7 @@
       "multirow",
       "psnfss",
       "stix2-type1",
+      "subfig",
       "tools",
       "was",
       "xcolor",
