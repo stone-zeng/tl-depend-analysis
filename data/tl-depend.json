@@ -6107,6 +6107,46 @@
     ]
   },
   {
+    "name": "cid",
+    "depend": [
+      "amsmath",
+      "babel",
+      "biblatex",
+      "bookmark",
+      "booktabs",
+      "caption",
+      "cleveref",
+      "cmap",
+      "colorprofiles",
+      "crop",
+      "csquotes",
+      "enumitem",
+      "eso-pic",
+      "etoolbox",
+      "fancyhdr",
+      "fontspec",
+      "footmisc",
+      "graphics",
+      "grffile",
+      "hyperref",
+      "iftex",
+      "latex",
+      "listings",
+      "microtype",
+      "oberdiek",
+      "orcidlink",
+      "pdfx",
+      "pgf",
+      "preprint",
+      "psnfss",
+      "ragged2e",
+      "selnolig",
+      "tools",
+      "url"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "cinzel",
     "depend": [
       "fontaxes",
@@ -6727,7 +6767,6 @@
   {
     "name": "codedescribe",
     "depend": [
-      "l3kernel",
       "listings",
       "psnfss",
       "scontents",
@@ -7118,6 +7157,7 @@
       "synctex",
       "tex4ebook",
       "texaccents",
+      "texblend",
       "texcount",
       "texdef",
       "texdiff",
@@ -7674,6 +7714,7 @@
       "sudoku",
       "sudokubundle",
       "tangramtikz",
+      "trivialpursuit",
       "wargame",
       "wordle",
       "xq",
@@ -9297,6 +9338,7 @@
       "latex-lab-dev",
       "latex-tools-dev",
       "latex-uni8",
+      "latex2pydata",
       "latexcolors",
       "latexdemo",
       "latexgit",
@@ -9567,6 +9609,7 @@
       "pbox",
       "pbsheet",
       "pdf14",
+      "pdfannotations",
       "pdfcol",
       "pdfcolmk",
       "pdfcomment",
@@ -11146,6 +11189,7 @@
       "chem-journal",
       "chifoot",
       "chs-physics-report",
+      "cid",
       "cje",
       "classicthesis",
       "cleanthesis",
@@ -23036,10 +23080,7 @@
   },
   {
     "name": "kantlipsum",
-    "depend": [
-      "l3kernel",
-      "l3packages"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -24200,6 +24241,15 @@
     ]
   },
   {
+    "name": "latex2pydata",
+    "depend": [
+      "etoolbox",
+      "fvextra",
+      "pdftexcmds"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "latex4musicians",
     "depend": [],
     "tl_depend": []
@@ -25358,8 +25408,10 @@
     "name": "logoetalab",
     "depend": [
       "graphics",
+      "pgf",
       "simplekv",
-      "tools"
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -31109,6 +31161,20 @@
   {
     "name": "pdf14",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "pdfannotations",
+    "depend": [
+      "graphics",
+      "hyperref",
+      "l3kernel",
+      "l3packages",
+      "latex",
+      "listings",
+      "pdfpages",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -37519,7 +37585,8 @@
     "depend": [
       "l3kernel",
       "l3packages",
-      "mathtools"
+      "mathtools",
+      "tabularray"
     ],
     "tl_depend": []
   },
@@ -39829,6 +39896,13 @@
     "tl_depend": []
   },
   {
+    "name": "texblend",
+    "depend": [],
+    "tl_depend": [
+      "texblend.ARCH"
+    ]
+  },
+  {
     "name": "texbytopic",
     "depend": [],
     "tl_depend": []
@@ -41798,6 +41872,18 @@
     "tl_depend": []
   },
   {
+    "name": "trivialpursuit",
+    "depend": [
+      "fontawesome5",
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "tools",
+      "xint"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "trsym",
     "depend": [],
     "tl_depend": []
@@ -42473,6 +42559,7 @@
       "caption",
       "chngcntr",
       "circuitikz",
+      "codedescribe",
       "contour",
       "csquotes",
       "enumitem",
@@ -42484,7 +42571,6 @@
       "graphics",
       "hyperref",
       "jknapltx",
-      "l3kernel",
       "latex",
       "listings",
       "lm",
@@ -42496,7 +42582,6 @@
       "newfloat",
       "nicematrix",
       "pdfcomment",
-      "pgf",
       "psnfss",
       "relsize",
       "showlabels",
