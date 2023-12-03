@@ -6107,7 +6107,7 @@
     ]
   },
   {
-    "name": "cid",
+    "name": "cidarticle",
     "depend": [
       "amsmath",
       "babel",
@@ -6315,6 +6315,37 @@
     "tl_depend": [
       "cjkutils.ARCH"
     ]
+  },
+  {
+    "name": "cjs-rcs-article",
+    "depend": [
+      "amscls",
+      "amsmath",
+      "babel",
+      "bookmark",
+      "datetime2",
+      "enumitem",
+      "environ",
+      "fira",
+      "fontawesome5",
+      "fontspec",
+      "graphics",
+      "latex",
+      "lineno",
+      "memoir",
+      "microtype",
+      "natbib",
+      "numprint",
+      "oberdiek",
+      "paracol",
+      "ragged2e",
+      "relsize",
+      "stix2-type1",
+      "unicode-math",
+      "url",
+      "xcolor"
+    ],
+    "tl_depend": []
   },
   {
     "name": "clara",
@@ -10887,6 +10918,7 @@
       "twemojis",
       "tzplot",
       "utfsym",
+      "vectorlogos",
       "venndiagram",
       "visualpstricks",
       "wheelchart",
@@ -11189,8 +11221,9 @@
       "chem-journal",
       "chifoot",
       "chs-physics-report",
-      "cid",
+      "cidarticle",
       "cje",
+      "cjs-rcs-article",
       "classicthesis",
       "cleanthesis",
       "cmpj",
@@ -21075,14 +21108,11 @@
       "kvdefinekeys",
       "kvoptions",
       "kvsetkeys",
-      "l3kernel",
       "letltxmacro",
-      "ltxcmds",
       "minitoc",
       "ntheorem",
       "pdf14",
       "pdfescape",
-      "pdftexcmds",
       "refcount",
       "rerunfilecheck",
       "stringenc",
@@ -25313,18 +25343,20 @@
   {
     "name": "lni",
     "depend": [
+      "amsmath",
       "babel",
       "biblatex",
       "caption",
-      "ccicons",
       "cleveref",
       "cmap",
       "crop",
       "csquotes",
+      "enumitem",
       "eso-pic",
       "etoolbox",
       "fancyhdr",
       "fontspec",
+      "footmisc",
       "graphics",
       "grffile",
       "hyperref",
@@ -25335,6 +25367,8 @@
       "newtx",
       "newtxtt",
       "oberdiek",
+      "orcidlink",
+      "preprint",
       "psnfss",
       "selnolig",
       "tools",
@@ -33083,6 +33117,7 @@
       "datatool",
       "listofitems",
       "modulus",
+      "ragged2e",
       "simplekv",
       "tcolorbox",
       "tools",
@@ -38502,9 +38537,7 @@
   },
   {
     "name": "starray",
-    "depend": [
-      "l3kernel"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -42582,6 +42615,7 @@
       "newfloat",
       "nicematrix",
       "pdfcomment",
+      "pgf",
       "psnfss",
       "relsize",
       "showlabels",
@@ -42835,6 +42869,7 @@
       "psnfss",
       "stickstoo",
       "subfig",
+      "titlesec",
       "tools",
       "was",
       "xcolor",
@@ -43693,6 +43728,15 @@
       "graphics",
       "listings",
       "psnfss"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "vectorlogos",
+    "depend": [
+      "graphics",
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
