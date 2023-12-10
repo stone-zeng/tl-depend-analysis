@@ -1373,8 +1373,8 @@
   {
     "name": "argumentation",
     "depend": [
-      "options",
-      "pgf"
+      "pgf",
+      "pgfopts"
     ],
     "tl_depend": []
   },
@@ -8947,6 +8947,7 @@
       "dbshow",
       "debate",
       "decimal",
+      "decimalcomma",
       "decorule",
       "defoldfonts",
       "delimtxt",
@@ -9324,7 +9325,6 @@
       "isosafety",
       "isotope",
       "issuulinks",
-      "iwhdp",
       "iwonamath",
       "jlabels",
       "jmsdelim",
@@ -9651,6 +9651,7 @@
       "pdfpc",
       "pdfpc-movie",
       "pdfprivacy",
+      "pdfrender",
       "pdfreview",
       "pdfscreen",
       "pdfslide",
@@ -9997,6 +9998,7 @@
       "truncate",
       "tucv",
       "turnthepage",
+      "tutodoc",
       "twoinone",
       "twoup",
       "txgreeks",
@@ -10250,7 +10252,6 @@
       "luaindex",
       "luainputenc",
       "luakeys",
-      "lualatex-doc",
       "lualatex-math",
       "lualatex-truncate",
       "lualibs",
@@ -11265,6 +11266,7 @@
       "har2nat",
       "hecthese",
       "hep-paper",
+      "heria",
       "hfutexam",
       "hfutthesis",
       "hithesis",
@@ -13539,6 +13541,11 @@
   },
   {
     "name": "decimal",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "decimalcomma",
     "depend": [],
     "tl_depend": []
   },
@@ -20230,6 +20237,35 @@
     "tl_depend": []
   },
   {
+    "name": "heria",
+    "depend": [
+      "atveryend",
+      "colortbl",
+      "enumitem",
+      "environ",
+      "everypage",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "kvoptions",
+      "l3packages",
+      "lastpage",
+      "latex",
+      "makecell",
+      "newtx",
+      "pdflscape",
+      "tcolorbox",
+      "titlesec",
+      "tools",
+      "twemojis",
+      "ulem",
+      "xcolor",
+      "xltabular"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "heros-otf",
     "depend": [
       "fontspec",
@@ -22519,38 +22555,6 @@
   {
     "name": "itnumpar",
     "depend": [],
-    "tl_depend": []
-  },
-  {
-    "name": "iwhdp",
-    "depend": [
-      "amsfonts",
-      "amsmath",
-      "babel",
-      "biblatex",
-      "bigfoot",
-      "booktabs",
-      "csquotes",
-      "datenumber",
-      "float",
-      "footmisc",
-      "geometry",
-      "graphics",
-      "hyperref",
-      "latex",
-      "lineno",
-      "lm",
-      "microtype",
-      "pdfpages",
-      "psnfss",
-      "sansmath",
-      "setspace",
-      "textpos",
-      "tools",
-      "universalis",
-      "wallpaper",
-      "xifthen"
-    ],
     "tl_depend": []
   },
   {
@@ -26088,11 +26092,6 @@
   },
   {
     "name": "luakeys",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
-    "name": "lualatex-doc",
     "depend": [],
     "tl_depend": []
   },
@@ -31426,6 +31425,11 @@
     "tl_depend": []
   },
   {
+    "name": "pdfrender",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "pdfreview",
     "depend": [
       "adjustbox",
@@ -36690,6 +36694,7 @@
       "listofitems",
       "pgf",
       "simplekv",
+      "tools",
       "xstring"
     ],
     "tl_depend": []
@@ -41428,7 +41433,6 @@
   {
     "name": "tkz-elements",
     "depend": [
-      "filecontents",
       "luacode"
     ],
     "tl_depend": []
@@ -42188,6 +42192,22 @@
       "pageslts",
       "picture",
       "zref"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tutodoc",
+    "depend": [
+      "amscls",
+      "clrstrip",
+      "csquotes",
+      "geometry",
+      "hyperref",
+      "koma-script",
+      "marginnote",
+      "tcolorbox",
+      "titlesec",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -44798,7 +44818,7 @@
     "name": "xfakebold",
     "depend": [
       "iftex",
-      "oberdiek",
+      "pdfrender",
       "xkeyval"
     ],
     "tl_depend": [
