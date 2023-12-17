@@ -4546,9 +4546,6 @@
   {
     "name": "bookmark",
     "depend": [
-      "atenddvi",
-      "atveryend",
-      "auxhook",
       "hyperref"
     ],
     "tl_depend": []
@@ -7161,7 +7158,6 @@
       "listings-ext",
       "ltxfileinfo",
       "ltximg",
-      "luajittex",
       "make4ht",
       "match_parens",
       "mflua",
@@ -7227,6 +7223,7 @@
       "context-filter",
       "context-gnuplot",
       "context-handlecsv",
+      "context-legacy",
       "context-letter",
       "context-mathsets",
       "context-notes-zh-cn",
@@ -7239,7 +7236,8 @@
       "context-typescripts",
       "context-vim",
       "context-visualcounter",
-      "jmn"
+      "jmn",
+      "luajittex"
     ]
   },
   {
@@ -7834,6 +7832,7 @@
       "hyphen-arabic",
       "hyphen-farsi",
       "imsproc",
+      "iran-bibtex",
       "khatalmaqala",
       "kurdishlipsum",
       "lshort-persian",
@@ -8584,6 +8583,7 @@
       "oberdiek",
       "pagesel",
       "pdfescape",
+      "pdftexcmds",
       "pslatex",
       "psnfss",
       "pspicture",
@@ -10178,7 +10178,6 @@
       "pdflscape",
       "pdfmanagement-testphase",
       "pdfpages",
-      "pdftexcmds",
       "polyglossia",
       "psfrag",
       "ragged2e",
@@ -11938,9 +11937,11 @@
     "depend": [],
     "tl_depend": [
       "amsfonts",
+      "context-texlive",
       "context.ARCH",
       "lm",
       "lm-math",
+      "luajittex",
       "luatex",
       "manfnt-font",
       "mflogo-font",
@@ -11987,6 +11988,18 @@
     "depend": [],
     "tl_depend": [
       "context"
+    ]
+  },
+  {
+    "name": "context-legacy",
+    "depend": [],
+    "tl_depend": [
+      "context",
+      "context-legacy.ARCH",
+      "metapost",
+      "mptopdf",
+      "pdftex",
+      "xetex"
     ]
   },
   {
@@ -22422,6 +22435,13 @@
     "tl_depend": []
   },
   {
+    "name": "iran-bibtex",
+    "depend": [
+      "natbib"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "is-bst",
     "depend": [],
     "tl_depend": []
@@ -22858,23 +22878,25 @@
       "comment",
       "ctex",
       "diagbox",
+      "enumitem",
       "environ",
       "etoolbox",
       "everypage",
       "extarrows",
       "fancyhdr",
       "geometry",
-      "hyperref",
       "iftex",
-      "lastpage",
       "mathdesign",
+      "mathtools",
       "multirow",
+      "ncctools",
       "pdfpages",
       "pgf",
       "relsize",
       "tabu",
       "tools",
       "xcolor",
+      "xecjk",
       "xkeyval",
       "zref"
     ],
@@ -25227,6 +25249,8 @@
   {
     "name": "litesolution",
     "depend": [
+      "amsfonts",
+      "amsmath",
       "appendix",
       "bbm-macros",
       "booktabs",
@@ -25234,6 +25258,7 @@
       "comment",
       "csquotes",
       "ctex",
+      "datetime",
       "derivative",
       "dirtree",
       "dutchcal",
@@ -25255,6 +25280,7 @@
       "latex",
       "listings",
       "multirow",
+      "nicematrix",
       "paracol",
       "pdfpages",
       "pgf",
@@ -25270,7 +25296,8 @@
       "ulem",
       "wallpaper",
       "wrapstuff",
-      "xcolor"
+      "xcolor",
+      "xecjk"
     ],
     "tl_depend": []
   },
@@ -31346,6 +31373,7 @@
       "bookmark",
       "etoolbox",
       "l3experimental",
+      "l3kernel",
       "tagpdf"
     ],
     "tl_depend": []
@@ -32679,11 +32707,8 @@
       "etoolbox",
       "fontspec",
       "iftex",
-      "l3kernel",
-      "l3packages",
       "luabidi",
       "luatexbase",
-      "makecmds",
       "tools",
       "xkeyval"
     ],
@@ -33137,6 +33162,7 @@
       "iftex",
       "listofitems",
       "luacode",
+      "lualinalg",
       "nicematrix",
       "pgf",
       "simplekv",
@@ -41979,7 +42005,6 @@
       "hyperref",
       "iftex",
       "koma-script",
-      "l3kernel",
       "l3packages",
       "latex",
       "leaflet",
@@ -42874,6 +42899,7 @@
       "amsmath",
       "caption",
       "cleveref",
+      "colortbl",
       "eso-pic",
       "fvextra",
       "graphics",
@@ -42892,8 +42918,7 @@
       "titlesec",
       "tools",
       "was",
-      "xcolor",
-      "xstring"
+      "xcolor"
     ],
     "tl_depend": []
   },
