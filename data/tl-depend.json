@@ -10092,6 +10092,7 @@
       "xifthen",
       "xint",
       "xkcdcolors",
+      "xkeymask",
       "xltabular",
       "xmpincl",
       "xnewcommand",
@@ -10791,6 +10792,7 @@
       "pgf-umlcd",
       "pgf-umlsd",
       "pgfgantt",
+      "pgfkeysearch",
       "pgfkeyx",
       "pgfmolbio",
       "pgfmorepages",
@@ -13561,7 +13563,9 @@
   },
   {
     "name": "decimalcomma",
-    "depend": [],
+    "depend": [
+      "was"
+    ],
     "tl_depend": []
   },
   {
@@ -18070,11 +18074,10 @@
       "amsfonts",
       "amsmath",
       "carlisle",
+      "decimalcomma",
       "ibrackets",
-      "iftex",
       "jknapltx",
       "lgrmath",
-      "ncctools",
       "tools",
       "was"
     ],
@@ -26969,6 +26972,7 @@
   {
     "name": "mathastext",
     "depend": [
+      "decimalcomma",
       "ncctools"
     ],
     "tl_depend": []
@@ -31813,6 +31817,11 @@
     "tl_depend": [
       "pgf"
     ]
+  },
+  {
+    "name": "pgfkeysearch",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "pgfkeyx",
@@ -39382,12 +39391,13 @@
   {
     "name": "tablvar",
     "depend": [
-      "colortbl",
+      "iftex",
       "latex",
       "multido",
       "pgf",
       "pst-node",
-      "tools"
+      "tools",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -44966,6 +44976,14 @@
     "name": "xkcdcolors",
     "depend": [
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "xkeymask",
+    "depend": [
+      "kvoptions",
+      "xkeyval"
     ],
     "tl_depend": []
   },
