@@ -7447,6 +7447,8 @@
       "jablantile",
       "jamtimes",
       "josefin",
+      "junicode",
+      "junicodevf",
       "kixfont",
       "kpfonts",
       "kpfonts-otf",
@@ -10413,6 +10415,7 @@
       "fnspe",
       "formal-grammar",
       "fouridx",
+      "freealign",
       "functan",
       "galois",
       "gastex",
@@ -10896,6 +10899,7 @@
       "tikzpfeile",
       "tikzpingus",
       "tikzposter",
+      "tikzquests",
       "tikzscale",
       "tikzsymbols",
       "tikztosvg",
@@ -15610,6 +15614,7 @@
       "pgf",
       "pgfopts",
       "stmaryrd",
+      "tools",
       "xstring"
     ],
     "tl_depend": [
@@ -18057,6 +18062,14 @@
   {
     "name": "frederika2016",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "freealign",
+    "depend": [
+      "etoolbox",
+      "zref"
+    ],
     "tl_depend": []
   },
   {
@@ -23044,6 +23057,27 @@
     "tl_depend": []
   },
   {
+    "name": "junicode",
+    "depend": [
+      "fontaxes",
+      "fontspec",
+      "iftex",
+      "latex",
+      "mweights",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "junicodevf",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "jupynotex",
     "depend": [
       "tcolorbox"
@@ -27376,7 +27410,7 @@
       "advice",
       "etoolbox",
       "pdftexcmds",
-      "pgfopts"
+      "pgf"
     ],
     "tl_depend": [
       "memoize.ARCH"
@@ -28490,9 +28524,7 @@
   },
   {
     "name": "morewrites",
-    "depend": [
-      "l3kernel"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -31380,7 +31412,6 @@
       "bookmark",
       "etoolbox",
       "l3experimental",
-      "l3kernel",
       "tagpdf"
     ],
     "tl_depend": []
@@ -38487,7 +38518,6 @@
       "pgf",
       "pgf-pie",
       "pgfplots",
-      "phaistos",
       "pst-coil",
       "pstricks-add",
       "setspace",
@@ -41260,6 +41290,11 @@
     "tl_depend": []
   },
   {
+    "name": "tikzquests",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "tikzscale",
     "depend": [
       "etoolbox",
@@ -43288,9 +43323,7 @@
   {
     "name": "unravel",
     "depend": [
-      "gtl",
-      "l3kernel",
-      "l3packages"
+      "gtl"
     ],
     "tl_depend": []
   },
@@ -43944,7 +43977,9 @@
   },
   {
     "name": "versonotes",
-    "depend": [],
+    "depend": [
+      "iftex"
+    ],
     "tl_depend": []
   },
   {
