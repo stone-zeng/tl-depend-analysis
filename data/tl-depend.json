@@ -3365,7 +3365,8 @@
     "name": "bibcop",
     "depend": [
       "iexec",
-      "pgfopts"
+      "pgfopts",
+      "tools"
     ],
     "tl_depend": [
       "bibcop.ARCH",
@@ -4412,8 +4413,8 @@
   {
     "name": "bodeplot",
     "depend": [
-      "environ",
       "ifplatform",
+      "l3packages",
       "pdftexcmds",
       "pgfplots"
     ],
@@ -10046,6 +10047,7 @@
       "verbdef",
       "verbments",
       "verifiche",
+      "verifycommand",
       "version",
       "versions",
       "versonotes",
@@ -10236,6 +10238,7 @@
       "linebreaker",
       "lparse",
       "lt3luabridge",
+      "lua-placeholders",
       "lua-tinyyaml",
       "lua-typo",
       "lua-uca",
@@ -10886,6 +10889,7 @@
       "tikz3d-fr",
       "tikzbricks",
       "tikzcodeblocks",
+      "tikzdotncross",
       "tikzducks",
       "tikzfill",
       "tikzinclude",
@@ -14667,9 +14671,16 @@
   {
     "name": "easybook",
     "depend": [
+      "amscls",
+      "biblatex",
       "ctex",
       "etoolbox",
-      "l3packages"
+      "hyperref",
+      "l3packages",
+      "natbib",
+      "newtx",
+      "thmtools",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -15620,6 +15631,7 @@
     "tl_depend": [
       "amsfonts",
       "amsmath",
+      "eolang.ARCH",
       "fancyvrb",
       "iexec",
       "pgf",
@@ -17082,9 +17094,10 @@
   {
     "name": "ffcode",
     "depend": [
-      "minted",
+      "listings",
       "pgfopts",
-      "tcolorbox"
+      "tcolorbox",
+      "xcolor"
     ],
     "tl_depend": [
       "environ",
@@ -20782,6 +20795,7 @@
     "name": "href-ul",
     "depend": [
       "hyperref",
+      "pgfopts",
       "ulem"
     ],
     "tl_depend": [
@@ -22573,7 +22587,9 @@
   },
   {
     "name": "isphysicalmath",
-    "depend": [],
+    "depend": [
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -25944,6 +25960,16 @@
     "tl_depend": []
   },
   {
+    "name": "lua-placeholders",
+    "depend": [
+      "latex",
+      "lualibs",
+      "luapackageloader",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lua-tinyyaml",
     "depend": [],
     "tl_depend": []
@@ -26555,6 +26581,7 @@
       "tocloft",
       "tools",
       "upquote",
+      "verifycommand",
       "xcolor",
       "xifthen",
       "xkeyval",
@@ -27908,7 +27935,6 @@
   {
     "name": "minim-mp",
     "depend": [
-      "environ",
       "minim"
     ],
     "tl_depend": []
@@ -27916,7 +27942,8 @@
   {
     "name": "minim-pdf",
     "depend": [
-      "minim"
+      "minim",
+      "minim-xmp"
     ],
     "tl_depend": []
   },
@@ -29330,7 +29357,10 @@
   },
   {
     "name": "newcomputermodern",
-    "depend": [],
+    "depend": [
+      "fontspec",
+      "unicode-math"
+    ],
     "tl_depend": []
   },
   {
@@ -29391,7 +29421,6 @@
       "latex",
       "mweights",
       "oberdiek",
-      "realscripts",
       "trimspaces",
       "unicode-math",
       "xcolor",
@@ -34629,7 +34658,6 @@
   {
     "name": "pyluatex",
     "depend": [
-      "atveryend",
       "kvoptions",
       "l3kernel",
       "lualibs"
@@ -39091,8 +39119,11 @@
   {
     "name": "superiors",
     "depend": [
+      "etoolbox",
+      "iftex",
       "latex",
-      "pgf",
+      "tools",
+      "xcolor",
       "xkeyval"
     ],
     "tl_depend": []
@@ -39653,7 +39684,6 @@
       "marginnote",
       "minted",
       "pdfcol",
-      "pdftexcmds",
       "pgf",
       "refcount",
       "tikzfill",
@@ -40517,6 +40547,7 @@
       "listofitems",
       "pgf",
       "simplekv",
+      "xint",
       "xstring"
     ],
     "tl_depend": []
@@ -41170,6 +41201,11 @@
       "translations",
       "xcolor"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikzdotncross",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -43957,6 +43993,15 @@
       "pgf",
       "ulem",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "verifycommand",
+    "depend": [
+      "etoolbox",
+      "iftex",
+      "pdftexcmds"
     ],
     "tl_depend": []
   },
