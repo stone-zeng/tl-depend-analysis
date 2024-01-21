@@ -836,6 +836,32 @@
     "tl_depend": []
   },
   {
+    "name": "amnestyreport",
+    "depend": [
+      "biblatex",
+      "booktabs",
+      "caption",
+      "fancyhdr",
+      "fontawesome5",
+      "fontspec",
+      "framed",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "hyphenat",
+      "inconsolata",
+      "l3packages",
+      "latex",
+      "placeins",
+      "sidecap",
+      "soul",
+      "tex-gyre",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "amsaddr",
     "depend": [],
     "tl_depend": []
@@ -8666,6 +8692,7 @@
       "autopdf",
       "autopuncitems",
       "avremu",
+      "awesomebox",
       "axessibility",
       "background",
       "bankstatement",
@@ -10467,6 +10494,7 @@
       "matrix-skeleton",
       "mattens",
       "mecaso",
+      "medmath",
       "membranecomputing",
       "memorygraphs",
       "messagepassing",
@@ -10488,6 +10516,7 @@
       "numerica-plus",
       "numerica-tables",
       "objectz",
+      "odesandpdes",
       "oplotsymbl",
       "ot-tableau",
       "oubraces",
@@ -10903,6 +10932,7 @@
       "tikzpfeile",
       "tikzpingus",
       "tikzposter",
+      "tikzquads",
       "tikzquests",
       "tikzscale",
       "tikzsymbols",
@@ -11198,6 +11228,7 @@
       "afthesis",
       "aguplus",
       "aiaa",
+      "amnestyreport",
       "anonymous-acm",
       "anufinalexam",
       "aomart",
@@ -11365,6 +11396,7 @@
       "ptptex",
       "qrbill",
       "quantumarticle",
+      "regulatory",
       "resphilosophica",
       "resumecls",
       "revtex",
@@ -11495,7 +11527,6 @@
     "depend": [],
     "tl_depend": [
       "arabxetex",
-      "awesomebox",
       "bidi-atbegshi",
       "bidicontour",
       "bidipagegrid",
@@ -12751,7 +12782,6 @@
     "name": "csvsimple",
     "depend": [
       "etoolbox",
-      "l3packages",
       "latex",
       "pgf",
       "tools"
@@ -21872,11 +21902,11 @@
     "depend": [
       "l3kernel",
       "pgf",
-      "tools",
-      "xkeyval"
+      "pgfopts",
+      "tools"
     ],
     "tl_depend": [
-      "xkeyval"
+      "pgf"
     ]
   },
   {
@@ -27361,6 +27391,15 @@
     "tl_depend": []
   },
   {
+    "name": "medmath",
+    "depend": [
+      "amsmath",
+      "etoolbox",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "medstarbeamer",
     "depend": [
       "amsmath",
@@ -30397,6 +30436,13 @@
   {
     "name": "octavo",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "odesandpdes",
+    "depend": [
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -35389,6 +35435,33 @@
     "tl_depend": []
   },
   {
+    "name": "regulatory",
+    "depend": [
+      "attachfile2",
+      "enumitem",
+      "fmtcount",
+      "glossaries",
+      "glossaries-extra",
+      "graphics",
+      "hyperref",
+      "koma-script",
+      "markdown",
+      "pgf",
+      "pgfopts",
+      "titlesec",
+      "tools",
+      "translations",
+      "xassoccnt",
+      "xcolor",
+      "xifthen",
+      "xpatch",
+      "xstring",
+      "zref",
+      "zref-clever"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "reledmac",
     "depend": [
       "bigfoot",
@@ -35729,7 +35802,6 @@
     "name": "robust-externalize",
     "depend": [
       "atveryend",
-      "etl",
       "etoolbox",
       "graphics",
       "iftex",
@@ -41326,6 +41398,13 @@
     "tl_depend": []
   },
   {
+    "name": "tikzquads",
+    "depend": [
+      "pgfkeysearch"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikzquests",
     "depend": [],
     "tl_depend": []
@@ -45904,7 +45983,10 @@
       "l3packages",
       "latex",
       "pgf",
-      "tools"
+      "tikz-cd",
+      "tools",
+      "varwidth",
+      "xstring"
     ],
     "tl_depend": []
   },
