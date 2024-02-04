@@ -7639,6 +7639,7 @@
       "yfonts-otf",
       "yfonts-t1",
       "yinit-otf",
+      "ysabeau",
       "zlmtt"
     ]
   },
@@ -10721,6 +10722,7 @@
       "songbook",
       "songproj",
       "songs",
+      "undar-digitacion",
       "xml2pmx",
       "xpiano"
     ]
@@ -25416,15 +25418,14 @@
   {
     "name": "litetable",
     "depend": [
-      "ctex",
       "etoolbox",
       "fontawesome5",
       "fontspec",
-      "iftex",
       "kvoptions",
       "newtx",
       "psnfss",
-      "standalone"
+      "standalone",
+      "xecjk"
     ],
     "tl_depend": []
   },
@@ -33273,6 +33274,7 @@
       "interval",
       "latex",
       "listofitems",
+      "lualinalg",
       "mathtools",
       "minted",
       "modulus",
@@ -35155,6 +35157,7 @@
       "extarrows",
       "fancyhdr",
       "freealign",
+      "functional",
       "geometry",
       "latex",
       "mathdesign",
@@ -35163,7 +35166,6 @@
       "pgf",
       "tools",
       "xcolor",
-      "xkeyval",
       "zref"
     ],
     "tl_depend": []
@@ -43142,30 +43144,41 @@
       "algorithmicx",
       "algorithms",
       "amscls",
-      "amsfonts",
-      "amsmath",
-      "caption",
+      "cite",
       "cleveref",
       "colortbl",
-      "eso-pic",
       "fvextra",
-      "graphics",
+      "hyperref",
       "inconsolata",
-      "jknapltx",
-      "koma-script",
       "listings",
       "mathtools",
       "mdframed",
       "microtype",
       "multirow",
       "newtx",
+      "nomencl",
+      "pdfpages",
+      "scontents",
       "stickstoo",
       "subfig",
       "tex-gyre",
-      "titlesec",
       "tools",
       "was",
-      "xcolor"
+      "xcolor",
+      "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "undar-digitacion",
+    "depend": [
+      "amsmath",
+      "l3packages",
+      "musicography",
+      "musixtex",
+      "pgf",
+      "recorder-fingering",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -45834,6 +45847,19 @@
       "pgf",
       "trimspaces",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "ysabeau",
+    "depend": [
+      "carlisle",
+      "etoolbox",
+      "fontaxes",
+      "latex",
+      "mweights",
+      "xkeyval",
+      "xstring"
     ],
     "tl_depend": []
   },
