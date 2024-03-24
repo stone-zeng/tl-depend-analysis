@@ -6035,6 +6035,11 @@
     "tl_depend": []
   },
   {
+    "name": "chicagolinks",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "chickenize",
     "depend": [],
     "tl_depend": []
@@ -7122,6 +7127,7 @@
       "chicago",
       "chicago-annote",
       "chicagoa",
+      "chicagolinks",
       "chscite",
       "citation-style-language",
       "citeall",
@@ -7237,6 +7243,7 @@
       "hook-pre-commit-pkg",
       "installfont",
       "ketcindy",
+      "l3sys-query",
       "lacheck",
       "latex-git-log",
       "latex-papersize",
@@ -7427,6 +7434,7 @@
       "comicneue",
       "concmath-fonts",
       "concmath-otf",
+      "context-companion-fonts",
       "cookingsymbols",
       "cooperhewitt",
       "cormorantgaramond",
@@ -7548,6 +7556,7 @@
       "kpfonts-otf",
       "kurier",
       "lato",
+      "lato-math",
       "lexend",
       "lfb",
       "libertine",
@@ -8162,6 +8171,7 @@
       "tlc2",
       "tlc3-examples",
       "tlmgrbasics",
+      "typstfun",
       "undergradmath",
       "visualfaq",
       "webguide",
@@ -8998,6 +9008,7 @@
       "darkmode",
       "dashbox",
       "dashrule",
+      "dashrulex",
       "dashundergaps",
       "dataref",
       "datatool",
@@ -9513,6 +9524,7 @@
       "listlbls",
       "listliketab",
       "listofsymbols",
+      "litebook",
       "litesolution",
       "litetable",
       "lkproof",
@@ -10852,6 +10864,7 @@
       "epspdfconversion",
       "esk",
       "euflag",
+      "fadingimage",
       "fast-diagram",
       "fenetrecas",
       "fig4latex",
@@ -12071,6 +12084,7 @@
     "depend": [],
     "tl_depend": [
       "amsfonts",
+      "context-companion-fonts",
       "context-texlive",
       "context.ARCH",
       "lm",
@@ -12095,6 +12109,11 @@
     "tl_depend": [
       "context"
     ]
+  },
+  {
+    "name": "context-companion-fonts",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "context-cyrillicnumbers",
@@ -12188,7 +12207,9 @@
   {
     "name": "context-texlive",
     "depend": [],
-    "tl_depend": []
+    "tl_depend": [
+      "context-texlive.ARCH"
+    ]
   },
   {
     "name": "context-transliterator",
@@ -13134,6 +13155,7 @@
       "enumitem",
       "fontawesome5",
       "listofitems",
+      "pgf",
       "randomlist",
       "simplekv",
       "tabularray",
@@ -13294,6 +13316,13 @@
     "name": "dashrule",
     "depend": [
       "ifmtarg"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "dashrulex",
+    "depend": [
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -15820,20 +15849,16 @@
     "name": "eplain",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dehyph",
       "eplain.ARCH",
-      "everyshi",
       "firstaid",
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "pdftex",
@@ -16776,6 +16801,14 @@
   {
     "name": "facture-belge-simple-sans-tva",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "fadingimage",
+    "depend": [
+      "pgf",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -18023,9 +18056,7 @@
     "depend": [
       "bigfoot"
     ],
-    "tl_depend": [
-      "bigfoot"
-    ]
+    "tl_depend": []
   },
   {
     "name": "footmisx",
@@ -20658,19 +20689,15 @@
     "name": "hitex",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "etex",
-      "everyshi",
       "firstaid",
       "hitex.ARCH",
       "hyphen-base",
       "knuth-lib",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "plain",
@@ -22839,8 +22866,6 @@
     ],
     "tl_depend": [
       "amsfonts",
-      "atbegshi",
-      "atveryend",
       "auxhook",
       "babel",
       "bigintcalc",
@@ -22851,7 +22876,6 @@
       "dehyph",
       "ec",
       "etoolbox",
-      "everyshi",
       "fancyhdr",
       "firstaid",
       "gettitlestring",
@@ -22871,7 +22895,6 @@
       "kvsetkeys",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "latexconfig",
@@ -23071,34 +23094,10 @@
   {
     "name": "jnuexam",
     "depend": [
-      "amsfonts",
-      "amsmath",
-      "cellspace",
-      "cjk",
-      "comment",
-      "ctex",
-      "diagbox",
-      "enumitem",
-      "environ",
-      "etoolbox",
       "everypage",
-      "extarrows",
-      "fancyhdr",
-      "geometry",
-      "iftex",
-      "mathdesign",
-      "mathtools",
-      "multirow",
-      "ncctools",
-      "pdfpages",
+      "functional",
       "pgf",
-      "relsize",
-      "tabu",
-      "tools",
-      "xcolor",
-      "xecjk",
-      "xkeyval",
-      "zref"
+      "randexam"
     ],
     "tl_depend": []
   },
@@ -24047,6 +24046,14 @@
     ]
   },
   {
+    "name": "l3sys-query",
+    "depend": [],
+    "tl_depend": [
+      "l3sys-query.ARCH",
+      "luatex"
+    ]
+  },
+  {
     "name": "labbook",
     "depend": [
       "koma-script",
@@ -24226,12 +24233,7 @@
       "tools",
       "url"
     ],
-    "tl_depend": [
-      "latex-fonts",
-      "latexconfig",
-      "luatex",
-      "pdftex"
-    ]
+    "tl_depend": []
   },
   {
     "name": "latex-amsmath-dev",
@@ -24258,19 +24260,15 @@
     "name": "latex-bin",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dehyph",
-      "everyshi",
       "firstaid",
       "graphics",
       "hyph-utf8",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-bin.ARCH",
       "latex-fonts",
@@ -24288,18 +24286,14 @@
     "name": "latex-bin-dev",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dehyph",
-      "everyshi",
       "firstaid",
       "hyph-utf8",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-base-dev",
       "latex-bin-dev.ARCH",
@@ -24683,6 +24677,14 @@
       "fontspec",
       "iftex",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "lato-math",
+    "depend": [
+      "iftex",
+      "unicode-math"
     ],
     "tl_depend": []
   },
@@ -25467,57 +25469,102 @@
     "tl_depend": []
   },
   {
-    "name": "litesolution",
+    "name": "litebook",
     "depend": [
+      "amscls",
       "amsfonts",
-      "amsmath",
-      "appendix",
-      "bbm-macros",
+      "anyfontsize",
       "booktabs",
-      "circuitikz",
-      "comment",
-      "csquotes",
-      "ctex",
+      "cancel",
+      "caption",
       "datetime",
       "derivative",
-      "dirtree",
-      "dutchcal",
+      "diagbox",
       "enumitem",
-      "esint",
       "esvect",
       "etoolbox",
       "extarrows",
+      "fadingimage",
       "fancyhdr",
-      "fancyvrb",
       "fixdif",
       "fontawesome5",
       "fontspec",
       "geometry",
       "graphics",
+      "hologo",
       "hyperref",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "libertine",
+      "lipsum",
+      "listofitems",
+      "mdframed",
+      "multirow",
+      "newtx",
+      "nicematrix",
+      "pgf",
+      "physics2",
+      "refstyle",
+      "setspace",
+      "siunitx",
+      "tocloft",
+      "tools",
+      "units",
+      "xcolor",
+      "xecjk",
+      "zhlipsum"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "litesolution",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "anyfontsize",
+      "booktabs",
+      "cancel",
+      "caption",
+      "circuitikz",
+      "comment",
+      "datetime",
+      "derivative",
+      "diagbox",
+      "enumitem",
+      "esvect",
+      "etoolbox",
+      "extarrows",
+      "fadingimage",
+      "fancyhdr",
+      "fixdif",
+      "fontawesome5",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hologo",
+      "hyperref",
+      "iftex",
       "jknapltx",
       "kvoptions",
       "latex",
-      "listings",
+      "lipsum",
       "multirow",
+      "newtx",
       "nicematrix",
-      "paracol",
-      "pdfpages",
-      "pgf",
       "pgfplots",
       "physics2",
-      "qrcode",
+      "refstyle",
       "setspace",
-      "silence",
+      "siunitx",
       "tasks",
       "tcolorbox",
-      "titlesec",
       "tools",
-      "ulem",
+      "units",
       "wallpaper",
-      "wrapstuff",
-      "xcolor",
-      "xecjk"
+      "xecjk",
+      "zhlipsum"
     ],
     "tl_depend": []
   },
@@ -27089,7 +27136,6 @@
       "amsmath",
       "catchfile",
       "csvsimple",
-      "etoolbox",
       "fancyvrb",
       "gobble",
       "graphics",
@@ -27097,6 +27143,7 @@
       "l3kernel",
       "latex",
       "ltxcmds",
+      "lua-uni-algos",
       "paralist",
       "soul",
       "url",
@@ -28400,19 +28447,15 @@
     "name": "mltex",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dehyph",
-      "everyshi",
       "firstaid",
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "latexconfig",
@@ -29898,7 +29941,6 @@
       "listings",
       "lua-ul",
       "njuvisual",
-      "ntheorem",
       "psnfss",
       "setspace",
       "tabularray",
@@ -30446,8 +30488,8 @@
       "import",
       "kpfonts",
       "kpfonts-otf",
-      "l3packages",
       "latex",
+      "listings",
       "marginnote",
       "mathtools",
       "mdwtools",
@@ -32734,16 +32776,12 @@
       "plautopatch"
     ],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
-      "everyshi",
       "firstaid",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-base-dev",
       "latex-firstaid-dev",
@@ -34021,6 +34059,7 @@
   {
     "name": "pst-fit",
     "depend": [
+      "pst-tools",
       "pstricks",
       "pstricks-add"
     ],
@@ -34670,7 +34709,8 @@
       "plain",
       "ptex-base",
       "ptex-fonts",
-      "ptex.ARCH"
+      "ptex.ARCH",
+      "uptex"
     ]
   },
   {
@@ -34915,6 +34955,7 @@
   {
     "name": "pythonhighlight",
     "depend": [
+      "l3packages",
       "listings",
       "xcolor"
     ],
@@ -38209,10 +38250,7 @@
       "translations",
       "translator"
     ],
-    "tl_depend": [
-      "l3kernel",
-      "l3packages"
-    ]
+    "tl_depend": []
   },
   {
     "name": "sjtutex",
@@ -39499,7 +39537,14 @@
       "trimspaces",
       "xcolor"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "graphics",
+      "iftex",
+      "koma-script",
+      "pdftexcmds",
+      "tools",
+      "trimspaces"
+    ]
   },
   {
     "name": "svg-inkscape",
@@ -42848,6 +42893,11 @@
     "tl_depend": []
   },
   {
+    "name": "typstfun",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "tzplot",
     "depend": [
       "l3kernel",
@@ -43865,16 +43915,12 @@
       "platex"
     ],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
-      "everyshi",
       "firstaid",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-base-dev",
       "latex-firstaid-dev",
@@ -45202,16 +45248,12 @@
     "name": "xelatex-dev",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
-      "everyshi",
       "firstaid",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-base-dev",
       "latex-firstaid-dev",
@@ -45283,18 +45325,14 @@
     "name": "xetex",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dvipdfmx",
       "etex",
-      "everyshi",
       "firstaid",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "lm",
@@ -45522,18 +45560,14 @@
     "name": "xmltex",
     "depend": [],
     "tl_depend": [
-      "atbegshi",
-      "atveryend",
       "babel",
       "cm",
       "dehyph",
-      "everyshi",
       "firstaid",
       "hyph-utf8",
       "hyphen-base",
       "l3backend",
       "l3kernel",
-      "l3packages",
       "latex",
       "latex-fonts",
       "latexconfig",
@@ -45612,7 +45646,9 @@
       "l3kernel",
       "l3packages"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "etoolbox"
+    ]
   },
   {
     "name": "xpdfopen",
