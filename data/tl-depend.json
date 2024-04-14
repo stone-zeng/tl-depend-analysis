@@ -4247,7 +4247,6 @@
       "pgf",
       "psnfss",
       "setspace",
-      "stmaryrd",
       "titlesec",
       "tools",
       "unicode-math",
@@ -7796,8 +7795,7 @@
       "psizzl",
       "startex",
       "texsis",
-      "xmltex",
-      "xmltexconfig"
+      "xmltex"
     ]
   },
   {
@@ -9078,6 +9076,7 @@
       "diagnose",
       "dialogl",
       "dichokey",
+      "didactic",
       "didec",
       "dimnum",
       "dinbrief",
@@ -9159,6 +9158,7 @@
       "envbig",
       "environ",
       "envlab",
+      "epcqrcode",
       "epigraph",
       "epigraph-keys",
       "epiolmec",
@@ -9455,6 +9455,7 @@
       "jobname-suffix",
       "joinbox",
       "jslectureplanner",
+      "jsonparse",
       "jumplines",
       "jvlisting",
       "kalendarium",
@@ -12817,7 +12818,6 @@
       "psnfss",
       "siunitx",
       "sttools",
-      "subfig",
       "tcolorbox",
       "tools",
       "upquote",
@@ -14054,6 +14054,28 @@
     "depend": [
       "graphics",
       "psnfss"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "didactic",
+    "depend": [
+      "amscls",
+      "babel",
+      "bera",
+      "changepage",
+      "etoolbox",
+      "l3packages",
+      "marginfix",
+      "minted",
+      "psnfss",
+      "pythontex",
+      "ragged2e",
+      "thmtools",
+      "tools",
+      "translations",
+      "xkeyval",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -15874,6 +15896,15 @@
       "pgfopts",
       "stmaryrd"
     ]
+  },
+  {
+    "name": "epcqrcode",
+    "depend": [
+      "calculator",
+      "qrcode",
+      "xstring"
+    ],
+    "tl_depend": []
   },
   {
     "name": "epigrafica",
@@ -19072,7 +19103,7 @@
   {
     "name": "gitinfo-lua",
     "depend": [
-      "luacode",
+      "luakeys",
       "pgfopts"
     ],
     "tl_depend": []
@@ -22014,6 +22045,7 @@
     "name": "iaria",
     "depend": [
       "biblatex",
+      "etoolbox",
       "graphics",
       "hyperref",
       "ieeetran",
@@ -22023,6 +22055,7 @@
       "pbalance",
       "psnfss",
       "sttools",
+      "subfig",
       "url",
       "xcolor",
       "xpatch"
@@ -22032,6 +22065,7 @@
   {
     "name": "iaria-lite",
     "depend": [
+      "etoolbox",
       "graphics",
       "hyperref",
       "ieeetran",
@@ -22039,6 +22073,7 @@
       "pbalance",
       "psnfss",
       "sttools",
+      "subfig",
       "url",
       "xcolor",
       "xpatch"
@@ -23332,6 +23367,11 @@
       "latex",
       "tools"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "jsonparse",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -32765,6 +32805,8 @@
       "listofitems",
       "pgf",
       "simplekv",
+      "tabularray",
+      "tools",
       "xint",
       "xstring"
     ],
@@ -45744,14 +45786,8 @@
       "tex",
       "tex-ini-files",
       "unicode-data",
-      "xmltex.ARCH",
-      "xmltexconfig"
+      "xmltex.ARCH"
     ]
-  },
-  {
-    "name": "xmltexconfig",
-    "depend": [],
-    "tl_depend": []
   },
   {
     "name": "xmpincl",
