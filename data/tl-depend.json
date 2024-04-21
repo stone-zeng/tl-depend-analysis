@@ -9477,7 +9477,9 @@
       "komacv-rg",
       "korigamik",
       "ktv-texdata",
+      "l3backend-dev",
       "l3build",
+      "l3kernel-dev",
       "labbook",
       "labels",
       "labels4easylist",
@@ -9543,6 +9545,7 @@
       "longnamefilelist",
       "loops",
       "lsc",
+      "lscapeenhanced",
       "lstaddons",
       "lstfiracode",
       "lt3graph",
@@ -15945,21 +15948,12 @@
     "depend": [],
     "tl_depend": [
       "babel",
-      "cm",
       "dehyph",
       "eplain.ARCH",
-      "firstaid",
       "hyph-utf8",
-      "hyphen-base",
       "knuth-lib",
-      "l3backend",
-      "l3kernel",
-      "latex",
-      "latex-fonts",
       "pdftex",
-      "plain",
-      "tex-ini-files",
-      "unicode-data"
+      "plain"
     ]
   },
   {
@@ -16978,7 +16972,8 @@
   {
     "name": "fancyqr",
     "depend": [
-      "pgf",
+      "l3packages",
+      "pict2e",
       "qrcode"
     ],
     "tl_depend": []
@@ -24152,6 +24147,11 @@
     "tl_depend": []
   },
   {
+    "name": "l3backend-dev",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "l3build",
     "depend": [],
     "tl_depend": [
@@ -24191,6 +24191,31 @@
     ],
     "tl_depend": [
       "l3backend"
+    ]
+  },
+  {
+    "name": "l3kernel-dev",
+    "depend": [
+      "alphalph",
+      "amsfonts",
+      "amsmath",
+      "booktabs",
+      "colortbl",
+      "csquotes",
+      "enumitem",
+      "fancyvrb",
+      "graphics",
+      "hologo",
+      "hypdoc",
+      "l3kernel",
+      "latex",
+      "lm",
+      "psnfss",
+      "tools",
+      "underscore"
+    ],
+    "tl_depend": [
+      "l3backend-dev"
     ]
   },
   {
@@ -24446,12 +24471,10 @@
       "babel",
       "cm",
       "dehyph",
-      "firstaid",
       "hyph-utf8",
       "hyphen-base",
-      "l3backend",
-      "l3kernel",
-      "latex",
+      "l3backend-dev",
+      "l3kernel-dev",
       "latex-base-dev",
       "latex-bin-dev.ARCH",
       "latex-firstaid-dev",
@@ -25678,8 +25701,6 @@
     "depend": [
       "amscls",
       "amsfonts",
-      "amsmath",
-      "anyfontsize",
       "booktabs",
       "cancel",
       "caption",
@@ -25695,31 +25716,32 @@
       "fadingimage",
       "fancyhdr",
       "fixdif",
+      "float",
       "fontawesome5",
-      "fontspec",
       "geometry",
       "graphics",
       "hologo",
       "hyperref",
       "iftex",
-      "jknapltx",
       "kvoptions",
       "latex",
+      "libertine",
       "lipsum",
-      "multirow",
+      "mdframed",
       "newtx",
       "nicematrix",
+      "paracol",
       "pgfplots",
       "physics2",
+      "qrcode",
       "refstyle",
       "setspace",
       "siunitx",
       "tasks",
-      "tcolorbox",
       "tools",
-      "units",
       "wallpaper",
       "xecjk",
+      "xfrac",
       "zhlipsum"
     ],
     "tl_depend": []
@@ -26027,6 +26049,13 @@
       "latex",
       "pst-node",
       "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "lscapeenhanced",
+    "depend": [
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -32801,7 +32830,6 @@
     "depend": [
       "csvsimple",
       "l3kernel",
-      "l3packages",
       "listofitems",
       "pgf",
       "simplekv",
@@ -32958,7 +32986,9 @@
       "firstaid",
       "hyphen-base",
       "l3backend",
+      "l3backend-dev",
       "l3kernel",
+      "l3kernel-dev",
       "latex",
       "latex-base-dev",
       "latex-firstaid-dev",
@@ -41158,9 +41188,7 @@
   {
     "name": "thesis-ekf",
     "depend": [
-      "cmap",
       "cmupint",
-      "etoolbox",
       "fixcmex",
       "fontsize",
       "geometry",
@@ -41852,7 +41880,8 @@
     "name": "tikzmarmots",
     "depend": [
       "iftex",
-      "pgf"
+      "pgf",
+      "tikzlings"
     ],
     "tl_depend": []
   },
@@ -44128,7 +44157,9 @@
       "firstaid",
       "hyphen-base",
       "l3backend",
+      "l3backend-dev",
       "l3kernel",
+      "l3kernel-dev",
       "latex",
       "latex-base-dev",
       "latex-firstaid-dev",
@@ -45461,11 +45492,9 @@
     "tl_depend": [
       "babel",
       "cm",
-      "firstaid",
       "hyphen-base",
-      "l3backend",
-      "l3kernel",
-      "latex",
+      "l3backend-dev",
+      "l3kernel-dev",
       "latex-base-dev",
       "latex-firstaid-dev",
       "latex-fonts",
