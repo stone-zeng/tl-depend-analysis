@@ -9200,6 +9200,7 @@
       "exercisebank",
       "exercisepoints",
       "exercises",
+      "exercisesheets",
       "exesheet",
       "exframe",
       "exp-testopt",
@@ -16015,7 +16016,9 @@
       "kvoptions",
       "pdftexcmds"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "epstopdf"
+    ]
   },
   {
     "name": "eq-pin2corr",
@@ -16675,6 +16678,24 @@
       "latex",
       "marginnote",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "exercisesheets",
+    "depend": [
+      "amsmath",
+      "catchfile",
+      "currfile",
+      "environ",
+      "etoolbox",
+      "graphics",
+      "iftex",
+      "koma-script",
+      "kvoptions",
+      "latex",
+      "pgf",
+      "refcount"
     ],
     "tl_depend": []
   },
@@ -23132,10 +23153,29 @@
   {
     "name": "jigsaw",
     "depend": [
+      "babel",
+      "footmisc",
+      "footnotehyper",
+      "geometry",
+      "hyperref",
+      "iftex",
+      "inconsolata",
+      "koma-script",
+      "latex",
+      "mathdesign",
+      "minted",
+      "nowidow",
+      "pgf",
+      "tcolorbox",
+      "tools",
+      "xcolor",
+      "xkeyval"
+    ],
+    "tl_depend": [
+      "epstopdf-pkg",
       "iftex",
       "pgf"
-    ],
-    "tl_depend": []
+    ]
   },
   {
     "name": "jkmath",
@@ -25716,9 +25756,7 @@
       "fadingimage",
       "fancyhdr",
       "fixdif",
-      "float",
       "fontawesome5",
-      "geometry",
       "graphics",
       "hologo",
       "hyperref",
@@ -25727,9 +25765,10 @@
       "latex",
       "libertine",
       "lipsum",
-      "mdframed",
       "newtx",
       "nicematrix",
+      "notebeamer",
+      "pagecolor",
       "paracol",
       "pgfplots",
       "physics2",
@@ -30353,13 +30392,10 @@
   {
     "name": "notebeamer",
     "depend": [
-      "ctex",
-      "etoolbox",
-      "fontawesome5",
-      "graphics",
-      "hyperref",
-      "kvoptions",
-      "standalone"
+      "geometry",
+      "pgf",
+      "tools",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -37048,6 +37084,7 @@
       "collection-metapost",
       "collection-xetex",
       "ec",
+      "epstopdf",
       "eurosym",
       "hyphen-basque",
       "hyphen-czech",
@@ -41883,7 +41920,9 @@
       "pgf",
       "tikzlings"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "tikzlings"
+    ]
   },
   {
     "name": "tikzorbital",
@@ -42738,6 +42777,7 @@
       "adjustbox",
       "anyfontsize",
       "beamer",
+      "bookmark",
       "environ",
       "fontspec",
       "geometry",
