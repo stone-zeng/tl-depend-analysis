@@ -2914,8 +2914,28 @@
   },
   {
     "name": "beamertheme-rainbow",
-    "depend": [],
-    "tl_depend": []
+    "depend": [
+      "babel",
+      "footmisc",
+      "footnotehyper",
+      "geometry",
+      "hyperref",
+      "iexec",
+      "inconsolata",
+      "koma-script",
+      "latex",
+      "mathdesign",
+      "minted",
+      "nowidow",
+      "tcolorbox",
+      "tools",
+      "xcolor",
+      "xkeyval"
+    ],
+    "tl_depend": [
+      "beamer",
+      "tools"
+    ]
   },
   {
     "name": "beamertheme-saintpetersburg",
@@ -2944,7 +2964,12 @@
     "depend": [
       "tcolorbox"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "beamer",
+      "tcolorbox",
+      "tikzfill",
+      "tools"
+    ]
   },
   {
     "name": "beamertheme-trigon",
@@ -7647,6 +7672,7 @@
       "romande",
       "rosario",
       "rsfso",
+      "ruscap",
       "sansmathaccent",
       "sansmathfonts",
       "sauter",
@@ -7840,6 +7866,7 @@
       "realtranspose",
       "reverxii",
       "rouequestions",
+      "rpgicons",
       "rubik",
       "schwalbe-chess",
       "scrabble",
@@ -9592,6 +9619,7 @@
       "mathexam",
       "mathfam256",
       "mathfont",
+      "mathgreeks",
       "maybemath",
       "mcaption",
       "mceinleger",
@@ -11501,6 +11529,7 @@
       "nwejm",
       "onrannual",
       "opteng",
+      "osda",
       "oststud",
       "oup-authoring-template",
       "philosophersimprint",
@@ -27540,6 +27569,15 @@
     "tl_depend": []
   },
   {
+    "name": "mathgreeks",
+    "depend": [
+      "amsmath",
+      "etoolbox",
+      "kvoptions"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mathlig",
     "depend": [],
     "tl_depend": []
@@ -31114,6 +31152,20 @@
   {
     "name": "oscola",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "osda",
+    "depend": [
+      "footmisc",
+      "hyperref",
+      "latex",
+      "pgf",
+      "pgfopts",
+      "qrcode",
+      "sttools",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -36442,6 +36494,14 @@
     "tl_depend": []
   },
   {
+    "name": "rpgicons",
+    "depend": [
+      "l3experimental",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "rrgtrees",
     "depend": [
       "pst-node",
@@ -36557,6 +36617,11 @@
     "tl_depend": [
       "runtexshebang.ARCH"
     ]
+  },
+  {
+    "name": "ruscap",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "russ",
@@ -41848,11 +41913,31 @@
   {
     "name": "tikzbricks",
     "depend": [
+      "babel",
+      "footmisc",
+      "footnotehyper",
+      "geometry",
+      "hyperref",
+      "iexec",
+      "inconsolata",
+      "koma-script",
+      "latex",
+      "mathdesign",
+      "minted",
+      "nowidow",
       "pgf",
+      "tcolorbox",
       "tikz-3dplot",
+      "tools",
+      "xcolor",
       "xkeyval"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "epstopdf-pkg",
+      "iftex",
+      "pgf",
+      "tikz-3dplot"
+    ]
   },
   {
     "name": "tikzcodeblocks",
@@ -41879,7 +41964,11 @@
       "l3kernel",
       "pgf"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "epstopdf-pkg",
+      "iftex",
+      "pgf"
+    ]
   },
   {
     "name": "tikzfill",
