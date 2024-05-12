@@ -7473,6 +7473,7 @@
       "cryst",
       "cuprum",
       "cyklop",
+      "cyrillic-modern",
       "dancers",
       "dantelogo",
       "dejavu",
@@ -8307,6 +8308,7 @@
       "epslatex-fr",
       "expose-expl3-dunkerque-2019",
       "facture",
+      "faq-fr",
       "formation-latex-ul",
       "frenchmath",
       "frletter",
@@ -10069,6 +10071,7 @@
       "swfigure",
       "swungdash",
       "syntax",
+      "synthslant",
       "syntrace",
       "synttree",
       "tabbing",
@@ -10169,6 +10172,7 @@
       "typed-checklist",
       "typeface",
       "typoaid",
+      "typog",
       "typogrid",
       "uassign",
       "ucs",
@@ -10253,6 +10257,7 @@
       "xfor",
       "xhfill",
       "xifthen",
+      "ximera",
       "xint",
       "xkcdcolors",
       "xkeymask",
@@ -11165,6 +11170,7 @@
       "gtl",
       "hlist",
       "hyplain",
+      "ifis-macros",
       "inputnormalization",
       "insbox",
       "js-misc",
@@ -13364,6 +13370,11 @@
     "tl_depend": [
       "cyrillic-bin.ARCH"
     ]
+  },
+  {
+    "name": "cyrillic-modern",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "cyrplain",
@@ -16945,8 +16956,7 @@
   {
     "name": "fadingimage",
     "depend": [
-      "pgf",
-      "xcolor"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -17075,6 +17085,11 @@
   },
   {
     "name": "fandol",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "faq-fr",
     "depend": [],
     "tl_depend": []
   },
@@ -18424,11 +18439,11 @@
       "amsmath",
       "carlisle",
       "decimalcomma",
+      "etoolbox",
       "ibrackets",
       "jknapltx",
-      "lgrmath",
-      "tools",
-      "was"
+      "mathgreeks",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -22280,6 +22295,11 @@
     "tl_depend": []
   },
   {
+    "name": "ifis-macros",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "ifmslide",
     "depend": [
       "amsfonts",
@@ -25790,11 +25810,14 @@
       "hologo",
       "hyperref",
       "iftex",
+      "jknapltx",
       "kvoptions",
       "latex",
       "libertine",
       "lipsum",
+      "mathtools",
       "newtx",
+      "newtxsf",
       "nicematrix",
       "notebeamer",
       "pagecolor",
@@ -25806,6 +25829,7 @@
       "setspace",
       "siunitx",
       "tasks",
+      "tocloft",
       "tools",
       "wallpaper",
       "xecjk",
@@ -26739,7 +26763,9 @@
   },
   {
     "name": "luamplib",
-    "depend": [],
+    "depend": [
+      "lualibs"
+    ],
     "tl_depend": []
   },
   {
@@ -28583,7 +28609,6 @@
   {
     "name": "mismath",
     "depend": [
-      "amsmath",
       "decimalcomma",
       "esvect",
       "etoolbox",
@@ -40030,6 +40055,18 @@
     "tl_depend": []
   },
   {
+    "name": "synthslant",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "l3experimental",
+      "pgf",
+      "pst-3d",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "syntrace",
     "depend": [
       "latex",
@@ -43250,6 +43287,17 @@
     "tl_depend": []
   },
   {
+    "name": "typog",
+    "depend": [
+      "etoolbox",
+      "everyhook",
+      "xkeyval"
+    ],
+    "tl_depend": [
+      "typog.ARCH"
+    ]
+  },
+  {
     "name": "typogrid",
     "depend": [
       "eso-pic",
@@ -44118,7 +44166,6 @@
       "graphics",
       "hyperref",
       "koma-script",
-      "l3packages",
       "lastpage",
       "latex",
       "microtype",
@@ -44136,12 +44183,12 @@
       "sourceserifpro",
       "tcolorbox",
       "textcase",
+      "tikzpagenodes",
       "tools",
       "totpages",
       "translator",
       "url",
-      "xcolor",
-      "xkeyval"
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -45820,6 +45867,35 @@
   {
     "name": "xii-lat",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "ximera",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "cancel",
+      "comment",
+      "enumitem",
+      "environ",
+      "epstopdf-pkg",
+      "fancyvrb",
+      "forloop",
+      "gettitlestring",
+      "hyperref",
+      "latex",
+      "listings",
+      "multido",
+      "pgf",
+      "pgfplots",
+      "titlesec",
+      "titling",
+      "url",
+      "xcolor",
+      "xifthen",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
