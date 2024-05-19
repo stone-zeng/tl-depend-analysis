@@ -7584,7 +7584,7 @@
       "kpfonts-otf",
       "kurier",
       "lato",
-      "lato-math",
+      "lete-sans-math",
       "lexend",
       "lfb",
       "libertine",
@@ -8966,6 +8966,7 @@
       "collection-pictures",
       "colophon",
       "color-edits",
+      "colorblind",
       "colordoc",
       "colorframed",
       "colorinfo",
@@ -10694,6 +10695,7 @@
       "rest-api",
       "revquantum",
       "ribbonproofs",
+      "rigidnotation",
       "rmathbr",
       "sankey",
       "sasnrdisplay",
@@ -11099,6 +11101,7 @@
       "tkz-euclide",
       "tkz-fct",
       "tkz-graph",
+      "tkz-grapheur",
       "tkz-orm",
       "tkz-tab",
       "tkzexample",
@@ -11743,6 +11746,16 @@
     "depend": [
       "graphics",
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "colorblind",
+    "depend": [
+      "latex",
+      "pgf",
+      "pgfplots",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -24951,14 +24964,6 @@
     "tl_depend": []
   },
   {
-    "name": "lato-math",
-    "depend": [
-      "iftex",
-      "unicode-math"
-    ],
-    "tl_depend": []
-  },
-  {
     "name": "layaureo",
     "depend": [
       "geometry",
@@ -25174,6 +25179,14 @@
     "depend": [
       "l3kernel",
       "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "lete-sans-math",
+    "depend": [
+      "iftex",
+      "unicode-math"
     ],
     "tl_depend": []
   },
@@ -29226,6 +29239,7 @@
     "depend": [
       "etex-pkg",
       "etoolbox",
+      "l3kernel",
       "memoir",
       "pdflscape",
       "pgf",
@@ -36328,6 +36342,17 @@
     "tl_depend": []
   },
   {
+    "name": "rigidnotation",
+    "depend": [
+      "l3packages",
+      "mathtools"
+    ],
+    "tl_depend": [
+      "l3packages",
+      "mathtools"
+    ]
+  },
+  {
     "name": "rit-fonts",
     "depend": [
       "iftex",
@@ -40409,7 +40434,6 @@
     "depend": [
       "babel",
       "caption",
-      "oberdiek",
       "tabularray"
     ],
     "tl_depend": []
@@ -42393,6 +42417,19 @@
       "latex",
       "pgf",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tkz-grapheur",
+    "depend": [
+      "latex",
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "siunitx",
+      "xint",
+      "xstring"
     ],
     "tl_depend": []
   },
