@@ -1700,6 +1700,11 @@
     "tl_depend": []
   },
   {
+    "name": "asy-overview",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "asyfig",
     "depend": [
       "bigfoot",
@@ -8147,6 +8152,7 @@
       "amslatex-primer",
       "around-the-bend",
       "ascii-chart",
+      "asy-overview",
       "biblatex-cheatsheet",
       "collection-basic",
       "components",
@@ -9192,6 +9198,7 @@
       "engpron",
       "engrec",
       "enotez",
+      "ensps-colorscheme",
       "enumitem",
       "enumitem-zref",
       "envbig",
@@ -10270,6 +10277,7 @@
       "xifthen",
       "ximera",
       "xint",
+      "xint-regression",
       "xkcdcolors",
       "xkeymask",
       "xltabular",
@@ -15902,6 +15910,14 @@
     "tl_depend": []
   },
   {
+    "name": "ensps-colorscheme",
+    "depend": [
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "enumitem",
     "depend": [],
     "tl_depend": []
@@ -16018,10 +16034,12 @@
     "depend": [],
     "tl_depend": [
       "babel",
+      "cm",
       "dehyph",
       "eplain.ARCH",
       "hyph-utf8",
       "knuth-lib",
+      "latex-fonts",
       "pdftex",
       "plain"
     ]
@@ -23152,6 +23170,7 @@
       "refcount",
       "rerunfilecheck",
       "stmaryrd",
+      "stringenc",
       "symbol",
       "tex",
       "tex-ini-files",
@@ -24677,7 +24696,6 @@
       "etoolbox",
       "graphics",
       "l3experimental",
-      "l3packages",
       "pdfmanagement-testphase",
       "tagpdf",
       "tools"
@@ -26642,6 +26660,7 @@
       "etex",
       "hyph-utf8",
       "hyphen-base",
+      "knuth-lib",
       "luahbtex.ARCH",
       "luatex",
       "plain",
@@ -26697,6 +26716,7 @@
       "etex",
       "hyph-utf8",
       "hyphen-base",
+      "knuth-lib",
       "luajittex.ARCH",
       "luatex",
       "plain",
@@ -26909,6 +26929,7 @@
       "etex",
       "hyph-utf8",
       "hyphen-base",
+      "knuth-lib",
       "luatex.ARCH",
       "plain",
       "tex-ini-files",
@@ -46041,6 +46062,16 @@
     "name": "xint",
     "depend": [
       "poormanlog"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "xint-regression",
+    "depend": [
+      "listofitems",
+      "simplekv",
+      "xint",
+      "xstring"
     ],
     "tl_depend": []
   },
