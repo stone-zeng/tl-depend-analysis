@@ -28680,6 +28680,7 @@
       "l3packages",
       "latex",
       "mathtools",
+      "mleftright",
       "tools",
       "xkeyval"
     ],
@@ -39233,8 +39234,10 @@
       "kvoptions",
       "l3kernel",
       "latex",
+      "marginnote",
       "newfile",
-      "xcolor"
+      "xcolor",
+      "xkeyval"
     ],
     "tl_depend": []
   },
