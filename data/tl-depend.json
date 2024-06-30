@@ -11627,6 +11627,7 @@
       "thucoursework",
       "thuthesis",
       "tidyres",
+      "tiet-question-paper",
       "timbreicmc",
       "tlc-article",
       "topletter",
@@ -41780,6 +41781,25 @@
     ]
   },
   {
+    "name": "tiet-question-paper",
+    "depend": [
+      "adjustbox",
+      "amsmath",
+      "anyfontsize",
+      "blindtext",
+      "enumitem",
+      "geometry",
+      "graphics",
+      "ifmtarg",
+      "latex",
+      "linegoal",
+      "parskip",
+      "sectsty",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz-3dplot",
     "depend": [
       "latex",
@@ -44339,6 +44359,7 @@
       "geometry",
       "graphics",
       "hyperref",
+      "isodate",
       "koma-script",
       "lastpage",
       "latex",
