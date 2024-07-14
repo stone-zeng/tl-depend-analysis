@@ -5839,7 +5839,9 @@
   },
   {
     "name": "chemformula-ru",
-    "depend": [],
+    "depend": [
+      "chemformula"
+    ],
     "tl_depend": []
   },
   {
@@ -7532,6 +7534,7 @@
       "garamond-libre",
       "garamond-math",
       "gelasio",
+      "gelasiomath",
       "genealogy",
       "gentium-tug",
       "gfsartemisia",
@@ -9795,6 +9798,7 @@
       "pas-cours",
       "pas-cv",
       "pas-tableur",
+      "passopt",
       "patch",
       "patchcmd",
       "pauldoc",
@@ -10481,6 +10485,7 @@
       "spelling",
       "stricttex",
       "sympycalc",
+      "tango",
       "texfindpkg",
       "truthtable",
       "tsvtemplate",
@@ -16239,6 +16244,7 @@
       "latex",
       "pstricks",
       "pstricks-add",
+      "tagpdf",
       "tools",
       "xargs",
       "xcolor"
@@ -18858,6 +18864,18 @@
       "iftex",
       "latex",
       "mweights",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "gelasiomath",
+    "depend": [
+      "etoolbox",
+      "iftex",
+      "l3packages",
+      "latex",
+      "newtx",
       "xkeyval"
     ],
     "tl_depend": []
@@ -25520,6 +25538,7 @@
   {
     "name": "lie-hasse",
     "depend": [
+      "contour",
       "dynkin-diagrams",
       "xcolor"
     ],
@@ -28934,9 +28953,11 @@
       "l3kernel",
       "l3packages",
       "latex",
+      "lm",
       "microtype",
       "multirow",
       "pgf",
+      "qrcode",
       "tex-gyre",
       "tools",
       "url",
@@ -29034,6 +29055,7 @@
   {
     "name": "moloch",
     "depend": [
+      "etoolbox",
       "graphics",
       "pgf",
       "pgfopts",
@@ -31439,7 +31461,8 @@
       "etoolbox",
       "old-arrows",
       "pgf",
-      "pict2e"
+      "pict2e",
+      "pstricks-add"
     ],
     "tl_depend": []
   },
@@ -31812,6 +31835,11 @@
       "url",
       "wasysym"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "passopt",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -34089,9 +34117,6 @@
       "graphics",
       "hologo",
       "hyperref",
-      "hyperxmp",
-      "kvoptions",
-      "kvsetkeys",
       "l3experimental",
       "l3packages",
       "latex",
@@ -34100,11 +34125,9 @@
       "natbib",
       "newtx",
       "parskip",
-      "textcase",
       "titlesec",
       "tools",
       "xcolor",
-      "xpatch",
       "yafoot"
     ],
     "tl_depend": []
@@ -40197,6 +40220,7 @@
   {
     "name": "synthslant",
     "depend": [
+      "etoolbox",
       "fontspec",
       "iftex",
       "l3experimental",
@@ -40506,6 +40530,31 @@
   {
     "name": "tamethebeast",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "tango",
+    "depend": [
+      "amscls",
+      "babel",
+      "caption",
+      "ccaption",
+      "enumitem",
+      "float",
+      "fontspec",
+      "fourier",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "mathtools",
+      "microtype",
+      "oberdiek",
+      "titlesec",
+      "tools",
+      "unicode-math",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
