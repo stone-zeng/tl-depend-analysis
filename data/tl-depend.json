@@ -1622,7 +1622,6 @@
   {
     "name": "asmejour",
     "depend": [
-      "asmeconf",
       "babel",
       "bookmark",
       "booktabs",
@@ -1633,6 +1632,7 @@
       "extsizes",
       "fancyhdr",
       "fontspec",
+      "footmisc",
       "geometry",
       "graphics",
       "hologo",
@@ -4559,6 +4559,18 @@
     "tl_depend": []
   },
   {
+    "name": "bonum-otf",
+    "depend": [
+      "iftex",
+      "latex",
+      "libertinus-fonts",
+      "tex-gyre-math",
+      "unicode-math",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "book-of-common-prayer",
     "depend": [
       "bilingualpages",
@@ -7343,6 +7355,7 @@
       "collection-basic",
       "context",
       "context-calendar-examples",
+      "context-chat",
       "context-collating-marks",
       "context-cyrillicnumbers",
       "context-filter",
@@ -7419,6 +7432,7 @@
       "bitter",
       "blacklettert1",
       "boisik",
+      "bonum-otf",
       "bookhands",
       "boondox",
       "braille",
@@ -9125,6 +9139,7 @@
       "documentation",
       "docutils",
       "doi",
+      "doibanner",
       "dotarrow",
       "dotlessi",
       "dotseqn",
@@ -12193,6 +12208,13 @@
     ]
   },
   {
+    "name": "context-chat",
+    "depend": [],
+    "tl_depend": [
+      "context"
+    ]
+  },
+  {
     "name": "context-collating-marks",
     "depend": [],
     "tl_depend": [
@@ -14417,6 +14439,17 @@
     "name": "doi",
     "depend": [
       "hyperref"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "doibanner",
+    "depend": [
+      "adjustbox",
+      "hyperref",
+      "kvoptions",
+      "l3packages",
+      "pgf"
     ],
     "tl_depend": []
   },
