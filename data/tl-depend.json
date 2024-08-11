@@ -154,7 +154,8 @@
   {
     "name": "abraces",
     "depend": [
-      "l3packages"
+      "l3packages",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -2921,24 +2922,7 @@
   },
   {
     "name": "beamertheme-rainbow",
-    "depend": [
-      "babel",
-      "footmisc",
-      "footnotehyper",
-      "geometry",
-      "hyperref",
-      "iexec",
-      "inconsolata",
-      "koma-script",
-      "latex",
-      "mathdesign",
-      "minted",
-      "nowidow",
-      "tcolorbox",
-      "tools",
-      "xcolor",
-      "xkeyval"
-    ],
+    "depend": [],
     "tl_depend": [
       "beamer",
       "tools"
@@ -3444,6 +3428,16 @@
       "bib2gls.ARCH",
       "glossaries-extra"
     ]
+  },
+  {
+    "name": "bib2qr",
+    "depend": [
+      "biblatex",
+      "latex",
+      "qrcode",
+      "xstring"
+    ],
+    "tl_depend": []
   },
   {
     "name": "bibarts",
@@ -6250,12 +6244,12 @@
       "footmisc",
       "graphics",
       "grffile",
+      "hypcap",
       "hyperref",
       "iftex",
       "latex",
       "listings",
       "microtype",
-      "oberdiek",
       "orcidlink",
       "pdfx",
       "pgf",
@@ -7078,6 +7072,7 @@
       "besjournals",
       "bestpapers",
       "bib2gls",
+      "bib2qr",
       "bibarts",
       "bibcop",
       "biber",
@@ -7627,6 +7622,7 @@
       "mdsymbol",
       "merriweather",
       "metsymb",
+      "mfb-oldstyle",
       "miama",
       "mintspirit",
       "missaali",
@@ -8718,6 +8714,7 @@
       "grfext",
       "hopatch",
       "hycolor",
+      "hypcap",
       "hyperref",
       "intcalc",
       "kvdefinekeys",
@@ -10127,6 +10124,7 @@
       "tdclock",
       "technics",
       "ted",
+      "telprint",
       "templatetools",
       "termcal",
       "termlist",
@@ -11013,6 +11011,7 @@
       "pgfopts",
       "pgfornament",
       "pgfplots",
+      "pgfplotsthemebeamer",
       "picinpar",
       "pict2e",
       "pictex",
@@ -11023,6 +11022,7 @@
       "pixelarttikz",
       "pmgraph",
       "polyhedra",
+      "polyomino",
       "postage",
       "postit",
       "prerex",
@@ -12898,6 +12898,7 @@
       "diagbox",
       "etoolbox",
       "graphics",
+      "hypcap",
       "hyperref",
       "ieeetran",
       "latex",
@@ -12907,7 +12908,6 @@
       "microtype",
       "ncctools",
       "newtxtt",
-      "oberdiek",
       "orcidlink",
       "paralist",
       "pbalance",
@@ -14009,6 +14009,7 @@
       "glossaries-extra",
       "graphics",
       "hologo",
+      "hypcap",
       "hyperref",
       "iftex",
       "imakeidx",
@@ -14447,8 +14448,6 @@
     "depend": [
       "adjustbox",
       "hyperref",
-      "kvoptions",
-      "l3packages",
       "pgf"
     ],
     "tl_depend": []
@@ -15665,6 +15664,7 @@
       "fontspec",
       "geometry",
       "graphics",
+      "hypcap",
       "hyperref",
       "hyphenat",
       "iftex",
@@ -15674,7 +15674,6 @@
       "makecell",
       "multirow",
       "nomencl",
-      "oberdiek",
       "paralist",
       "parskip",
       "pdfpages",
@@ -20185,6 +20184,7 @@
       "float",
       "geometry",
       "graphics",
+      "hypcap",
       "hyperref",
       "iftex",
       "koma-script",
@@ -20194,7 +20194,6 @@
       "lm",
       "moreverb",
       "multirow",
-      "oberdiek",
       "overpic",
       "pdfpages",
       "pict2e",
@@ -21564,6 +21563,13 @@
     "tl_depend": []
   },
   {
+    "name": "hypcap",
+    "depend": [
+      "letltxmacro"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "hypdestopt",
     "depend": [
       "alphalph",
@@ -21590,8 +21596,8 @@
     "depend": [
       "atveryend",
       "bookmark",
+      "hypcap",
       "hyperref",
-      "oberdiek",
       "xcolor",
       "xkeyval"
     ],
@@ -23294,23 +23300,8 @@
   {
     "name": "jigsaw",
     "depend": [
-      "babel",
-      "footmisc",
-      "footnotehyper",
-      "geometry",
-      "hyperref",
       "iftex",
-      "inconsolata",
-      "koma-script",
-      "latex",
-      "mathdesign",
-      "minted",
-      "nowidow",
-      "pgf",
-      "tcolorbox",
-      "tools",
-      "xcolor",
-      "xkeyval"
+      "pgf"
     ],
     "tl_depend": [
       "epstopdf-pkg",
@@ -25292,6 +25283,7 @@
       "fourier",
       "geometry",
       "graphics",
+      "hypcap",
       "hyperref",
       "l3packages",
       "latex",
@@ -25300,7 +25292,6 @@
       "mathtools",
       "microtype",
       "ninecolors",
-      "oberdiek",
       "parskip",
       "pgfornament",
       "placeins",
@@ -26028,6 +26019,7 @@
       "footmisc",
       "graphics",
       "grffile",
+      "hypcap",
       "hyperref",
       "iftex",
       "latex",
@@ -26035,7 +26027,6 @@
       "microtype",
       "newtx",
       "newtxtt",
-      "oberdiek",
       "orcidlink",
       "preprint",
       "psnfss",
@@ -26459,12 +26450,12 @@
     "depend": [
       "etoolbox",
       "graphics",
+      "hypcap",
       "hyperref",
       "iftex",
       "koma-script",
       "latex",
       "listings",
-      "oberdiek",
       "tools"
     ],
     "tl_depend": []
@@ -27279,11 +27270,7 @@
   {
     "name": "magicwatermark",
     "depend": [
-      "ctex",
-      "everypage",
-      "l3kernel",
-      "l3packages",
-      "pgf"
+      "everypage"
     ],
     "tl_depend": []
   },
@@ -28147,9 +28134,6 @@
     "name": "mercatormap",
     "depend": [
       "graphics",
-      "l3kernel",
-      "l3packages",
-      "pdftexcmds",
       "pgf",
       "siunitx"
     ],
@@ -28332,6 +28316,16 @@
     "tl_depend": [
       "mf2pt1.ARCH"
     ]
+  },
+  {
+    "name": "mfb-oldstyle",
+    "depend": [
+      "fontaxes",
+      "latex",
+      "mweights",
+      "xkeyval"
+    ],
+    "tl_depend": []
   },
   {
     "name": "mfirstuc",
@@ -30911,6 +30905,7 @@
       "geometry",
       "glossaries",
       "graphics",
+      "hypcap",
       "hyperref",
       "ifoddpage",
       "import",
@@ -30924,7 +30919,6 @@
       "microtype",
       "nag",
       "ntheorem",
-      "oberdiek",
       "placeins",
       "refcount",
       "standalone",
@@ -30997,7 +30991,6 @@
       "intcalc",
       "kvoptions",
       "kvsetkeys",
-      "letltxmacro",
       "lm-math",
       "ltxcmds",
       "parallel",
@@ -32695,6 +32688,18 @@
     ]
   },
   {
+    "name": "pgfplotsthemebeamer",
+    "depend": [
+      "pgfplots"
+    ],
+    "tl_depend": [
+      "beamer",
+      "pgfopts",
+      "pgfplots",
+      "tools"
+    ]
+  },
+  {
     "name": "phaistos",
     "depend": [],
     "tl_depend": []
@@ -33553,6 +33558,13 @@
     "name": "polynomial",
     "depend": [
       "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "polyomino",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -40775,6 +40787,11 @@
     "tl_depend": []
   },
   {
+    "name": "telprint",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "templates-fenn",
     "depend": [],
     "tl_depend": []
@@ -42207,23 +42224,8 @@
   {
     "name": "tikzbricks",
     "depend": [
-      "babel",
-      "footmisc",
-      "footnotehyper",
-      "geometry",
-      "hyperref",
-      "iexec",
-      "inconsolata",
-      "koma-script",
-      "latex",
-      "mathdesign",
-      "minted",
-      "nowidow",
       "pgf",
-      "tcolorbox",
       "tikz-3dplot",
-      "tools",
-      "xcolor",
       "xkeyval"
     ],
     "tl_depend": [
@@ -43781,6 +43783,7 @@
       "geometry",
       "glossaries",
       "graphics",
+      "hypcap",
       "hyperref",
       "hyphenat",
       "koma-script",
@@ -43792,7 +43795,6 @@
       "microtype",
       "nag",
       "natbib",
-      "oberdiek",
       "pgf",
       "placeins",
       "ragged2e",
@@ -46644,6 +46646,7 @@
       "geometry",
       "glossaries",
       "graphics",
+      "hypcap",
       "iftex",
       "l3packages",
       "latex",
