@@ -9281,6 +9281,7 @@
       "filedate",
       "fileinfo",
       "filemod",
+      "fillwith",
       "fink",
       "finstrut",
       "fistrum",
@@ -9422,6 +9423,7 @@
       "harpoon",
       "hc",
       "he-she",
+      "hebdomon",
       "hep-acronym",
       "hep-float",
       "hep-math",
@@ -10455,6 +10457,7 @@
       "lualinalg",
       "luamathalign",
       "luamaths",
+      "luamml",
       "luamodulartables",
       "luamplib",
       "luaoptions",
@@ -17653,6 +17656,16 @@
     "tl_depend": []
   },
   {
+    "name": "fillwith",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "svn-prov",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "finbib",
     "depend": [],
     "tl_depend": []
@@ -20334,7 +20347,8 @@
     "name": "harmony",
     "depend": [
       "amsfonts",
-      "latex"
+      "latex",
+      "mathtools"
     ],
     "tl_depend": []
   },
@@ -20433,6 +20447,36 @@
     "depend": [
       "everyhook",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hebdomon",
+    "depend": [
+      "amsmath",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "enumitem",
+      "environ",
+      "fira",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "l3packages",
+      "latex",
+      "listings",
+      "lm",
+      "minitoc",
+      "minted",
+      "nicematrix",
+      "pgf",
+      "pgfplots",
+      "setspace",
+      "tcolorbox",
+      "titlesec",
+      "xcolor",
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -24749,6 +24793,7 @@
       "graphics",
       "l3experimental",
       "latex-lab",
+      "luamml",
       "pdfmanagement-testphase",
       "tagpdf",
       "tools"
@@ -25881,6 +25926,7 @@
     "depend": [
       "amscls",
       "amsfonts",
+      "anyfontsize",
       "booktabs",
       "cancel",
       "caption",
@@ -25906,7 +25952,9 @@
       "latex",
       "libertine",
       "lipsum",
+      "magicwatermark",
       "mathtools",
+      "mhchem",
       "newtx",
       "newtxsf",
       "nicematrix",
@@ -25919,10 +25967,11 @@
       "refstyle",
       "setspace",
       "siunitx",
+      "soul",
       "tasks",
       "tocloft",
       "tools",
-      "wallpaper",
+      "ulem",
       "xecjk",
       "xfrac",
       "zhlipsum"
@@ -26845,6 +26894,15 @@
     "tl_depend": []
   },
   {
+    "name": "luamml",
+    "depend": [
+      "amsmath",
+      "luatodonotes",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luamodulartables",
     "depend": [
       "luacode",
@@ -27269,9 +27327,7 @@
   },
   {
     "name": "magicwatermark",
-    "depend": [
-      "everypage"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -33080,6 +33136,7 @@
   {
     "name": "piton",
     "depend": [
+      "amsmath",
       "footnotehyper",
       "l3packages",
       "luacode",
