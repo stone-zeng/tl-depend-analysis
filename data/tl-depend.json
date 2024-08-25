@@ -4474,7 +4474,46 @@
       "xltabular",
       "xstring"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "algorithm2e",
+      "amscls",
+      "anyfontsize",
+      "babel",
+      "biblatex",
+      "bookmark",
+      "caption",
+      "chngcntr",
+      "csquotes",
+      "enumitem",
+      "fancyhdr",
+      "float",
+      "fontspec",
+      "geometry",
+      "glossaries",
+      "glossaries-extra",
+      "graphics",
+      "ifoddpage",
+      "koma-script",
+      "lastpage",
+      "lineno",
+      "listings",
+      "ltablex",
+      "multirow",
+      "nowidow",
+      "oberdiek",
+      "relsize",
+      "setspace",
+      "stackengine",
+      "tabto-ltx",
+      "titlesec",
+      "tools",
+      "totcount",
+      "ulem",
+      "xassoccnt",
+      "xcolor",
+      "xltabular",
+      "xstring"
+    ]
   },
   {
     "name": "bnumexpr",
@@ -10591,6 +10630,7 @@
       "diffcoeff",
       "digiconfigs",
       "dijkstra",
+      "domaincoloring",
       "drawmatrix",
       "drawstack",
       "dyntree",
@@ -11464,6 +11504,7 @@
       "ebook",
       "ebsthesis",
       "ecothesis",
+      "edmaths",
       "ejpecp",
       "ekaia",
       "elbioimp",
@@ -14463,6 +14504,11 @@
     "tl_depend": []
   },
   {
+    "name": "domaincoloring",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "domitian",
     "depend": [
       "fontaxes",
@@ -15333,6 +15379,26 @@
   {
     "name": "edmargin",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "edmaths",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "cmap",
+      "cmbright",
+      "fancyhdr",
+      "fontspec",
+      "fourier",
+      "hyperref",
+      "latex",
+      "microtype",
+      "setspace",
+      "tools",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -23126,7 +23192,9 @@
     "name": "isosafety",
     "depend": [
       "graphics",
-      "xcolor"
+      "latex",
+      "xcolor",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -23387,7 +23455,6 @@
       "etoolbox",
       "everyhook",
       "filehook",
-      "l3packages",
       "lm",
       "luatexja",
       "sttools"
@@ -35371,6 +35438,7 @@
     "name": "pxchfon",
     "depend": [
       "atbegshi",
+      "etoolbox",
       "graphics",
       "pxufont"
     ],
@@ -45616,10 +45684,8 @@
   {
     "name": "wordle",
     "depend": [
-      "l3kernel",
-      "pgf",
-      "simplekv",
-      "xstring"
+      "l3packages",
+      "pgf"
     ],
     "tl_depend": []
   },
