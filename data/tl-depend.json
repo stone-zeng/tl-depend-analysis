@@ -4286,7 +4286,8 @@
       "tools",
       "unicode-math",
       "xcolor",
-      "xecjk"
+      "xecjk",
+      "zhlineskip"
     ],
     "tl_depend": []
   },
@@ -4716,7 +4717,6 @@
   {
     "name": "bookshelf",
     "depend": [
-      "biblatex",
       "eso-pic",
       "fontspec",
       "fp",
@@ -4726,7 +4726,9 @@
       "tools",
       "xcolor"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "bookshelf.ARCH"
+    ]
   },
   {
     "name": "booktabs",
@@ -8397,6 +8399,7 @@
       "expose-expl3-dunkerque-2019",
       "facture",
       "faq-fr",
+      "faq-fr-gutenberg",
       "formation-latex-ul",
       "frenchmath",
       "frletter",
@@ -15168,12 +15171,15 @@
     "name": "easybook",
     "depend": [
       "amscls",
+      "amsmath",
       "biblatex",
+      "chemformula",
       "ctex",
       "etoolbox",
       "hyperref",
       "keytheorems",
       "l3packages",
+      "mhchem",
       "natbib",
       "newtx",
       "thmtools",
@@ -17352,6 +17358,11 @@
   },
   {
     "name": "faq-fr",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "faq-fr-gutenberg",
     "depend": [],
     "tl_depend": []
   },
@@ -20635,7 +20646,6 @@
     "depend": [
       "amsfonts",
       "amsmath",
-      "biblatex",
       "booktabs",
       "cancel",
       "caption",
@@ -20647,14 +20657,19 @@
       "extarrows",
       "fancyhdr",
       "fixdif",
+      "gbt7714",
       "geometry",
+      "hologo",
+      "hyperref",
       "latex",
       "lipsum",
       "listings",
       "mathtools",
       "pgfplots",
       "physics2",
+      "setspace",
       "siunitx",
+      "titlesec",
       "tocloft",
       "tools",
       "zhlipsum"
@@ -25585,7 +25600,6 @@
       "graphics",
       "hypcap",
       "hyperref",
-      "l3packages",
       "latex",
       "libertine",
       "listings",
@@ -34246,6 +34260,8 @@
     "depend": [
       "amsfonts",
       "cancel",
+      "commalists-tools",
+      "datetime2",
       "esvect",
       "fancyvrb",
       "fontawesome5",
@@ -43132,6 +43148,7 @@
   {
     "name": "to-be-determined",
     "depend": [
+      "mathtools",
       "soul",
       "xcolor",
       "xkeyval"
@@ -44507,8 +44524,7 @@
     "name": "unbtex",
     "depend": [
       "abntex2",
-      "algorithmicx",
-      "algorithms",
+      "algorithm2e",
       "amscls",
       "cite",
       "cleveref",
@@ -44516,7 +44532,9 @@
       "fvextra",
       "hyperref",
       "inconsolata",
+      "koma-script",
       "listings",
+      "mathalpha",
       "mathtools",
       "mdframed",
       "microtype",
