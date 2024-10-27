@@ -742,11 +742,14 @@
     "depend": [
       "algorithmicx",
       "amsfonts",
+      "etoolbox",
       "fancyvrb",
-      "latex",
+      "marginnote",
       "pgf",
       "pgfopts",
       "ragged2e",
+      "todonotes",
+      "tools",
       "varwidth",
       "xcolor"
     ],
@@ -2910,6 +2913,17 @@
       "pgf",
       "pgfopts",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertheme-mirage",
+    "depend": [
+      "fontawesome5",
+      "microtype",
+      "pgf",
+      "regexpatch",
+      "relsize"
     ],
     "tl_depend": []
   },
@@ -8922,6 +8936,7 @@
       "beamertheme-gotham",
       "beamertheme-light",
       "beamertheme-metropolis",
+      "beamertheme-mirage",
       "beamertheme-npbt",
       "beamertheme-phnompenh",
       "beamertheme-pure-minimalistic",
@@ -10671,6 +10686,7 @@
       "concmath",
       "concrete",
       "conteq",
+      "cora-macs",
       "correctmathalign",
       "cryptocode",
       "cs-techrep",
@@ -12655,6 +12671,16 @@
     "depend": [
       "latex",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "cora-macs",
+    "depend": [
+      "amsfonts",
+      "xcolor",
+      "xifthen",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -27648,7 +27674,6 @@
   {
     "name": "make4ht",
     "depend": [
-      "context",
       "luaxml"
     ],
     "tl_depend": [
@@ -43881,6 +43906,7 @@
       "hyperref",
       "keytheorems",
       "koma-script",
+      "latex",
       "marginnote",
       "minted",
       "tcolorbox",
