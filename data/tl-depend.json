@@ -7394,6 +7394,7 @@
       "dvipos",
       "dvisvgm",
       "easydtx",
+      "expltools",
       "findhyph",
       "fragmaster",
       "git-latexdiff",
@@ -14154,9 +14155,9 @@
   {
     "name": "dejavu-otf",
     "depend": [
+      "fontspec",
       "iftex",
       "latex",
-      "tex-gyre-math",
       "unicode-math",
       "xkeyval"
     ],
@@ -17172,6 +17173,13 @@
     "name": "expkv-bundle",
     "depend": [],
     "tl_depend": []
+  },
+  {
+    "name": "expltools",
+    "depend": [],
+    "tl_depend": [
+      "expltools.ARCH"
+    ]
   },
   {
     "name": "export",
@@ -33764,9 +33772,9 @@
   {
     "name": "plex-otf",
     "depend": [
-      "fontspec",
       "iftex",
       "latex",
+      "unicode-math",
       "xkeyval"
     ],
     "tl_depend": []
@@ -34069,7 +34077,9 @@
   {
     "name": "ppmcheckpdf",
     "depend": [],
-    "tl_depend": []
+    "tl_depend": [
+      "ppmcheckpdf.ARCH"
+    ]
   },
   {
     "name": "ppr-prv",
@@ -40545,6 +40555,7 @@
       "fancyhdr",
       "fixltxhyph",
       "fontsize",
+      "footnpag",
       "geometry",
       "graphics",
       "iftex",
@@ -40561,8 +40572,7 @@
       "psnfss",
       "titlesec",
       "tools",
-      "xkeyval",
-      "zref"
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -43961,11 +43971,10 @@
       "hyperref",
       "keytheorems",
       "koma-script",
+      "latex",
       "marginnote",
       "minted",
-      "tcolorbox",
-      "titlesec",
-      "xcolor"
+      "tcolorbox"
     ],
     "tl_depend": []
   },
