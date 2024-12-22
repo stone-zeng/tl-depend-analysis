@@ -4160,7 +4160,6 @@
       "url",
       "xcolor",
       "xifthen",
-      "xkeyval",
       "zref"
     ],
     "tl_depend": []
@@ -6714,11 +6713,11 @@
     "name": "clicks",
     "depend": [
       "etoolbox",
-      "xkeyval"
+      "pgfopts"
     ],
     "tl_depend": [
       "etoolbox",
-      "xkeyval"
+      "pgfopts"
     ]
   },
   {
@@ -9729,6 +9728,7 @@
       "listlbls",
       "listliketab",
       "listofsymbols",
+      "listparskip",
       "litetable",
       "lkproof",
       "lmake",
@@ -26232,6 +26232,7 @@
   {
     "name": "lisp-on-tex",
     "depend": [
+      "l3kernel",
       "xkeyval"
     ],
     "tl_depend": []
@@ -26310,6 +26311,11 @@
       "nomencl",
       "tools"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "listparskip",
+    "depend": [],
     "tl_depend": []
   },
   {
