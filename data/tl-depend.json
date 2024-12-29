@@ -137,6 +137,7 @@
   {
     "name": "abntexto",
     "depend": [
+      "csquotes",
       "geometry",
       "graphics",
       "latex"
@@ -20794,9 +20795,9 @@
       "ctex",
       "datetime",
       "derivative",
+      "dirtree",
       "enumitem",
       "etoolbox",
-      "extarrows",
       "fancyhdr",
       "fixdif",
       "framed",
@@ -20818,10 +20819,13 @@
       "physics2",
       "setspace",
       "siunitx",
+      "tasks",
+      "tikzpagenodes",
       "tocloft",
       "tools",
       "twemojis",
       "unicode-math",
+      "xcolor",
       "xecjk",
       "zhlipsum"
     ],
