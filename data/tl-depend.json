@@ -1102,7 +1102,9 @@
       "lastpage",
       "yhmath"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "aomart.ARCH"
+    ]
   },
   {
     "name": "apa",
@@ -3029,6 +3031,29 @@
     "tl_depend": []
   },
   {
+    "name": "beamerthemecelestia",
+    "depend": [
+      "arev",
+      "babel",
+      "etoolbox",
+      "fontspec",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "listings",
+      "microtype",
+      "pgf",
+      "psnfss",
+      "roboto",
+      "silence",
+      "sourcesanspro",
+      "sourceserifpro",
+      "tcolorbox",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamerthemeconcrete",
     "depend": [
       "adjustbox",
@@ -3068,6 +3093,11 @@
     "depend": [
       "latex"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertools",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -5522,7 +5552,10 @@
   },
   {
     "name": "cascadiamono-otf",
-    "depend": [],
+    "depend": [
+      "fontspec",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -7676,7 +7709,8 @@
       "gelasio",
       "gelasiomath",
       "genealogy",
-      "gentium-tug",
+      "gentium-otf",
+      "gentium-sil",
       "gfsartemisia",
       "gfsbodoni",
       "gfscomplutum",
@@ -7715,6 +7749,7 @@
       "iwona",
       "jablantile",
       "jamtimes",
+      "jetbrainsmono-otf",
       "josefin",
       "junicode",
       "junicodevf",
@@ -8799,6 +8834,7 @@
       "numberpt",
       "ordinalpt",
       "ptlatexcommands",
+      "tabularray-abnt",
       "xypic-tut-pt"
     ]
   },
@@ -8993,11 +9029,13 @@
       "beamertheme-trigon",
       "beamertheme-upenn-bc",
       "beamerthemeamurmaple",
+      "beamerthemecelestia",
       "beamerthemeconcrete",
       "beamerthemejltree",
       "beamerthemelalic",
       "beamerthemenirma",
       "beamerthemenord",
+      "beamertools",
       "bearwear",
       "beaulivre",
       "beautybook",
@@ -9430,6 +9468,7 @@
       "filedate",
       "fileinfo",
       "filemod",
+      "fillpages",
       "fillwith",
       "fink",
       "finstrut",
@@ -9880,6 +9919,7 @@
       "ncclatex",
       "ncctools",
       "needspace",
+      "neoschool",
       "nestquot",
       "newcommand",
       "newenviron",
@@ -11240,6 +11280,7 @@
       "tikz-bagua",
       "tikz-bayesnet",
       "tikz-bbox",
+      "tikz-bpmn",
       "tikz-cd",
       "tikz-decofonts",
       "tikz-dependency",
@@ -17972,6 +18013,11 @@
     "tl_depend": []
   },
   {
+    "name": "fillpages",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "fillwith",
     "depend": [
       "l3kernel",
@@ -19315,10 +19361,19 @@
     "tl_depend": []
   },
   {
-    "name": "gentium-tug",
+    "name": "gentium-otf",
     "depend": [
+      "fontspec",
+      "iftex",
+      "latex",
+      "unicode-math",
       "xkeyval"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "gentium-sil",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -20794,6 +20849,7 @@
     "depend": [
       "amsfonts",
       "anyfontsize",
+      "beamer",
       "biblatex",
       "booktabs",
       "cancel",
@@ -20812,7 +20868,6 @@
       "framed",
       "gbt7714",
       "geometry",
-      "graphics",
       "hologo",
       "hyperref",
       "keytheorems",
@@ -20823,6 +20878,7 @@
       "listings",
       "mathtools",
       "menukeys",
+      "minted",
       "nicematrix",
       "parskip",
       "pdfpages",
@@ -23752,6 +23808,14 @@
   {
     "name": "jbact",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "jetbrainsmono-otf",
+    "depend": [
+      "fontspec",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -30379,7 +30443,6 @@
       "enumitem",
       "etoolbox",
       "float",
-      "gentium-tug",
       "geometry",
       "graphics",
       "hyperref",
@@ -30422,6 +30485,85 @@
   {
     "name": "needspace",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "neoschool",
+    "depend": [
+      "adforn",
+      "adjustbox",
+      "algorithmicx",
+      "amsfonts",
+      "annotate-equations",
+      "asymptote",
+      "babel",
+      "blindtext",
+      "bookmark",
+      "breqn",
+      "cancel",
+      "changepage",
+      "environ",
+      "esvect",
+      "fontawesome5",
+      "fontspec",
+      "forest",
+      "fourier",
+      "graphics",
+      "iftex",
+      "jknapltx",
+      "koma-script",
+      "kvoptions",
+      "lastpage",
+      "latex",
+      "lipsum",
+      "lua-ul",
+      "luacas",
+      "luacolor",
+      "marginnote",
+      "mathastext",
+      "microtype",
+      "mismath",
+      "ncctools",
+      "needspace",
+      "newpx",
+      "numprint",
+      "pdftexcmds",
+      "pgf",
+      "pgfmorepages",
+      "pgfplots",
+      "pst-3dplot",
+      "pst-bezier",
+      "pst-eucl",
+      "pst-node",
+      "pst-plot",
+      "pst-text",
+      "pst-tree",
+      "pstricks",
+      "pstricks-add",
+      "qrcode",
+      "silence",
+      "siunitx",
+      "sttools",
+      "tabularray",
+      "tasks",
+      "tcolorbox",
+      "tdsfrmath",
+      "textcase",
+      "tikzpagenodes",
+      "tikzsymbols",
+      "tkz-euclide",
+      "todonotes",
+      "tools",
+      "ulem",
+      "witharrows",
+      "wrapfig",
+      "xcolor",
+      "xhfill",
+      "xkeyval",
+      "xlop",
+      "xsim",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -33581,6 +33723,7 @@
     "name": "pixelarttikz",
     "depend": [
       "csvsimple",
+      "datatool",
       "l3kernel",
       "latex",
       "listofitems",
@@ -37491,6 +37634,7 @@
       "fancyvrb",
       "geometry",
       "hypdoc",
+      "inconsolata",
       "l3packages",
       "latex",
       "listings",
@@ -37723,7 +37867,6 @@
       "collection-metapost",
       "dejavu",
       "eulervm",
-      "gentium-tug",
       "iwona",
       "kurier",
       "ly1",
@@ -41113,6 +41256,14 @@
     "tl_depend": []
   },
   {
+    "name": "tabularray-abnt",
+    "depend": [
+      "float",
+      "tabularray"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tabulary",
     "depend": [
       "tools"
@@ -42528,6 +42679,15 @@
     "tl_depend": []
   },
   {
+    "name": "tikz-bpmn",
+    "depend": [
+      "pgf",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz-cd",
     "depend": [
       "pgf"
@@ -42537,6 +42697,7 @@
   {
     "name": "tikz-decofonts",
     "depend": [
+      "listofitems",
       "pgf",
       "simplekv",
       "xint",
@@ -47402,12 +47563,14 @@
       "changepage",
       "chngcntr",
       "csquotes",
+      "doi",
       "enumitem",
       "fancyhdr",
       "float",
       "footmisc",
       "geometry",
       "graphics",
+      "href-ul",
       "imakeidx",
       "l3packages",
       "lastpage",
