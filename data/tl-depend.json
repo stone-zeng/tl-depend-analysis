@@ -4165,7 +4165,6 @@
       "geometry",
       "graphics",
       "hyperref",
-      "iftex",
       "latex",
       "ltxcmds",
       "marvosym",
@@ -8429,6 +8428,7 @@
       "hrlatex",
       "huaz",
       "hulipsum",
+      "hyphen-albanian",
       "hyphen-croatian",
       "hyphen-danish",
       "hyphen-dutch",
@@ -8777,7 +8777,6 @@
       "lshort-vietnamese",
       "marathi",
       "ntheorem-vn",
-      "padauk",
       "quran-bn",
       "quran-id",
       "quran-ur",
@@ -22211,6 +22210,14 @@
     ]
   },
   {
+    "name": "hyphen-albanian",
+    "depend": [],
+    "tl_depend": [
+      "hyph-utf8",
+      "hyphen-base"
+    ]
+  },
+  {
     "name": "hyphen-ancientgreek",
     "depend": [],
     "tl_depend": [
@@ -32159,11 +32166,6 @@
     "tl_depend": []
   },
   {
-    "name": "padauk",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "padcount",
     "depend": [],
     "tl_depend": []
@@ -38164,8 +38166,8 @@
       "fancybox",
       "fancyhdr",
       "geometry",
-      "lastpage",
       "latex",
+      "totpages",
       "translations",
       "xcolor"
     ],
