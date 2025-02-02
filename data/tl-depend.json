@@ -1614,20 +1614,17 @@
       "iftex",
       "inconsolata",
       "kvoptions",
-      "l3experimental",
       "l3packages",
       "latex",
       "lineno",
       "luatexja",
       "mathalpha",
       "mathtools",
-      "metalogo",
       "natbib",
       "newtx",
       "oberdiek",
       "sttools",
       "textcase",
-      "titlesec",
       "tools",
       "xcolor",
       "yafoot"
@@ -1656,13 +1653,11 @@
       "iftex",
       "inconsolata",
       "kvoptions",
-      "l3experimental",
       "l3packages",
       "latex",
       "lineno",
       "mathalpha",
       "mathtools",
-      "metalogo",
       "natbib",
       "newtx",
       "sttools",
@@ -5403,6 +5398,9 @@
     "depend": [
       "amsfonts",
       "circledtext",
+      "fontspec",
+      "inlinegraphicx",
+      "listofitems",
       "simplekv",
       "tcolorbox",
       "tools",
@@ -9991,6 +9989,7 @@
       "outlining",
       "overlays",
       "overpic",
+      "packdoc",
       "padcount",
       "pagecolor",
       "pagecont",
@@ -11046,6 +11045,7 @@
       "mfpic4ode",
       "minim-hatching",
       "mp-geom2d",
+      "mp-neuralnetwork",
       "mp3d",
       "mparrows",
       "mpattern",
@@ -21773,7 +21773,6 @@
     "name": "hrefhide",
     "depend": [
       "hyperref",
-      "kvoptions",
       "xcolor"
     ],
     "tl_depend": []
@@ -28064,7 +28063,9 @@
     "tl_depend": [
       "l3kernel",
       "lt3luabridge",
-      "lua-uni-algos"
+      "lua-tinyyaml",
+      "lua-uni-algos",
+      "markdown.ARCH"
     ]
   },
   {
@@ -29288,7 +29289,6 @@
       "latex",
       "lineno",
       "mathtools",
-      "titlesec",
       "tools",
       "unicode-math",
       "xcolor"
@@ -29770,6 +29770,11 @@
   },
   {
     "name": "mp-geom2d",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "mp-neuralnetwork",
     "depend": [],
     "tl_depend": []
   },
@@ -32192,6 +32197,39 @@
     "tl_depend": []
   },
   {
+    "name": "packdoc",
+    "depend": [
+      "cleveref",
+      "enumitem",
+      "etoolbox",
+      "geometry",
+      "hyperref",
+      "latex",
+      "marginnote",
+      "minted",
+      "nowidow",
+      "pgfopts",
+      "ragged2e",
+      "snaptodo",
+      "tcolorbox",
+      "tools"
+    ],
+    "tl_depend": [
+      "enumitem",
+      "etoolbox",
+      "geometry",
+      "hyperref",
+      "marginnote",
+      "minted",
+      "nowidow",
+      "pgfopts",
+      "ragged2e",
+      "snaptodo",
+      "tcolorbox",
+      "tools"
+    ]
+  },
+  {
     "name": "padcount",
     "depend": [],
     "tl_depend": []
@@ -32200,7 +32238,6 @@
     "name": "pagecolor",
     "depend": [
       "graphics",
-      "kvoptions",
       "xcolor"
     ],
     "tl_depend": []
@@ -34164,8 +34201,7 @@
       "fontspec",
       "iftex",
       "luabidi",
-      "tools",
-      "xkeyval"
+      "tools"
     ],
     "tl_depend": [
       "etoolbox",
@@ -37307,7 +37343,9 @@
   },
   {
     "name": "romanbar",
-    "depend": [],
+    "depend": [
+      "adjustbox"
+    ],
     "tl_depend": []
   },
   {
@@ -43064,13 +43102,14 @@
   },
   {
     "name": "tikzdotncross",
-    "depend": [],
+    "depend": [
+      "etoolbox"
+    ],
     "tl_depend": []
   },
   {
     "name": "tikzducks",
     "depend": [
-      "l3kernel",
       "pgf"
     ],
     "tl_depend": [
@@ -44013,7 +44052,6 @@
       "anyfontsize",
       "beamer",
       "bookmark",
-      "environ",
       "fontspec",
       "geometry",
       "graphics",
