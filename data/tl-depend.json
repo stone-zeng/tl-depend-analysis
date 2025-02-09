@@ -5400,7 +5400,9 @@
       "circledtext",
       "fontspec",
       "inlinegraphicx",
+      "latex",
       "listofitems",
+      "oberdiek",
       "simplekv",
       "tcolorbox",
       "tools",
@@ -6651,7 +6653,7 @@
       "bera",
       "booktabs",
       "caption",
-      "carlisle",
+      "euler-math",
       "eulervm",
       "fontspec",
       "footmisc",
@@ -8888,6 +8890,7 @@
       "colortbl",
       "epstopdf-pkg",
       "etexcmds",
+      "etoolbox",
       "fancyhdr",
       "firstaid",
       "fix2col",
@@ -10092,6 +10095,7 @@
       "progress",
       "progressbar",
       "projlib",
+      "pronunciation",
       "proofread",
       "properties",
       "prosper",
@@ -10545,7 +10549,6 @@
       "crop",
       "ctable",
       "eso-pic",
-      "etoolbox",
       "euenc",
       "euler",
       "everysel",
@@ -34760,6 +34763,15 @@
     ]
   },
   {
+    "name": "pronunciation",
+    "depend": [
+      "l3packages",
+      "latex",
+      "tipa"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "proof-at-the-end",
     "depend": [
       "catchfile",
@@ -37507,6 +37519,8 @@
     "depend": [
       "biblatex",
       "boxedminipage",
+      "etoolbox",
+      "forloop",
       "geometry",
       "hyperref",
       "latex",
