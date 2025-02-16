@@ -2888,7 +2888,6 @@
   {
     "name": "beamertheme-gotham",
     "depend": [
-      "etoolbox",
       "fira",
       "fontspec",
       "iftex",
@@ -10923,6 +10922,7 @@
       "pfdicons",
       "physconst",
       "physics",
+      "physics-patch",
       "physics2",
       "physunits",
       "pinoutikz",
@@ -11881,6 +11881,7 @@
       "turabian",
       "uaclasses",
       "uafthesis",
+      "ualberta",
       "uantwerpendocs",
       "ucalgmthesis",
       "ucbthesis",
@@ -17465,7 +17466,9 @@
   },
   {
     "name": "fancyhdr",
-    "depend": [],
+    "depend": [
+      "l3packages"
+    ],
     "tl_depend": []
   },
   {
@@ -31217,6 +31220,7 @@
     "name": "notebeamer",
     "depend": [
       "l3experimental",
+      "l3kernel",
       "l3packages",
       "pgf",
       "tikzpagenodes"
@@ -33210,7 +33214,9 @@
     "depend": [
       "fontspec",
       "latex",
+      "lm",
       "pgf",
+      "silence",
       "zhnumber"
     ],
     "tl_depend": []
@@ -33637,6 +33643,15 @@
     "name": "physics",
     "depend": [
       "amsmath",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "physics-patch",
+    "depend": [
+      "amsmath",
+      "etoolbox",
       "l3packages"
     ],
     "tl_depend": []
@@ -34672,6 +34687,7 @@
       "tcolorbox",
       "tools",
       "varwidth",
+      "xcolor",
       "xint",
       "xlop"
     ],
@@ -39588,7 +39604,6 @@
       "fancyhdr",
       "geometry",
       "graphics",
-      "l3packages",
       "libertinus-fonts",
       "libertinust1math",
       "lm-math",
@@ -39596,6 +39611,7 @@
       "newcomputermodern",
       "newpx",
       "newtx",
+      "pageslts",
       "pdfpages",
       "psnfss",
       "stix2-otf",
@@ -44431,9 +44447,7 @@
   },
   {
     "name": "typewriter",
-    "depend": [
-      "luaotfload"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -44500,6 +44514,16 @@
   {
     "name": "uafthesis",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "ualberta",
+    "depend": [
+      "etoolbox",
+      "geometry",
+      "pdfx",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
