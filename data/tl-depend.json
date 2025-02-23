@@ -5429,6 +5429,14 @@
     "tl_depend": []
   },
   {
+    "name": "callouts-box",
+    "depend": [
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "calrsfs",
     "depend": [],
     "tl_depend": []
@@ -8381,7 +8389,6 @@
       "tex-font-errors-cheatsheet",
       "tex-nutshell",
       "tex-overview",
-      "tex-refs",
       "tex-vpat",
       "texbytopic",
       "texonly",
@@ -10045,6 +10052,7 @@
       "pdfwin",
       "pdfx",
       "pecha",
+      "pegmatch",
       "perltex",
       "permute",
       "petiteannonce",
@@ -10689,6 +10697,7 @@
       "luavlna",
       "luaxml",
       "lutabulartools",
+      "marginalia",
       "minim",
       "minim-math",
       "minim-mp",
@@ -11138,6 +11147,7 @@
       "byrne",
       "cachepic",
       "callouts",
+      "callouts-box",
       "celtic",
       "chemfig",
       "circuit-macros",
@@ -11209,6 +11219,7 @@
       "luasseq",
       "maker",
       "makeshape",
+      "maritime",
       "mathspic",
       "memoize",
       "mercatormap",
@@ -11354,6 +11365,7 @@
       "tikzviolinplots",
       "tile-graphic",
       "tilings",
+      "timechart",
       "timing-diagrams",
       "tipfr",
       "tkz-base",
@@ -11803,6 +11815,7 @@
       "nwafuthesis",
       "nwejm",
       "nxuthesis",
+      "omgtudoc-asoiu",
       "onrannual",
       "opteng",
       "oststud",
@@ -15439,7 +15452,8 @@
   {
     "name": "ebgaramond-maths",
     "depend": [
-      "ebgaramond"
+      "ebgaramond",
+      "svn-prov"
     ],
     "tl_depend": []
   },
@@ -27375,6 +27389,7 @@
   {
     "name": "luamplib",
     "depend": [
+      "lua-uni-algos",
       "lualibs"
     ],
     "tl_depend": []
@@ -28031,6 +28046,11 @@
     "tl_depend": []
   },
   {
+    "name": "marginalia",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "marginfit",
     "depend": [],
     "tl_depend": []
@@ -28043,6 +28063,18 @@
   {
     "name": "marginnote",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "maritime",
+    "depend": [
+      "etex-pkg",
+      "graphics",
+      "pgf",
+      "xcolor",
+      "xkeyval",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -31837,6 +31869,25 @@
     ]
   },
   {
+    "name": "omgtudoc-asoiu",
+    "depend": [
+      "amsmath",
+      "assoccnt",
+      "biblatex",
+      "caption",
+      "etoolbox",
+      "fontspec",
+      "geometry",
+      "latex",
+      "newtx",
+      "polyglossia",
+      "tempora",
+      "tools",
+      "totcount"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "onedown",
     "depend": [
       "adjustbox",
@@ -33093,6 +33144,11 @@
     ]
   },
   {
+    "name": "pegmatch",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "penlight",
     "depend": [],
     "tl_depend": []
@@ -33652,7 +33708,10 @@
     "depend": [
       "amsmath",
       "etoolbox",
-      "l3packages"
+      "l3packages",
+      "physics",
+      "xcolor",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -38233,7 +38292,6 @@
       "supertabular",
       "tamethebeast",
       "tds",
-      "tex-refs",
       "tie",
       "web",
       "xpdfopen"
@@ -41863,11 +41921,6 @@
     "tl_depend": []
   },
   {
-    "name": "tex-refs",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "tex-virtual-academy-pl",
     "depend": [],
     "tl_depend": []
@@ -43342,6 +43395,13 @@
       "pgf",
       "xcolor",
       "xwatermark"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "timechart",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
