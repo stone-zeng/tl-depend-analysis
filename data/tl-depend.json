@@ -9682,6 +9682,7 @@
       "import",
       "incgraph",
       "indextools",
+      "indextra",
       "inline-images",
       "inlinedef",
       "inlinegraphicx",
@@ -10833,6 +10834,7 @@
       "eolang",
       "eqexpl",
       "eqnarray",
+      "eqnlines",
       "eqnnumwarn",
       "euclidean-lattice",
       "euclideangeometry",
@@ -16548,6 +16550,13 @@
     "tl_depend": []
   },
   {
+    "name": "eqnlines",
+    "depend": [
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "eqnnumwarn",
     "depend": [
       "environ",
@@ -18623,7 +18632,12 @@
   },
   {
     "name": "fontscripts",
-    "depend": [],
+    "depend": [
+      "fonttable",
+      "geometry",
+      "latex",
+      "svn-prov"
+    ],
     "tl_depend": []
   },
   {
@@ -20638,9 +20652,9 @@
       "datetime2",
       "enumitem",
       "epstopdf-pkg",
-      "eurosym",
       "fancyhdr",
       "float",
+      "forloop",
       "geometry",
       "graphics",
       "hypcap",
@@ -20649,14 +20663,20 @@
       "koma-script",
       "latex",
       "lengthconvert",
+      "lineno",
       "listingsutf8",
       "lm",
+      "marvosym",
       "moreverb",
       "multirow",
       "overpic",
+      "pdfmanagement-testphase",
       "pdfpages",
+      "pgf",
       "pict2e",
+      "soul",
       "subdepth",
+      "textpos",
       "titlesec",
       "titling",
       "tools",
@@ -23234,6 +23254,11 @@
     "tl_depend": []
   },
   {
+    "name": "indextra",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "infwarerr",
     "depend": [],
     "tl_depend": []
@@ -25359,7 +25384,6 @@
     "depend": [
       "amsmath",
       "bigfoot",
-      "etoolbox",
       "graphics",
       "l3experimental",
       "latex-lab",
@@ -40254,10 +40278,9 @@
   {
     "name": "spreadtab",
     "depend": [
-      "fp",
-      "l3packages",
       "lm",
       "psnfss",
+      "simplekv",
       "xstring"
     ],
     "tl_depend": []
@@ -43582,7 +43605,9 @@
   },
   {
     "name": "tkz-elements",
-    "depend": [],
+    "depend": [
+      "unicode-math"
+    ],
     "tl_depend": []
   },
   {
