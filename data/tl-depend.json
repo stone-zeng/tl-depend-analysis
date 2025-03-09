@@ -6339,6 +6339,20 @@
     "tl_depend": []
   },
   {
+    "name": "chronos",
+    "depend": [
+      "etoolbox",
+      "fp",
+      "l3kernel",
+      "l3packages",
+      "pgf",
+      "svn-prov",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "chronosys",
     "depend": [
       "pgf"
@@ -8693,6 +8707,7 @@
       "luatexja",
       "mendex-doc",
       "morisawa",
+      "outoruby",
       "pbibtex-base",
       "pbibtex-manual",
       "platex",
@@ -9145,6 +9160,7 @@
       "chletter",
       "chngcntr",
       "chronology",
+      "chronos",
       "circ",
       "circledsteps",
       "circledtext",
@@ -9257,6 +9273,8 @@
       "dashundergaps",
       "dataref",
       "datatool",
+      "datatool-english",
+      "datatool-regions",
       "datax",
       "dateiliste",
       "datenumber",
@@ -10888,6 +10906,7 @@
       "lplfitch",
       "lstbayes",
       "luanumint",
+      "math-operator",
       "mathcommand",
       "mathcomp",
       "mathfixs",
@@ -11344,6 +11363,7 @@
       "tikz2d-fr",
       "tikz3d-fr",
       "tikzbricks",
+      "tikzcalendarnotes",
       "tikzcodeblocks",
       "tikzdotncross",
       "tikzducks",
@@ -13838,6 +13858,7 @@
       "substr",
       "textcase",
       "tools",
+      "tracklang",
       "xfor",
       "xkeyval"
     ],
@@ -13846,6 +13867,20 @@
       "substr",
       "xfor",
       "xkeyval"
+    ]
+  },
+  {
+    "name": "datatool-english",
+    "depend": [],
+    "tl_depend": [
+      "datatool"
+    ]
+  },
+  {
+    "name": "datatool-regions",
+    "depend": [],
+    "tl_depend": [
+      "datatool"
     ]
   },
   {
@@ -14276,7 +14311,6 @@
   {
     "name": "delimset",
     "depend": [
-      "amsmath",
       "graphics"
     ],
     "tl_depend": []
@@ -19126,6 +19160,7 @@
       "fancyvrb",
       "latex",
       "lineno",
+      "pdftexcmds",
       "upquote"
     ],
     "tl_depend": [
@@ -20921,15 +20956,11 @@
       "circuitikz",
       "cleveref",
       "ctex",
-      "datetime",
       "derivative",
       "dirtree",
       "enumitem",
-      "esvect",
-      "etoolbox",
       "fancyhdr",
       "fixdif",
-      "framed",
       "gbt7714",
       "geometry",
       "hologo",
@@ -20937,11 +20968,9 @@
       "keytheorems",
       "l3kernel",
       "latex",
-      "libertine",
       "lipsum",
       "listings",
       "mathtools",
-      "menukeys",
       "minted",
       "nicematrix",
       "parskip",
@@ -21802,7 +21831,8 @@
     "depend": [
       "hyperref",
       "pgfopts",
-      "ulem"
+      "ulem",
+      "url"
     ],
     "tl_depend": [
       "hyperref",
@@ -21979,40 +22009,21 @@
   {
     "name": "hustthesis",
     "depend": [
-      "algorithm2e",
-      "amsfonts",
       "amsmath",
-      "appendix",
-      "bigfoot",
+      "biblatex",
       "caption",
-      "carlisle",
-      "datenumber",
-      "enumitem",
-      "etoolbox",
+      "ctex",
       "fancyhdr",
-      "fancynum",
-      "fontspec",
       "geometry",
       "graphics",
-      "hyperref",
-      "iftex",
-      "latex",
       "listings",
-      "luatexja",
       "multirow",
-      "natbib",
-      "ntheorem",
-      "overpic",
       "titlesec",
-      "tocloft",
-      "tocvsec2",
       "tools",
-      "xcolor",
-      "xecjk",
-      "xkeyval",
-      "xstring",
-      "xunicode",
-      "zhnumber"
+      "ulem",
+      "utfsym",
+      "xcolor-material",
+      "zref"
     ],
     "tl_depend": []
   },
@@ -26488,8 +26499,8 @@
   {
     "name": "litetable",
     "depend": [
+      "l3kernel",
       "l3packages",
-      "latex",
       "pgf"
     ],
     "tl_depend": []
@@ -28199,6 +28210,11 @@
     "tl_depend": []
   },
   {
+    "name": "math-operator",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "mathabx",
     "depend": [],
     "tl_depend": []
@@ -28628,7 +28644,6 @@
       "iftex",
       "l3packages",
       "latex",
-      "mparhack",
       "textcase",
       "tools",
       "xpatch"
@@ -32230,6 +32245,17 @@
       "todonotes"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "outoruby",
+    "depend": [
+      "infwarerr",
+      "ltxcmds",
+      "pxrubrica"
+    ],
+    "tl_depend": [
+      "pxrubrica"
+    ]
   },
   {
     "name": "overarrows",
@@ -40358,6 +40384,7 @@
       "eurosym",
       "float",
       "forloop",
+      "fp",
       "framed",
       "graphics",
       "l3packages",
@@ -43191,6 +43218,11 @@
       "pgf",
       "tikz-3dplot"
     ]
+  },
+  {
+    "name": "tikzcalendarnotes",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "tikzcodeblocks",
