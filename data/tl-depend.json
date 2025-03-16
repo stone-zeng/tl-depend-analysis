@@ -3921,7 +3921,10 @@
   },
   {
     "name": "biblatex-publist",
-    "depend": [],
+    "depend": [
+      "pict2e",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -6132,8 +6135,9 @@
     "name": "chess-problem-diagrams",
     "depend": [
       "latex",
-      "pstricks",
-      "tools"
+      "pgf",
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -8065,6 +8069,7 @@
       "othello",
       "othelloboard",
       "pas-crosswords",
+      "pgf-go",
       "playcards",
       "psgo",
       "quizztex",
@@ -8796,12 +8801,14 @@
       "hyphen-esperanto",
       "hyphen-ethiopic",
       "hyphen-georgian",
+      "hyphen-hebrew",
       "hyphen-indic",
       "hyphen-indonesian",
       "hyphen-interlingua",
       "hyphen-sanskrit",
       "hyphen-thai",
       "hyphen-turkmen",
+      "hyphen-vietnamese",
       "latex-mr",
       "latexbangla",
       "latino-sine-flexione",
@@ -8816,6 +8823,7 @@
       "sanskrit-t1",
       "thaienum",
       "thaispec",
+      "tuzuk",
       "unicode-alphabets",
       "velthuis",
       "vntex",
@@ -11842,6 +11850,7 @@
       "opteng",
       "oststud",
       "oup-authoring-template",
+      "pats-resume",
       "philosophersimprint",
       "pittetd",
       "pkuthss",
@@ -19889,7 +19898,9 @@
       "tools",
       "xkeyval"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "glossaries"
+    ]
   },
   {
     "name": "glossaries-finnish",
@@ -22507,6 +22518,14 @@
     ]
   },
   {
+    "name": "hyphen-hebrew",
+    "depend": [],
+    "tl_depend": [
+      "hyph-utf8",
+      "hyphen-base"
+    ]
+  },
+  {
     "name": "hyphen-hungarian",
     "depend": [],
     "tl_depend": [
@@ -22758,6 +22777,14 @@
   },
   {
     "name": "hyphen-uppersorbian",
+    "depend": [],
+    "tl_depend": [
+      "hyph-utf8",
+      "hyphen-base"
+    ]
+  },
+  {
+    "name": "hyphen-vietnamese",
     "depend": [],
     "tl_depend": [
       "hyph-utf8",
@@ -32696,6 +32723,27 @@
     "tl_depend": []
   },
   {
+    "name": "pats-resume",
+    "depend": [
+      "babel",
+      "comment",
+      "enumitem",
+      "fancyhdr",
+      "fontawesome5",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "latex",
+      "microtype",
+      "paracol",
+      "pgf",
+      "supertabular",
+      "titlesec",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pauldoc",
     "depend": [
       "babel",
@@ -33306,6 +33354,14 @@
   {
     "name": "pgf-blur",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "pgf-go",
+    "depend": [
+      "l3packages",
+      "pgf"
+    ],
     "tl_depend": []
   },
   {
@@ -41463,6 +41519,7 @@
       "l3kernel",
       "l3packages",
       "ninecolors",
+      "pgf",
       "siunitx",
       "varwidth",
       "zref"
@@ -44443,6 +44500,20 @@
     "tl_depend": []
   },
   {
+    "name": "tuzuk",
+    "depend": [
+      "babel",
+      "enumitem",
+      "geometry",
+      "hyphenat",
+      "latex",
+      "psnfss",
+      "setspace",
+      "ulem"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "twemoji-colr",
     "depend": [],
     "tl_depend": []
@@ -45704,11 +45775,13 @@
       "hyphenat",
       "iftex",
       "latex",
+      "pgf",
       "picinpar",
       "psnfss",
       "relsize",
       "setspace",
       "thmtools",
+      "titlesec",
       "tools",
       "txfonts",
       "ulem",
