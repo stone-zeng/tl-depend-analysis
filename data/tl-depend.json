@@ -8575,6 +8575,7 @@
       "etdipa",
       "etoolbox-de",
       "fifinddo-info",
+      "fragoli",
       "german",
       "germbib",
       "germkorr",
@@ -9793,6 +9794,7 @@
       "leading",
       "leaflet",
       "lebhart",
+      "lecturenotes",
       "lectures",
       "lectureslides",
       "leftidx",
@@ -11734,6 +11736,7 @@
       "cquthesis",
       "dccpaper",
       "dithesis",
+      "dlrg-templates",
       "ebook",
       "ebsthesis",
       "ecothesis",
@@ -14682,6 +14685,37 @@
       "ragged2e",
       "tools",
       "url"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "dlrg-templates",
+    "depend": [
+      "amsmath",
+      "babel",
+      "blindtext",
+      "caption",
+      "cnltx",
+      "enumitem",
+      "environ",
+      "fontspec",
+      "forarray",
+      "glossaries",
+      "graphics",
+      "hyperref",
+      "koma-script",
+      "l3packages",
+      "latex",
+      "pgf",
+      "pgfopts",
+      "silence",
+      "tabularray",
+      "tblr-extras",
+      "tcolorbox",
+      "varwidth",
+      "xcolor",
+      "xifthen",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -18943,6 +18977,24 @@
     "tl_depend": []
   },
   {
+    "name": "fragoli",
+    "depend": [
+      "amsmath",
+      "comment",
+      "enumitem",
+      "etoolbox",
+      "kvoptions",
+      "l3packages",
+      "pdftexcmds",
+      "tools",
+      "ulem",
+      "units",
+      "xcolor",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "frame",
     "depend": [],
     "tl_depend": []
@@ -20970,8 +21022,11 @@
       "derivative",
       "dirtree",
       "enumitem",
+      "esint",
       "fancyhdr",
+      "fancyqr",
       "fixdif",
+      "fontawesome5",
       "gbt7714",
       "geometry",
       "hologo",
@@ -20999,7 +21054,6 @@
       "twemojis",
       "unicode-math",
       "xcolor",
-      "xecjk",
       "zhlipsum"
     ],
     "tl_depend": []
@@ -24002,7 +24056,6 @@
   {
     "name": "jlreq",
     "depend": [
-      "etoolbox",
       "everyhook",
       "filehook",
       "lm",
@@ -25829,6 +25882,41 @@
     ]
   },
   {
+    "name": "lecturenotes",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "babelbib",
+      "booktabs",
+      "cancel",
+      "csquotes",
+      "datetime",
+      "faktor",
+      "fancyhdr",
+      "geometry",
+      "hyperref",
+      "jknapltx",
+      "kpfonts-otf",
+      "latex",
+      "mathdots",
+      "mathtools",
+      "microtype",
+      "mparhack",
+      "multirow",
+      "pgf",
+      "setspace",
+      "stmaryrd",
+      "textcase",
+      "titlesec",
+      "tocloft",
+      "unicode-math",
+      "xfrac"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lecturer",
     "depend": [],
     "tl_depend": []
@@ -25844,6 +25932,7 @@
       "babel",
       "biblatex",
       "bodegraph",
+      "cancel",
       "caption",
       "circuitikz",
       "csquotes",
@@ -31318,8 +31407,6 @@
     "name": "notebeamer",
     "depend": [
       "l3experimental",
-      "l3kernel",
-      "l3packages",
       "pgf",
       "tikzpagenodes"
     ],
@@ -33816,6 +33903,7 @@
       "etoolbox",
       "l3packages",
       "physics",
+      "siunitx",
       "xcolor",
       "xstring"
     ],
@@ -38604,12 +38692,9 @@
   {
     "name": "scrabble",
     "depend": [
-      "l3packages",
-      "listofitems",
       "pgf",
-      "simplekv",
-      "tools",
-      "xstring"
+      "randintlist",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -45770,6 +45855,7 @@
       "colortbl",
       "draftwatermark",
       "environ",
+      "fontawesome5",
       "graphics",
       "hyperref",
       "hyphenat",
@@ -45780,8 +45866,10 @@
       "psnfss",
       "relsize",
       "setspace",
+      "tcolorbox",
       "thmtools",
       "titlesec",
+      "tocbibind",
       "tools",
       "txfonts",
       "ulem",
