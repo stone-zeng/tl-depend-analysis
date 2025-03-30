@@ -1598,34 +1598,28 @@
     "name": "asmeconf",
     "depend": [
       "babel",
-      "bookmark",
       "booktabs",
       "caption",
       "doi",
       "etoolbox",
       "fancyhdr",
-      "fontspec",
       "footmisc",
       "geometry",
       "graphics",
-      "hologo",
       "hyperref",
-      "hyperxmp",
-      "iftex",
       "inconsolata",
       "kvoptions",
       "l3packages",
       "latex",
       "lineno",
       "luatexja",
-      "mathalpha",
       "mathtools",
       "natbib",
       "newtx",
-      "oberdiek",
       "sttools",
       "textcase",
       "tools",
+      "unicode-math",
       "xcolor",
       "yafoot"
     ],
@@ -3512,6 +3506,11 @@
   },
   {
     "name": "bibarts",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "bibbreeze",
     "depend": [],
     "tl_depend": []
   },
@@ -7267,6 +7266,7 @@
       "bib2gls",
       "bib2qr",
       "bibarts",
+      "bibbreeze",
       "bibcop",
       "biber",
       "biber-ms",
@@ -11509,6 +11509,7 @@
       "path",
       "pdf-trans",
       "pdfmsym",
+      "pdftoolbox",
       "pitex",
       "placeins-plain",
       "plainpkg",
@@ -16448,14 +16449,19 @@
       "xstring"
     ],
     "tl_depend": [
+      "adjustbox",
       "amsfonts",
       "amsmath",
       "eolang.ARCH",
+      "everyshi",
       "fancyvrb",
+      "hyperref",
       "iexec",
+      "pdftexcmds",
       "pgf",
       "pgfopts",
-      "stmaryrd"
+      "stmaryrd",
+      "xstring"
     ]
   },
   {
@@ -33244,6 +33250,11 @@
     "tl_depend": []
   },
   {
+    "name": "pdftoolbox",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "pdftosrc",
     "depend": [],
     "tl_depend": [
@@ -34028,7 +34039,6 @@
     "depend": [
       "amsmath",
       "footnotehyper",
-      "l3packages",
       "luacode",
       "luatexbase",
       "mdwtools",
@@ -43417,7 +43427,6 @@
   {
     "name": "tikzlings",
     "depend": [
-      "l3kernel",
       "pgf"
     ],
     "tl_depend": [
