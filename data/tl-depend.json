@@ -5131,7 +5131,9 @@
       "graphics",
       "twemojis"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "twemojis"
+    ]
   },
   {
     "name": "bxdpx-beamer",
@@ -7810,6 +7812,7 @@
       "linguisticspro",
       "lobster2",
       "logix",
+      "luciole",
       "luwiantype",
       "lxfonts",
       "ly1",
@@ -10000,6 +10003,7 @@
       "notespages",
       "notestex",
       "notoccite",
+      "novabeamer-theme",
       "nowidow",
       "nox",
       "ntheorem",
@@ -10980,6 +10984,7 @@
       "qsharp",
       "quickreaction",
       "quiver",
+      "qworld",
       "rank-2-roots",
       "rbt-mathnotes",
       "rec-thy",
@@ -13216,7 +13221,6 @@
       "amsmath",
       "babel",
       "biblatex",
-      "booktabs",
       "caption",
       "ccicons",
       "cleveref",
@@ -13224,6 +13228,7 @@
       "diagbox",
       "doclicense",
       "etoolbox",
+      "floatrow",
       "graphics",
       "hypcap",
       "hyperref",
@@ -18985,13 +18990,16 @@
   {
     "name": "fragoli",
     "depend": [
+      "amsfonts",
       "amsmath",
       "comment",
       "enumitem",
       "etoolbox",
       "kvoptions",
+      "l3kernel",
       "l3packages",
       "pdftexcmds",
+      "stmaryrd",
       "tools",
       "ulem",
       "units",
@@ -22880,6 +22888,7 @@
       "biblatex",
       "caption",
       "etoolbox",
+      "floatrow",
       "graphics",
       "hyperref",
       "ieeetran",
@@ -22901,6 +22910,7 @@
     "depend": [
       "caption",
       "etoolbox",
+      "floatrow",
       "graphics",
       "hyperref",
       "ieeetran",
@@ -27802,6 +27812,14 @@
     "tl_depend": []
   },
   {
+    "name": "luciole",
+    "depend": [
+      "iftex",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lutabulartools",
     "depend": [
       "booktabs",
@@ -31024,7 +31042,6 @@
     "depend": [
       "amsmath",
       "footnotehyper",
-      "l3packages",
       "mdwtools",
       "pgf",
       "tools"
@@ -31507,6 +31524,16 @@
       "newtx",
       "noto",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "novabeamer-theme",
+    "depend": [
+      "comment",
+      "graphics",
+      "pgf",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -36756,6 +36783,16 @@
     "tl_depend": []
   },
   {
+    "name": "qworld",
+    "depend": [
+      "l3packages",
+      "latex",
+      "pgf",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "qyxf-book",
     "depend": [
       "amsmath",
@@ -39880,7 +39917,6 @@
       "translations",
       "unicode-math",
       "was",
-      "xcolor",
       "xits"
     ],
     "tl_depend": []
