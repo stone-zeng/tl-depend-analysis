@@ -1629,36 +1629,29 @@
     "name": "asmejour",
     "depend": [
       "babel",
-      "bookmark",
       "booktabs",
       "caption",
       "doi",
-      "enumitem",
       "etoolbox",
       "extsizes",
       "fancyhdr",
-      "fontspec",
       "footmisc",
       "geometry",
       "graphics",
-      "hologo",
       "hyperref",
-      "hyperxmp",
-      "iftex",
       "inconsolata",
       "kvoptions",
       "l3packages",
       "latex",
       "lineno",
-      "mathalpha",
       "mathtools",
       "natbib",
       "newtx",
       "sttools",
-      "titlesec",
       "tools",
-      "totcount",
+      "unicode-math",
       "xcolor",
+      "xits",
       "yafoot"
     ],
     "tl_depend": []
@@ -2723,6 +2716,15 @@
       "beamer",
       "iftex",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "beamer-theme-albi",
+    "depend": [
+      "etoolbox",
+      "pgf",
+      "pgfopts"
     ],
     "tl_depend": []
   },
@@ -8191,6 +8193,7 @@
       "kurdishlipsum",
       "lshort-persian",
       "luabidi",
+      "mohe-book",
       "na-box",
       "parsimatn",
       "parsinevis",
@@ -9045,6 +9048,7 @@
       "basicarith",
       "bchart",
       "beamer-rl",
+      "beamer-theme-albi",
       "beamer2thesis",
       "beamerappendixnote",
       "beameraudience",
@@ -9510,6 +9514,7 @@
       "fgruler",
       "fifo-stack",
       "figsize",
+      "figureversions",
       "filecontents",
       "filecontentsdef",
       "filedate",
@@ -10428,6 +10433,7 @@
       "totalcount",
       "totcount",
       "totpages",
+      "traffic-light-protocol",
       "tramlines",
       "translations",
       "transparent",
@@ -10919,6 +10925,7 @@
       "lpform",
       "lplfitch",
       "lstbayes",
+      "lua-regression",
       "luanumint",
       "math-operator",
       "mathcommand",
@@ -11858,6 +11865,7 @@
       "onrannual",
       "opteng",
       "oststud",
+      "ou-tma",
       "oup-authoring-template",
       "pats-resume",
       "philosophersimprint",
@@ -13657,9 +13665,12 @@
   {
     "name": "customenvs",
     "depend": [
+      "adjustbox",
       "enumitem",
       "fontawesome5",
+      "latex",
       "listofitems",
+      "oberdiek",
       "pas-tableur",
       "pgf",
       "randomlist",
@@ -18115,6 +18126,11 @@
       "subfigure",
       "tools"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "figureversions",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -27248,6 +27264,16 @@
     "tl_depend": []
   },
   {
+    "name": "lua-regression",
+    "depend": [
+      "latex",
+      "luacode",
+      "pgf",
+      "pgfplots"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lua-tinyyaml",
     "depend": [],
     "tl_depend": []
@@ -29842,6 +29868,40 @@
     "tl_depend": []
   },
   {
+    "name": "mohe-book",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "caption",
+      "cleveref",
+      "emptypage",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "float",
+      "fourier",
+      "geometry",
+      "glossaries-extra",
+      "graphics",
+      "hyperref",
+      "lastpage",
+      "latex",
+      "longfigure",
+      "mathtools",
+      "ptext",
+      "tasks",
+      "thmtools",
+      "titlesec",
+      "tocloft",
+      "tools",
+      "totcount",
+      "xcolor",
+      "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "moloch",
     "depend": [
       "etoolbox",
@@ -31429,7 +31489,6 @@
   {
     "name": "notebeamer",
     "depend": [
-      "l3experimental",
       "pgf",
       "tikzpagenodes"
     ],
@@ -32315,6 +32374,27 @@
     "name": "otibet",
     "depend": [
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "ou-tma",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "cleveref",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "isodate",
+      "l3kernel",
+      "lastpage",
+      "tools",
+      "was",
+      "wasysym",
+      "xifthen"
     ],
     "tl_depend": []
   },
@@ -44178,6 +44258,15 @@
     "tl_depend": []
   },
   {
+    "name": "traffic-light-protocol",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "trajan",
     "depend": [],
     "tl_depend": []
@@ -45900,6 +45989,7 @@
       "colortbl",
       "draftwatermark",
       "environ",
+      "fancyhdr",
       "fontawesome5",
       "graphics",
       "hyperref",
