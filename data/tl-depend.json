@@ -2844,6 +2844,13 @@
     "tl_depend": []
   },
   {
+    "name": "beamertheme-cleaneasy",
+    "depend": [
+      "cmbright"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamertheme-cuerna",
     "depend": [
       "amsfonts",
@@ -6519,6 +6526,18 @@
     "tl_depend": []
   },
   {
+    "name": "cistercian",
+    "depend": [
+      "etoolbox",
+      "pgf"
+    ],
+    "tl_depend": [
+      "epstopdf-pkg",
+      "iftex",
+      "pgf"
+    ]
+  },
+  {
     "name": "citation-style-language",
     "depend": [
       "l3kernel",
@@ -9058,6 +9077,7 @@
       "beamerposter",
       "beamersubframe",
       "beamertheme-arguelles",
+      "beamertheme-cleaneasy",
       "beamertheme-cuerna",
       "beamertheme-detlevcm",
       "beamertheme-epyt",
@@ -9180,6 +9200,7 @@
       "circ",
       "circledsteps",
       "circledtext",
+      "cistercian",
       "classics",
       "classpack",
       "clefval",
@@ -34780,16 +34801,25 @@
       "xcolor"
     ],
     "tl_depend": [
+      "anyfontsize",
+      "changepage",
       "crumbs",
       "enumitem",
-      "hyperref",
+      "fontsize",
+      "hardwrap",
+      "href-ul",
+      "ifoddpage",
+      "lastpage",
+      "listings",
       "pagecolor",
       "pgf",
       "pgfopts",
       "qrcode",
       "seqsplit",
+      "soul",
+      "textpos",
       "tikzpagenodes",
-      "tools",
+      "titling",
       "varwidth",
       "xcolor"
     ]
@@ -46011,7 +46041,8 @@
       "url",
       "vmargin",
       "xcolor",
-      "xkeyval"
+      "xkeyval",
+      "xltabular"
     ],
     "tl_depend": []
   },
