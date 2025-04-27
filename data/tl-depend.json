@@ -4879,6 +4879,11 @@
     "tl_depend": []
   },
   {
+    "name": "bracealign",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "bracketkey",
     "depend": [
       "coolstr",
@@ -10826,6 +10831,7 @@
       "boldtensors",
       "bosisio",
       "bpchem",
+      "bracealign",
       "bropd",
       "bussproofs",
       "bussproofs-extra",
@@ -11295,6 +11301,7 @@
       "nl-interval",
       "nndraw",
       "numericplots",
+      "open-everyday-symbols",
       "outilsgeomtikz",
       "papiergurvan",
       "pb-diagram",
@@ -11411,6 +11418,7 @@
       "tikzdotncross",
       "tikzducks",
       "tikzfill",
+      "tikzfxgraph",
       "tikzinclude",
       "tikzlings",
       "tikzmark",
@@ -32209,6 +32217,15 @@
     "tl_depend": []
   },
   {
+    "name": "open-everyday-symbols",
+    "depend": [
+      "etoolbox",
+      "pgf",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "opencolor",
     "depend": [
       "xcolor"
@@ -38841,9 +38858,7 @@
   },
   {
     "name": "scontents",
-    "depend": [
-      "l3packages"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -43559,6 +43574,11 @@
     "depend": [
       "pgf"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikzfxgraph",
+    "depend": [],
     "tl_depend": []
   },
   {
