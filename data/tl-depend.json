@@ -517,6 +517,46 @@
     ]
   },
   {
+    "name": "afperpack",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "caption",
+      "cases",
+      "circuitikz",
+      "csquotes",
+      "eso-pic",
+      "etoolbox",
+      "extarrows",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "jknapltx",
+      "latex",
+      "listings",
+      "lm",
+      "mathfixs",
+      "mathtools",
+      "multirow",
+      "pgfplots",
+      "psnfss",
+      "showlabels",
+      "siunitx",
+      "steinmetz",
+      "tikzdotncross",
+      "tikzfxgraph",
+      "tikzquads",
+      "tikzquests",
+      "titlesec",
+      "tools",
+      "url",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "afthesis",
     "depend": [
       "caption",
@@ -9022,6 +9062,7 @@
       "adrconv",
       "advdate",
       "affilauthor",
+      "afperpack",
       "akktex",
       "akletter",
       "alchemist",
@@ -10048,6 +10089,7 @@
       "ocr-latex",
       "octavo",
       "oldstyle",
+      "onepgnote",
       "onlyamsmath",
       "opcit",
       "opencolor",
@@ -25523,7 +25565,6 @@
       "bigfoot",
       "etoolbox",
       "graphics",
-      "l3experimental",
       "luamml",
       "pdfmanagement-testphase",
       "tagpdf",
@@ -25537,7 +25578,6 @@
       "amsmath",
       "bigfoot",
       "graphics",
-      "l3experimental",
       "latex-lab",
       "luamml",
       "pdfmanagement-testphase",
@@ -32180,6 +32220,15 @@
       "translator",
       "xcolor",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "onepgnote",
+    "depend": [
+      "latex",
+      "pgf",
+      "tcolorbox"
     ],
     "tl_depend": []
   },
@@ -44412,8 +44461,7 @@
     "name": "transparent",
     "depend": [
       "auxhook",
-      "iftex",
-      "l3experimental"
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -46038,6 +46086,7 @@
       "caption",
       "colortbl",
       "draftwatermark",
+      "enumitem",
       "environ",
       "fancyhdr",
       "fontawesome5",
@@ -46051,6 +46100,7 @@
       "psnfss",
       "relsize",
       "setspace",
+      "stackengine",
       "tcolorbox",
       "thmtools",
       "titlesec",
