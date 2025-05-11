@@ -7796,6 +7796,7 @@
       "fonetika",
       "fontawesome",
       "fontawesome5",
+      "fontawesome6",
       "fontmfizz",
       "fonts-churchslavonic",
       "fontscripts",
@@ -10990,6 +10991,7 @@
       "lie-hasse",
       "linearregression",
       "logicproof",
+      "logictools",
       "longdivision",
       "lpform",
       "lplfitch",
@@ -11576,6 +11578,7 @@
       "listofitems",
       "localloc",
       "mathdots",
+      "measurebox",
       "metatex",
       "midnight",
       "mkpattern",
@@ -11610,6 +11613,7 @@
       "shade",
       "simplekv",
       "soul",
+      "stretchy",
       "swrule",
       "systeme",
       "tabto-generic",
@@ -11865,6 +11869,7 @@
       "hobete",
       "hu-berlin-bundle",
       "hustthesis",
+      "hustvisual",
       "iaria",
       "iaria-lite",
       "icsv",
@@ -13158,6 +13163,7 @@
     "name": "creationboites",
     "depend": [
       "fontawesome5",
+      "fontawesome6",
       "simplekv",
       "tcolorbox",
       "xstring"
@@ -13739,6 +13745,7 @@
       "adjustbox",
       "enumitem",
       "fontawesome5",
+      "fontawesome6",
       "latex",
       "listofitems",
       "oberdiek",
@@ -18734,6 +18741,15 @@
     "tl_depend": []
   },
   {
+    "name": "fontawesome6",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "luatexbase"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fontaxes",
     "depend": [],
     "tl_depend": []
@@ -22194,6 +22210,14 @@
     "tl_depend": []
   },
   {
+    "name": "hustvisual",
+    "depend": [
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "hvarabic",
     "depend": [
       "fontspec",
@@ -22260,6 +22284,7 @@
       "fetamont",
       "hologo",
       "l3kernel",
+      "pgf",
       "tools",
       "unicode-math",
       "xits"
@@ -26866,6 +26891,21 @@
     "tl_depend": []
   },
   {
+    "name": "logictools",
+    "depend": [
+      "adjustbox",
+      "amsmath",
+      "bussproofs",
+      "l3kernel",
+      "l3packages",
+      "mathtools",
+      "stmaryrd",
+      "trimspaces",
+      "units"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "logix",
     "depend": [
       "arydshln",
@@ -28788,6 +28828,11 @@
     "tl_depend": []
   },
   {
+    "name": "measurebox",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "mecaso",
     "depend": [
       "amsfonts",
@@ -29595,7 +29640,6 @@
       "graphics",
       "hyperref",
       "hyperxmp",
-      "iftex",
       "kvoptions",
       "l3packages",
       "latex",
@@ -34234,7 +34278,6 @@
       "amsmath",
       "footnotehyper",
       "luacode",
-      "luatexbase",
       "mdwtools",
       "xcolor"
     ],
@@ -35108,7 +35151,9 @@
       "esvect",
       "etoolbox",
       "fancyvrb",
+      "fenetrecas",
       "fontawesome5",
+      "fontawesome6",
       "hologo",
       "iftex",
       "interval",
@@ -35129,9 +35174,12 @@
       "siunitx",
       "tabularray",
       "tcolorbox",
+      "tikz2d-fr",
+      "tikz3d-fr",
       "tkz-tab",
       "tools",
       "units",
+      "varwidth",
       "xcolor",
       "xint",
       "xkeyval",
@@ -39818,6 +39866,7 @@
     "name": "sim-os-menus",
     "depend": [
       "fontawesome5",
+      "fontawesome6",
       "forest",
       "listofitems",
       "oberdiek",
@@ -41109,6 +41158,11 @@
       "xkeyval",
       "xstring"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "stretchy",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -42879,6 +42933,7 @@
     "name": "thematicpuzzle",
     "depend": [
       "fontawesome5",
+      "fontawesome6",
       "listofitems",
       "pgf",
       "simplekv",
@@ -44512,6 +44567,7 @@
     "name": "trivialpursuit",
     "depend": [
       "fontawesome5",
+      "fontawesome6",
       "listofitems",
       "pgf",
       "simplekv",
