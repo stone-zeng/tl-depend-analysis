@@ -1140,7 +1140,8 @@
       "hyperref",
       "iftex",
       "lastpage",
-      "yhmath"
+      "yhmath",
+      "zref"
     ],
     "tl_depend": [
       "aomart.ARCH"
@@ -3035,6 +3036,19 @@
     "name": "beamertheme-simpleplus",
     "depend": [],
     "tl_depend": []
+  },
+  {
+    "name": "beamertheme-spectrum",
+    "depend": [
+      "pgf",
+      "pgf-spectra"
+    ],
+    "tl_depend": [
+      "beamer",
+      "pgf",
+      "pgf-spectra",
+      "tools"
+    ]
   },
   {
     "name": "beamertheme-tcolorbox",
@@ -7853,6 +7867,7 @@
       "jamtimes",
       "jetbrainsmono-otf",
       "josefin",
+      "juliamono",
       "junicode",
       "junicodevf",
       "kixfont",
@@ -9140,6 +9155,7 @@
       "beamertheme-saintpetersburg",
       "beamertheme-simpledarkblue",
       "beamertheme-simpleplus",
+      "beamertheme-spectrum",
       "beamertheme-tcolorbox",
       "beamertheme-trigon",
       "beamertheme-upenn-bc",
@@ -10415,6 +10431,7 @@
       "svn-prov",
       "svninfo",
       "swfigure",
+      "switch",
       "swungdash",
       "syntax",
       "synthslant",
@@ -11598,6 +11615,7 @@
       "pdftoolbox",
       "pitex",
       "placeins-plain",
+      "plain-widow",
       "plainpkg",
       "plipsum",
       "plnfss",
@@ -14311,10 +14329,7 @@
   {
     "name": "ddphonism",
     "depend": [
-      "etoolbox",
-      "l3packages",
-      "pgf",
-      "xstring"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -24384,6 +24399,15 @@
     "tl_depend": []
   },
   {
+    "name": "juliamono",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "jumplines",
     "depend": [
       "babel",
@@ -26635,6 +26659,7 @@
       "latex",
       "natbib",
       "psnfss",
+      "svg",
       "titling",
       "tools",
       "xcolor"
@@ -34406,6 +34431,11 @@
     "tl_depend": []
   },
   {
+    "name": "plain-widow",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "plainpkg",
     "depend": [
       "catcodes"
@@ -41558,6 +41588,11 @@
     "tl_depend": []
   },
   {
+    "name": "switch",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "swrule",
     "depend": [],
     "tl_depend": []
@@ -41670,6 +41705,7 @@
   {
     "name": "systeme",
     "depend": [
+      "simplekv",
       "xstring"
     ],
     "tl_depend": []
