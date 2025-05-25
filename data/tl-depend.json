@@ -4111,7 +4111,8 @@
       "amsmath",
       "fmtcount",
       "iftex",
-      "latex"
+      "latex",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -8218,6 +8219,7 @@
       "lexref",
       "ling-macros",
       "linguex",
+      "linguistix",
       "liturg",
       "metrix",
       "nnext",
@@ -10544,6 +10546,7 @@
       "uassign",
       "ucs",
       "uebungsblatt",
+      "ullrcorners",
       "umoline",
       "underlin",
       "underoverlap",
@@ -10641,6 +10644,7 @@
       "xreview",
       "xsavebox",
       "xsim",
+      "xsipa",
       "xstring",
       "xtab",
       "xurl",
@@ -18766,7 +18770,9 @@
   },
   {
     "name": "fontaxes",
-    "depend": [],
+    "depend": [
+      "figureversions"
+    ],
     "tl_depend": []
   },
   {
@@ -26637,6 +26643,14 @@
     "tl_depend": []
   },
   {
+    "name": "linguistix",
+    "depend": [
+      "fontspec",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "linop",
     "depend": [
       "l3packages",
@@ -26766,8 +26780,6 @@
   {
     "name": "litetable",
     "depend": [
-      "l3kernel",
-      "l3packages",
       "pgf"
     ],
     "tl_depend": []
@@ -26921,12 +26933,9 @@
       "adjustbox",
       "amsmath",
       "bussproofs",
-      "l3kernel",
-      "l3packages",
-      "mathtools",
       "stmaryrd",
       "trimspaces",
-      "units"
+      "xfrac"
     ],
     "tl_depend": []
   },
@@ -34176,7 +34185,6 @@
       "amsmath",
       "etoolbox",
       "l3packages",
-      "physics",
       "siunitx",
       "xcolor",
       "xstring"
@@ -45509,6 +45517,11 @@
     "tl_depend": []
   },
   {
+    "name": "ullrcorners",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "ulqda",
     "depend": [
       "dot2texi",
@@ -48079,6 +48092,21 @@
       "translations"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "xsipa",
+    "depend": [
+      "iftex",
+      "l3packages",
+      "tipa",
+      "xunicode"
+    ],
+    "tl_depend": [
+      "iftex",
+      "l3packages",
+      "tipa",
+      "xunicode"
+    ]
   },
   {
     "name": "xskak",
