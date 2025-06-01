@@ -3040,13 +3040,11 @@
   {
     "name": "beamertheme-spectrum",
     "depend": [
-      "pgf",
-      "pgf-spectra"
+      "pgf"
     ],
     "tl_depend": [
       "beamer",
       "pgf",
-      "pgf-spectra",
       "tools"
     ]
   },
@@ -11411,6 +11409,7 @@
       "pxpic",
       "qcircuit",
       "qrcode",
+      "qrcodetikz",
       "quantikz",
       "randbild",
       "randomwalk",
@@ -21697,6 +21696,7 @@
   {
     "name": "highlightx",
     "depend": [
+      "etoolbox",
       "pgf",
       "simplekv",
       "soul",
@@ -32304,6 +32304,7 @@
   {
     "name": "onepgnote",
     "depend": [
+      "l3kernel",
       "latex",
       "pgf",
       "tcolorbox"
@@ -35192,6 +35193,7 @@
       "fenetrecas",
       "fontawesome5",
       "fontawesome6",
+      "graphics",
       "hologo",
       "iftex",
       "interval",
@@ -36812,6 +36814,14 @@
     "depend": [
       "xcolor",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "qrcodetikz",
+    "depend": [
+      "pgf",
+      "qrcode"
     ],
     "tl_depend": []
   },
@@ -44103,7 +44113,7 @@
   {
     "name": "tkz-elements",
     "depend": [
-      "unicode-math"
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -45138,7 +45148,6 @@
       "background",
       "cmbright",
       "crop",
-      "ean13isbn",
       "environ",
       "eso-pic",
       "etoolbox",
