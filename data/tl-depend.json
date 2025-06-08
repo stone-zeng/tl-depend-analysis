@@ -262,6 +262,8 @@
       "inconsolata",
       "latex",
       "libertine",
+      "libertinus-fonts",
+      "lm-math",
       "microtype",
       "natbib",
       "ncctools",
@@ -7626,6 +7628,7 @@
     "tl_depend": [
       "collection-basic",
       "context",
+      "context-animation",
       "context-calendar-examples",
       "context-chat",
       "context-collating-marks",
@@ -8219,6 +8222,7 @@
       "linguex",
       "linguistix",
       "liturg",
+      "liturgy-cw",
       "metrix",
       "nnext",
       "opbible",
@@ -10766,6 +10770,7 @@
       "emoji",
       "emojicite",
       "enigma",
+      "farbe",
       "gitinfo-lua",
       "ideavault",
       "innerscript",
@@ -11079,6 +11084,9 @@
       "pseudocode",
       "pythonhighlight",
       "qsharp",
+      "quantikz",
+      "quantum-chemistry-bonn",
+      "quantumcubemodel",
       "quickreaction",
       "quiver",
       "qworld",
@@ -11410,7 +11418,6 @@
       "qcircuit",
       "qrcode",
       "qrcodetikz",
-      "quantikz",
       "randbild",
       "randomwalk",
       "realhats",
@@ -12610,6 +12617,13 @@
       "manfnt-font",
       "mflogo-font",
       "stmaryrd"
+    ]
+  },
+  {
+    "name": "context-animation",
+    "depend": [],
+    "tl_depend": [
+      "context"
     ]
   },
   {
@@ -16490,7 +16504,6 @@
   {
     "name": "enumext",
     "depend": [
-      "scontents",
       "tools"
     ],
     "tl_depend": []
@@ -17783,6 +17796,11 @@
   },
   {
     "name": "faq-fr-gutenberg",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "farbe",
     "depend": [],
     "tl_depend": []
   },
@@ -19126,6 +19144,7 @@
       "tools",
       "ulem",
       "units",
+      "varwidth",
       "xcolor",
       "xstring"
     ],
@@ -25618,7 +25637,6 @@
     "depend": [
       "amsmath",
       "bigfoot",
-      "etoolbox",
       "graphics",
       "luamml",
       "pdfmanagement-testphase",
@@ -26796,6 +26814,20 @@
       "ecclesiastic",
       "graphics",
       "lettrine"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "liturgy-cw",
+    "depend": [
+      "bibleref",
+      "booktabs",
+      "fontspec",
+      "framed",
+      "geometry",
+      "titlesec",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -35161,6 +35193,7 @@
       "simplekv",
       "siunitx",
       "stackengine",
+      "stringstrings",
       "tcolorbox",
       "tools",
       "xcolor",
@@ -36877,6 +36910,16 @@
     "tl_depend": []
   },
   {
+    "name": "quantum-chemistry-bonn",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "siunitx",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "quantumarticle",
     "depend": [
       "amsfonts",
@@ -36899,6 +36942,15 @@
       "xcolor",
       "xkeyval",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "quantumcubemodel",
+    "depend": [
+      "braket",
+      "pgf",
+      "xcolor"
     ],
     "tl_depend": []
   },
