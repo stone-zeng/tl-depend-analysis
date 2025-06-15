@@ -6640,6 +6640,13 @@
     "tl_depend": []
   },
   {
+    "name": "citeright",
+    "depend": [
+      "etoolbox"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "cje",
     "depend": [
       "amsfonts",
@@ -6900,12 +6907,23 @@
   {
     "name": "cloze",
     "depend": [
+      "amsmath",
+      "farbe",
       "fontspec",
-      "kvoptions",
-      "l3packages",
-      "luatexbase",
+      "forest",
+      "graphics",
+      "hyperref",
+      "latex",
+      "lparse",
+      "luakeys",
+      "mdframed",
+      "minted",
+      "paralist",
+      "pgf",
       "setspace",
       "stackengine",
+      "titlesec",
+      "tools",
       "transparent",
       "ulem",
       "xcolor"
@@ -7440,6 +7458,7 @@
       "citation-style-language",
       "citeall",
       "citeref",
+      "citeright",
       "collection-latex",
       "collref",
       "compactbib",
@@ -7588,6 +7607,7 @@
       "pythontex",
       "runtexshebang",
       "seetexk",
+      "show-pdf-tags",
       "spix",
       "sqltex",
       "srcredact",
@@ -7632,7 +7652,6 @@
       "context-calendar-examples",
       "context-chat",
       "context-collating-marks",
-      "context-companion-fonts",
       "context-cyrillicnumbers",
       "context-filter",
       "context-gnuplot",
@@ -7645,7 +7664,6 @@
       "context-simpleslides",
       "context-squares",
       "context-sudoku",
-      "context-texlive",
       "context-transliterator",
       "context-typescripts",
       "context-vim",
@@ -12606,17 +12624,10 @@
     "name": "context",
     "depend": [],
     "tl_depend": [
-      "amsfonts",
-      "context-companion-fonts",
-      "context-texlive",
       "context.ARCH",
+      "dejavu",
       "lm",
-      "lm-math",
-      "luajittex",
-      "luatex",
-      "manfnt-font",
-      "mflogo-font",
-      "stmaryrd"
+      "lm-math"
     ]
   },
   {
@@ -12646,11 +12657,6 @@
     "tl_depend": [
       "context"
     ]
-  },
-  {
-    "name": "context-companion-fonts",
-    "depend": [],
-    "tl_depend": []
   },
   {
     "name": "context-cyrillicnumbers",
@@ -12684,12 +12690,17 @@
     "name": "context-legacy",
     "depend": [],
     "tl_depend": [
+      "amsfonts",
       "context",
       "context-legacy.ARCH",
-      "metapost",
+      "lm",
+      "ly1",
+      "manfnt-font",
+      "mflogo-font",
+      "mptopdf",
       "mptopdf",
       "pdftex",
-      "xetex"
+      "stmaryrd"
     ]
   },
   {
@@ -12739,13 +12750,6 @@
     "depend": [],
     "tl_depend": [
       "context"
-    ]
-  },
-  {
-    "name": "context-texlive",
-    "depend": [],
-    "tl_depend": [
-      "context-texlive.ARCH"
     ]
   },
   {
@@ -36418,6 +36422,7 @@
       "biblatex",
       "booktabs",
       "caption",
+      "csquotes",
       "eso-pic",
       "everyshi",
       "fancyvrb",
@@ -38590,25 +38595,54 @@
     "name": "scheme-context",
     "depend": [],
     "tl_depend": [
+      "almfixed",
       "antt",
-      "asana-math",
-      "ccicons",
+      "circuitikz",
+      "cm-unicode",
       "collection-context",
       "collection-metapost",
+      "concmath-otf",
+      "context-animation",
+      "context-calendar-examples",
+      "context-collating-marks",
+      "context-cyrillicnumbers",
+      "context-filter",
+      "context-gnuplot",
+      "context-handlecsv",
+      "context-letter",
+      "context-mathsets",
+      "context-pocketdiary",
+      "context-simpleslides",
+      "context-squares",
+      "context-sudoku",
+      "context-transliterator",
+      "context-vim",
+      "context-visualcounter",
       "dejavu",
-      "eulervm",
+      "ebgaramond",
+      "erewhon",
+      "erewhon-math",
+      "euler-math",
+      "fontawesome",
+      "garamond-math",
+      "gentium-sil",
       "iwona",
+      "kpfonts-otf",
       "kurier",
-      "ly1",
-      "manfnt-font",
+      "libertinus-fonts",
+      "lm",
+      "lm-math",
+      "lua-widow-control",
       "marvosym",
-      "mflogo-font",
+      "oldstandard",
+      "pgf",
+      "pgfplots",
+      "plex",
       "poltawski",
-      "pxfonts",
       "tex-gyre",
       "tex-gyre-math",
-      "txfonts",
-      "wasy",
+      "xcharter",
+      "xcharter-math",
       "xits"
     ]
   },
@@ -39766,6 +39800,15 @@
     "name": "shorttoc",
     "depend": [],
     "tl_depend": []
+  },
+  {
+    "name": "show-pdf-tags",
+    "depend": [
+      "luatodonotes"
+    ],
+    "tl_depend": [
+      "show-pdf-tags.ARCH"
+    ]
   },
   {
     "name": "show2e",
