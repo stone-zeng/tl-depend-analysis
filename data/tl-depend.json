@@ -498,6 +498,28 @@
     "tl_depend": []
   },
   {
+    "name": "aeskwadraat",
+    "depend": [
+      "babel",
+      "eurosym",
+      "fancyhdr",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "iftex",
+      "kix",
+      "latex",
+      "lineno",
+      "merriweather",
+      "newtx",
+      "pgf",
+      "substr",
+      "tikzducks",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "aesupp",
     "depend": [
       "latex"
@@ -5401,12 +5423,13 @@
   {
     "name": "cahierprof",
     "depend": [
-      "colortbl",
       "geometry",
+      "l3packages",
       "latex",
       "microtype",
+      "nicematrix",
       "pgf",
-      "tools"
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -6921,11 +6944,8 @@
       "paralist",
       "pgf",
       "setspace",
-      "stackengine",
       "titlesec",
       "tools",
-      "transparent",
-      "ulem",
       "xcolor"
     ],
     "tl_depend": []
@@ -11016,6 +11036,7 @@
       "hepparticles",
       "hepthesis",
       "hepunits",
+      "hideproofs",
       "ibrackets",
       "includernw",
       "interval",
@@ -11588,6 +11609,7 @@
       "dowith",
       "eijkhout",
       "encxvlna",
+      "eoldef",
       "epigram",
       "epsf",
       "epsf-dvipdfmx",
@@ -11679,6 +11701,7 @@
       "ulem",
       "upca",
       "varisize",
+      "visualtoks",
       "xii",
       "xii-lat",
       "xintsession",
@@ -11819,6 +11842,7 @@
       "acmconf",
       "active-conf",
       "adfathesis",
+      "aeskwadraat",
       "afthesis",
       "aguplus",
       "aiaa",
@@ -12038,6 +12062,7 @@
       "stellenbosch-2",
       "suftesi",
       "sugconf",
+      "sysuthesis",
       "tabriz-thesis",
       "technion-thesis-template",
       "texilikechaps",
@@ -16592,6 +16617,11 @@
       "stmaryrd",
       "xstring"
     ]
+  },
+  {
+    "name": "eoldef",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "epcqrcode",
@@ -21703,6 +21733,18 @@
     "depend": [
       "graphics",
       "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hideproofs",
+    "depend": [
+      "amscls",
+      "environ",
+      "l3kernel",
+      "l3packages",
+      "latex",
+      "oberdiek"
     ],
     "tl_depend": []
   },
@@ -34349,6 +34391,7 @@
       "footnotehyper",
       "luacode",
       "mdwtools",
+      "tcolorbox",
       "xcolor"
     ],
     "tl_depend": []
@@ -41824,6 +41867,41 @@
     "tl_depend": []
   },
   {
+    "name": "sysuthesis",
+    "depend": [
+      "amscls",
+      "amsmath",
+      "asana-math",
+      "biblatex",
+      "bookmark",
+      "caption",
+      "ctex",
+      "emptypage",
+      "fancyhdr",
+      "firamath",
+      "footmisc",
+      "garamond-math",
+      "gbt7714",
+      "geometry",
+      "gfsneohellenicmath",
+      "graphics",
+      "hyperref",
+      "l3packages",
+      "lete-sans-math",
+      "libertinus-fonts",
+      "lm-math",
+      "luciole",
+      "pgf",
+      "plex",
+      "stix",
+      "stix2-otf",
+      "tex-gyre-math",
+      "unicode-math",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "t-angles",
     "depend": [
       "iftex"
@@ -46862,6 +46940,11 @@
   },
   {
     "name": "visualtikz",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "visualtoks",
     "depend": [],
     "tl_depend": []
   },
