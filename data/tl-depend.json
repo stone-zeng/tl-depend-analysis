@@ -3817,7 +3817,8 @@
       "l3packages",
       "pgf",
       "pict2e",
-      "xcolor"
+      "xcolor",
+      "xsavebox"
     ],
     "tl_depend": []
   },
@@ -8213,6 +8214,7 @@
       "sudokubundle",
       "tangramtikz",
       "thematicpuzzle",
+      "tictactoe",
       "tikz-triminos",
       "trivialpursuit",
       "twoxtwogame",
@@ -10085,6 +10087,7 @@
       "multiexpand",
       "multifootnote",
       "multilang",
+      "multinotes",
       "multiple-choice",
       "multirow",
       "multitoc",
@@ -11693,6 +11696,7 @@
       "texdimens",
       "texinfo",
       "timetable",
+      "tokmap",
       "tracklang",
       "transparent-io",
       "treetex",
@@ -13230,6 +13234,7 @@
       "fontawesome6",
       "simplekv",
       "tcolorbox",
+      "twemojis",
       "xstring"
     ],
     "tl_depend": []
@@ -22482,8 +22487,6 @@
   {
     "name": "hyperref",
     "depend": [
-      "atbegshi",
-      "atveryend",
       "bitset",
       "etoolbox",
       "gettitlestring",
@@ -27786,9 +27789,7 @@
   {
     "name": "luamml",
     "depend": [
-      "amsmath",
-      "luatodonotes",
-      "tools"
+      "luatodonotes"
     ],
     "tl_depend": []
   },
@@ -30531,6 +30532,32 @@
       "etoolbox",
       "pgf",
       "pgfopts"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "multinotes",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "caption",
+      "comment",
+      "etoolbox",
+      "float",
+      "graphics",
+      "l3packages",
+      "paracol",
+      "pgf",
+      "setspace",
+      "tcolorbox",
+      "titling",
+      "tools",
+      "translations",
+      "trimspaces",
+      "xifthen",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -37715,7 +37742,6 @@
   {
     "name": "rerunfilecheck",
     "depend": [
-      "atveryend",
       "infwarerr",
       "kvoptions",
       "pdftexcmds",
@@ -41395,12 +41421,14 @@
   {
     "name": "struktex",
     "depend": [
+      "cleveref",
       "curves",
       "graphics",
       "hyperref",
       "iftex",
       "latex",
       "pict2e",
+      "tools",
       "url"
     ],
     "tl_depend": []
@@ -42159,7 +42187,6 @@
     "depend": [
       "etoolbox",
       "latex-lab",
-      "pdfmanagement-testphase",
       "xpatch"
     ],
     "tl_depend": []
@@ -43444,6 +43471,14 @@
     "tl_depend": []
   },
   {
+    "name": "tictactoe",
+    "depend": [
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tidyres",
     "depend": [
       "amsfonts",
@@ -44494,6 +44529,11 @@
     "depend": [
       "latex"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "tokmap",
+    "depend": [],
     "tl_depend": []
   },
   {
