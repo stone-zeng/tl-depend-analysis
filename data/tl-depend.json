@@ -1610,10 +1610,17 @@
   {
     "name": "ascelike",
     "depend": [
+      "babel",
+      "caption",
       "endfloat",
+      "float",
       "latex",
       "lineno",
-      "setspace"
+      "microtype",
+      "newtx",
+      "preprint",
+      "setspace",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -5427,6 +5434,7 @@
       "geometry",
       "l3packages",
       "latex",
+      "listofitems",
       "microtype",
       "nicematrix",
       "pgf",
@@ -6946,8 +6954,7 @@
       "pgf",
       "setspace",
       "titlesec",
-      "tools",
-      "xcolor"
+      "tools"
     ],
     "tl_depend": []
   },
@@ -11493,6 +11500,7 @@
       "tikz-bbox",
       "tikz-bpmn",
       "tikz-cd",
+      "tikz-cookingsymbols",
       "tikz-decofonts",
       "tikz-dependency",
       "tikz-dimline",
@@ -26455,7 +26463,6 @@
     "depend": [
       "fontspec",
       "iftex",
-      "latex",
       "libertinus-fonts",
       "newunicodechar",
       "unicode-math",
@@ -27627,7 +27634,8 @@
   {
     "name": "luafindfont",
     "depend": [
-      "lualibs"
+      "lualibs",
+      "xindex"
     ],
     "tl_depend": [
       "luafindfont.ARCH"
@@ -37785,7 +37793,6 @@
       "fancyhdr",
       "footmisc",
       "hyperref",
-      "lastpage",
       "mathdesign",
       "microtype",
       "natbib",
@@ -43583,6 +43590,14 @@
     "tl_depend": []
   },
   {
+    "name": "tikz-cookingsymbols",
+    "depend": [
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz-decofonts",
     "depend": [
       "listofitems",
@@ -46889,6 +46904,7 @@
       "multido",
       "ncctools",
       "newunicodechar",
+      "pgf",
       "setspace",
       "tabto-ltx",
       "tools"
