@@ -10494,6 +10494,7 @@
       "tableaux",
       "tablefootnote",
       "tableof",
+      "tablericons",
       "tablists",
       "tabls",
       "tablvar",
@@ -10818,6 +10819,7 @@
       "emoji",
       "emojicite",
       "enigma",
+      "fancymag",
       "farbe",
       "gitinfo-lua",
       "ideavault",
@@ -13758,7 +13760,15 @@
   {
     "name": "curriculum-vitae",
     "depend": [
+      "etoolbox",
+      "fira",
+      "fontspec",
+      "l3packages",
       "latex",
+      "microtype",
+      "parskip",
+      "ragged2e",
+      "setspace",
       "titlesec"
     ],
     "tl_depend": []
@@ -13823,6 +13833,7 @@
       "enumitem",
       "fontawesome5",
       "fontawesome6",
+      "inlinegraphicx",
       "latex",
       "listofitems",
       "oberdiek",
@@ -13833,6 +13844,7 @@
       "tabularray",
       "tcolorbox",
       "tools",
+      "twemojis",
       "varwidth",
       "xcolor",
       "xint",
@@ -17764,6 +17776,37 @@
     "tl_depend": []
   },
   {
+    "name": "fancymag",
+    "depend": [
+      "adjustbox",
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "caption",
+      "eso-pic",
+      "everypage",
+      "fancyhdr",
+      "fontspec",
+      "fundus-calligra",
+      "geometry",
+      "graphics",
+      "latex",
+      "lettrine",
+      "lipsum",
+      "pdfrender",
+      "pgf",
+      "preprint",
+      "shadowtext",
+      "textpos",
+      "titlesec",
+      "tools",
+      "wrapfig",
+      "xcolor",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fancynum",
     "depend": [],
     "tl_depend": []
@@ -18184,6 +18227,7 @@
   {
     "name": "ffcode",
     "depend": [
+      "fancyvrb",
       "listings",
       "pgfopts",
       "tcolorbox",
@@ -42015,6 +42059,17 @@
     "name": "tableof",
     "depend": [
       "atveryend"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tablericons",
+    "depend": [
+      "graphics",
+      "latex",
+      "simplekv",
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
