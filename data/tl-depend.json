@@ -3071,7 +3071,8 @@
   {
     "name": "beamertheme-spectrum",
     "depend": [
-      "pgf"
+      "pgf",
+      "xkeyval"
     ],
     "tl_depend": [
       "beamer",
@@ -3082,7 +3083,8 @@
   {
     "name": "beamertheme-tcolorbox",
     "depend": [
-      "tcolorbox"
+      "tcolorbox",
+      "xkeyval"
     ],
     "tl_depend": [
       "beamer",
@@ -10300,6 +10302,7 @@
       "quotchap",
       "quoting",
       "quotmark",
+      "rainbowbrackets",
       "ran_toks",
       "randexam",
       "randintlist",
@@ -10759,6 +10762,7 @@
       "latexbug",
       "lineno",
       "listings",
+      "ltx-talk",
       "lwarp",
       "mathspec",
       "mathtools",
@@ -10870,6 +10874,7 @@
       "luarandom",
       "luaset",
       "luatbls",
+      "luatex-type-definitions",
       "luatex85",
       "luatexbase",
       "luatexko",
@@ -11407,6 +11412,7 @@
       "liftarm",
       "lpic",
       "lroundrect",
+      "lua-tikz3dtools",
       "luamesh",
       "luasseq",
       "maker",
@@ -11424,6 +11430,7 @@
       "nndraw",
       "numericplots",
       "open-everyday-symbols",
+      "openmoji",
       "outilsgeomtikz",
       "papiergurvan",
       "pb-diagram",
@@ -13833,6 +13840,7 @@
       "enumitem",
       "fontawesome5",
       "fontawesome6",
+      "graphics",
       "inlinegraphicx",
       "latex",
       "listofitems",
@@ -23943,6 +23951,7 @@
   {
     "name": "ipsum",
     "depend": [
+      "kvoptions",
       "simplekv",
       "xint",
       "xstring"
@@ -24014,7 +24023,6 @@
   {
     "name": "isodoc",
     "depend": [
-      "fancyhdr",
       "forarray",
       "graphics",
       "hyperref",
@@ -27424,6 +27432,21 @@
     "tl_depend": []
   },
   {
+    "name": "ltx-talk",
+    "depend": [
+      "amsmath",
+      "graphics",
+      "hyperref",
+      "lm",
+      "newcomputermodern",
+      "relsize",
+      "sansmathfonts",
+      "unicode-math",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "ltxcmds",
     "depend": [],
     "tl_depend": []
@@ -27545,6 +27568,13 @@
       "luacode",
       "pgf",
       "pgfplots"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "lua-tikz3dtools",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -27992,6 +28022,11 @@
       "tex-ini-files",
       "unicode-data"
     ]
+  },
+  {
+    "name": "luatex-type-definitions",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "luatex85",
@@ -32514,6 +32549,17 @@
     "name": "opencolor",
     "depend": [
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "openmoji",
+    "depend": [
+      "graphics",
+      "latex",
+      "simplekv",
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -37282,6 +37328,16 @@
     "depend": [
       "everysel",
       "footmisc"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "rainbowbrackets",
+    "depend": [
+      "kvoptions",
+      "l3kernel",
+      "l3packages",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -42248,7 +42304,6 @@
     "name": "tagpdf",
     "depend": [
       "etoolbox",
-      "latex-lab",
       "xpatch"
     ],
     "tl_depend": []
@@ -43655,9 +43710,11 @@
   {
     "name": "tikz-decofonts",
     "depend": [
+      "latex",
       "listofitems",
       "pgf",
       "simplekv",
+      "tools",
       "xint",
       "xstring"
     ],
