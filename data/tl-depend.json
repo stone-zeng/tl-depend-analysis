@@ -138,6 +138,8 @@
     "name": "abntexto",
     "depend": [
       "csquotes",
+      "enumitem",
+      "etoolbox",
       "geometry",
       "graphics",
       "latex"
@@ -5091,6 +5093,11 @@
     "tl_depend": []
   },
   {
+    "name": "broydensolve",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "brushscr",
     "depend": [],
     "tl_depend": []
@@ -7635,6 +7642,7 @@
       "ppmcheckpdf",
       "purifyeps",
       "pythontex",
+      "runtexfile",
       "runtexshebang",
       "seetexk",
       "show-pdf-tags",
@@ -9973,6 +9981,7 @@
       "longfbox",
       "longfigure",
       "longnamefilelist",
+      "longtwocolumn",
       "loops",
       "lsc",
       "lscapeenhanced",
@@ -10955,6 +10964,7 @@
       "bpchem",
       "bracealign",
       "bropd",
+      "broydensolve",
       "bussproofs",
       "bussproofs-extra",
       "bytefield",
@@ -11070,6 +11080,7 @@
       "letterswitharrows",
       "lie-hasse",
       "linearregression",
+      "linkedthm",
       "logicproof",
       "logictools",
       "longdivision",
@@ -26777,6 +26788,15 @@
     "tl_depend": []
   },
   {
+    "name": "linkedthm",
+    "depend": [
+      "amscls",
+      "hyperref",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "linop",
     "depend": [
       "l3packages",
@@ -27165,6 +27185,11 @@
     "depend": [
       "fileinfo"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "longtwocolumn",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -31185,6 +31210,7 @@
       "pgf",
       "pgfmorepages",
       "pgfplots",
+      "psnfss",
       "pst-3dplot",
       "pst-bezier",
       "pst-eucl",
@@ -37337,7 +37363,8 @@
       "kvoptions",
       "l3kernel",
       "l3packages",
-      "xcolor"
+      "xcolor",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -38404,6 +38431,16 @@
       "xstring"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "runtexfile",
+    "depend": [
+      "lualibs",
+      "xindex"
+    ],
+    "tl_depend": [
+      "runtexfile.ARCH"
+    ]
   },
   {
     "name": "runtexshebang",
@@ -47113,7 +47150,9 @@
   },
   {
     "name": "visualtoks",
-    "depend": [],
+    "depend": [
+      "tokmap"
+    ],
     "tl_depend": []
   },
   {
