@@ -1479,7 +1479,6 @@
     "name": "argumentation",
     "depend": [
       "amsmath",
-      "etoolbox",
       "pgf",
       "pgfopts",
       "refcount",
@@ -5993,6 +5992,14 @@
     "tl_depend": []
   },
   {
+    "name": "char2path",
+    "depend": [
+      "etoolbox",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "charissil",
     "depend": [
       "fontaxes",
@@ -7869,6 +7876,7 @@
       "fontawesome",
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "fontmfizz",
       "fonts-churchslavonic",
       "fontscripts",
@@ -8206,6 +8214,7 @@
       "logicpuzzle",
       "mahjong",
       "maze",
+      "multi-sudoku",
       "musikui",
       "nimsticks",
       "onedown",
@@ -10820,6 +10829,7 @@
       "barracuda",
       "bezierplot",
       "blopentype",
+      "char2path",
       "checkcites",
       "chickenize",
       "chinese-jfm",
@@ -10912,6 +10922,7 @@
       "plantuml",
       "pyluatex",
       "scikgtex",
+      "seatingchart",
       "selnolig",
       "semesterplannerlua",
       "showhyphenation",
@@ -11067,6 +11078,7 @@
       "ibrackets",
       "includernw",
       "interval",
+      "intexgral",
       "ionumbers",
       "isomath",
       "isphysicalmath",
@@ -11426,6 +11438,7 @@
       "lua-tikz3dtools",
       "luamesh",
       "luasseq",
+      "lucide-icons",
       "maker",
       "makeshape",
       "maritime",
@@ -11442,6 +11455,7 @@
       "numericplots",
       "open-everyday-symbols",
       "openmoji",
+      "optikz",
       "outilsgeomtikz",
       "papiergurvan",
       "pb-diagram",
@@ -11547,6 +11561,7 @@
       "tikz-qtree",
       "tikz-relay",
       "tikz-sfc",
+      "tikz-shields",
       "tikz-swigs",
       "tikz-timing",
       "tikz-trackschematic",
@@ -18896,6 +18911,15 @@
     "tl_depend": []
   },
   {
+    "name": "fontawesome7",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "luatexbase"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fontaxes",
     "depend": [
       "figureversions"
@@ -23842,6 +23866,15 @@
     "tl_depend": []
   },
   {
+    "name": "intexgral",
+    "depend": [
+      "derivative",
+      "l3kernel",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "intopdf",
     "depend": [
       "hyperref",
@@ -28172,6 +28205,17 @@
     "tl_depend": []
   },
   {
+    "name": "lucide-icons",
+    "depend": [
+      "graphics",
+      "latex",
+      "simplekv",
+      "tools",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luciole",
     "depend": [
       "iftex",
@@ -30562,6 +30606,17 @@
     "tl_depend": []
   },
   {
+    "name": "multi-sudoku",
+    "depend": [
+      "kvoptions",
+      "l3packages",
+      "latex",
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "multiaudience",
     "depend": [
       "environ",
@@ -32651,6 +32706,16 @@
       "mathtools",
       "tools",
       "xifthen"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "optikz",
+    "depend": [
+      "amsfonts",
+      "l3packages",
+      "pgf",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -39525,6 +39590,15 @@
     "tl_depend": []
   },
   {
+    "name": "seatingchart",
+    "depend": [
+      "etoolbox",
+      "luacode",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "secdot",
     "depend": [],
     "tl_depend": []
@@ -43969,6 +44043,18 @@
   {
     "name": "tikz-sfc",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "tikz-shields",
+    "depend": [
+      "fontawesome",
+      "hyperref",
+      "latex",
+      "pgf",
+      "tcolorbox",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
