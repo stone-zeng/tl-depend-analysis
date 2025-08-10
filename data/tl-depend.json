@@ -73,12 +73,15 @@
     "name": "aastex",
     "depend": [
       "amsfonts",
+      "amsmath",
       "epsf",
       "graphics",
       "hyperref",
       "latex",
       "lineno",
+      "natbib",
       "psnfss",
+      "textcase",
       "tools",
       "ulem",
       "url",
@@ -795,17 +798,24 @@
       "algorithmicx",
       "amsfonts",
       "etoolbox",
-      "fancyvrb",
-      "marginnote",
       "pgf",
       "pgfopts",
       "ragged2e",
-      "todonotes",
-      "tools",
       "varwidth",
       "xcolor"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "algorithmicx",
+      "algorithmicx",
+      "amsfonts",
+      "etoolbox",
+      "pgf",
+      "pgf",
+      "pgfopts",
+      "ragged2e",
+      "varwidth",
+      "xcolor"
+    ]
   },
   {
     "name": "aligned-overset",
@@ -7877,6 +7887,7 @@
       "fontawesome5",
       "fontawesome6",
       "fontawesome7",
+      "fontawesomescaled",
       "fontmfizz",
       "fonts-churchslavonic",
       "fontscripts",
@@ -9590,6 +9601,7 @@
       "enumext",
       "enumitem",
       "enumitem-zref",
+      "enumsub",
       "envbig",
       "enverb",
       "environ",
@@ -11220,6 +11232,7 @@
       "temporal-logic",
       "tensind",
       "tensor",
+      "tensormatrix",
       "tex-ewd",
       "textgreek",
       "textopo",
@@ -11962,6 +11975,7 @@
       "fcavtex",
       "fcltxdoc",
       "fei",
+      "fhj-script",
       "ftc-notebook",
       "gaceta",
       "gammas",
@@ -13275,6 +13289,7 @@
     "depend": [
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "simplekv",
       "tcolorbox",
       "twemojis",
@@ -13325,6 +13340,7 @@
   {
     "name": "crossrefenum",
     "depend": [
+      "expkv-bundle",
       "zref"
     ],
     "tl_depend": []
@@ -13866,6 +13882,7 @@
       "enumitem",
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "graphics",
       "inlinegraphicx",
       "latex",
@@ -16617,6 +16634,16 @@
     "tl_depend": []
   },
   {
+    "name": "enumsub",
+    "depend": [
+      "enumitem",
+      "etoolbox",
+      "l3packages",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "envbig",
     "depend": [],
     "tl_depend": []
@@ -18304,6 +18331,18 @@
     "tl_depend": []
   },
   {
+    "name": "fhj-script",
+    "depend": [
+      "etoolbox",
+      "hyperref",
+      "koma-script",
+      "supertabular",
+      "tools",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fifinddo-info",
     "depend": [],
     "tl_depend": []
@@ -18916,6 +18955,21 @@
       "l3kernel",
       "l3packages",
       "luatexbase"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "fontawesomescaled",
+    "depend": [
+      "fontawesome",
+      "fontawesome5",
+      "fontawesome6",
+      "fontawesome7",
+      "graphics",
+      "latex",
+      "relsize",
+      "simplekv",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -35489,6 +35543,7 @@
       "fenetrecas",
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "graphics",
       "hologo",
       "iftex",
@@ -37271,6 +37326,8 @@
     "name": "quizztex",
     "depend": [
       "fontawesome5",
+      "fontawesome6",
+      "fontawesome7",
       "oberdiek",
       "pgf",
       "simplekv",
@@ -38500,8 +38557,7 @@
   {
     "name": "runtexfile",
     "depend": [
-      "lualibs",
-      "xindex"
+      "lualibs"
     ],
     "tl_depend": [
       "runtexfile.ARCH"
@@ -40297,6 +40353,7 @@
     "depend": [
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "forest",
       "listofitems",
       "oberdiek",
@@ -42702,6 +42759,13 @@
     "tl_depend": []
   },
   {
+    "name": "tensormatrix",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "termcal",
     "depend": [
       "latex",
@@ -43416,6 +43480,7 @@
     "depend": [
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "listofitems",
       "pgf",
       "simplekv",
@@ -45085,6 +45150,7 @@
     "depend": [
       "fontawesome5",
       "fontawesome6",
+      "fontawesome7",
       "listofitems",
       "pgf",
       "simplekv",
@@ -47001,7 +47067,7 @@
     "name": "varsfromjobname",
     "depend": [
       "currfile",
-      "latex"
+      "l3kernel"
     ],
     "tl_depend": []
   },
