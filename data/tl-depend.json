@@ -5519,12 +5519,12 @@
     "name": "calculatoritems",
     "depend": [
       "amsfonts",
-      "circledtext",
       "fontspec",
       "inlinegraphicx",
       "latex",
       "listofitems",
       "oberdiek",
+      "pgf",
       "simplekv",
       "tcolorbox",
       "tools",
@@ -6664,8 +6664,8 @@
       "lua-uca",
       "lua-uni-algos",
       "lualibs",
-      "luatodonotes",
       "luaxml",
+      "show-pdf-tags",
       "url"
     ],
     "tl_depend": [
@@ -9975,6 +9975,7 @@
       "leftindex",
       "leipzig",
       "lengthconvert",
+      "leporello",
       "lettre",
       "lettrine",
       "lewis",
@@ -11581,6 +11582,7 @@
       "tikz-truchet",
       "tikz2d-fr",
       "tikz3d-fr",
+      "tikzbrickfigurines",
       "tikzbricks",
       "tikzcalendarnotes",
       "tikzcodeblocks",
@@ -26401,6 +26403,16 @@
     "tl_depend": []
   },
   {
+    "name": "leporello",
+    "depend": [
+      "geometry",
+      "graphics",
+      "l3experimental",
+      "latex"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lete-sans-math",
     "depend": [
       "iftex",
@@ -27983,7 +27995,7 @@
   {
     "name": "luamml",
     "depend": [
-      "luatodonotes"
+      "show-pdf-tags"
     ],
     "tl_depend": []
   },
@@ -28069,7 +28081,7 @@
   {
     "name": "luapstricks",
     "depend": [
-      "luatodonotes"
+      "show-pdf-tags"
     ],
     "tl_depend": []
   },
@@ -40146,9 +40158,7 @@
   },
   {
     "name": "show-pdf-tags",
-    "depend": [
-      "luatodonotes"
-    ],
+    "depend": [],
     "tl_depend": [
       "show-pdf-tags.ARCH"
     ]
@@ -44195,6 +44205,19 @@
       "simplekv",
       "tikz-3dplot",
       "xint",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikzbrickfigurines",
+    "depend": [
+      "graphics",
+      "latex",
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "tools",
       "xstring"
     ],
     "tl_depend": []
