@@ -248,6 +248,7 @@
     "name": "acmart",
     "depend": [
       "amscls",
+      "amsfonts",
       "babel",
       "booktabs",
       "caption",
@@ -5449,8 +5450,6 @@
   {
     "name": "cahierprof",
     "depend": [
-      "geometry",
-      "l3packages",
       "latex",
       "listofitems",
       "microtype",
@@ -9603,6 +9602,7 @@
       "enumitem-zref",
       "enumsub",
       "envbig",
+      "envelope-letter",
       "enverb",
       "environ",
       "envlab",
@@ -9905,7 +9905,7 @@
       "isonums",
       "isopt",
       "isorot",
-      "isosafety",
+      "isosigns",
       "isotope",
       "issuulinks",
       "iwonamath",
@@ -11052,6 +11052,7 @@
       "emf",
       "endiagram",
       "engtlc",
+      "entropy-coupled-operator-dynamic",
       "eolang",
       "eqexpl",
       "eqnarray",
@@ -16609,6 +16610,14 @@
     "tl_depend": []
   },
   {
+    "name": "entropy-coupled-operator-dynamic",
+    "depend": [
+      "amsfonts",
+      "amsmath"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "enumext",
     "depend": [
       "tools"
@@ -16648,6 +16657,18 @@
   {
     "name": "envbig",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "envelope-letter",
+    "depend": [
+      "fp",
+      "geometry",
+      "graphics",
+      "pgf",
+      "pgfopts",
+      "psnfss"
+    ],
     "tl_depend": []
   },
   {
@@ -24162,7 +24183,7 @@
     "tl_depend": []
   },
   {
-    "name": "isosafety",
+    "name": "isosigns",
     "depend": [
       "graphics",
       "latex",
@@ -28735,7 +28756,6 @@
       "ltxcmds",
       "lua-tinyyaml",
       "lua-ul",
-      "lua-uni-algos",
       "luacolor",
       "paralist",
       "soul",
@@ -31449,7 +31469,8 @@
     "name": "newpax",
     "depend": [
       "etoolbox",
-      "graphics"
+      "graphics",
+      "pdfmanagement-testphase"
     ],
     "tl_depend": []
   },
@@ -44212,6 +44233,7 @@
   {
     "name": "tikzbrickfigurines",
     "depend": [
+      "etoolbox",
       "graphics",
       "latex",
       "listofitems",
