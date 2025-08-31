@@ -150,6 +150,13 @@
     "tl_depend": []
   },
   {
+    "name": "abntexto-uece",
+    "depend": [
+      "abntexto"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "aboensis",
     "depend": [
       "fontspec",
@@ -11052,7 +11059,6 @@
       "emf",
       "endiagram",
       "engtlc",
-      "entropy-coupled-operator-dynamic",
       "eolang",
       "eqexpl",
       "eqnarray",
@@ -11068,6 +11074,7 @@
       "fixdif",
       "fixmath",
       "fnspe",
+      "fodot",
       "formal-grammar",
       "fouridx",
       "freealign",
@@ -11901,6 +11908,7 @@
       "abnt",
       "abntex2",
       "abntexto",
+      "abntexto-uece",
       "acmart",
       "acmconf",
       "active-conf",
@@ -12314,10 +12322,7 @@
   {
     "name": "coloredbelts",
     "depend": [
-      "graphics",
-      "simplekv",
-      "tools",
-      "xstring"
+      "graphics"
     ],
     "tl_depend": []
   },
@@ -16610,14 +16615,6 @@
     "tl_depend": []
   },
   {
-    "name": "entropy-coupled-operator-dynamic",
-    "depend": [
-      "amsfonts",
-      "amsmath"
-    ],
-    "tl_depend": []
-  },
-  {
     "name": "enumext",
     "depend": [
       "tools"
@@ -18909,6 +18906,16 @@
       "numprint",
       "sauerj",
       "xifthen"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "fodot",
+    "depend": [
+      "amsfonts",
+      "listings",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -23796,9 +23803,7 @@
   {
     "name": "inlinegraphicx",
     "depend": [
-      "graphics",
-      "simplekv",
-      "tools"
+      "graphics"
     ],
     "tl_depend": []
   },
@@ -26426,7 +26431,6 @@
   {
     "name": "leporello",
     "depend": [
-      "geometry",
       "graphics",
       "l3experimental",
       "latex"
@@ -31376,6 +31380,7 @@
       "todonotes",
       "tools",
       "ulem",
+      "unicode-math",
       "witharrows",
       "wrapfig",
       "xcolor",
@@ -45196,6 +45201,7 @@
       "fontawesome5",
       "fontawesome6",
       "fontawesome7",
+      "latex",
       "listofitems",
       "pgf",
       "simplekv",
@@ -46248,7 +46254,6 @@
       "inconsolata",
       "koma-script",
       "listings",
-      "mathalpha",
       "mathtools",
       "mdframed",
       "microtype",
