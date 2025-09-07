@@ -4926,6 +4926,13 @@
     "tl_depend": []
   },
   {
+    "name": "bootstrapicons",
+    "depend": [
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "bophook",
     "depend": [],
     "tl_depend": []
@@ -9631,6 +9638,7 @@
       "esindex",
       "esint",
       "esint-type1",
+      "essaykit",
       "etaremune",
       "etextools",
       "etl",
@@ -11383,6 +11391,7 @@
       "bodegraph",
       "bondgraph",
       "bondgraphs",
+      "bootstrapicons",
       "braids",
       "bxeepic",
       "byo-twemojis",
@@ -13902,6 +13911,7 @@
       "simplekv",
       "tabularray",
       "tcolorbox",
+      "tikz-3dplot",
       "tools",
       "twemojis",
       "varwidth",
@@ -17080,6 +17090,24 @@
   {
     "name": "esrelation",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "essaykit",
+    "depend": [
+      "amsmath",
+      "caption",
+      "chemfig",
+      "graphics",
+      "hyperref",
+      "imakeidx",
+      "pgf",
+      "tcolorbox",
+      "wrapfig",
+      "xcolor",
+      "xkeyval",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -21569,15 +21597,16 @@
     "name": "hep-font",
     "depend": [
       "cfr-lm",
+      "etoolbox",
+      "fontsetup",
       "fontspec",
       "iftex",
       "kvoptions",
       "l3packages",
       "latex",
-      "lm",
       "microtype",
-      "nfssext-cfr",
       "pdftexcmds",
+      "silence",
       "slantsc",
       "units",
       "xpatch"
@@ -21632,6 +21661,8 @@
   {
     "name": "hep-paper",
     "depend": [
+      "environ",
+      "etoolbox",
       "geometry",
       "hep-acronym",
       "hep-bibliography",
@@ -21647,6 +21678,7 @@
       "parskip",
       "pdftexcmds",
       "ragged2e",
+      "xcolor",
       "xpatch"
     ],
     "tl_depend": []
@@ -21682,6 +21714,7 @@
       "abstract",
       "atbegshi",
       "environ",
+      "etoolbox",
       "picture",
       "preprint",
       "titling",
@@ -24191,9 +24224,7 @@
     "name": "isosigns",
     "depend": [
       "graphics",
-      "latex",
-      "xcolor",
-      "xkeyval"
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -25503,7 +25534,8 @@
       "underscore"
     ],
     "tl_depend": [
-      "l3backend"
+      "l3backend",
+      "lua-uni-algos"
     ]
   },
   {
@@ -25523,12 +25555,14 @@
       "l3kernel",
       "latex",
       "lm",
+      "lua-uni-algos",
       "psnfss",
       "tools",
       "underscore"
     ],
     "tl_depend": [
-      "l3backend-dev"
+      "l3backend-dev",
+      "lua-uni-algos"
     ]
   },
   {
@@ -34700,6 +34734,7 @@
       "luacode",
       "mdwtools",
       "tcolorbox",
+      "transparent",
       "xcolor"
     ],
     "tl_depend": []
@@ -35759,7 +35794,8 @@
       "amsfonts",
       "amsmath",
       "forest",
-      "svn-prov"
+      "svn-prov",
+      "unicode-math"
     ],
     "tl_depend": []
   },
