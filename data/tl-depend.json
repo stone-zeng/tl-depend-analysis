@@ -2825,6 +2825,13 @@
     "tl_depend": []
   },
   {
+    "name": "beamer-varbox",
+    "depend": [
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamer-verona",
     "depend": [
       "pgf",
@@ -8223,6 +8230,7 @@
       "crosswrd",
       "customdice",
       "egameps",
+      "eigo",
       "gamebook",
       "gamebooklib",
       "go",
@@ -9224,6 +9232,7 @@
       "bchart",
       "beamer-rl",
       "beamer-theme-albi",
+      "beamer-varbox",
       "beamer2thesis",
       "beamerappendixnote",
       "beameraudience",
@@ -9969,6 +9978,7 @@
       "latex-firstaid-dev",
       "latex-graphics-dev",
       "latex-lab-dev",
+      "latex-tagging-status",
       "latex-tools-dev",
       "latex-uni8",
       "latex2pydata",
@@ -10550,6 +10560,7 @@
       "tabstackengine",
       "tabto-ltx",
       "tabu",
+      "tabular2",
       "tabularborder",
       "tabularcalc",
       "tabularew",
@@ -11340,6 +11351,7 @@
       "collection-latex",
       "ddphonism",
       "figbas",
+      "fretplot",
       "gchords",
       "gregoriotex",
       "gtrcrd",
@@ -12049,12 +12061,14 @@
       "ku-template",
       "langsci",
       "langsci-avm",
+      "leporello",
       "limecv",
       "lion-msc",
       "llncs",
       "llncsconf",
       "lni",
       "lps",
+      "maine-thesis",
       "matc3",
       "matc3mem",
       "mcmthesis",
@@ -13897,6 +13911,7 @@
     "depend": [
       "adjustbox",
       "enumitem",
+      "etoolbox",
       "fontawesome5",
       "fontawesome6",
       "fontawesome7",
@@ -15996,11 +16011,11 @@
       "fancyhdr",
       "fontspec",
       "fourier",
+      "geometry",
       "hyperref",
       "latex",
       "microtype",
       "setspace",
-      "tools",
       "xcolor"
     ],
     "tl_depend": []
@@ -16070,6 +16085,19 @@
   {
     "name": "eiad-ltx",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "eigo",
+    "depend": [
+      "iftex",
+      "latex",
+      "luatex85",
+      "newunicodechar",
+      "pgf",
+      "tools",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -19472,6 +19500,13 @@
       "jknapltx",
       "mathgreeks",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "fretplot",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -23983,6 +24018,7 @@
   {
     "name": "intexgral",
     "depend": [
+      "amsfonts",
       "derivative",
       "l3kernel",
       "l3packages"
@@ -25964,6 +26000,11 @@
   },
   {
     "name": "latex-refsheet",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "latex-tagging-status",
     "depend": [],
     "tl_depend": []
   },
@@ -28559,6 +28600,48 @@
     "name": "mailmerge",
     "depend": [
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "maine-thesis",
+    "depend": [
+      "appendix",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "changes",
+      "csquotes",
+      "etoolbox",
+      "float",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "hyphenat",
+      "iftex",
+      "latex",
+      "lineno",
+      "mhchem",
+      "microtype",
+      "multirow",
+      "ncctools",
+      "newunicodechar",
+      "nth",
+      "pdflscape",
+      "setspace",
+      "siunitx",
+      "soul",
+      "textcase",
+      "textgreek",
+      "titlesec",
+      "titling",
+      "tocbibind",
+      "tocloft",
+      "todonotes",
+      "tools",
+      "xcolor",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -38170,6 +38253,11 @@
     "tl_depend": []
   },
   {
+    "name": "retosmatematicos",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "returntogrid",
     "depend": [
       "eso-pic",
@@ -42453,6 +42541,13 @@
     "tl_depend": [
       "varwidth"
     ]
+  },
+  {
+    "name": "tabular2",
+    "depend": [
+      "l3experimental"
+    ],
+    "tl_depend": []
   },
   {
     "name": "tabularborder",
