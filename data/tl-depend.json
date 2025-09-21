@@ -192,7 +192,10 @@
   },
   {
     "name": "academicons",
-    "depend": [],
+    "depend": [
+      "fontspec",
+      "iftex"
+    ],
     "tl_depend": []
   },
   {
@@ -2499,6 +2502,14 @@
     "tl_depend": []
   },
   {
+    "name": "bahaistar",
+    "depend": [
+      "accsupp",
+      "newunicodechar"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "bangla",
     "depend": [
       "charissil",
@@ -2931,6 +2942,7 @@
       "etoolbox",
       "eulervm",
       "fontawesome5",
+      "iftex",
       "latex",
       "mathalpha",
       "microtype",
@@ -7292,7 +7304,8 @@
       "listings",
       "psnfss",
       "scontents",
-      "xcolor"
+      "xcolor",
+      "xpeekahead"
     ],
     "tl_depend": []
   },
@@ -7783,6 +7796,7 @@
       "auncial-new",
       "aurical",
       "b1encoding",
+      "bahaistar",
       "barcodes",
       "baskervaldadf",
       "baskervaldx",
@@ -10750,6 +10764,7 @@
       "xoptarg",
       "xpatch",
       "xpeek",
+      "xpeekahead",
       "xprintlen",
       "xpunctuate",
       "xreview",
@@ -11469,6 +11484,7 @@
       "hvfloat",
       "istgame",
       "kblocks",
+      "keisennote",
       "kinematikz",
       "knitting",
       "knittingpattern",
@@ -12061,7 +12077,6 @@
       "ku-template",
       "langsci",
       "langsci-avm",
-      "leporello",
       "limecv",
       "lion-msc",
       "llncs",
@@ -12125,6 +12140,7 @@
       "regulatory",
       "resphilosophica",
       "resumecls",
+      "retosmatematicos",
       "revtex",
       "revtex4",
       "revtex4-1",
@@ -24966,6 +24982,24 @@
     ]
   },
   {
+    "name": "keisennote",
+    "depend": [
+      "fp",
+      "graphics",
+      "l3kernel",
+      "l3packages",
+      "latex",
+      "luatex85",
+      "pgf",
+      "tools",
+      "url",
+      "xcolor",
+      "xkeyval",
+      "zref"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "kerkis",
     "depend": [
       "txfonts"
@@ -25565,6 +25599,7 @@
       "hypdoc",
       "latex",
       "lm",
+      "lua-uni-algos",
       "psnfss",
       "tools",
       "underscore"
@@ -38254,7 +38289,52 @@
   },
   {
     "name": "retosmatematicos",
-    "depend": [],
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "auto-pst-pdf",
+      "babel",
+      "cancel",
+      "caption",
+      "ccicons",
+      "cleveref",
+      "colortbl",
+      "enumitem",
+      "esvect",
+      "eurosym",
+      "fancyvrb",
+      "hyperref",
+      "jknapltx",
+      "l3packages",
+      "latex",
+      "lipsum",
+      "mathtools",
+      "minted",
+      "natbib",
+      "pgf",
+      "pgfplots",
+      "polynom",
+      "psnfss",
+      "pst-eucl",
+      "pstricks-add",
+      "qrcode",
+      "scalerel",
+      "setspace",
+      "siunitx",
+      "standalone",
+      "systeme",
+      "tcolorbox",
+      "titlesec",
+      "titling",
+      "tools",
+      "was",
+      "wrapfig",
+      "xcolor",
+      "xfrac",
+      "xkeyval",
+      "yhmath"
+    ],
     "tl_depend": []
   },
   {
@@ -48719,6 +48799,11 @@
       "l3kernel",
       "l3packages"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "xpeekahead",
+    "depend": [],
     "tl_depend": []
   },
   {
