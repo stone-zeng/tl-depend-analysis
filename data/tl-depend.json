@@ -8259,6 +8259,7 @@
       "labyrinth",
       "logicpuzzle",
       "mahjong",
+      "mathador",
       "maze",
       "multi-sudoku",
       "musikui",
@@ -12125,6 +12126,7 @@
       "oup-authoring-template",
       "pats-resume",
       "philosophersimprint",
+      "phimisci",
       "pittetd",
       "pkuthss",
       "powerdot-fuberlin",
@@ -28648,6 +28650,7 @@
       "changes",
       "csquotes",
       "etoolbox",
+      "everypage",
       "float",
       "fontspec",
       "geometry",
@@ -28655,6 +28658,7 @@
       "hyperref",
       "hyphenat",
       "iftex",
+      "kvoptions",
       "latex",
       "lineno",
       "mhchem",
@@ -28662,8 +28666,10 @@
       "multirow",
       "ncctools",
       "newunicodechar",
+      "nowidow",
       "nth",
       "pdflscape",
+      "pgf",
       "setspace",
       "siunitx",
       "soul",
@@ -28671,7 +28677,6 @@
       "textgreek",
       "titlesec",
       "titling",
-      "tocbibind",
       "tocloft",
       "todonotes",
       "tools",
@@ -29011,6 +29016,17 @@
     "tl_depend": [
       "mathabx"
     ]
+  },
+  {
+    "name": "mathador",
+    "depend": [
+      "latex",
+      "listofitems",
+      "pgf",
+      "simplekv",
+      "tools"
+    ],
+    "tl_depend": []
   },
   {
     "name": "mathalpha",
@@ -34619,6 +34635,38 @@
       "psnfss",
       "sttools",
       "trajan"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "phimisci",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "biblatex",
+      "booktabs",
+      "csquotes",
+      "enumitem",
+      "etoolbox",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "hyphenat",
+      "koma-script",
+      "l3kernel",
+      "l3packages",
+      "libertinus",
+      "lineno",
+      "lua-widow-control",
+      "microtype",
+      "noto",
+      "orcidlink",
+      "pgf",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -42726,12 +42774,14 @@
   {
     "name": "talk",
     "depend": [
-      "amsmath",
+      "cmbright",
+      "environ",
       "graphics",
       "hyperref",
       "latex",
       "multido",
-      "pgf"
+      "pgf",
+      "xstring"
     ],
     "tl_depend": []
   },
