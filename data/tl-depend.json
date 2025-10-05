@@ -9792,6 +9792,7 @@
       "fundus-calligra",
       "fundus-cyr",
       "fundus-sueterlin",
+      "futharksymb",
       "fvextra",
       "fwlw",
       "g-brief",
@@ -9974,6 +9975,7 @@
       "komacv",
       "komacv-rg",
       "korigamik",
+      "ktbox",
       "ktv-texdata",
       "l3backend-dev",
       "l3build",
@@ -10774,6 +10776,7 @@
       "xsipa",
       "xstring",
       "xtab",
+      "xtufte",
       "xurl",
       "xwatermark",
       "xytree",
@@ -10904,6 +10907,7 @@
       "innerscript",
       "interpreter",
       "kanaparser",
+      "kksymbols",
       "ligtype",
       "linebreaker",
       "longmath",
@@ -19670,6 +19674,13 @@
     "tl_depend": []
   },
   {
+    "name": "futharksymb",
+    "depend": [
+      "allrunes"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fvextra",
     "depend": [
       "etoolbox",
@@ -25170,6 +25181,13 @@
     "tl_depend": []
   },
   {
+    "name": "kksymbols",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "kluwer",
     "depend": [
       "amsfonts",
@@ -25463,6 +25481,17 @@
       "koma-script",
       "ragged2e",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "ktbox",
+    "depend": [
+      "enumitem",
+      "hyperref",
+      "orcidlink",
+      "tcolorbox",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -28649,8 +28678,10 @@
       "caption",
       "changes",
       "csquotes",
+      "eso-pic",
       "etoolbox",
       "everypage",
+      "fancyhdr",
       "float",
       "fontspec",
       "geometry",
@@ -28928,7 +28959,6 @@
       "l3kernel",
       "lt3luabridge",
       "lua-tinyyaml",
-      "lua-uni-algos",
       "markdown.ARCH"
     ]
   },
@@ -29449,9 +29479,7 @@
       "booktabs",
       "hyperref",
       "iftex",
-      "l3packages",
       "latex",
-      "textcase",
       "tools",
       "xpatch"
     ],
@@ -48987,6 +49015,39 @@
   {
     "name": "xtab",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "xtufte",
+    "depend": [
+      "bera",
+      "biblatex",
+      "bidi",
+      "changepage",
+      "fancyhdr",
+      "geometry",
+      "hardwrap",
+      "hyperref",
+      "iftex",
+      "juliamono",
+      "kpfonts-otf",
+      "latex",
+      "mathtools",
+      "microtype",
+      "natbib",
+      "paralist",
+      "placeins",
+      "psnfss",
+      "ragged2e",
+      "sauerj",
+      "setspace",
+      "titlesec",
+      "tools",
+      "unicode-math",
+      "xcolor",
+      "xifthen",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
