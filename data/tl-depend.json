@@ -1591,6 +1591,14 @@
     "tl_depend": []
   },
   {
+    "name": "arsenal-math",
+    "depend": [
+      "fontspec",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "articleingud",
     "depend": [
       "latex"
@@ -1856,7 +1864,6 @@
     "name": "atableau",
     "depend": [
       "amsfonts",
-      "l3packages",
       "pgf"
     ],
     "tl_depend": []
@@ -4947,7 +4954,7 @@
   {
     "name": "bootstrapicons",
     "depend": [
-      "graphics"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -6679,6 +6686,7 @@
     "name": "cistercian",
     "depend": [
       "etoolbox",
+      "panda",
       "pgf"
     ],
     "tl_depend": [
@@ -7785,6 +7793,7 @@
       "arev",
       "arimo",
       "arsenal",
+      "arsenal-math",
       "arvo",
       "asana-math",
       "asapsym",
@@ -10130,6 +10139,7 @@
       "minitoc",
       "minorrevision",
       "minted",
+      "minted-code",
       "minutes",
       "mla-paper",
       "mleftright",
@@ -10258,6 +10268,7 @@
       "pagerange",
       "pageslts",
       "palette",
+      "panda",
       "pangram",
       "paper",
       "papercdcase",
@@ -11298,6 +11309,7 @@
       "youngtab",
       "yquant",
       "ytableau",
+      "zeckendorf",
       "zx-calculus"
     ]
   },
@@ -12367,7 +12379,8 @@
   {
     "name": "coloredbelts",
     "depend": [
-      "graphics"
+      "graphics",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -18434,6 +18447,7 @@
       "etoolbox",
       "hyperref",
       "koma-script",
+      "latex",
       "supertabular",
       "tools",
       "xstring"
@@ -24998,16 +25012,9 @@
     "name": "keisennote",
     "depend": [
       "fp",
-      "graphics",
-      "l3kernel",
-      "l3packages",
-      "latex",
-      "luatex85",
+      "kvoptions",
       "pgf",
-      "tools",
-      "url",
       "xcolor",
-      "xkeyval",
       "zref"
     ],
     "tl_depend": []
@@ -25183,7 +25190,10 @@
   {
     "name": "kksymbols",
     "depend": [
-      "pgf"
+      "bxghost",
+      "l3kernel",
+      "pgf",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -30136,6 +30146,14 @@
     ]
   },
   {
+    "name": "minted-code",
+    "depend": [
+      "minted",
+      "tcolorbox"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mintspirit",
     "depend": [
       "fontaxes",
@@ -33405,6 +33423,13 @@
     "depend": [
       "macrolist",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "panda",
+    "depend": [
+      "expkv-bundle"
     ],
     "tl_depend": []
   },
@@ -49501,6 +49526,13 @@
       "microtype",
       "tikzpagenodes",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "zeckendorf",
+    "depend": [
+      "xint"
     ],
     "tl_depend": []
   },
