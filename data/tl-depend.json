@@ -1583,10 +1583,10 @@
   {
     "name": "arsenal",
     "depend": [
+      "arsenal-math",
       "fontspec",
-      "iwonamath",
-      "kpfonts-otf",
-      "l3packages"
+      "l3packages",
+      "unicode-math"
     ],
     "tl_depend": []
   },
@@ -2957,6 +2957,16 @@
       "parskip",
       "pgf",
       "tcolorbox"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertheme-bilkent-econ",
+    "depend": [
+      "fontspec",
+      "graphics",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -9266,6 +9276,7 @@
       "beamerposter",
       "beamersubframe",
       "beamertheme-arguelles",
+      "beamertheme-bilkent-econ",
       "beamertheme-cleaneasy",
       "beamertheme-cuerna",
       "beamertheme-detlevcm",
@@ -11299,6 +11310,7 @@
       "thmbox",
       "thmtools",
       "tiscreen",
+      "tkz-interval",
       "turnstile",
       "ulqda",
       "unitsdef",
@@ -25190,8 +25202,8 @@
   {
     "name": "kksymbols",
     "depend": [
-      "bxghost",
       "l3kernel",
+      "luatexja",
       "pgf",
       "tools"
     ],
@@ -35568,6 +35580,7 @@
       "anyfontsize",
       "changepage",
       "crumbs",
+      "csquotes",
       "enumitem",
       "fancyhdr",
       "fontsize",
@@ -35575,7 +35588,6 @@
       "href-ul",
       "lastpage",
       "latex",
-      "libertine",
       "microtype",
       "pagecolor",
       "pgf",
@@ -45044,6 +45056,14 @@
       "xint",
       "xint-regression",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tkz-interval",
+    "depend": [
+      "pgf",
+      "simplekv"
     ],
     "tl_depend": []
   },
