@@ -3127,7 +3127,7 @@
     "name": "beamertheme-spectrum",
     "depend": [
       "pgf",
-      "xkeyval"
+      "xpatch"
     ],
     "tl_depend": [
       "beamer",
@@ -6715,7 +6715,6 @@
       "lua-uni-algos",
       "lualibs",
       "luaxml",
-      "show-pdf-tags",
       "url"
     ],
     "tl_depend": [
@@ -7320,6 +7319,7 @@
     "name": "codedescribe",
     "depend": [
       "listings",
+      "pkginfograb",
       "psnfss",
       "scontents",
       "xcolor",
@@ -10344,6 +10344,7 @@
       "photobook",
       "picture",
       "piff",
+      "pkginfograb",
       "pkgloader",
       "placeins",
       "plantslabels",
@@ -12459,7 +12460,7 @@
       "titlesec",
       "tools",
       "ulem",
-      "wrapfig"
+      "wrapfig2"
     ],
     "tl_depend": [
       "projlib"
@@ -28182,9 +28183,7 @@
   },
   {
     "name": "luamml",
-    "depend": [
-      "show-pdf-tags"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -28268,9 +28267,7 @@
   },
   {
     "name": "luapstricks",
-    "depend": [
-      "show-pdf-tags"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -34963,6 +34960,7 @@
       "amsmath",
       "footnotehyper",
       "luacode",
+      "marginalia",
       "mdwtools",
       "tcolorbox",
       "transparent",
@@ -34996,6 +34994,7 @@
       "csvsimple",
       "datatool",
       "l3kernel",
+      "l3packages",
       "latex",
       "listofitems",
       "pgf",
@@ -35020,6 +35019,11 @@
     "tl_depend": [
       "pkfix-helper.ARCH"
     ]
+  },
+  {
+    "name": "pkginfograb",
+    "depend": [],
+    "tl_depend": []
   },
   {
     "name": "pkgloader",
@@ -44476,6 +44480,9 @@
     "name": "tikz-shields",
     "depend": [
       "fontawesome",
+      "fontawesome5",
+      "fontawesome6",
+      "fontawesome7",
       "hyperref",
       "latex",
       "pgf",
@@ -48926,7 +48933,9 @@
   },
   {
     "name": "xpeekahead",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
