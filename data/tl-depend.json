@@ -8933,6 +8933,7 @@
       "kanbun",
       "lshort-japanese",
       "luatexja",
+      "luwa-ul",
       "mendex-doc",
       "morisawa",
       "outoruby",
@@ -22678,6 +22679,7 @@
       "fetamont",
       "hologo",
       "l3kernel",
+      "lm-math",
       "pgf",
       "tools",
       "unicode-math",
@@ -26649,6 +26651,7 @@
       "tcolorbox",
       "titlesec",
       "tools",
+      "typicons",
       "xcolor",
       "xurl"
     ],
@@ -28485,6 +28488,17 @@
       "makecell",
       "multirow",
       "penlightplus",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "luwa-ul",
+    "depend": [
+      "lua-ul",
+      "luacolor",
+      "pgf",
       "tools",
       "xcolor"
     ],
@@ -31540,7 +31554,6 @@
       "adforn",
       "adjustbox",
       "algorithmicx",
-      "amsfonts",
       "annotate-equations",
       "asymptote",
       "babel",
@@ -31549,8 +31562,10 @@
       "breqn",
       "cancel",
       "changepage",
+      "enumitem",
       "environ",
       "esvect",
+      "fancyvrb",
       "fontawesome5",
       "fontspec",
       "forest",
@@ -31589,6 +31604,7 @@
       "pstricks",
       "pstricks-add",
       "qrcode",
+      "setspace",
       "silence",
       "siunitx",
       "sttools",
@@ -31596,10 +31612,13 @@
       "tasks",
       "tcolorbox",
       "tdsfrmath",
+      "tex-gyre",
+      "tex-gyre-math",
       "textcase",
       "tikzpagenodes",
       "tikzsymbols",
       "tkz-euclide",
+      "tkz-tab",
       "todonotes",
       "tools",
       "ulem",
@@ -34430,7 +34449,9 @@
   },
   {
     "name": "pgfkeysearch",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
@@ -41773,7 +41794,9 @@
   },
   {
     "name": "starray",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
@@ -42405,7 +42428,9 @@
   },
   {
     "name": "switch",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
@@ -42546,7 +42571,6 @@
       "gfsneohellenicmath",
       "graphics",
       "hyperref",
-      "l3packages",
       "lete-sans-math",
       "libertinus-fonts",
       "lm-math",
@@ -44618,7 +44642,8 @@
   {
     "name": "tikzdotncross",
     "depend": [
-      "etoolbox"
+      "etoolbox",
+      "pkginfograb"
     ],
     "tl_depend": []
   },
@@ -46332,7 +46357,6 @@
       "csquotes",
       "enumitem",
       "eso-pic",
-      "etex-pkg",
       "etoolbox",
       "extarrows",
       "geometry",
@@ -46351,6 +46375,7 @@
       "nicematrix",
       "pdfcomment",
       "pgf",
+      "pkginfograb",
       "psnfss",
       "relsize",
       "showlabels",
