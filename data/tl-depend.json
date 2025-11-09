@@ -8028,6 +8028,7 @@
       "luwiantype",
       "lxfonts",
       "ly1",
+      "lydtype",
       "magra",
       "marcellus",
       "mathabx",
@@ -10623,6 +10624,7 @@
       "telprint",
       "templatetools",
       "termcal",
+      "terminalcode",
       "termlist",
       "termsim",
       "testhyphens",
@@ -24788,6 +24790,7 @@
     "depend": [
       "fontspec",
       "iftex",
+      "lm",
       "xkeyval"
     ],
     "tl_depend": []
@@ -28600,6 +28603,14 @@
     "tl_depend": []
   },
   {
+    "name": "lydtype",
+    "depend": [
+      "fontspec",
+      "l3kernel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lyluatex",
     "depend": [
       "currfile",
@@ -30228,16 +30239,13 @@
   {
     "name": "mitthesis",
     "depend": [
-      "bookmark",
       "caption",
       "doi",
       "etoolbox",
       "geometry",
       "graphics",
       "hyperref",
-      "hyperxmp",
       "kvoptions",
-      "l3packages",
       "latex",
       "lineno",
       "mathtools",
@@ -31556,12 +31564,14 @@
       "algorithmicx",
       "annotate-equations",
       "asymptote",
+      "auto-pst-pdf",
       "babel",
       "blindtext",
       "bookmark",
       "breqn",
       "cancel",
       "changepage",
+      "colortbl",
       "enumitem",
       "environ",
       "esvect",
@@ -43186,6 +43196,18 @@
     "tl_depend": []
   },
   {
+    "name": "terminalcode",
+    "depend": [
+      "ctex",
+      "fontspec",
+      "kvoptions",
+      "listings",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "termlist",
     "depend": [],
     "tl_depend": []
@@ -44622,7 +44644,9 @@
   },
   {
     "name": "tikzcalendarnotes",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
@@ -44667,7 +44691,9 @@
   },
   {
     "name": "tikzfxgraph",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
@@ -44788,7 +44814,9 @@
   },
   {
     "name": "tikzquests",
-    "depend": [],
+    "depend": [
+      "pkginfograb"
+    ],
     "tl_depend": []
   },
   {
