@@ -3126,8 +3126,7 @@
   {
     "name": "beamertheme-spectrum",
     "depend": [
-      "pgf",
-      "xpatch"
+      "pgf"
     ],
     "tl_depend": [
       "beamer",
@@ -3188,6 +3187,7 @@
       "latex",
       "listings",
       "microtype",
+      "minted",
       "pgf",
       "psnfss",
       "roboto",
@@ -3195,7 +3195,8 @@
       "sourcesanspro",
       "sourceserifpro",
       "tcolorbox",
-      "tools"
+      "tools",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -8114,6 +8115,7 @@
       "sourcesanspro",
       "sourceserifpro",
       "spectral",
+      "splentinex",
       "srbtiks",
       "starfont",
       "staves",
@@ -13961,6 +13963,8 @@
     "name": "customenvs",
     "depend": [
       "adjustbox",
+      "babel",
+      "cabin",
       "enumitem",
       "etoolbox",
       "fontawesome5",
@@ -13975,6 +13979,8 @@
       "pgf",
       "randomlist",
       "simplekv",
+      "standalone",
+      "tablericons",
       "tabularray",
       "tcolorbox",
       "tikz-3dplot",
@@ -19932,6 +19938,7 @@
   {
     "name": "gckanbun",
     "depend": [
+      "etoolbox",
       "graphics",
       "ifptex",
       "iftex"
@@ -27757,6 +27764,7 @@
       "graphics",
       "hyperref",
       "lm",
+      "mathtools",
       "newcomputermodern",
       "relsize",
       "sansmathfonts",
@@ -31594,7 +31602,6 @@
       "marginnote",
       "mathastext",
       "microtype",
-      "mismath",
       "ncctools",
       "needspace",
       "newpx",
@@ -41555,6 +41562,15 @@
     ]
   },
   {
+    "name": "splentinex",
+    "depend": [
+      "fontaxes",
+      "latex",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "splines",
     "depend": [],
     "tl_depend": []
@@ -41948,7 +41964,6 @@
     "name": "stex",
     "depend": [
       "amscls",
-      "babel",
       "beamer",
       "graphics",
       "l3kernel",
@@ -41956,9 +41971,11 @@
       "latex",
       "listings",
       "ltxcmds",
+      "marginnote",
       "mdframed",
       "pdfcomment",
       "pgf",
+      "qrcode",
       "standalone",
       "thmtools",
       "tools",
@@ -44808,7 +44825,9 @@
   {
     "name": "tikzquads",
     "depend": [
-      "pgfkeysearch"
+      "pgfkeysearch",
+      "pkginfograb",
+      "tikzdotncross"
     ],
     "tl_depend": []
   },
@@ -47973,37 +47992,44 @@
     "name": "whatsnote",
     "depend": [
       "amsfonts",
+      "anyfontsize",
+      "bbm-macros",
       "booktabs",
       "cancel",
       "caption",
-      "circuitikz",
-      "cleveref",
-      "comment",
-      "ctex",
       "derivative",
+      "enumext",
       "enumitem",
+      "esvect",
       "extarrows",
       "fancyhdr",
       "fixdif",
-      "fontawesome5",
+      "framed",
       "geometry",
       "graphics",
       "hyperref",
       "keytheorems",
       "latex",
-      "lipsum",
+      "libertine",
+      "lm",
+      "manfnt",
       "mathtools",
-      "mdframed",
-      "multirow",
+      "mhchem",
+      "microtype",
       "nicematrix",
-      "pagecolor",
+      "paracol",
+      "pgf",
       "pgfplots",
       "physics2",
+      "ragged2e",
       "siunitx",
-      "tasks",
+      "soul",
+      "titlesec",
       "tools",
-      "xecjk",
-      "zhlipsum"
+      "ulem",
+      "xcolor",
+      "xfrac",
+      "zref"
     ],
     "tl_depend": []
   },
