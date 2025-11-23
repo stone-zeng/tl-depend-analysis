@@ -567,6 +567,7 @@
       "cases",
       "circuitikz",
       "csquotes",
+      "enumitem",
       "eso-pic",
       "etoolbox",
       "extarrows",
@@ -581,6 +582,7 @@
       "mathtools",
       "multirow",
       "pgfplots",
+      "pkginfograb",
       "psnfss",
       "showlabels",
       "siunitx",
@@ -10529,6 +10531,7 @@
       "skills",
       "skrapport",
       "slantsc",
+      "slixte",
       "smalltableof",
       "smart-eqn",
       "smartref",
@@ -28404,8 +28407,7 @@
     "depend": [
       "cjk-ko",
       "fontspec",
-      "lua-uni-algos",
-      "luatexbase"
+      "lua-uni-algos"
     ],
     "tl_depend": []
   },
@@ -41221,6 +41223,28 @@
     "tl_depend": []
   },
   {
+    "name": "slixte",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "bbm-macros",
+      "beamer",
+      "contour",
+      "enumitem",
+      "etoolbox",
+      "fontawesome",
+      "geometry",
+      "l3packages",
+      "latex",
+      "lm",
+      "pgf",
+      "refcount",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "smalltableof",
     "depend": [],
     "tl_depend": []
@@ -43802,10 +43826,14 @@
     "depend": [
       "amsfonts",
       "amsmath",
+      "arcs",
       "babel",
+      "bbold",
       "cancel",
       "eurosym",
       "graphics",
+      "mhchem",
+      "stix",
       "teubner"
     ],
     "tl_depend": []
