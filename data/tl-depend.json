@@ -2980,6 +2980,17 @@
     "tl_depend": []
   },
   {
+    "name": "beamertheme-csh",
+    "depend": [
+      "lastpage",
+      "pgf",
+      "qrcode",
+      "tex-gyre",
+      "totcount"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamertheme-cuerna",
     "depend": [
       "amsfonts",
@@ -9284,6 +9295,7 @@
       "beamertheme-arguelles",
       "beamertheme-bilkent-econ",
       "beamertheme-cleaneasy",
+      "beamertheme-csh",
       "beamertheme-cuerna",
       "beamertheme-detlevcm",
       "beamertheme-epyt",
@@ -10750,6 +10762,7 @@
       "volumes",
       "vpe",
       "vruler",
+      "vscodeicons",
       "vtable",
       "vwcol",
       "wallcalendar",
@@ -10938,6 +10951,7 @@
       "innerscript",
       "interpreter",
       "kanaparser",
+      "kkran",
       "kksymbols",
       "ligtype",
       "linebreaker",
@@ -11148,6 +11162,7 @@
       "formal-grammar",
       "fouridx",
       "freealign",
+      "freemath",
       "functan",
       "galois",
       "gastex",
@@ -18924,6 +18939,10 @@
       "etoolbox",
       "graphics",
       "latex",
+      "luatex85",
+      "pgf",
+      "pst-text",
+      "rerunfilecheck",
       "tools",
       "xfor",
       "xkeyval"
@@ -19538,6 +19557,11 @@
       "etoolbox",
       "zref"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "freemath",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -25213,6 +25237,21 @@
   {
     "name": "kixfont",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "kkran",
+    "depend": [
+      "etoolbox",
+      "kksymbols",
+      "kvoptions",
+      "luacode",
+      "luatexja",
+      "pgf",
+      "psnfss",
+      "tools",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -47861,6 +47900,17 @@
   {
     "name": "vruler",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "vscodeicons",
+    "depend": [
+      "graphics",
+      "latex",
+      "simplekv",
+      "tools",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
