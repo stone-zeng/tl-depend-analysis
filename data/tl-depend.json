@@ -2135,6 +2135,11 @@
     "tl_depend": []
   },
   {
+    "name": "awami",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "awesomebox",
     "depend": [
       "fontawesome5",
@@ -8058,6 +8063,7 @@
       "missaali",
       "mlmodern",
       "mnsymbol",
+      "monaspace-otf",
       "montserrat",
       "mpfonts",
       "mweights",
@@ -8411,6 +8417,7 @@
       "arabic-book",
       "arabluatex",
       "arabtex",
+      "awami",
       "bidi",
       "bidihl",
       "collection-basic",
@@ -8462,6 +8469,7 @@
       "install-latex-guide-zh-cn",
       "latex-notes-zh-cn",
       "lshort-chinese",
+      "lxgw-fonts",
       "nanicolle",
       "njurepo",
       "pgfornament-han",
@@ -9187,6 +9195,7 @@
       "letltxmacro",
       "ltxcmds",
       "ltxmisc",
+      "lua-uni-algos",
       "mfnfss",
       "mptopdf",
       "natbib",
@@ -10963,7 +10972,6 @@
       "lua-typo",
       "lua-uca",
       "lua-ul",
-      "lua-uni-algos",
       "lua-visual-debug",
       "lua-widow-control",
       "luaaddplot",
@@ -10979,6 +10987,7 @@
       "luaindex",
       "luainputenc",
       "luakeys",
+      "luakeyval",
       "lualatex-math",
       "lualatex-truncate",
       "lualibs",
@@ -25983,6 +25992,7 @@
       "latex-fonts",
       "latexconfig",
       "lm",
+      "lua-uni-algos",
       "luahbtex",
       "luaotfload",
       "luatex",
@@ -27943,7 +27953,8 @@
   {
     "name": "lua-tikz3dtools",
     "depend": [
-      "pgf"
+      "pgf",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -28165,6 +28176,11 @@
   },
   {
     "name": "luakeys",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "luakeyval",
     "depend": [],
     "tl_depend": []
   },
@@ -28642,6 +28658,11 @@
     "depend": [
       "etoolbox"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "lxgw-fonts",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -30675,6 +30696,15 @@
       "pgf",
       "pgfopts",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "monaspace-otf",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -44176,18 +44206,11 @@
     "name": "thumbs",
     "depend": [
       "alphalph",
-      "amsfonts",
-      "atbegshi",
-      "atveryend",
-      "cellspace",
-      "infwarerr",
       "kvoptions",
-      "latex",
-      "ltxcmds",
       "pagecolor",
-      "pageslts",
       "picture",
       "rerunfilecheck",
+      "undolabl",
       "xcolor"
     ],
     "tl_depend": []
@@ -46825,7 +46848,9 @@
   },
   {
     "name": "unibidi-lua",
-    "depend": [],
+    "depend": [
+      "luakeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -47745,7 +47770,6 @@
   {
     "name": "verifiche",
     "depend": [
-      "amsfonts",
       "enumitem",
       "fp",
       "l3packages",
