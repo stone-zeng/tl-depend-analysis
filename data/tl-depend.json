@@ -8095,6 +8095,7 @@
       "pacioli",
       "pagella-otf",
       "paratype",
+      "pennstander-otf",
       "phaistos",
       "phonetic",
       "pigpen",
@@ -10892,6 +10893,7 @@
       "lineno",
       "listings",
       "ltx-talk",
+      "lua-unicode-math",
       "lwarp",
       "mathspec",
       "mathtools",
@@ -25166,7 +25168,6 @@
     "name": "keytheorems",
     "depend": [
       "amscls",
-      "hyperref",
       "oberdiek",
       "refcount",
       "tcolorbox",
@@ -27992,6 +27993,13 @@
   {
     "name": "lua-uni-algos",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "lua-unicode-math",
+    "depend": [
+      "lua-uni-algos"
+    ],
     "tl_depend": []
   },
   {
@@ -31641,19 +31649,22 @@
       "adforn",
       "adjustbox",
       "algorithmicx",
+      "amsfonts",
       "annotate-equations",
       "asymptote",
       "auto-pst-pdf",
       "babel",
       "blindtext",
       "bookmark",
-      "breqn",
       "cancel",
       "changepage",
       "colortbl",
       "enumitem",
       "environ",
       "esvect",
+      "etoolbox",
+      "fancybox",
+      "fancyhdr",
       "fancyvrb",
       "fontawesome5",
       "fontspec",
@@ -31673,6 +31684,7 @@
       "marginnote",
       "mathastext",
       "microtype",
+      "multirow",
       "ncctools",
       "needspace",
       "newpx",
@@ -31702,7 +31714,6 @@
       "tdsfrmath",
       "tex-gyre",
       "tex-gyre-math",
-      "textcase",
       "tikzpagenodes",
       "tikzsymbols",
       "tkz-euclide",
@@ -31711,6 +31722,7 @@
       "tools",
       "ulem",
       "unicode-math",
+      "variations",
       "witharrows",
       "wrapfig",
       "xcolor",
@@ -34353,6 +34365,14 @@
       "luakeys",
       "penlight",
       "tokcycle"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pennstander-otf",
+    "depend": [
+      "iftex",
+      "unicode-math"
     ],
     "tl_depend": []
   },
