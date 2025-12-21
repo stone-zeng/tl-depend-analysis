@@ -1587,8 +1587,7 @@
     "depend": [
       "arsenal-math",
       "fontspec",
-      "l3packages",
-      "unicode-math"
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -3155,8 +3154,7 @@
   {
     "name": "beamertheme-tcolorbox",
     "depend": [
-      "tcolorbox",
-      "xkeyval"
+      "tcolorbox"
     ],
     "tl_depend": [
       "beamer",
@@ -10816,6 +10814,7 @@
       "xkcdcolors",
       "xkeymask",
       "xltabular",
+      "xmeaning",
       "xmpincl",
       "xnewcommand",
       "xoptarg",
@@ -11028,6 +11027,7 @@
       "nodetree",
       "odsfile",
       "optex",
+      "parstat",
       "pdfarticle",
       "pdfextra",
       "penlight",
@@ -11927,11 +11927,13 @@
       "pst-fill",
       "pst-fit",
       "pst-flags",
+      "pst-fourbarlinkage",
       "pst-fr3d",
       "pst-fractal",
       "pst-fun",
       "pst-func",
       "pst-gantt",
+      "pst-gears",
       "pst-geo",
       "pst-geometrictools",
       "pst-gr3d",
@@ -11949,6 +11951,7 @@
       "pst-lsystem",
       "pst-magneticfield",
       "pst-marble",
+      "pst-massspring",
       "pst-math",
       "pst-mirror",
       "pst-moire",
@@ -16830,6 +16833,7 @@
       "pgfopts",
       "stmaryrd",
       "tools",
+      "xcolor",
       "xstring"
     ],
     "tl_depend": [
@@ -33712,6 +33716,11 @@
     "tl_depend": []
   },
   {
+    "name": "parstat",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "pas-cours",
     "depend": [
       "amsfonts",
@@ -36628,6 +36637,13 @@
     "tl_depend": []
   },
   {
+    "name": "pst-fourbarlinkage",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-fr3d",
     "depend": [],
     "tl_depend": []
@@ -36667,6 +36683,14 @@
     "name": "pst-gantt",
     "depend": [
       "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-gears",
+    "depend": [
+      "pstricks",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -36785,6 +36809,13 @@
   },
   {
     "name": "pst-marble",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-massspring",
     "depend": [
       "pstricks"
     ],
@@ -37178,16 +37209,20 @@
       "eso-pic",
       "everyshi",
       "fancyvrb",
+      "fontspec",
       "footmisc",
       "geometry",
       "graphics",
       "hyperref",
       "ifplatform",
       "iftex",
+      "juliamono",
       "koma-script",
       "latex",
       "libertinus-otf",
+      "lua-unicode-math",
       "manfnt",
+      "minted-code",
       "multido",
       "paralist",
       "pgf",
@@ -37208,7 +37243,6 @@
       "showexpl",
       "subfig",
       "tools",
-      "unicode-math",
       "xcolor",
       "xkeyval",
       "xurl"
@@ -49021,6 +49055,14 @@
     "tl_depend": [
       "metalogo"
     ]
+  },
+  {
+    "name": "xmeaning",
+    "depend": [
+      "l3kernel",
+      "pkginfograb"
+    ],
+    "tl_depend": []
   },
   {
     "name": "xml2pmx",
