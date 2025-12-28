@@ -1980,6 +1980,7 @@
       "enumitem",
       "eso-pic",
       "etoolbox",
+      "hologo",
       "hyperref",
       "intopdf",
       "kvoptions",
@@ -9881,6 +9882,7 @@
       "glossaries-serbian",
       "glossaries-slovene",
       "glossaries-spanish",
+      "glossaries-ukrainian",
       "gmdoc",
       "gmdoc-enhance",
       "gmiflink",
@@ -11956,6 +11958,7 @@
       "pst-mirror",
       "pst-moire",
       "pst-node",
+      "pst-nutation",
       "pst-ob3d",
       "pst-ode",
       "pst-optexp",
@@ -11981,6 +11984,7 @@
       "pst-solides3d",
       "pst-soroban",
       "pst-spectra",
+      "pst-sphericaltrochoid",
       "pst-spinner",
       "pst-stru",
       "pst-support",
@@ -12214,6 +12218,7 @@
       "revtex4-1",
       "rub-kunstgeschichte",
       "rutitlepage",
+      "rwth-ci",
       "ryersonsgsthesis",
       "ryethesis",
       "sageep",
@@ -20565,6 +20570,11 @@
     "tl_depend": []
   },
   {
+    "name": "glossaries-ukrainian",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "glyphlist",
     "depend": [],
     "tl_depend": []
@@ -24130,7 +24140,7 @@
       "amsfonts",
       "derivative",
       "l3kernel",
-      "l3packages"
+      "pkginfograb"
     ],
     "tl_depend": []
   },
@@ -27140,7 +27150,9 @@
   {
     "name": "linguistix",
     "depend": [
+      "babel",
       "fontspec",
+      "setspace",
       "unicode-math"
     ],
     "tl_depend": []
@@ -36854,6 +36866,13 @@
     "tl_depend": []
   },
   {
+    "name": "pst-nutation",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-ob3d",
     "depend": [
       "pstricks"
@@ -37056,6 +37075,13 @@
       "multido",
       "pstricks",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-sphericaltrochoid",
+    "depend": [
+      "pstricks"
     ],
     "tl_depend": []
   },
@@ -39127,6 +39153,11 @@
     "depend": [
       "latex"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "rwth-ci",
+    "depend": [],
     "tl_depend": []
   },
   {
