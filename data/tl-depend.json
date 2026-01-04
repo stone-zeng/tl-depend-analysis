@@ -2826,6 +2826,15 @@
     "tl_depend": []
   },
   {
+    "name": "beamer-reveal",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamer-rl",
     "depend": [
       "babel",
@@ -9290,6 +9299,7 @@
       "bashful",
       "basicarith",
       "bchart",
+      "beamer-reveal",
       "beamer-rl",
       "beamer-theme-albi",
       "beamer-varbox",
@@ -10187,6 +10197,7 @@
       "mnotes",
       "moderncv",
       "modernposter",
+      "modernruler",
       "moderntimeline",
       "modref",
       "modroman",
@@ -11945,6 +11956,7 @@
       "pst-infixplot",
       "pst-intersect",
       "pst-jtree",
+      "pst-kepler",
       "pst-knot",
       "pst-labo",
       "pst-layout",
@@ -13414,7 +13426,7 @@
       "simplekv",
       "tcolorbox",
       "twemojis",
-      "xstring"
+      "ulem"
     ],
     "tl_depend": []
   },
@@ -14000,8 +14012,6 @@
     "name": "customenvs",
     "depend": [
       "adjustbox",
-      "babel",
-      "cabin",
       "enumitem",
       "etoolbox",
       "fontawesome5",
@@ -14016,8 +14026,6 @@
       "pgf",
       "randomlist",
       "simplekv",
-      "standalone",
-      "tablericons",
       "tabularray",
       "tcolorbox",
       "tikz-3dplot",
@@ -28021,8 +28029,8 @@
   {
     "name": "lua-visual-debug",
     "depend": [
-      "atbegshi",
-      "iftex"
+      "iftex",
+      "luakeyval"
     ],
     "tl_depend": []
   },
@@ -30623,6 +30631,15 @@
       "relsize",
       "sfmath",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "modernruler",
+    "depend": [
+      "kvoptions",
+      "tcolorbox",
+      "varwidth"
     ],
     "tl_depend": []
   },
@@ -33322,9 +33339,11 @@
       "amsfonts",
       "amsmath",
       "anyfontsize",
+      "arydshln",
       "caption",
       "changepage",
       "crop",
+      "footmisc",
       "graphics",
       "hyperref",
       "jknapltx",
@@ -33334,6 +33353,7 @@
       "multirow",
       "natbib",
       "pgf",
+      "silence",
       "sttools",
       "subfloat",
       "tools",
@@ -36767,6 +36787,17 @@
     "tl_depend": []
   },
   {
+    "name": "pst-kepler",
+    "depend": [
+      "animate",
+      "hvextern",
+      "pst-eucl",
+      "pstricks",
+      "xint"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-knot",
     "depend": [
       "pstricks"
@@ -39157,7 +39188,21 @@
   },
   {
     "name": "rwth-ci",
-    "depend": [],
+    "depend": [
+      "adjustbox",
+      "anyfontsize",
+      "arimo",
+      "beamer",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "iftex",
+      "koma-script",
+      "latex",
+      "qrcode",
+      "tcolorbox",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -42200,7 +42245,8 @@
   {
     "name": "stocksize",
     "depend": [
-      "geometry"
+      "geometry",
+      "l3packages"
     ],
     "tl_depend": []
   },
