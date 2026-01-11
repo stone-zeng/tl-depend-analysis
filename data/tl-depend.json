@@ -10513,6 +10513,7 @@
       "sdrt",
       "secdot",
       "secnum",
+      "secretx",
       "sectionbox",
       "sectionbreak",
       "sectsty",
@@ -10840,6 +10841,7 @@
       "xsavebox",
       "xsim",
       "xsipa",
+      "xstacks",
       "xstring",
       "xtab",
       "xtufte",
@@ -12176,6 +12178,7 @@
       "mluexercise",
       "mnras",
       "modeles-factures-belges-assocs",
+      "modernnewspaper",
       "msu-thesis",
       "mucproc",
       "mugsthesis",
@@ -17229,11 +17232,13 @@
       "amsmath",
       "caption",
       "chemfig",
+      "enumitem",
       "graphics",
       "hyperref",
       "imakeidx",
       "pgf",
       "tcolorbox",
+      "textpos",
       "wrapfig",
       "xcolor",
       "xkeyval",
@@ -19993,10 +19998,12 @@
   {
     "name": "gckanbun",
     "depend": [
+      "bxghost",
       "etoolbox",
       "graphics",
       "ifptex",
-      "iftex"
+      "iftex",
+      "luatexja"
     ],
     "tl_depend": []
   },
@@ -28598,6 +28605,7 @@
     "depend": [
       "lua-ul",
       "luacolor",
+      "luatexja",
       "pgf",
       "tools",
       "xcolor"
@@ -30614,6 +30622,22 @@
       "url",
       "xcolor"
     ]
+  },
+  {
+    "name": "modernnewspaper",
+    "depend": [
+      "bidi",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "polyglossia",
+      "setspace",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
   },
   {
     "name": "modernposter",
@@ -37797,6 +37821,7 @@
     "name": "quantumcubemodel",
     "depend": [
       "braket",
+      "kvoptions",
       "pgf",
       "xcolor"
     ],
@@ -40262,6 +40287,20 @@
     "depend": [
       "l3kernel",
       "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "secretx",
+    "depend": [
+      "atbegshi",
+      "environ",
+      "etoolbox",
+      "everyhook",
+      "fancyhdr",
+      "kvoptions",
+      "tcolorbox",
+      "zref"
     ],
     "tl_depend": []
   },
@@ -49378,6 +49417,13 @@
       "chessboard",
       "etoolbox",
       "xifthen"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "xstacks",
+    "depend": [
+      "pkginfograb"
     ],
     "tl_depend": []
   },
