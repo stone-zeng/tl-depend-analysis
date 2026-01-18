@@ -4890,15 +4890,11 @@
   {
     "name": "bookcover",
     "depend": [
-      "etoolbox",
       "fgruler",
       "geometry",
-      "graphics",
       "kvoptions",
-      "l3packages",
       "latex",
       "pgf",
-      "picture",
       "tools"
     ],
     "tl_depend": []
@@ -11757,6 +11753,7 @@
       "utfsym",
       "vectorlogos",
       "venndiagram",
+      "vexillology",
       "visualpstricks",
       "wheelchart",
       "wordcloud",
@@ -27845,9 +27842,11 @@
     "name": "ltx-talk",
     "depend": [
       "amsmath",
+      "fontspec",
       "graphics",
       "hyperref",
       "lm",
+      "lua-unicode-math",
       "mathtools",
       "newcomputermodern",
       "relsize",
@@ -47985,6 +47984,13 @@
     "name": "vertbars",
     "depend": [
       "lineno"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "vexillology",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
