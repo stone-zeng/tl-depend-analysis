@@ -1765,6 +1765,19 @@
     "tl_depend": []
   },
   {
+    "name": "aspen",
+    "depend": [
+      "bigfoot",
+      "latex",
+      "mathtools",
+      "rcs",
+      "stmaryrd",
+      "xcolor",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "assignment",
     "depend": [
       "latex"
@@ -8474,6 +8487,7 @@
       "install-latex-guide-zh-cn",
       "latex-notes-zh-cn",
       "lshort-chinese",
+      "luatex-cn",
       "lxgw-fonts",
       "nanicolle",
       "njurepo",
@@ -11086,6 +11100,7 @@
       "amstex",
       "annotate-equations",
       "apxproof",
+      "aspen",
       "atableau",
       "autobreak",
       "axodraw2",
@@ -11542,6 +11557,7 @@
       "fitbox",
       "flowchart",
       "forest",
+      "forest-ext",
       "genealogytree",
       "getmap",
       "gincltex",
@@ -12150,6 +12166,7 @@
       "jourcl",
       "jourrr",
       "jpsj",
+      "jsonresume",
       "jwjournal",
       "kdgdocs",
       "kdpcover",
@@ -19413,6 +19430,11 @@
     ]
   },
   {
+    "name": "forest-ext",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "forest-quickstart",
     "depend": [],
     "tl_depend": []
@@ -24857,6 +24879,16 @@
     "tl_depend": []
   },
   {
+    "name": "jsonresume",
+    "depend": [
+      "enumitem",
+      "hyperref",
+      "iftex",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "juliamono",
     "depend": [
       "fontspec",
@@ -28441,6 +28473,23 @@
       "tex-ini-files",
       "unicode-data"
     ]
+  },
+  {
+    "name": "luatex-cn",
+    "depend": [
+      "enumitem",
+      "environ",
+      "fontspec",
+      "geometry",
+      "iftex",
+      "l3kernel",
+      "l3packages",
+      "latex",
+      "luatexbase",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
   },
   {
     "name": "luatex-type-definitions",
@@ -36036,6 +36085,7 @@
     "depend": [
       "amsfonts",
       "cancel",
+      "colortbl",
       "commalists-tools",
       "datetime2",
       "esvect",
@@ -36219,11 +36269,8 @@
   {
     "name": "prooftrees",
     "depend": [
-      "amsfonts",
-      "amsmath",
       "forest",
-      "svn-prov",
-      "unicode-math"
+      "svn-prov"
     ],
     "tl_depend": []
   },
@@ -44375,7 +44422,6 @@
     "name": "thumbs",
     "depend": [
       "alphalph",
-      "kvoptions",
       "pagecolor",
       "picture",
       "rerunfilecheck",
@@ -44576,8 +44622,10 @@
     "depend": [
       "latex",
       "listofitems",
+      "oberdiek",
       "pgf",
       "simplekv",
+      "tikz-3dplot",
       "tools",
       "xint",
       "xstring"
