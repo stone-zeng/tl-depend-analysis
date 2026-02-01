@@ -5291,6 +5291,15 @@
     "tl_depend": []
   },
   {
+    "name": "bussproofs-colorful",
+    "depend": [
+      "bussproofs",
+      "kvoptions",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "bussproofs-extra",
     "depend": [
       "bussproofs",
@@ -10337,6 +10346,7 @@
       "paracol",
       "parades",
       "paralist",
+      "paramcalc",
       "paresse",
       "parnotes",
       "parsa",
@@ -10986,6 +10996,7 @@
       "innerscript",
       "interpreter",
       "kanaparser",
+      "kkluaverb",
       "kkran",
       "kksymbols",
       "ligtype",
@@ -11118,6 +11129,7 @@
       "bropd",
       "broydensolve",
       "bussproofs",
+      "bussproofs-colorful",
       "bussproofs-extra",
       "bytefield",
       "calculation",
@@ -11292,6 +11304,7 @@
       "physics",
       "physics-patch",
       "physics2",
+      "physics3",
       "physunits",
       "pinoutikz",
       "pm-isomath",
@@ -25308,6 +25321,16 @@
     "tl_depend": []
   },
   {
+    "name": "kkluaverb",
+    "depend": [
+      "luacode",
+      "luatexbase",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "kkran",
     "depend": [
       "etoolbox",
@@ -26027,6 +26050,7 @@
       "hyperref",
       "l3kernel",
       "latex",
+      "latex-lab",
       "tools",
       "url"
     ],
@@ -31450,17 +31474,12 @@
       "biblatex",
       "caption",
       "ctex",
+      "etoolbox",
       "geometry",
       "graphics",
       "hyperref",
       "kvoptions",
-      "marvosym",
-      "paralist",
-      "subfig",
-      "titlesec",
-      "tools",
-      "xcolor",
-      "xpatch"
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -33756,6 +33775,11 @@
     "tl_depend": []
   },
   {
+    "name": "paramcalc",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "paratype",
     "depend": [
       "graphics"
@@ -35088,6 +35112,17 @@
       "amsmath",
       "fixdif",
       "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "physics3",
+    "depend": [
+      "amsmath",
+      "etoolbox",
+      "fixdif",
+      "graphics",
+      "mathtools"
     ],
     "tl_depend": []
   },
@@ -39821,15 +39856,34 @@
       "hyphen-portuguese",
       "hyphen-spanish",
       "hyphen-swedish",
+      "l3backend-dev",
+      "l3kernel-dev",
+      "latex-amsmath-dev",
+      "latex-base-dev",
+      "latex-bin-dev",
+      "latex-firstaid-dev",
+      "latex-graphics-dev",
+      "latex-lab",
+      "latex-lab-dev",
+      "latex-tools-dev",
       "lm",
+      "ltx-talk",
+      "lua-unicode-math",
       "lualibs",
+      "luamml",
       "luaotfload",
       "luatexbase",
+      "make4ht",
+      "pdfmanagement-testphase",
       "revtex",
       "synctex",
+      "tagpdf",
+      "tex4ebook",
+      "tex4ht",
       "times",
       "tipa",
       "ulem",
+      "unicode-math",
       "upquote",
       "zapfding"
     ]
