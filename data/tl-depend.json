@@ -2841,6 +2841,7 @@
   {
     "name": "beamer-reveal",
     "depend": [
+      "currfile",
       "l3kernel",
       "l3packages",
       "pgf"
@@ -3032,6 +3033,19 @@
   {
     "name": "beamertheme-detlevcm",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertheme-durham",
+    "depend": [
+      "appendixnumberbeamer",
+      "etoolbox",
+      "fira",
+      "natbib",
+      "pgf",
+      "xcolor",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -9336,6 +9350,7 @@
       "beamertheme-csh",
       "beamertheme-cuerna",
       "beamertheme-detlevcm",
+      "beamertheme-durham",
       "beamertheme-epyt",
       "beamertheme-focus",
       "beamertheme-gotham",
@@ -10156,6 +10171,7 @@
       "makecookbook",
       "makedtx",
       "makeglos",
+      "makegobbler",
       "makelabels",
       "makerobust",
       "mandi",
@@ -11340,6 +11356,7 @@
       "sciposter",
       "sclang-prettifier",
       "scratchx",
+      "seqcalc",
       "sesamanuel",
       "sfg",
       "shuffle",
@@ -12110,6 +12127,7 @@
       "collection-latex",
       "confproc",
       "contract",
+      "cqjtuthesis",
       "cquthesis",
       "dccpaper",
       "dithesis",
@@ -13373,6 +13391,34 @@
   {
     "name": "cprotectinside",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "cqjtuthesis",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "booktabs",
+      "caption",
+      "cjk",
+      "ctex",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "kvoptions",
+      "multirow",
+      "natbib",
+      "setspace",
+      "titlesec",
+      "tools",
+      "ulem",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -27220,7 +27266,9 @@
     "depend": [
       "babel",
       "fontspec",
+      "lua-unicode-math",
       "setspace",
+      "tools",
       "unicode-math"
     ],
     "tl_depend": []
@@ -29007,6 +29055,13 @@
     "tl_depend": []
   },
   {
+    "name": "makegobbler",
+    "depend": [
+      "latex"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "makeindex",
     "depend": [],
     "tl_depend": [
@@ -30421,7 +30476,6 @@
   {
     "name": "mitthesis",
     "depend": [
-      "caption",
       "doi",
       "etoolbox",
       "geometry",
@@ -40014,6 +40068,7 @@
       "geometry",
       "graphics",
       "hyperref",
+      "iftex",
       "koma-script",
       "l3packages",
       "latex",
@@ -40046,7 +40101,6 @@
       "units",
       "utfsym",
       "varwidth",
-      "warning",
       "wrapfig",
       "xargs",
       "xcolor",
@@ -40569,6 +40623,15 @@
   {
     "name": "sepnum",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "seqcalc",
+    "depend": [
+      "bussproofs",
+      "l3kernel",
+      "l3packages"
+    ],
     "tl_depend": []
   },
   {
