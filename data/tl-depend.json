@@ -11045,6 +11045,7 @@
       "lualatex-truncate",
       "lualibs",
       "lualinalg",
+      "lualineno",
       "luamathalign",
       "luamaths",
       "luamml",
@@ -28369,6 +28370,13 @@
     "tl_depend": []
   },
   {
+    "name": "lualineno",
+    "depend": [
+      "luakeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luamathalign",
     "depend": [
       "iftex"
@@ -30788,8 +30796,10 @@
     "name": "modernruler",
     "depend": [
       "kvoptions",
+      "pgf",
       "tcolorbox",
-      "varwidth"
+      "varwidth",
+      "zref"
     ],
     "tl_depend": []
   },
@@ -31830,16 +31840,17 @@
       "amsfonts",
       "annotate-equations",
       "asymptote",
-      "auto-pst-pdf",
       "babel",
       "blindtext",
       "bookmark",
       "cancel",
+      "carlisle",
       "changepage",
       "colortbl",
       "enumitem",
       "environ",
       "esvect",
+      "etoc",
       "etoolbox",
       "fancybox",
       "fancyhdr",
@@ -31848,6 +31859,7 @@
       "fontspec",
       "forest",
       "fourier",
+      "frenchmath",
       "graphics",
       "iftex",
       "jknapltx",
@@ -31856,11 +31868,14 @@
       "lastpage",
       "latex",
       "lipsum",
+      "lm",
+      "lm-math",
       "lua-ul",
       "luacas",
       "luacolor",
       "marginnote",
       "mathastext",
+      "mathtools",
       "microtype",
       "multirow",
       "ncctools",
@@ -32891,6 +32906,7 @@
       "hyperref",
       "ifoddpage",
       "import",
+      "keytheorems",
       "kpfonts",
       "kpfonts-otf",
       "latex",
@@ -32914,7 +32930,9 @@
       "translations",
       "unicode-math",
       "xcolor",
-      "zref"
+      "zref",
+      "zref-clever",
+      "zref-vario"
     ],
     "tl_depend": []
   },
@@ -43015,8 +43033,8 @@
       "caption",
       "ctex",
       "emptypage",
+      "euler-math",
       "fancyhdr",
-      "firamath",
       "footmisc",
       "garamond-math",
       "gbt7714",
@@ -43024,14 +43042,12 @@
       "gfsneohellenicmath",
       "graphics",
       "hyperref",
-      "lete-sans-math",
       "libertinus-fonts",
       "lm-math",
-      "luciole",
+      "oldstandard",
       "pgf",
       "plex",
       "stix",
-      "stix2-otf",
       "tex-gyre-math",
       "unicode-math",
       "xcolor"
