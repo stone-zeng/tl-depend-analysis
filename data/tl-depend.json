@@ -3576,6 +3576,7 @@
       "geometry",
       "graphics",
       "handoutwithnotes",
+      "hyperref",
       "iftex",
       "koma-script",
       "l3kernel",
@@ -10205,6 +10206,7 @@
       "menu",
       "menucard",
       "menukeys",
+      "metacapture",
       "metalogox",
       "metanorma",
       "metastr",
@@ -10744,6 +10746,8 @@
       "todonotes",
       "tokcycle",
       "tokenizer",
+      "tokglobalstack",
+      "tokgroupmark",
       "toolbox",
       "topfloat",
       "topiclongtable",
@@ -12131,6 +12135,7 @@
       "cqjtuthesis",
       "cquthesis",
       "dccpaper",
+      "deutschesmuseum",
       "dithesis",
       "dlrg-templates",
       "ebook",
@@ -12179,6 +12184,7 @@
       "hu-berlin-bundle",
       "hustthesis",
       "hustvisual",
+      "iacrj",
       "iaria",
       "iaria-lite",
       "icsv",
@@ -12200,6 +12206,7 @@
       "jpsj",
       "jsonresume",
       "jwjournal",
+      "jyu-chem-thesis",
       "kdgdocs",
       "kdpcover",
       "kfupm-math-exam",
@@ -14795,14 +14802,13 @@
       "bookmark",
       "booktabs",
       "caption",
-      "cleveref",
       "comment",
       "csquotes",
       "datetime2",
       "enumitem",
       "etoolbox",
       "fixfoot",
-      "fontawesome",
+      "fontawesome5",
       "fontspec",
       "footmisc",
       "glossaries-extra",
@@ -14856,6 +14862,24 @@
     "tl_depend": [
       "detex.ARCH"
     ]
+  },
+  {
+    "name": "deutschesmuseum",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "caption",
+      "fancyhdr",
+      "fontspec",
+      "garamond-math",
+      "geometry",
+      "hyperref",
+      "natbib",
+      "tools",
+      "unicode-math",
+      "xcolor"
+    ],
+    "tl_depend": []
   },
   {
     "name": "dhua",
@@ -23544,6 +23568,42 @@
     "tl_depend": []
   },
   {
+    "name": "iacrj",
+    "depend": [
+      "amscls",
+      "biblatex",
+      "caption",
+      "csquotes",
+      "currfile",
+      "etoolbox",
+      "fancyhdr",
+      "float",
+      "floatrow",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "l3kernel",
+      "latex",
+      "lineno",
+      "lm",
+      "luatex85",
+      "mathtools",
+      "metacapture",
+      "microtype",
+      "pgf",
+      "sectsty",
+      "tools",
+      "totpages",
+      "xifthen",
+      "xkeyval",
+      "xpatch",
+      "xstring",
+      "xurl"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "iaria",
     "depend": [
       "biblatex",
@@ -25075,6 +25135,11 @@
     ]
   },
   {
+    "name": "jyu-chem-thesis",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "kalendarium",
     "depend": [
       "l3packages"
@@ -25395,7 +25460,8 @@
   {
     "name": "kksymbols",
     "depend": [
-      "l3kernel",
+      "kvoptions",
+      "luacode",
       "luatexja",
       "pgf",
       "tools"
@@ -29894,6 +29960,22 @@
       "float",
       "l3packages",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "metacapture",
+    "depend": [
+      "alphalph",
+      "doclicense",
+      "etoolbox",
+      "fancyvrb",
+      "listofitems",
+      "mdwtools",
+      "pgf",
+      "tokcycle",
+      "xpatch",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -45750,6 +45832,20 @@
     "tl_depend": []
   },
   {
+    "name": "tokglobalstack",
+    "depend": [
+      "pkginfograb"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tokgroupmark",
+    "depend": [
+      "pkginfograb"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tokmap",
     "depend": [],
     "tl_depend": []
@@ -49610,7 +49706,9 @@
   {
     "name": "xstacks",
     "depend": [
-      "pkginfograb"
+      "pkginfograb",
+      "tokglobalstack",
+      "tokgroupmark"
     ],
     "tl_depend": []
   },
