@@ -410,6 +410,7 @@
   {
     "name": "adforn",
     "depend": [
+      "fixtounicode",
       "l3kernel",
       "l3packages",
       "svn-prov"
@@ -419,6 +420,7 @@
   {
     "name": "adfsymbols",
     "depend": [
+      "fixtounicode",
       "l3kernel",
       "l3packages",
       "svn-prov"
@@ -3041,7 +3043,6 @@
       "appendixnumberbeamer",
       "etoolbox",
       "fira",
-      "natbib",
       "pgf",
       "xcolor",
       "xstring"
@@ -3231,24 +3232,32 @@
   {
     "name": "beamerthemecelestia",
     "depend": [
-      "arev",
       "babel",
+      "caption",
+      "carlisle",
       "etoolbox",
       "fontspec",
+      "hyperref",
       "iftex",
+      "inter",
       "kvoptions",
+      "l3packages",
       "latex",
+      "libertinust1math",
       "listings",
-      "microtype",
       "minted",
+      "newtx",
+      "notomath",
       "pgf",
+      "plex",
       "psnfss",
-      "roboto",
       "silence",
-      "sourcesanspro",
-      "sourceserifpro",
+      "stix2-type1",
       "tcolorbox",
+      "tex-gyre",
       "tools",
+      "unicode-math",
+      "xcharter",
       "xstring"
     ],
     "tl_depend": []
@@ -8464,6 +8473,7 @@
       "bidihl",
       "collection-basic",
       "dad",
+      "fariscovernew",
       "ghab",
       "hvarabic",
       "hyphen-arabic",
@@ -9705,6 +9715,9 @@
       "egplot",
       "ehhline",
       "einfart",
+      "elegantbook",
+      "elegantnote",
+      "elegantpaper",
       "elements",
       "ellipsis",
       "elmath",
@@ -9827,6 +9840,7 @@
       "fixfoot",
       "fixme",
       "fixmetodonotes",
+      "fixtounicode",
       "fjodor",
       "flabels",
       "flacards",
@@ -10201,6 +10215,7 @@
       "medstarbeamer",
       "meetingmins",
       "memexsupp",
+      "memoize-ext",
       "memory",
       "mensa-tex",
       "menu",
@@ -10216,6 +10231,7 @@
       "mftinc",
       "mi-solns",
       "midpage",
+      "milestonetimeline",
       "mindflow",
       "minibox",
       "minidocument",
@@ -16445,6 +16461,130 @@
     "tl_depend": []
   },
   {
+    "name": "elegantbook",
+    "depend": [
+      "adforn",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "anyfontsize",
+      "appendix",
+      "apptools",
+      "babel",
+      "bbding",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "comment",
+      "csquotes",
+      "ctex",
+      "enumitem",
+      "esint",
+      "etoolbox",
+      "fancyhdr",
+      "fancyvrb",
+      "fontspec",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hologo",
+      "hyperref",
+      "iftex",
+      "jknapltx",
+      "kvoptions",
+      "latex",
+      "lipsum",
+      "listings",
+      "luatexja",
+      "makecell",
+      "manfnt",
+      "multirow",
+      "mwe",
+      "newtx",
+      "pgf",
+      "psnfss",
+      "setspace",
+      "tcolorbox",
+      "titlesec",
+      "tocloft",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "elegantnote",
+    "depend": [
+      "amscls",
+      "amsmath",
+      "anyfontsize",
+      "appendix",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "ctex",
+      "enumitem",
+      "esint",
+      "etoolbox",
+      "extsizes",
+      "fancyhdr",
+      "fontspec",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hologo",
+      "hyperref",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "listings",
+      "lstaddons",
+      "newtx",
+      "pgf",
+      "psnfss",
+      "silence",
+      "titlesec",
+      "tools",
+      "xcolor",
+      "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "elegantpaper",
+    "depend": [
+      "abstract",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "appendix",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "ctex",
+      "enumitem",
+      "esint",
+      "etoolbox",
+      "fancyvrb",
+      "fontspec",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hologo",
+      "hyperref",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "listings",
+      "multirow",
+      "newtx",
+      "psnfss",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "elements",
     "depend": [
       "etoolbox",
@@ -17198,8 +17338,10 @@
   {
     "name": "erewhon-math",
     "depend": [
+      "fontspec",
       "fourier",
       "iftex",
+      "lua-unicode-math",
       "realscripts",
       "unicode-math"
     ],
@@ -18238,6 +18380,18 @@
     "tl_depend": []
   },
   {
+    "name": "fariscovernew",
+    "depend": [
+      "bidi",
+      "fontspec",
+      "iftex",
+      "l3packages",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fascicules",
     "depend": [
       "amscls",
@@ -18932,6 +19086,11 @@
     "tl_depend": []
   },
   {
+    "name": "fixtounicode",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "fiziko",
     "depend": [],
     "tl_depend": []
@@ -19515,7 +19674,9 @@
   },
   {
     "name": "forest-ext",
-    "depend": [],
+    "depend": [
+      "memoize-ext"
+    ],
     "tl_depend": []
   },
   {
@@ -19886,7 +20047,6 @@
       "fancyvrb",
       "latex",
       "lineno",
-      "pdftexcmds",
       "upquote"
     ],
     "tl_depend": [
@@ -26430,8 +26590,7 @@
     "name": "latex2pydata",
     "depend": [
       "etoolbox",
-      "fvextra",
-      "pdftexcmds"
+      "fvextra"
     ],
     "tl_depend": []
   },
@@ -28625,9 +28784,10 @@
     "depend": [
       "enumitem",
       "environ",
+      "eso-pic",
       "fontspec",
       "geometry",
-      "iftex",
+      "graphics",
       "l3kernel",
       "l3packages",
       "latex",
@@ -29858,6 +30018,15 @@
     ]
   },
   {
+    "name": "memoize-ext",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "memoize"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "memory",
     "depend": [],
     "tl_depend": []
@@ -30285,6 +30454,16 @@
   {
     "name": "midpage",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "milestonetimeline",
+    "depend": [
+      "kvoptions",
+      "l3packages",
+      "pgf",
+      "xifthen"
+    ],
     "tl_depend": []
   },
   {
@@ -31941,7 +32120,6 @@
       "fontspec",
       "forest",
       "fourier",
-      "frenchmath",
       "graphics",
       "iftex",
       "jknapltx",
@@ -36459,6 +36637,7 @@
     "name": "prooftrees",
     "depend": [
       "forest",
+      "memoize-ext",
       "svn-prov"
     ],
     "tl_depend": []
@@ -39262,7 +39441,8 @@
     "name": "rpgicons",
     "depend": [
       "l3experimental",
-      "pgf"
+      "pgf",
+      "standalone"
     ],
     "tl_depend": []
   },
@@ -42346,7 +42526,8 @@
   {
     "name": "starray",
     "depend": [
-      "pkginfograb"
+      "pkginfograb",
+      "tokglobalstack"
     ],
     "tl_depend": []
   },
@@ -48886,7 +49067,9 @@
   {
     "name": "xcharter-math",
     "depend": [
+      "fontspec",
       "iftex",
+      "lua-unicode-math",
       "realscripts",
       "unicode-math"
     ],
@@ -50200,11 +50383,9 @@
   {
     "name": "zebra-goodies",
     "depend": [
-      "kvoptions",
       "manfnt",
       "marginnote",
       "microtype",
-      "tikzpagenodes",
       "xcolor"
     ],
     "tl_depend": []
