@@ -833,6 +833,13 @@
     ]
   },
   {
+    "name": "aliascnt",
+    "depend": [
+      "carlisle"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "aligned-overset",
     "depend": [
       "amsmath",
@@ -2288,7 +2295,9 @@
   {
     "name": "babel-french",
     "depend": [],
-    "tl_depend": []
+    "tl_depend": [
+      "carlisle"
+    ]
   },
   {
     "name": "babel-friulan",
@@ -3100,7 +3109,9 @@
       "pgfopts",
       "tools"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "pgfopts"
+    ]
   },
   {
     "name": "beamertheme-mirage",
@@ -3206,13 +3217,21 @@
     "depend": [
       "pgf",
       "pgfopts",
-      "sourcesanspro"
+      "sourcesans"
     ],
     "tl_depend": []
   },
   {
     "name": "beamertheme-upenn-bc",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertheme-westlake",
+    "depend": [
+      "pgf",
+      "ragged2e"
+    ],
     "tl_depend": []
   },
   {
@@ -3342,7 +3361,7 @@
       "tikz-cd",
       "tools",
       "unicode-math",
-      "wrapfig"
+      "wrapfig2"
     ],
     "tl_depend": [
       "colorist"
@@ -3594,7 +3613,7 @@
       "nunito",
       "pgf",
       "qrcode",
-      "sourceserifpro",
+      "sourceserif",
       "tcolorbox",
       "translations",
       "xcolor",
@@ -3620,7 +3639,7 @@
       "nunito",
       "pgf",
       "qrcode",
-      "sourceserifpro",
+      "sourceserif",
       "tcolorbox",
       "tools",
       "translations",
@@ -6242,7 +6261,9 @@
     "depend": [
       "pgf"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "simplekv"
+    ]
   },
   {
     "name": "chemformula",
@@ -7812,6 +7833,8 @@
       "typeoutfileinfo",
       "upmendex",
       "web",
+      "xdvipsk",
+      "xdvipsk-support",
       "xindex",
       "xindy",
       "xpdfopen"
@@ -8182,8 +8205,8 @@
       "simpleicons",
       "skull",
       "sourcecodepro",
-      "sourcesanspro",
-      "sourceserifpro",
+      "sourcesans",
+      "sourceserif",
       "spectral",
       "splentinex",
       "srbtiks",
@@ -8446,6 +8469,7 @@
       "rtklage",
       "screenplay",
       "screenplay-pkg",
+      "sharedline",
       "sides",
       "stage",
       "textglos",
@@ -8591,6 +8615,7 @@
       "hyphen-belarusian",
       "hyphen-bulgarian",
       "hyphen-churchslavonic",
+      "hyphen-kazakh",
       "hyphen-mongolian",
       "hyphen-russian",
       "hyphen-serbian",
@@ -9298,6 +9323,7 @@
       "akletter",
       "alchemist",
       "alertmessage",
+      "aliascnt",
       "alnumsec",
       "alphalph",
       "alterqcm",
@@ -9379,6 +9405,7 @@
       "beamertheme-tcolorbox",
       "beamertheme-trigon",
       "beamertheme-upenn-bc",
+      "beamertheme-westlake",
       "beamerthemeamurmaple",
       "beamerthemecelestia",
       "beamerthemeconcrete",
@@ -9882,6 +9909,7 @@
       "formlett",
       "forms16be",
       "formular",
+      "fox-listings",
       "fragments",
       "frame",
       "framed",
@@ -10479,6 +10507,7 @@
       "pstring",
       "pxgreeks",
       "pygmentex",
+      "pyjupyter",
       "pynotebook",
       "python",
       "pythonimmediate",
@@ -10502,6 +10531,7 @@
       "readablecv",
       "readarray",
       "realboxes",
+      "realscripts",
       "recipe",
       "recipebook",
       "recipecard",
@@ -10609,6 +10639,7 @@
       "simplecd",
       "simplecv",
       "simpleinvoice",
+      "simplex",
       "simplivre",
       "sitem",
       "skb",
@@ -10636,6 +10667,7 @@
       "splitindex",
       "spot",
       "spotcolor",
+      "spotxcolor",
       "spreadtab",
       "spverbatim",
       "srbook-mem",
@@ -10898,6 +10930,7 @@
       "xsim",
       "xsipa",
       "xstacks",
+      "xstix2",
       "xstring",
       "xtab",
       "xtufte",
@@ -11218,6 +11251,7 @@
       "diffcoeff",
       "digiconfigs",
       "dijkstra",
+      "dnsrecord",
       "domaincoloring",
       "drawmatrix",
       "drawstack",
@@ -12219,6 +12253,7 @@
       "jnuexam",
       "jourcl",
       "jourrr",
+      "jouthesis",
       "jpsj",
       "jsonresume",
       "jwjournal",
@@ -12273,6 +12308,7 @@
       "nwejm",
       "nxuthesis",
       "omgtudoc-asoiu",
+      "onlinebrief24",
       "onrannual",
       "opteng",
       "oststud",
@@ -12450,7 +12486,6 @@
       "na-position",
       "philokalia",
       "ptext",
-      "realscripts",
       "simple-resume-cv",
       "simple-thesis-dissertation",
       "tetragonos",
@@ -13410,7 +13445,9 @@
       "bigfoot",
       "latex"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "bigfoot"
+    ]
   },
   {
     "name": "cprotectinside",
@@ -14999,7 +15036,9 @@
       "graphics",
       "psnfss"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "psnfss"
+    ]
   },
   {
     "name": "didactic",
@@ -15213,6 +15252,17 @@
   {
     "name": "dnp",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "dnsrecord",
+    "depend": [
+      "amsmath",
+      "booktabs",
+      "etoolbox",
+      "l3packages",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -16010,7 +16060,9 @@
       "mweights",
       "xkeyval"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "xkeyval"
+    ]
   },
   {
     "name": "ebgaramond-maths",
@@ -19758,6 +19810,14 @@
     "tl_depend": []
   },
   {
+    "name": "fox-listings",
+    "depend": [
+      "listings",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fp",
     "depend": [],
     "tl_depend": []
@@ -20050,7 +20110,9 @@
       "upquote"
     ],
     "tl_depend": [
-      "fancyvrb"
+      "fancyvrb",
+      "lineno",
+      "upquote"
     ]
   },
   {
@@ -20604,7 +20666,9 @@
       "adjustbox",
       "svn-prov"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "svn-prov"
+    ]
   },
   {
     "name": "gindex",
@@ -21091,6 +21155,7 @@
       "latex"
     ],
     "tl_depend": [
+      "epstopdf-pkg",
       "graphics-cfg",
       "graphics-def"
     ]
@@ -21144,7 +21209,7 @@
   {
     "name": "graphicxpsd",
     "depend": [
-      "tools"
+      "l3kernel"
     ],
     "tl_depend": []
   },
@@ -22451,20 +22516,12 @@
     "name": "hitex",
     "depend": [],
     "tl_depend": [
-      "babel",
       "cm",
       "etex",
-      "firstaid",
       "hitex.ARCH",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
-      "l3kernel",
-      "latex",
-      "latex-fonts",
-      "plain",
-      "tex-ini-files",
-      "unicode-data"
+      "plain"
     ]
   },
   {
@@ -22932,6 +22989,7 @@
       "fancyhdr",
       "geometry",
       "graphics",
+      "hustvisual",
       "listings",
       "multirow",
       "titlesec",
@@ -23192,7 +23250,9 @@
       "stringenc"
     ],
     "tl_depend": [
-      "hyperxmp.ARCH"
+      "hyperxmp.ARCH",
+      "ifmtarg",
+      "oberdiek"
     ]
   },
   {
@@ -23488,6 +23548,14 @@
   },
   {
     "name": "hyphen-italian",
+    "depend": [],
+    "tl_depend": [
+      "hyph-utf8",
+      "hyphen-base"
+    ]
+  },
+  {
+    "name": "hyphen-kazakh",
     "depend": [],
     "tl_depend": [
       "hyph-utf8",
@@ -24165,7 +24233,11 @@
       "luatexbase",
       "xcolor"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "luacode",
+      "luatexbase",
+      "xcolor"
+    ]
   },
   {
     "name": "import",
@@ -24985,6 +25057,7 @@
     "name": "jmlr",
     "depend": [
       "algorithm2e",
+      "aliascnt",
       "amsfonts",
       "amsmath",
       "cleveref",
@@ -24996,7 +25069,6 @@
       "hyperref",
       "latex",
       "natbib",
-      "oberdiek",
       "placeins",
       "setspace",
       "tools",
@@ -25094,6 +25166,48 @@
       "tools",
       "wasysym",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "jouthesis",
+    "depend": [
+      "algorithmicx",
+      "algorithms",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "bookmark",
+      "booktabs",
+      "caption",
+      "cleveref",
+      "ctex",
+      "enumitem",
+      "fancyhdr",
+      "float",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "lastpage",
+      "listings",
+      "makecell",
+      "mathtools",
+      "multirow",
+      "natbib",
+      "nomencl",
+      "pdflscape",
+      "setspace",
+      "siunitx",
+      "tablefootnote",
+      "textpos",
+      "threeparttable",
+      "tinos",
+      "titlesec",
+      "tools",
+      "xcolor",
+      "xecjk"
     ],
     "tl_depend": []
   },
@@ -25510,8 +25624,8 @@
   {
     "name": "keytheorems",
     "depend": [
+      "aliascnt",
       "amscls",
-      "oberdiek",
       "refcount",
       "tcolorbox",
       "thmtools",
@@ -26333,6 +26447,7 @@
     "name": "latex-bin",
     "depend": [],
     "tl_depend": [
+      "amsmath",
       "babel",
       "cm",
       "dehyph",
@@ -26354,6 +26469,7 @@
       "luatex",
       "pdftex",
       "tex-ini-files",
+      "tools",
       "unicode-data"
     ]
   },
@@ -26867,7 +26983,7 @@
       "tikz-cd",
       "tools",
       "unicode-math",
-      "wrapfig"
+      "wrapfig2"
     ],
     "tl_depend": [
       "colorist"
@@ -27679,8 +27795,8 @@
   {
     "name": "llncs",
     "depend": [
+      "aliascnt",
       "latex",
-      "oberdiek",
       "tools"
     ],
     "tl_depend": []
@@ -28368,7 +28484,9 @@
       "iftex",
       "luakeyval"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "luakeyval"
+    ]
   },
   {
     "name": "lua-widow-control",
@@ -29731,7 +29849,8 @@
       "tools"
     ],
     "tl_depend": [
-      "amsmath"
+      "amsmath",
+      "tools"
     ]
   },
   {
@@ -31971,6 +32090,7 @@
   {
     "name": "nchairx",
     "depend": [
+      "aliascnt",
       "amsfonts",
       "amsmath",
       "bigfoot",
@@ -31978,7 +32098,6 @@
       "graphics",
       "mathtools",
       "ntheorem",
-      "oberdiek",
       "tensor",
       "xkeyval"
     ],
@@ -33237,7 +33356,6 @@
       "amsmath",
       "atveryend",
       "bigintcalc",
-      "carlisle",
       "etexcmds",
       "fontspec",
       "fp",
@@ -33471,6 +33589,26 @@
       "latex",
       "pgf",
       "tcolorbox"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "onlinebrief24",
+    "depend": [
+      "eso-pic",
+      "etoolbox",
+      "fontspec",
+      "geometry",
+      "iftex",
+      "koma-script",
+      "kvoptions",
+      "latex",
+      "marvosym",
+      "pgf",
+      "sourcesans",
+      "tex-gyre",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -34603,6 +34741,7 @@
       "eso-pic",
       "graphics",
       "oberdiek",
+      "pdflscape",
       "tools"
     ]
   },
@@ -34616,7 +34755,9 @@
       "stringenc",
       "xstring"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "hyperxmp"
+    ]
   },
   {
     "name": "pdfpc-movie",
@@ -35256,11 +35397,11 @@
   {
     "name": "phfthm",
     "depend": [
+      "aliascnt",
       "amscls",
       "amsfonts",
       "amsmath",
       "etoolbox",
-      "oberdiek",
       "xkeyval"
     ],
     "tl_depend": []
@@ -36775,11 +36916,11 @@
   {
     "name": "pseudo",
     "depend": [
+      "aliascnt",
       "colortbl",
       "etoolbox",
       "l3kernel",
       "l3packages",
-      "oberdiek",
       "pgf",
       "tools",
       "xcolor"
@@ -38009,6 +38150,19 @@
     ]
   },
   {
+    "name": "pyjupyter",
+    "depend": [
+      "bera",
+      "inconsolata",
+      "kvoptions",
+      "listingsutf8",
+      "sourcecodepro",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pyluatex",
     "depend": [
       "kvoptions",
@@ -38198,6 +38352,7 @@
   {
     "name": "quantum-chemistry-bonn",
     "depend": [
+      "acronym",
       "l3kernel",
       "l3packages",
       "siunitx",
@@ -41177,6 +41332,13 @@
     "tl_depend": []
   },
   {
+    "name": "sharedline",
+    "depend": [
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "shdoc",
     "depend": [
       "caption",
@@ -41584,6 +41746,13 @@
   {
     "name": "simplewick",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "simplex",
+    "depend": [
+      "l3packages"
+    ],
     "tl_depend": []
   },
   {
@@ -42082,7 +42251,7 @@
     "tl_depend": []
   },
   {
-    "name": "sourcesanspro",
+    "name": "sourcesans",
     "depend": [
       "fontaxes",
       "fontspec",
@@ -42094,7 +42263,7 @@
     "tl_depend": []
   },
   {
-    "name": "sourceserifpro",
+    "name": "sourceserif",
     "depend": [
       "fontaxes",
       "fontspec",
@@ -42304,6 +42473,14 @@
     "name": "spotcolor",
     "depend": [
       "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "spotxcolor",
+    "depend": [
+      "iftex",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -43544,7 +43721,9 @@
       "varwidth",
       "zref"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "ninecolors"
+    ]
   },
   {
     "name": "tabularray-abnt",
@@ -45551,7 +45730,9 @@
       "pgf",
       "xstring"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "xstring"
+    ]
   },
   {
     "name": "tikzsymbols",
@@ -45829,6 +46010,7 @@
   {
     "name": "tkz-grapheur",
     "depend": [
+      "commalists-tools",
       "latex",
       "listofitems",
       "pgf",
@@ -47514,8 +47696,10 @@
       "lualatex-math"
     ],
     "tl_depend": [
+      "amsmath",
       "fontspec",
-      "lm-math"
+      "lm-math",
+      "lualatex-math"
     ]
   },
   {
@@ -47584,7 +47768,7 @@
       "l3packages",
       "ragged2e",
       "roboto",
-      "sourceserifpro"
+      "sourceserif"
     ],
     "tl_depend": []
   },
@@ -47723,8 +47907,8 @@
       "refcount",
       "setspace",
       "sourcecodepro",
-      "sourcesanspro",
-      "sourceserifpro",
+      "sourcesans",
+      "sourceserif",
       "tcolorbox",
       "textcase",
       "tikzpagenodes",
@@ -48159,7 +48343,7 @@
       "hyperref",
       "microtype",
       "sourcecodepro",
-      "sourcesanspro",
+      "sourcesans",
       "stringstrings",
       "textpos",
       "titlesec",
@@ -49226,6 +49410,24 @@
     ]
   },
   {
+    "name": "xdvipsk",
+    "depend": [],
+    "tl_depend": [
+      "xdvipsk-support",
+      "xdvipsk.ARCH"
+    ]
+  },
+  {
+    "name": "xdvipsk-support",
+    "depend": [
+      "lualibs",
+      "luatexbase"
+    ],
+    "tl_depend": [
+      "xdvipsk"
+    ]
+  },
+  {
     "name": "xebaposter",
     "depend": [
       "geometry",
@@ -49892,6 +50094,15 @@
       "pkginfograb",
       "tokglobalstack",
       "tokgroupmark"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "xstix2",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "unicode-math"
     ],
     "tl_depend": []
   },
