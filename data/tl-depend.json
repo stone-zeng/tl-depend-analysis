@@ -9118,6 +9118,7 @@
       "ethiop",
       "ethiop-t1",
       "fc",
+      "fonts-arundina",
       "fonts-tlwg",
       "hebrew-fonts",
       "hindawi-latex-template",
@@ -10059,6 +10060,7 @@
       "incgraph",
       "indextools",
       "indextra",
+      "infufrgs",
       "inline-images",
       "inlinedef",
       "inlinegraphicx",
@@ -10691,6 +10693,7 @@
       "stubs",
       "studenthandouts",
       "styledcmd",
+      "styleitems",
       "subdepth",
       "subdocs",
       "subeqn",
@@ -11088,6 +11091,7 @@
       "luacomplex",
       "luagcd",
       "luahttp",
+      "luahyperbolic",
       "luahyphenrules",
       "luaimageembed",
       "luaindex",
@@ -11757,6 +11761,7 @@
       "spectralsequences",
       "strands",
       "sunpath",
+      "svg-animate",
       "swimgraf",
       "syntaxdi",
       "table-fct",
@@ -12306,6 +12311,7 @@
       "nstc-proposal",
       "nwafuthesis",
       "nwejm",
+      "nxtlatex",
       "nxuthesis",
       "omgtudoc-asoiu",
       "onlinebrief24",
@@ -19539,6 +19545,13 @@
     ]
   },
   {
+    "name": "fonts-arundina",
+    "depend": [
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fonts-churchslavonic",
     "depend": [],
     "tl_depend": []
@@ -24320,6 +24333,30 @@
     "tl_depend": []
   },
   {
+    "name": "infufrgs",
+    "depend": [
+      "abntex2",
+      "babel",
+      "caption",
+      "fancyhdr",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hypcap",
+      "hyperref",
+      "iftex",
+      "lastpage",
+      "latex",
+      "newtx",
+      "setspace",
+      "titlesec",
+      "tocloft",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "infwarerr",
     "depend": [],
     "tl_depend": []
@@ -28611,6 +28648,15 @@
       "l3packages",
       "luapackageloader",
       "url"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "luahyperbolic",
+    "depend": [
+      "iftex",
+      "luacode",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -33312,6 +33358,26 @@
       "zref",
       "zref-clever",
       "zref-vario"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "nxtlatex",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "booktabs",
+      "etoolbox",
+      "fontspec",
+      "graphics",
+      "hyperref",
+      "koma-script",
+      "kvoptions",
+      "latex",
+      "ragged2e",
+      "unicode-math",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -38153,8 +38219,10 @@
     "name": "pyjupyter",
     "depend": [
       "bera",
+      "etoolbox",
       "inconsolata",
       "kvoptions",
+      "listings",
       "listingsutf8",
       "sourcecodepro",
       "tcolorbox",
@@ -43043,6 +43111,18 @@
     "tl_depend": []
   },
   {
+    "name": "styleitems",
+    "depend": [
+      "bidicontour",
+      "etoolbox",
+      "graphics",
+      "l3packages",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "suanpan",
     "depend": [],
     "tl_depend": []
@@ -43262,6 +43342,14 @@
       "tools",
       "trimspaces"
     ]
+  },
+  {
+    "name": "svg-animate",
+    "depend": [
+      "graphics",
+      "pgf"
+    ],
+    "tl_depend": []
   },
   {
     "name": "svg-inkscape",
@@ -48793,6 +48881,7 @@
       "etoolbox",
       "graphics",
       "l3experimental",
+      "l3packages",
       "luacode",
       "memoir",
       "microtype",
@@ -48800,6 +48889,7 @@
       "pdftexcmds",
       "pgf",
       "pgfopts",
+      "soul",
       "tools",
       "wasysym",
       "xcolor"
@@ -50594,6 +50684,7 @@
   {
     "name": "zebra-goodies",
     "depend": [
+      "hyperref",
       "manfnt",
       "marginnote",
       "microtype",
