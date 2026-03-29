@@ -8373,6 +8373,7 @@
       "jigsaw",
       "labyrinth",
       "logicpuzzle",
+      "magicthegathering",
       "mahjong",
       "mathador",
       "maze",
@@ -10254,6 +10255,7 @@
       "metacapture",
       "metalogox",
       "metanorma",
+      "metaphor",
       "metastr",
       "method",
       "metre",
@@ -10641,6 +10643,7 @@
       "simplecd",
       "simplecv",
       "simpleinvoice",
+      "simplesystemtex",
       "simplex",
       "simplivre",
       "sitem",
@@ -10946,7 +10949,7 @@
       "ycbook",
       "ydoc",
       "yplan",
-      "zebra-goodies",
+      "zebra",
       "zed-csp",
       "zennote",
       "ziffer",
@@ -11397,6 +11400,7 @@
       "quantikz",
       "quantum-chemistry-bonn",
       "quantumcubemodel",
+      "quickderivs",
       "quickreaction",
       "quiver",
       "qworld",
@@ -29305,6 +29309,23 @@
     "tl_depend": []
   },
   {
+    "name": "magicthegathering",
+    "depend": [
+      "booktabs",
+      "enumitem",
+      "graphics",
+      "hyperref",
+      "l3kernel",
+      "l3packages",
+      "pgfopts",
+      "svg",
+      "tools",
+      "xcolor",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "magicwatermark",
     "depend": [],
     "tl_depend": []
@@ -30369,6 +30390,15 @@
   {
     "name": "metaobj",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "metaphor",
+    "depend": [
+      "imakeidx",
+      "kvoptions",
+      "tools"
+    ],
     "tl_depend": []
   },
   {
@@ -33663,13 +33693,13 @@
     "depend": [
       "eso-pic",
       "etoolbox",
+      "fontawesome5",
       "fontspec",
       "geometry",
       "iftex",
       "koma-script",
       "kvoptions",
       "latex",
-      "marvosym",
       "pgf",
       "sourcesans",
       "tex-gyre",
@@ -38476,6 +38506,14 @@
     "tl_depend": []
   },
   {
+    "name": "quickderivs",
+    "depend": [
+      "l3packages",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "quickreaction",
     "depend": [
       "l3packages",
@@ -41808,6 +41846,16 @@
       "amsmath",
       "l3kernel",
       "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "simplesystemtex",
+    "depend": [
+      "amsfonts",
+      "hyperref",
+      "pgf",
+      "tocloft"
     ],
     "tl_depend": []
   },
@@ -46101,6 +46149,7 @@
       "commalists-tools",
       "latex",
       "listofitems",
+      "luacode",
       "pgf",
       "pgfplots",
       "simplekv",
@@ -50435,11 +50484,13 @@
   {
     "name": "yb-book",
     "depend": [
+      "amsmath",
       "anyfontsize",
       "biblatex",
       "bigfoot",
       "changepage",
       "chngcntr",
+      "cleveref",
       "csquotes",
       "doi",
       "enumitem",
@@ -50460,10 +50511,8 @@
       "pgf",
       "pgfopts",
       "setspace",
-      "soul",
       "textpos",
       "titlesec",
-      "ulem",
       "wrapfig",
       "xcolor",
       "xifthen"
@@ -50682,7 +50731,7 @@
     "tl_depend": []
   },
   {
-    "name": "zebra-goodies",
+    "name": "zebra",
     "depend": [
       "hyperref",
       "manfnt",
