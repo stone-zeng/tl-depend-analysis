@@ -5029,6 +5029,13 @@
     "tl_depend": []
   },
   {
+    "name": "booktabstabular",
+    "depend": [
+      "booktabs"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "boolexpr",
     "depend": [],
     "tl_depend": []
@@ -6343,6 +6350,14 @@
     "tl_depend": []
   },
   {
+    "name": "chempid",
+    "depend": [
+      "etoolbox",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "chemplants",
     "depend": [
       "latex",
@@ -7050,6 +7065,15 @@
       "crefthe",
       "oberdiek",
       "regexpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "cleveref-icelandic",
+    "depend": [
+      "cleveref",
+      "hyperref",
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -9282,6 +9306,7 @@
       "oberdiek",
       "pagesel",
       "pdfescape",
+      "pdfmanagement-testphase",
       "pdftexcmds",
       "pslatex",
       "psnfss",
@@ -9289,6 +9314,7 @@
       "refcount",
       "rerunfilecheck",
       "stringenc",
+      "tagpdf",
       "tools",
       "uniquecounter",
       "url"
@@ -9443,6 +9469,7 @@
       "bookest",
       "booklet",
       "bookshelf",
+      "booktabstabular",
       "boolexpr",
       "bophook",
       "boxedminipage",
@@ -9518,6 +9545,7 @@
       "clefval",
       "cleveref",
       "cleveref-forward",
+      "cleveref-icelandic",
       "cleveref-usedon",
       "clicks",
       "clipboard",
@@ -10741,7 +10769,6 @@
       "tabulary",
       "tagging",
       "tagpair",
-      "tagpdf",
       "talk",
       "tamefloats",
       "tangocolors",
@@ -11015,7 +11042,6 @@
       "parskip",
       "pdfcolfoot",
       "pdflscape",
-      "pdfmanagement-testphase",
       "pdfpages",
       "polyglossia",
       "psfrag",
@@ -11225,6 +11251,7 @@
       "chemmacros",
       "chemnum",
       "chemobabel",
+      "chempid",
       "chemplants",
       "chemschemex",
       "chemsec",
@@ -11434,6 +11461,7 @@
       "spalign",
       "spbmark",
       "stanli",
+      "statementsp",
       "statex",
       "statex2",
       "statistics",
@@ -11618,6 +11646,7 @@
       "collection-basic",
       "coloredbelts",
       "combinedgraphics",
+      "corasdiagram",
       "curve",
       "curve2e",
       "curves",
@@ -11986,6 +12015,7 @@
       "texinfo",
       "timetable",
       "tokmap",
+      "tokstools",
       "tracklang",
       "transparent-io",
       "treetex",
@@ -12194,6 +12224,7 @@
       "cqjtuthesis",
       "cquthesis",
       "dccpaper",
+      "delvierre",
       "deutschesmuseum",
       "dithesis",
       "dlrg-templates",
@@ -13327,6 +13358,16 @@
       "xcolor",
       "xifthen",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "corasdiagram",
+    "depend": [
+      "graphics",
+      "l3packages",
+      "pgf",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -14844,6 +14885,35 @@
   {
     "name": "delimtxt",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "delvierre",
+    "depend": [
+      "amsmath",
+      "booktabs",
+      "caption",
+      "enumitem",
+      "environ",
+      "eso-pic",
+      "etoolbox",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "latex",
+      "microtype",
+      "natbib",
+      "newtx",
+      "newtxtt",
+      "pgf",
+      "preprint",
+      "ragged2e",
+      "sttools",
+      "titlesec",
+      "tools",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -26203,8 +26273,7 @@
   {
     "name": "l3experimental",
     "depend": [
-      "l3kernel",
-      "l3packages"
+      "l3kernel"
     ],
     "tl_depend": [
       "l3kernel"
@@ -42830,6 +42899,22 @@
     "tl_depend": []
   },
   {
+    "name": "statementsp",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "etoolbox",
+      "graphics",
+      "hyperref",
+      "latex",
+      "pgf",
+      "prettyref",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "statex",
     "depend": [
       "amsfonts",
@@ -45891,10 +45976,8 @@
   {
     "name": "tikzviolinplots",
     "depend": [
-      "latex",
       "pgf",
-      "pgfplots",
-      "stringstrings"
+      "pgfplots"
     ],
     "tl_depend": []
   },
@@ -46348,6 +46431,13 @@
   {
     "name": "tokmap",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "tokstools",
+    "depend": [
+      "simplekv"
+    ],
     "tl_depend": []
   },
   {
