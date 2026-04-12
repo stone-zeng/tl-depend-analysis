@@ -4329,6 +4329,13 @@
     "tl_depend": []
   },
   {
+    "name": "bibleref-sbl",
+    "depend": [
+      "bibleref"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "bibletext",
     "depend": [
       "pdftexcmds",
@@ -8559,8 +8566,6 @@
       "asymptote-manual-zh-cn",
       "cns",
       "collection-langcjk",
-      "ctex",
-      "ctex-faq",
       "exam-zh",
       "fandol",
       "fduthesis",
@@ -8611,7 +8616,6 @@
       "norasi-c90",
       "pxtatescale",
       "xcjk2uni",
-      "xecjk",
       "zitie",
       "zxjafont"
     ]
@@ -8769,7 +8773,6 @@
       "visualfaq",
       "webguide",
       "wrapstuff-doc-en",
-      "xetexref",
       "yet-another-guide-latex2e"
     ]
   },
@@ -9180,8 +9183,7 @@
       "velthuis",
       "vntex",
       "wnri",
-      "wnri-latex",
-      "xetex-devanagari"
+      "wnri-latex"
     ]
   },
   {
@@ -10686,6 +10688,7 @@
       "slixte",
       "smalltableof",
       "smart-eqn",
+      "smartnotes",
       "smartref",
       "smartunits",
       "snapshot",
@@ -11084,6 +11087,7 @@
       "cloze",
       "collection-basic",
       "combofont",
+      "countwords",
       "cstypo",
       "ctablestack",
       "ekdosis",
@@ -11309,6 +11313,7 @@
       "faktor",
       "fascicules",
       "fitch",
+      "fits-astro",
       "fixdif",
       "fixmath",
       "fnspe",
@@ -11322,6 +11327,7 @@
       "gastex",
       "gene-logic",
       "ghsystem",
+      "glmatrix",
       "glosmathtools",
       "gotoh",
       "grundgesetze",
@@ -11382,8 +11388,10 @@
       "mhequ",
       "miller",
       "mismath",
+      "mohelper",
       "moremath",
       "multiobjective",
+      "mystyletau",
       "naive-ebnf",
       "namedtensor",
       "natded",
@@ -11790,6 +11798,7 @@
       "simplenodes",
       "simpleoptics",
       "smartdiagram",
+      "sneaker",
       "spath3",
       "spectralsequences",
       "strands",
@@ -12199,6 +12208,7 @@
       "beilstein",
       "bfh-ci",
       "bgteubner",
+      "bibleref-sbl",
       "bjfuthesis",
       "bmstu",
       "bmstu-iu8",
@@ -12384,6 +12394,11 @@
       "ryethesis",
       "sageep",
       "sapthesis",
+      "sblarticle",
+      "sblbook",
+      "sblfonts",
+      "sblidx",
+      "sblreport",
       "schule",
       "scientific-thesis-cover",
       "scripture",
@@ -12395,7 +12410,6 @@
       "seuthesix",
       "sfee",
       "shortmathj",
-      "shtthesis",
       "smflatex",
       "soton",
       "sphdthesis",
@@ -12519,6 +12533,8 @@
       "businesscard-qrcode",
       "collection-basic",
       "cqubeamer",
+      "ctex",
+      "ctex-faq",
       "fixlatvian",
       "font-change-xetex",
       "fontbook",
@@ -12527,6 +12543,7 @@
       "na-position",
       "philokalia",
       "ptext",
+      "shtthesis",
       "simple-resume-cv",
       "simple-thesis-dissertation",
       "tetragonos",
@@ -12536,6 +12553,7 @@
       "unisugar",
       "xebaposter",
       "xechangebar",
+      "xecjk",
       "xecolor",
       "xecyr",
       "xeindex",
@@ -12543,12 +12561,14 @@
       "xesearch",
       "xespotcolor",
       "xetex",
+      "xetex-devanagari",
       "xetex-itrans",
       "xetex-pstricks",
       "xetex-tibetan",
       "xetexconfig",
       "xetexfontinfo",
       "xetexko",
+      "xetexref",
       "xevlna",
       "zbmath-review-template"
     ]
@@ -13437,6 +13457,14 @@
     "tl_depend": []
   },
   {
+    "name": "countwords",
+    "depend": [
+      "luapackageloader",
+      "luatexbase"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "courier",
     "depend": [],
     "tl_depend": []
@@ -13877,8 +13905,7 @@
       "pdftex",
       "plain",
       "tex",
-      "tex-ini-files",
-      "xetex"
+      "tex-ini-files"
     ]
   },
   {
@@ -19136,6 +19163,11 @@
     "tl_depend": []
   },
   {
+    "name": "fits-astro",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "fix2col",
     "depend": [],
     "tl_depend": []
@@ -20843,6 +20875,14 @@
       "latex",
       "pdftexcmds",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "glmatrix",
+    "depend": [
+      "fp",
+      "xint"
     ],
     "tl_depend": []
   },
@@ -31415,6 +31455,15 @@
     "tl_depend": []
   },
   {
+    "name": "mohelper",
+    "depend": [
+      "etoolbox",
+      "pgf",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "moloch",
     "depend": [
       "etoolbox",
@@ -32069,6 +32118,15 @@
       "hyperref",
       "kvoptions",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "mystyletau",
+    "depend": [
+      "amsmath",
+      "fontspec",
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -40192,6 +40250,80 @@
     "tl_depend": []
   },
   {
+    "name": "sblarticle",
+    "depend": [
+      "biblatex",
+      "caption",
+      "csquotes",
+      "fancyhdr",
+      "footmisc",
+      "geometry",
+      "latex",
+      "ragged2e",
+      "sblfonts",
+      "setspace",
+      "titlesec"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "sblbook",
+    "depend": [
+      "biblatex",
+      "bibleref-parse",
+      "caption",
+      "csquotes",
+      "fancyhdr",
+      "footmisc",
+      "geometry",
+      "impnattypo",
+      "latex",
+      "microtype",
+      "nowidow",
+      "sblfonts",
+      "sblidx",
+      "titlesec"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "sblfonts",
+    "depend": [
+      "babel",
+      "fontspec",
+      "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "sblidx",
+    "depend": [
+      "biblatex",
+      "bibleref-parse",
+      "bibleref-sbl",
+      "idxlayout",
+      "imakeidx"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "sblreport",
+    "depend": [
+      "biblatex",
+      "caption",
+      "csquotes",
+      "fancyhdr",
+      "footmisc",
+      "geometry",
+      "latex",
+      "ragged2e",
+      "sblfonts",
+      "setspace",
+      "titlesec"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "scale",
     "depend": [],
     "tl_depend": []
@@ -42304,6 +42436,15 @@
     "tl_depend": []
   },
   {
+    "name": "smartnotes",
+    "depend": [
+      "l3packages",
+      "pgf",
+      "tikzpagenodes"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "smartref",
     "depend": [],
     "tl_depend": []
@@ -42341,6 +42482,13 @@
     "name": "snaptodo",
     "depend": [
       "tikzpagenodes"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "sneaker",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -47285,7 +47433,8 @@
       "soul",
       "tools",
       "ulem",
-      "xstring"
+      "xstring",
+      "zref"
     ],
     "tl_depend": []
   },
