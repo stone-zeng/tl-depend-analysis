@@ -1353,6 +1353,7 @@
     "name": "apxproof",
     "depend": [
       "amscls",
+      "appendix",
       "bibunits",
       "catchfile",
       "environ",
@@ -1777,6 +1778,7 @@
     "name": "aspen",
     "depend": [
       "bigfoot",
+      "etoolbox",
       "latex",
       "mathtools",
       "rcs",
@@ -6360,6 +6362,7 @@
     "name": "chempid",
     "depend": [
       "etoolbox",
+      "import",
       "pgf"
     ],
     "tl_depend": []
@@ -11109,6 +11112,7 @@
       "longmath",
       "lparse",
       "lt3luabridge",
+      "lua-list-hyphen",
       "lua-placeholders",
       "lua-tinyyaml",
       "lua-typo",
@@ -12144,6 +12148,7 @@
       "pst-solides3d",
       "pst-soroban",
       "pst-spectra",
+      "pst-spectrum",
       "pst-sphericaltrochoid",
       "pst-spinner",
       "pst-stru",
@@ -12488,6 +12493,7 @@
       "ut-thesis",
       "utexasthesis",
       "uvaletter",
+      "uvlhighlight",
       "uwa-colours",
       "uwa-letterhead",
       "uwa-pcf",
@@ -28553,6 +28559,11 @@
     "tl_depend": []
   },
   {
+    "name": "lua-list-hyphen",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "lua-physical",
     "depend": [],
     "tl_depend": []
@@ -28662,11 +28673,7 @@
   },
   {
     "name": "luabidi",
-    "depend": [
-      "bigfoot",
-      "etoolbox",
-      "latex"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -32435,6 +32442,7 @@
       "esvect",
       "etoc",
       "etoolbox",
+      "eurosym",
       "fancybox",
       "fancyhdr",
       "fancyvrb",
@@ -33986,6 +33994,7 @@
   {
     "name": "orcidlink",
     "depend": [
+      "etoolbox",
       "hyperref",
       "pgf"
     ],
@@ -37908,6 +37917,15 @@
       "multido",
       "pstricks",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-spectrum",
+    "depend": [
+      "l3kernel",
+      "multido",
+      "pstricks"
     ],
     "tl_depend": []
   },
@@ -48700,6 +48718,19 @@
       "psnfss",
       "setspace",
       "soul"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "uvlhighlight",
+    "depend": [
+      "bera",
+      "inconsolata",
+      "latex",
+      "listings",
+      "lm",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
