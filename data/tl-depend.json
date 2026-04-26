@@ -3818,6 +3818,15 @@
     "tl_depend": []
   },
   {
+    "name": "biblatex-abs-annote",
+    "depend": [
+      "changepage",
+      "kvoptions",
+      "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "biblatex-accursius",
     "depend": [],
     "tl_depend": []
@@ -3827,6 +3836,11 @@
     "depend": [
       "shortmathj"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "biblatex-ams",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -5791,6 +5805,16 @@
     "tl_depend": []
   },
   {
+    "name": "cardgame",
+    "depend": [
+      "l3packages",
+      "pgf",
+      "tabularray",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "carlisle",
     "depend": [
       "graphics",
@@ -6469,15 +6493,14 @@
       "amsmath",
       "caption",
       "cite",
-      "collref",
       "datetime",
-      "filecontents",
       "footmisc",
       "geometry",
       "graphics",
       "hyperref",
       "kvoptions",
       "l3packages",
+      "mciteplus",
       "microtype",
       "ncctools",
       "tocloft",
@@ -7018,6 +7041,16 @@
       "marginnote",
       "tools",
       "url"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "clawxiv",
+    "depend": [
+      "hyperref",
+      "l3packages",
+      "mdframed",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -7604,7 +7637,9 @@
       "bibhtml",
       "biblatex",
       "biblatex-abnt",
+      "biblatex-abs-annote",
       "biblatex-ajc2020unofficial",
+      "biblatex-ams",
       "biblatex-anonymous",
       "biblatex-apa",
       "biblatex-apa6",
@@ -8383,6 +8418,7 @@
     "depend": [],
     "tl_depend": [
       "bartel-chess-fonts",
+      "cardgame",
       "chess",
       "chess-problem-diagrams",
       "chessboard",
@@ -9311,7 +9347,7 @@
       "oberdiek",
       "pagesel",
       "pdfescape",
-      "pdfmanagement-testphase",
+      "pdfmanagement",
       "pdftexcmds",
       "pslatex",
       "psnfss",
@@ -9547,6 +9583,7 @@
       "cistercian",
       "classics",
       "classpack",
+      "clawxiv",
       "clefval",
       "cleveref",
       "cleveref-forward",
@@ -10226,6 +10263,7 @@
       "lt3rawobjects",
       "ltablex",
       "ltabptch",
+      "ltmermaid",
       "ltxdockit",
       "ltxguidex",
       "ltxkeys",
@@ -10884,6 +10922,7 @@
       "upquote",
       "uri",
       "useclass",
+      "user-persona",
       "ushort",
       "uspace",
       "utf8add",
@@ -11439,6 +11478,7 @@
       "quantikz",
       "quantum-chemistry-bonn",
       "quantumcubemodel",
+      "query-astro",
       "quickderivs",
       "quickreaction",
       "quiver",
@@ -11446,6 +11486,7 @@
       "rank-2-roots",
       "rbt-mathnotes",
       "rec-thy",
+      "register-transfer-level",
       "reptheorem",
       "resolsysteme",
       "rest-api",
@@ -12491,6 +12532,7 @@
       "urcls",
       "uspatent",
       "ut-thesis",
+      "utbmciad-report",
       "utexasthesis",
       "uvaletter",
       "uvlhighlight",
@@ -19693,6 +19735,8 @@
   {
     "name": "fontsetup",
     "depend": [
+      "arsenal",
+      "arsenal-math",
       "cabin",
       "cm-unicode",
       "concmath-otf",
@@ -19711,10 +19755,13 @@
       "iftex",
       "inconsolata",
       "kerkis",
+      "lete-sans-math",
       "libertinus-otf",
+      "luciole",
       "newcomputermodern",
       "oberdiek",
       "oldstandard",
+      "pennstander-otf",
       "stix2-otf",
       "talos",
       "tex-gyre-math",
@@ -21799,7 +21846,7 @@
       "moreverb",
       "multirow",
       "overpic",
-      "pdfmanagement-testphase",
+      "pdfmanagement",
       "pdfpages",
       "pgf",
       "pict2e",
@@ -22139,13 +22186,15 @@
       "babel",
       "csquotes",
       "enumitem",
-      "graphics",
+      "etoolbox",
+      "fontspec",
       "latex",
+      "mathtools",
       "memoir",
-      "numprint",
-      "oberdiek",
-      "tocvsec2",
-      "tools"
+      "psnfss",
+      "tools",
+      "unicode-math",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -26725,7 +26774,7 @@
       "bigfoot",
       "graphics",
       "luamml",
-      "pdfmanagement-testphase",
+      "pdfmanagement",
       "tagpdf",
       "tools"
     ],
@@ -26739,7 +26788,7 @@
       "graphics",
       "latex-lab",
       "luamml",
-      "pdfmanagement-testphase",
+      "pdfmanagement",
       "tagpdf",
       "tools"
     ],
@@ -28441,6 +28490,19 @@
     "tl_depend": []
   },
   {
+    "name": "ltmermaid",
+    "depend": [
+      "adjustbox",
+      "fancyvrb",
+      "graphics",
+      "iftex",
+      "kvoptions",
+      "luacode",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "ltx-talk",
     "depend": [
       "amsmath",
@@ -29123,6 +29185,7 @@
       "luatexbase",
       "pdftexcmds",
       "preview",
+      "regexpatch",
       "siunitx",
       "sttools",
       "tools",
@@ -32600,7 +32663,7 @@
     "depend": [
       "etoolbox",
       "graphics",
-      "pdfmanagement-testphase"
+      "pdfmanagement"
     ],
     "tl_depend": []
   },
@@ -34921,10 +34984,11 @@
     "tl_depend": []
   },
   {
-    "name": "pdfmanagement-testphase",
+    "name": "pdfmanagement",
     "depend": [
       "bookmark",
       "etoolbox",
+      "hyperref",
       "l3experimental",
       "tagpdf"
     ],
@@ -36397,7 +36461,8 @@
       "fontspec",
       "iftex",
       "luabidi",
-      "tools"
+      "tools",
+      "unibidi-lua"
     ],
     "tl_depend": [
       "etoolbox",
@@ -38408,8 +38473,6 @@
   {
     "name": "pyluatex",
     "depend": [
-      "kvoptions",
-      "l3kernel",
       "lualibs"
     ],
     "tl_depend": []
@@ -38648,6 +38711,11 @@
       "latex",
       "xkeyval"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "query-astro",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -39267,6 +39335,14 @@
       "latex",
       "tools",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "register-transfer-level",
+    "depend": [
+      "circuitikz",
+      "graphics"
     ],
     "tl_depend": []
   },
@@ -40688,7 +40764,7 @@
       "luaotfload",
       "luatexbase",
       "make4ht",
-      "pdfmanagement-testphase",
+      "pdfmanagement",
       "revtex",
       "synctex",
       "tagpdf",
@@ -48617,6 +48693,19 @@
     "tl_depend": []
   },
   {
+    "name": "user-persona",
+    "depend": [
+      "enumitem",
+      "etoolbox",
+      "fontawesome5",
+      "graphics",
+      "tcolorbox",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "ushort",
     "depend": [],
     "tl_depend": []
@@ -48654,6 +48743,13 @@
       "geometry",
       "latex",
       "setspace"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "utbmciad-report",
+    "depend": [
+      "upmethodology"
     ],
     "tl_depend": []
   },
@@ -50770,11 +50866,11 @@
       "geometry",
       "graphics",
       "href-ul",
+      "iftex",
       "imakeidx",
       "l3packages",
       "lastpage",
       "latex",
-      "libertine",
       "mdframed",
       "microtype",
       "paralist",
