@@ -4192,17 +4192,8 @@
   {
     "name": "biblatex-sbl",
     "depend": [
-      "biblatex",
-      "bibleref-parse",
-      "fancyhdr",
-      "footmisc",
-      "geometry",
-      "hyperref",
-      "imakeidx",
-      "l3packages",
-      "setspace",
-      "textcase",
-      "titlesec"
+      "biblatex-source-division",
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -9762,6 +9753,7 @@
       "dimnum",
       "dinbrief",
       "directory",
+      "dirtreex",
       "dirtytalk",
       "dlfltxb",
       "dnaseq",
@@ -10272,6 +10264,7 @@
       "lua-check-hyphen",
       "lua-physical",
       "luatodonotes",
+      "lucide-admonitions",
       "macrolist",
       "macroswap",
       "magaz",
@@ -11538,6 +11531,7 @@
       "tensind",
       "tensor",
       "tensormatrix",
+      "tensorstyles",
       "tex-ewd",
       "textgreek",
       "textopo",
@@ -11596,6 +11590,7 @@
       "mfpic",
       "mfpic4ode",
       "minim-hatching",
+      "mp-gears",
       "mp-geom2d",
       "mp-neuralnetwork",
       "mp3d",
@@ -11723,6 +11718,7 @@
       "epspdfconversion",
       "esk",
       "euflag",
+      "eurion",
       "fadingimage",
       "fast-diagram",
       "fenetrecas",
@@ -15293,6 +15289,17 @@
     "tl_depend": []
   },
   {
+    "name": "dirtreex",
+    "depend": [
+      "environ",
+      "l3packages",
+      "pgf",
+      "xcolor",
+      "zref"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "dirtytalk",
     "depend": [
       "kvoptions",
@@ -17878,6 +17885,15 @@
   {
     "name": "eulervm",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "eurion",
+    "depend": [
+      "eso-pic",
+      "pgf",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -29267,6 +29283,16 @@
     "tl_depend": []
   },
   {
+    "name": "lucide-admonitions",
+    "depend": [
+      "lucide-icons",
+      "tcolorbox",
+      "translations",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lucide-icons",
     "depend": [
       "graphics",
@@ -31684,6 +31710,11 @@
       "latex",
       "oberdiek"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "mp-gears",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -44526,6 +44557,16 @@
     "name": "tensormatrix",
     "depend": [
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tensorstyles",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "l3kernel",
+      "mathtools"
     ],
     "tl_depend": []
   },
