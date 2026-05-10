@@ -2370,6 +2370,13 @@
     "tl_depend": []
   },
   {
+    "name": "babel-kazakh",
+    "depend": [
+      "babel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "babel-kurmanji",
     "depend": [],
     "tl_depend": []
@@ -6721,6 +6728,33 @@
     "tl_depend": []
   },
   {
+    "name": "ciad-beamertheme",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "beamer",
+      "colortbl",
+      "environ",
+      "etoolbox",
+      "graphics",
+      "hyphenat",
+      "latex",
+      "oberdiek",
+      "pgf",
+      "psnfss",
+      "relsize",
+      "stringstrings",
+      "tcolorbox",
+      "textcase",
+      "tools",
+      "translator",
+      "url",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "cidarticle",
     "depend": [
       "amsmath",
@@ -8656,6 +8690,7 @@
     "tl_depend": [
       "babel-belarusian",
       "babel-bulgarian",
+      "babel-kazakh",
       "babel-russian",
       "babel-serbian",
       "babel-serbianc",
@@ -11770,6 +11805,7 @@
       "miniplot",
       "mkpic",
       "modiagram",
+      "na-urmborder",
       "neuralnetwork",
       "nl-interval",
       "nndraw",
@@ -12264,6 +12300,7 @@
       "chem-journal",
       "chifoot",
       "chs-physics-report",
+      "ciad-beamertheme",
       "cidarticle",
       "cje",
       "cjs-rcs-article",
@@ -12306,6 +12343,7 @@
       "gammas",
       "geradwp",
       "gfdl",
+      "gia-handout",
       "gradstudentresume",
       "grant",
       "gsemthesis",
@@ -12456,6 +12494,7 @@
       "soton",
       "sphdthesis",
       "spie",
+      "spim-phdthesisthemes",
       "sr-vorl",
       "srdp-mathematik",
       "sshrc-insight",
@@ -13686,7 +13725,8 @@
       "simplekv",
       "tcolorbox",
       "twemojis",
-      "ulem"
+      "ulem",
+      "varwidth"
     ],
     "tl_depend": []
   },
@@ -20573,8 +20613,6 @@
   {
     "name": "genealogytree",
     "depend": [
-      "l3kernel",
-      "l3packages",
       "tcolorbox",
       "tools"
     ],
@@ -20829,6 +20867,30 @@
       "standalone",
       "tools",
       "translations"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "gia-handout",
+    "depend": [
+      "babel",
+      "bookmark",
+      "csquotes",
+      "fira",
+      "fontspec",
+      "geometry",
+      "hyperref",
+      "iftex",
+      "koma-script",
+      "l3packages",
+      "latex",
+      "microtype",
+      "pgf",
+      "pgfopts",
+      "qrcode",
+      "setspace",
+      "tcolorbox",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -32250,6 +32312,18 @@
     "tl_depend": []
   },
   {
+    "name": "na-urmborder",
+    "depend": [
+      "background",
+      "graphics",
+      "niceframe",
+      "xcolor"
+    ],
+    "tl_depend": [
+      "niceframe"
+    ]
+  },
+  {
     "name": "nag",
     "depend": [],
     "tl_depend": []
@@ -32544,6 +32618,7 @@
       "fontspec",
       "forest",
       "fourier",
+      "frenchmath",
       "graphics",
       "iftex",
       "jknapltx",
@@ -35426,6 +35501,7 @@
     "name": "pgf-periodictable",
     "depend": [
       "fontspec",
+      "hyperref",
       "latex",
       "lm",
       "pgf",
@@ -42711,11 +42787,12 @@
   {
     "name": "sourcesans",
     "depend": [
-      "fontaxes",
+      "figureversions",
       "fontspec",
       "iftex",
       "latex",
       "mweights",
+      "tools",
       "xkeyval"
     ],
     "tl_depend": []
@@ -42883,6 +42960,16 @@
     "depend": [
       "cite",
       "latex"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "spim-phdthesisthemes",
+    "depend": [
+      "adjustbox",
+      "lettrine",
+      "natbib",
+      "upmethodology"
     ],
     "tl_depend": []
   },
@@ -48066,29 +48153,39 @@
   {
     "name": "unbtex",
     "depend": [
-      "abntex2",
       "algorithm2e",
       "amscls",
+      "babel",
+      "bookmark",
+      "breakurl",
+      "caption",
       "cite",
       "cleveref",
       "colortbl",
+      "enumitem",
       "fvextra",
       "hyperref",
+      "iftex",
       "inconsolata",
       "koma-script",
+      "latex",
       "listings",
       "mathtools",
       "mdframed",
+      "memoir",
       "microtype",
       "multirow",
       "newtx",
       "nomencl",
       "pdfpages",
+      "relsize",
       "scontents",
+      "setspace",
       "stickstoo",
-      "subfig",
       "tex-gyre",
+      "textcase",
       "tools",
+      "url",
       "was",
       "xcolor",
       "xpatch"
@@ -50838,7 +50935,6 @@
       "etoolbox",
       "fncychap",
       "geometry",
-      "glossaries",
       "graphics",
       "hypcap",
       "iftex",
@@ -50853,7 +50949,6 @@
       "setspace",
       "tcolorbox",
       "titlesec",
-      "tocbibind",
       "tools",
       "translator",
       "xcolor",
@@ -50898,11 +50993,13 @@
       "changepage",
       "chngcntr",
       "cleveref",
+      "cm-unicode",
       "csquotes",
       "doi",
       "enumitem",
       "fancyhdr",
       "float",
+      "fontspec",
       "footmisc",
       "geometry",
       "graphics",
