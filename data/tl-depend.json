@@ -1778,11 +1778,13 @@
     "name": "aspen",
     "depend": [
       "bigfoot",
+      "contour",
       "etoolbox",
       "latex",
       "mathtools",
       "rcs",
       "stmaryrd",
+      "ulem",
       "xcolor",
       "xkeyval"
     ],
@@ -5092,6 +5094,17 @@
       "graphics",
       "subfigure",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "boustrophedon",
+    "depend": [
+      "archaic",
+      "graphics",
+      "iftex",
+      "l3kernel",
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -9539,6 +9552,7 @@
       "booktabstabular",
       "boolexpr",
       "bophook",
+      "boustrophedon",
       "boxedminipage",
       "boxhandler",
       "bracketkey",
@@ -10422,6 +10436,7 @@
       "mycv",
       "mylatex",
       "mylatexformat",
+      "na-cover",
       "nag",
       "nameauth",
       "namespc",
@@ -10837,6 +10852,7 @@
       "tabularborder",
       "tabularcalc",
       "tabularew",
+      "tabularht",
       "tabularray",
       "tabulary",
       "tagging",
@@ -11805,6 +11821,8 @@
       "miniplot",
       "mkpic",
       "modiagram",
+      "na-fancyborders",
+      "na-tikzornament",
       "na-urmborder",
       "neuralnetwork",
       "nl-interval",
@@ -12072,6 +12090,7 @@
       "pdftoolbox",
       "pitex",
       "placeins-plain",
+      "plain-grid",
       "plain-widow",
       "plainpkg",
       "plipsum",
@@ -12481,6 +12500,7 @@
       "sblreport",
       "schule",
       "scientific-thesis-cover",
+      "screenwriter",
       "scripture",
       "scrjrnl",
       "sduthesis",
@@ -28713,7 +28733,6 @@
     "depend": [
       "latex",
       "lualibs",
-      "luapackageloader",
       "tools"
     ],
     "tl_depend": []
@@ -32305,9 +32324,34 @@
     "tl_depend": []
   },
   {
+    "name": "na-cover",
+    "depend": [
+      "eso-pic",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "na-fancyborders",
+    "depend": [
+      "eso-pic",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "na-position",
     "depend": [
       "tkz-tab"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "na-tikzornament",
+    "depend": [
+      "pgf",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -33618,6 +33662,7 @@
     "depend": [
       "amsmath",
       "biblatex",
+      "booktabs",
       "caption",
       "ctex",
       "enumitem",
@@ -33630,6 +33675,7 @@
       "l3packages",
       "ntheorem",
       "psnfss",
+      "tabularray",
       "titlesec",
       "unicode-math",
       "xcolor"
@@ -36246,6 +36292,11 @@
   },
   {
     "name": "plain-doc",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "plain-grid",
     "depend": [],
     "tl_depend": []
   },
@@ -41211,6 +41262,15 @@
     "tl_depend": []
   },
   {
+    "name": "screenwriter",
+    "depend": [
+      "geometry",
+      "latex",
+      "psnfss"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "scrhack",
     "depend": [
       "floatbytocbasic",
@@ -44281,6 +44341,14 @@
     "name": "tabularew",
     "depend": [
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tabularht",
+    "depend": [
+      "graphics",
+      "iftex"
     ],
     "tl_depend": []
   },
