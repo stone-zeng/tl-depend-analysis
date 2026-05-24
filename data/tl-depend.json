@@ -1960,6 +1960,25 @@
     ]
   },
   {
+    "name": "attinormativi",
+    "depend": [
+      "babel",
+      "chngcntr",
+      "enumitem",
+      "fontspec",
+      "geometry",
+      "hyperref",
+      "iftex",
+      "l3packages",
+      "latex",
+      "lm",
+      "microtype",
+      "titlesec",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "atveryend",
     "depend": [],
     "tl_depend": []
@@ -3087,6 +3106,15 @@
       "firamath-otf",
       "latex",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "beamertheme-geode",
+    "depend": [
+      "pgf",
+      "psnfss",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -9081,6 +9109,7 @@
       "amsmath-it",
       "amsthdoc-it",
       "antanilipsum",
+      "attinormativi",
       "babel-italian",
       "biblatex-accursius",
       "codicefiscaleitaliano",
@@ -9498,6 +9527,7 @@
       "beamertheme-durham",
       "beamertheme-epyt",
       "beamertheme-focus",
+      "beamertheme-geode",
       "beamertheme-gotham",
       "beamertheme-light",
       "beamertheme-metropolis",
@@ -10038,7 +10068,7 @@
       "functional",
       "fundus-calligra",
       "fundus-cyr",
-      "fundus-sueterlin",
+      "fundus-suetterlin",
       "futharksymb",
       "fvextra",
       "fwlw",
@@ -10509,6 +10539,7 @@
       "overpic",
       "packdoc",
       "padcount",
+      "page-canons",
       "pagecolor",
       "pagecont",
       "pagegrid",
@@ -11491,6 +11522,7 @@
       "numerica",
       "numerica-plus",
       "numerica-tables",
+      "numodel-bundle",
       "objectz",
       "odesandpdes",
       "oplotsymbl",
@@ -11591,6 +11623,7 @@
       "thmtools",
       "tiscreen",
       "tkz-interval",
+      "transition-metals",
       "turnstile",
       "ulqda",
       "unitsdef",
@@ -11791,6 +11824,7 @@
       "graphviz",
       "gtrlib-largetrees",
       "harveyballs",
+      "hawkdraw",
       "here",
       "hf-tikz",
       "hobby",
@@ -12178,6 +12212,7 @@
       "pst-diffraction",
       "pst-electricfield",
       "pst-eps",
+      "pst-eqhz",
       "pst-eucl",
       "pst-exa",
       "pst-feyn",
@@ -20337,7 +20372,7 @@
     "tl_depend": []
   },
   {
-    "name": "fundus-sueterlin",
+    "name": "fundus-suetterlin",
     "depend": [],
     "tl_depend": []
   },
@@ -22163,6 +22198,13 @@
     "name": "havannah",
     "depend": [
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hawkdraw",
+    "depend": [
+      "l3experimental"
     ],
     "tl_depend": []
   },
@@ -33632,6 +33674,22 @@
     "tl_depend": []
   },
   {
+    "name": "numodel-bundle",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "float",
+      "l3kernel",
+      "l3packages",
+      "luacode",
+      "pgf",
+      "pgfplots",
+      "siunitx",
+      "tabularray"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "numprint",
     "depend": [
       "latex",
@@ -34505,6 +34563,14 @@
   {
     "name": "padcount",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "page-canons",
+    "depend": [
+      "geometry",
+      "iftex"
+    ],
     "tl_depend": []
   },
   {
@@ -37637,6 +37703,14 @@
   {
     "name": "pst-eps",
     "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-eqhz",
+    "depend": [
+      "fp",
       "pstricks"
     ],
     "tl_depend": []
@@ -47047,6 +47121,17 @@
     "tl_depend": []
   },
   {
+    "name": "transition-metals",
+    "depend": [
+      "bidi",
+      "fontspec",
+      "mhchem",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "translation-array-fr",
     "depend": [],
     "tl_depend": []
@@ -48225,7 +48310,6 @@
       "amscls",
       "babel",
       "bookmark",
-      "breakurl",
       "caption",
       "cite",
       "cleveref",
@@ -48233,9 +48317,7 @@
       "enumitem",
       "fvextra",
       "hyperref",
-      "iftex",
       "inconsolata",
-      "koma-script",
       "latex",
       "listings",
       "mathtools",
@@ -48246,17 +48328,14 @@
       "newtx",
       "nomencl",
       "pdfpages",
-      "relsize",
       "scontents",
       "setspace",
       "stickstoo",
       "tex-gyre",
-      "textcase",
       "tools",
       "url",
       "was",
-      "xcolor",
-      "xpatch"
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -51305,10 +51384,8 @@
   {
     "name": "zebra",
     "depend": [
-      "hyperref",
       "manfnt",
       "marginnote",
-      "microtype",
       "xcolor"
     ],
     "tl_depend": []
