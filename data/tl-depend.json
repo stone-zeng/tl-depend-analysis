@@ -1933,6 +1933,14 @@
     "tl_depend": []
   },
   {
+    "name": "atomicreactions",
+    "depend": [
+      "l3packages",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "attachfile",
     "depend": [
       "graphics",
@@ -1971,8 +1979,9 @@
       "iftex",
       "l3packages",
       "latex",
-      "lm",
       "microtype",
+      "tagpdf",
+      "tex-gyre",
       "titlesec",
       "xcolor"
     ],
@@ -4050,6 +4059,14 @@
     "tl_depend": []
   },
   {
+    "name": "biblatex-greifswald",
+    "depend": [
+      "biblatex-ext",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "biblatex-historian",
     "depend": [],
     "tl_depend": []
@@ -4937,7 +4954,10 @@
   },
   {
     "name": "boldtensors",
-    "depend": [],
+    "depend": [
+      "iftex",
+      "unicode-math"
+    ],
     "tl_depend": []
   },
   {
@@ -5587,6 +5607,7 @@
   {
     "name": "bxtexlogo",
     "depend": [
+      "graphics",
       "hologo"
     ],
     "tl_depend": []
@@ -7728,6 +7749,7 @@
       "biblatex-gb7714-2015",
       "biblatex-german-legal",
       "biblatex-gost",
+      "biblatex-greifswald",
       "biblatex-historian",
       "biblatex-ieee",
       "biblatex-ijsra",
@@ -10467,6 +10489,7 @@
       "mylatex",
       "mylatexformat",
       "na-cover",
+      "na-list",
       "nag",
       "nameauth",
       "namespc",
@@ -10638,6 +10661,7 @@
       "prettyref",
       "prettytok",
       "preview",
+      "printcolormanager",
       "printlen",
       "probsoln",
       "profmaquette",
@@ -11338,6 +11362,7 @@
       "apxproof",
       "aspen",
       "atableau",
+      "atomicreactions",
       "autobreak",
       "axodraw2",
       "backnaur",
@@ -11526,6 +11551,7 @@
       "objectz",
       "odesandpdes",
       "oplotsymbl",
+      "orbitals",
       "ot-tableau",
       "oubraces",
       "overarrows",
@@ -11842,6 +11868,7 @@
       "lpic",
       "lroundrect",
       "lua-tikz3dtools",
+      "luadraw",
       "luamesh",
       "luasseq",
       "lucide-icons",
@@ -11971,6 +11998,7 @@
       "tikz-planets",
       "tikz-qtree",
       "tikz-relay",
+      "tikz-sections",
       "tikz-sfc",
       "tikz-shields",
       "tikz-swigs",
@@ -12231,6 +12259,7 @@
       "pst-gr3d",
       "pst-grad",
       "pst-graphicx",
+      "pst-hertz",
       "pst-hsb",
       "pst-infixplot",
       "pst-intersect",
@@ -12282,6 +12311,7 @@
       "pst-support",
       "pst-text",
       "pst-thick",
+      "pst-titration",
       "pst-tools",
       "pst-tree",
       "pst-turtle",
@@ -12431,6 +12461,7 @@
       "imtekda",
       "inkpaper",
       "iodhbwm",
+      "iptconf",
       "iscram",
       "jacow",
       "jmlr",
@@ -14375,6 +14406,7 @@
       "inlinegraphicx",
       "latex",
       "listofitems",
+      "lucide-icons",
       "oberdiek",
       "pas-tableur",
       "pgf",
@@ -15386,10 +15418,7 @@
   {
     "name": "dirtreex",
     "depend": [
-      "environ",
-      "l3packages",
       "pgf",
-      "xcolor",
       "zref"
     ],
     "tl_depend": []
@@ -25005,6 +25034,27 @@
     "tl_depend": []
   },
   {
+    "name": "iptconf",
+    "depend": [
+      "amsfonts",
+      "babel",
+      "biblatex",
+      "caption",
+      "cmap",
+      "csquotes",
+      "enumitem",
+      "fontsetup",
+      "geometry",
+      "hyperref",
+      "latex",
+      "mathtools",
+      "microtype",
+      "sttools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "iran-bibtex",
     "depend": [
       "natbib"
@@ -28930,6 +28980,17 @@
     "tl_depend": []
   },
   {
+    "name": "luadraw",
+    "depend": [
+      "iftex",
+      "luacode",
+      "pgf",
+      "tools",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luafindfont",
     "depend": [
       "lualibs",
@@ -30279,7 +30340,9 @@
   },
   {
     "name": "maze",
-    "depend": [],
+    "depend": [
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -32383,6 +32446,18 @@
     "tl_depend": []
   },
   {
+    "name": "na-list",
+    "depend": [
+      "enumitem",
+      "graphics",
+      "l3packages",
+      "pgf",
+      "psnfss",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "na-position",
     "depend": [
       "tkz-tab"
@@ -34265,6 +34340,15 @@
     "tl_depend": []
   },
   {
+    "name": "orbitals",
+    "depend": [
+      "mhchem",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "orcidlink",
     "depend": [
       "etoolbox",
@@ -34419,7 +34503,6 @@
       "multirow",
       "natbib",
       "pgf",
-      "silence",
       "sttools",
       "subfloat",
       "tools",
@@ -35285,6 +35368,7 @@
   {
     "name": "pdfprivacy",
     "depend": [
+      "iftex",
       "kvoptions",
       "latex"
     ],
@@ -37017,6 +37101,15 @@
     "tl_depend": []
   },
   {
+    "name": "printcolormanager",
+    "depend": [
+      "l3packages",
+      "xcolor",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "printlen",
     "depend": [],
     "tl_depend": []
@@ -37073,7 +37166,6 @@
       "datatool",
       "fmtcount",
       "fontawesome5",
-      "gmp",
       "ifoddpage",
       "iftex",
       "latex",
@@ -37083,9 +37175,11 @@
       "mathtools",
       "modulus",
       "multido",
+      "multirow",
       "nicematrix",
       "pgf",
       "psnfss",
+      "readarray",
       "simplekv",
       "siunitx",
       "stackengine",
@@ -37868,6 +37962,13 @@
     "tl_depend": []
   },
   {
+    "name": "pst-hertz",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-hsb",
     "depend": [
       "pstricks"
@@ -38263,6 +38364,13 @@
   },
   {
     "name": "pst-thick",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-titration",
     "depend": [
       "pstricks"
     ],
@@ -46150,6 +46258,13 @@
     "tl_depend": []
   },
   {
+    "name": "tikz-sections",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz-sfc",
     "depend": [],
     "tl_depend": []
@@ -51140,18 +51255,15 @@
       "changepage",
       "chngcntr",
       "cleveref",
-      "cm-unicode",
       "csquotes",
       "doi",
       "enumitem",
       "fancyhdr",
       "float",
-      "fontspec",
       "footmisc",
       "geometry",
       "graphics",
       "href-ul",
-      "iftex",
       "imakeidx",
       "l3packages",
       "lastpage",
