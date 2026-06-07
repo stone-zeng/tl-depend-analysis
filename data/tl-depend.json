@@ -286,6 +286,7 @@
       "newtx",
       "pbalance",
       "preprint",
+      "psnfss",
       "refcount",
       "setspace",
       "totpages",
@@ -1893,7 +1894,10 @@
       "amsfonts",
       "pgf"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "l3kernel",
+      "pgf"
+    ]
   },
   {
     "name": "atbegshi",
@@ -9968,6 +9972,7 @@
       "eulerpx",
       "euromoney",
       "europasscv",
+      "europasscv2025",
       "europecv",
       "everyhook",
       "everypage",
@@ -10718,6 +10723,7 @@
       "regexpatch",
       "register",
       "regstats",
+      "relatese",
       "relenc",
       "relsize",
       "repeatindex",
@@ -11572,6 +11578,7 @@
       "principia",
       "proba",
       "proof-at-the-end",
+      "proofgraph",
       "prooftrees",
       "pseudo",
       "pseudocode",
@@ -12261,6 +12268,8 @@
       "pst-graphicx",
       "pst-hertz",
       "pst-hsb",
+      "pst-hyperboloid",
+      "pst-hypertiling",
       "pst-infixplot",
       "pst-intersect",
       "pst-jtree",
@@ -12519,6 +12528,7 @@
       "novel",
       "nrc",
       "nstc-proposal",
+      "nwafupaper",
       "nwafuthesis",
       "nwejm",
       "nxtlatex",
@@ -18071,6 +18081,34 @@
     "tl_depend": []
   },
   {
+    "name": "europasscv2025",
+    "depend": [
+      "biblatex",
+      "booktabs",
+      "colortbl",
+      "eso-pic",
+      "etoolbox",
+      "fancyhdr",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "l3packages",
+      "lastpage",
+      "latex",
+      "microtype",
+      "pgf",
+      "psnfss",
+      "ragged2e",
+      "tcolorbox",
+      "tools",
+      "ulem",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "europecv",
     "depend": [
       "booktabs",
@@ -20156,13 +20194,16 @@
     "depend": [
       "amsfonts",
       "amsmath",
-      "comment",
       "enumitem",
       "etoolbox",
       "kvoptions",
       "l3kernel",
       "l3packages",
+      "latex",
+      "mathabx",
+      "mnsymbol",
       "pdftexcmds",
+      "rainbowbrackets",
       "stmaryrd",
       "tools",
       "ulem",
@@ -25043,7 +25084,7 @@
       "cmap",
       "csquotes",
       "enumitem",
-      "fontsetup",
+      "fontspec",
       "geometry",
       "hyperref",
       "latex",
@@ -26811,6 +26852,7 @@
       "hypdoc",
       "hyperref",
       "l3kernel",
+      "latex-lab",
       "tools",
       "url"
     ],
@@ -27013,7 +27055,11 @@
   },
   {
     "name": "latex-papersize",
-    "depend": [],
+    "depend": [
+      "iftex",
+      "l3kernel",
+      "l3packages"
+    ],
     "tl_depend": [
       "latex-papersize.ARCH"
     ]
@@ -33760,7 +33806,8 @@
       "pgf",
       "pgfplots",
       "siunitx",
-      "tabularray"
+      "tabularray",
+      "xfrac"
     ],
     "tl_depend": []
   },
@@ -33787,6 +33834,32 @@
       "latex",
       "mweights",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "nwafupaper",
+    "depend": [
+      "amsmath",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "ctex",
+      "enumitem",
+      "fancyhdr",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "l3kernel",
+      "l3packages",
+      "ntheorem",
+      "psnfss",
+      "tabularray",
+      "titlesec",
+      "unicode-math",
+      "xcolor",
+      "zhnumber"
     ],
     "tl_depend": []
   },
@@ -37208,7 +37281,6 @@
     "depend": [
       "amsfonts",
       "cancel",
-      "colortbl",
       "commalists-tools",
       "datetime2",
       "esvect",
@@ -37376,6 +37448,17 @@
       "l3packages",
       "pgf",
       "thmtools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "proofgraph",
+    "depend": [
+      "amscls",
+      "etoolbox",
+      "graphics",
+      "kvoptions",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -37970,6 +38053,18 @@
   },
   {
     "name": "pst-hsb",
+    "depend": [
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-hyperboloid",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-hypertiling",
     "depend": [
       "pstricks"
     ],
@@ -39721,6 +39816,45 @@
       "xstring",
       "zref",
       "zref-clever"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "relatese",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "biblatex",
+      "booktabs",
+      "cancel",
+      "caption",
+      "changepage",
+      "cleveref",
+      "colortbl",
+      "csquotes",
+      "enumitem",
+      "float",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "l3packages",
+      "lastpage",
+      "lipsum",
+      "makecell",
+      "mhchem",
+      "microtype",
+      "pdflscape",
+      "placeins",
+      "preprint",
+      "setspace",
+      "siunitx",
+      "svg",
+      "titlesec",
+      "tocloft",
+      "tools",
+      "xcolor",
+      "xfrac"
     ],
     "tl_depend": []
   },
@@ -43097,8 +43231,6 @@
   {
     "name": "spath3",
     "depend": [
-      "l3kernel",
-      "l3packages",
       "pgf"
     ],
     "tl_depend": []
@@ -46466,10 +46598,7 @@
   },
   {
     "name": "tikzmark",
-    "depend": [
-      "l3kernel",
-      "l3packages"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -48426,10 +48555,10 @@
       "babel",
       "bookmark",
       "caption",
-      "cite",
       "cleveref",
       "colortbl",
       "enumitem",
+      "environ",
       "fvextra",
       "hyperref",
       "inconsolata",
@@ -48443,7 +48572,6 @@
       "newtx",
       "nomencl",
       "pdfpages",
-      "scontents",
       "setspace",
       "stickstoo",
       "tex-gyre",
