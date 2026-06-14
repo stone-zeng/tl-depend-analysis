@@ -2089,6 +2089,13 @@
     ]
   },
   {
+    "name": "autoaffil",
+    "depend": [
+      "etoolbox"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "autoaligne",
     "depend": [
       "babel",
@@ -5774,6 +5781,16 @@
     "tl_depend": []
   },
   {
+    "name": "callout-itembox",
+    "depend": [
+      "l3packages",
+      "pgf",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "callouts",
     "depend": [
       "kvoptions",
@@ -8982,6 +8999,7 @@
       "nevelok",
       "rojud",
       "swebib",
+      "turkce-sayi",
       "turkmen"
     ]
   },
@@ -9520,6 +9538,7 @@
       "authoraftertitle",
       "authorarchive",
       "authorindex",
+      "autoaffil",
       "autofancyhdr",
       "autonum",
       "autopdf",
@@ -9862,6 +9881,7 @@
       "dirtytalk",
       "dlfltxb",
       "dnaseq",
+      "docext",
       "doclicense",
       "docmfp",
       "docmute",
@@ -10667,6 +10687,7 @@
       "prettytok",
       "preview",
       "printcolormanager",
+      "printfilelist",
       "printlen",
       "probsoln",
       "profmaquette",
@@ -11289,6 +11310,7 @@
       "luamml",
       "luamodulartables",
       "luamplib",
+      "luanumbers",
       "luaoptions",
       "luaotfload",
       "luapackageloader",
@@ -11800,6 +11822,7 @@
       "byo-twemojis",
       "byrne",
       "cachepic",
+      "callout-itembox",
       "callouts",
       "callouts-box",
       "celtic",
@@ -12094,6 +12117,7 @@
       "collargs",
       "collection-basic",
       "colorsep",
+      "comment2tex",
       "compare",
       "crossrefenum",
       "cweb-old",
@@ -12246,6 +12270,8 @@
       "pst-dbicons",
       "pst-diffraction",
       "pst-electricfield",
+      "pst-electrolysis",
+      "pst-ellipsoid",
       "pst-eps",
       "pst-eqhz",
       "pst-eucl",
@@ -12412,6 +12438,7 @@
       "dlrg-templates",
       "ebook",
       "ebsthesis",
+      "ecnuthesis",
       "ecothesis",
       "edmaths",
       "ejpecp",
@@ -13010,6 +13037,13 @@
   {
     "name": "comment",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "comment2tex",
+    "depend": [
+      "listings"
+    ],
     "tl_depend": []
   },
   {
@@ -15572,6 +15606,16 @@
     "tl_depend": []
   },
   {
+    "name": "docext",
+    "depend": [
+      "enumitem",
+      "latex",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "doclicense",
     "depend": [
       "ccicons",
@@ -16448,6 +16492,31 @@
   {
     "name": "ecltree",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "ecnuthesis",
+    "depend": [
+      "amsmath",
+      "biblatex",
+      "caption",
+      "ctex",
+      "fancyhdr",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "l3kernel",
+      "l3packages",
+      "libertinus-fonts",
+      "pdfpages",
+      "pgf",
+      "titlesec",
+      "unicode-math",
+      "xcolor",
+      "xecjk",
+      "xits"
+    ],
     "tl_depend": []
   },
   {
@@ -22274,7 +22343,8 @@
   {
     "name": "hawkdraw",
     "depend": [
-      "l3experimental"
+      "l3experimental",
+      "standalone"
     ],
     "tl_depend": []
   },
@@ -24940,9 +25010,7 @@
     "name": "intexgral",
     "depend": [
       "amsfonts",
-      "derivative",
-      "l3kernel",
-      "pkginfograb"
+      "l3kernel"
     ],
     "tl_depend": []
   },
@@ -27056,6 +27124,7 @@
   {
     "name": "latex-papersize",
     "depend": [
+      "geometry",
       "iftex",
       "l3kernel",
       "l3packages"
@@ -29238,6 +29307,14 @@
     "depend": [
       "lua-uni-algos",
       "lualibs"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "luanumbers",
+    "depend": [
+      "iftex",
+      "luatexbase"
     ],
     "tl_depend": []
   },
@@ -36685,7 +36762,6 @@
     "name": "plex-otf",
     "depend": [
       "iftex",
-      "latex",
       "unicode-math",
       "xkeyval"
     ],
@@ -37180,6 +37256,11 @@
       "xcolor",
       "xkeyval"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "printfilelist",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -37878,6 +37959,22 @@
     "tl_depend": []
   },
   {
+    "name": "pst-electrolysis",
+    "depend": [
+      "pst-grad",
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-ellipsoid",
+    "depend": [
+      "pst-solides3d",
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-eps",
     "depend": [
       "pstricks"
@@ -38060,7 +38157,10 @@
   },
   {
     "name": "pst-hyperboloid",
-    "depend": [],
+    "depend": [
+      "pst-solides3d",
+      "pstricks"
+    ],
     "tl_depend": []
   },
   {
@@ -41474,6 +41574,9 @@
   {
     "name": "scientific-thesis-cover",
     "depend": [
+      "csquotes",
+      "graphics",
+      "iftex",
       "kvoptions",
       "latex"
     ],
@@ -47770,6 +47873,15 @@
       "latex",
       "nowidow",
       "setspace"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "turkce-sayi",
+    "depend": [
+      "iftex",
+      "luatexbase",
+      "refcount"
     ],
     "tl_depend": []
   },
