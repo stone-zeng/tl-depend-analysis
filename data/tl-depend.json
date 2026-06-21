@@ -11349,6 +11349,7 @@
       "placeat",
       "plantuml",
       "pyluatex",
+      "scholatex",
       "scikgtex",
       "seatingchart",
       "selnolig",
@@ -12261,6 +12262,7 @@
       "pst-bspline",
       "pst-calculate",
       "pst-calendar",
+      "pst-chladni",
       "pst-cie",
       "pst-circ",
       "pst-coil",
@@ -12700,6 +12702,7 @@
       "uwa-pif",
       "uwthesis",
       "vancouver",
+      "westlakethesis",
       "wsemclassic",
       "xduthesis",
       "xduts",
@@ -22343,8 +22346,7 @@
   {
     "name": "hawkdraw",
     "depend": [
-      "l3experimental",
-      "standalone"
+      "l3experimental"
     ],
     "tl_depend": []
   },
@@ -37894,6 +37896,14 @@
     "tl_depend": []
   },
   {
+    "name": "pst-chladni",
+    "depend": [
+      "pst-solides3d",
+      "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pst-cie",
     "depend": [
       "pstricks"
@@ -38463,6 +38473,7 @@
   {
     "name": "pst-shell",
     "depend": [
+      "pst-solides3d",
       "pstricks"
     ],
     "tl_depend": []
@@ -41426,6 +41437,32 @@
       "tex-gyre-math",
       "unicode-math",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "scholatex",
+    "depend": [
+      "adjustbox",
+      "amsfonts",
+      "amsmath",
+      "colortbl",
+      "enumitem",
+      "extsizes",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "kvoptions",
+      "multirow",
+      "needspace",
+      "ragged2e",
+      "tabularray",
+      "tcolorbox",
+      "titlesec",
+      "tools",
+      "unicode-math",
+      "xcolor",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -48686,9 +48723,11 @@
       "pdfpages",
       "setspace",
       "stickstoo",
+      "tablefootnote",
       "tex-gyre",
       "tools",
       "url",
+      "varwidth",
       "was",
       "xcolor"
     ],
@@ -50050,6 +50089,31 @@
     "name": "weiqi",
     "depend": [
       "l3experimental"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "westlakethesis",
+    "depend": [
+      "anyfontsize",
+      "beamer",
+      "ctex",
+      "docext",
+      "gbt7714",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "l3experimental",
+      "l3kernel",
+      "libertine",
+      "lipsum",
+      "lm",
+      "microtype",
+      "newtx",
+      "tocloft",
+      "tools",
+      "zhlineskip",
+      "zhlipsum"
     ],
     "tl_depend": []
   },
