@@ -637,6 +637,16 @@
     "tl_depend": []
   },
   {
+    "name": "aidisclose",
+    "depend": [
+      "amsfonts",
+      "relsize",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "aiplans",
     "depend": [
       "listofitems",
@@ -1515,7 +1525,6 @@
       "amsmath",
       "pgf",
       "pgfopts",
-      "refcount",
       "tools",
       "xcolor"
     ],
@@ -5299,6 +5308,18 @@
     "tl_depend": []
   },
   {
+    "name": "brandstyler",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "merriweather",
+      "opensans",
+      "roboto",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "breakcites",
     "depend": [],
     "tl_depend": []
@@ -8717,6 +8738,7 @@
       "exam-zh",
       "fandol",
       "fduthesis",
+      "gbt9704",
       "hanzibox",
       "hyphen-chinese",
       "impatient-cn",
@@ -9500,6 +9522,7 @@
       "advdate",
       "affilauthor",
       "afperpack",
+      "aidisclose",
       "akktex",
       "akletter",
       "alchemist",
@@ -10051,6 +10074,7 @@
       "fillwith",
       "fink",
       "finstrut",
+      "firstindexletter",
       "fistrum",
       "fithesis",
       "fixcmex",
@@ -11512,6 +11536,7 @@
       "hepparticles",
       "hepthesis",
       "hepunits",
+      "hexdumptikz",
       "hideproofs",
       "ibrackets",
       "includernw",
@@ -12415,6 +12440,7 @@
       "brandeis-dissertation",
       "brandeis-problemset",
       "brandeis-thesis",
+      "brandstyler",
       "buctthesis",
       "cascadilla",
       "cesenaexam",
@@ -14278,6 +14304,7 @@
       "adobemapping",
       "atbegshi",
       "beamer",
+      "chinese-jfm",
       "cjk",
       "cjkpunct",
       "ec",
@@ -19424,6 +19451,14 @@
     "tl_depend": []
   },
   {
+    "name": "firstindexletter",
+    "depend": [
+      "imakeidx",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "fistrum",
     "depend": [
       "babel",
@@ -20725,6 +20760,21 @@
     ]
   },
   {
+    "name": "gbt9704",
+    "depend": [
+      "booktabs",
+      "caption",
+      "ctex",
+      "fontspec",
+      "graphics",
+      "memoir",
+      "tools",
+      "ulem",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "gcard",
     "depend": [
       "graphics",
@@ -20749,10 +20799,8 @@
     "name": "gckanbun",
     "depend": [
       "bxghost",
-      "etoolbox",
-      "graphics",
       "ifptex",
-      "iftex",
+      "l3packages",
       "luatexja"
     ],
     "tl_depend": []
@@ -22812,6 +22860,13 @@
     "depend": [
       "pgf",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hexdumptikz",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -31688,12 +31743,11 @@
     "name": "moderncv",
     "depend": [
       "academicons",
-      "arydshln",
       "changepage",
       "ebgaramond",
       "etoolbox",
       "fancyhdr",
-      "fontawesome5",
+      "fontawesome6",
       "graphics",
       "hyperref",
       "iftex",
@@ -35352,6 +35406,7 @@
   {
     "name": "pdfcol",
     "depend": [
+      "etoolbox",
       "graphics"
     ],
     "tl_depend": []
@@ -36224,9 +36279,7 @@
   },
   {
     "name": "phonenumbers",
-    "depend": [
-      "l3packages"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -41455,10 +41508,12 @@
       "kvoptions",
       "multirow",
       "needspace",
+      "pgfplots",
       "ragged2e",
       "tabularray",
       "tcolorbox",
       "titlesec",
+      "tkz-tab",
       "tools",
       "unicode-math",
       "xcolor",
@@ -50666,7 +50721,10 @@
       "xunicode"
     ],
     "tl_depend": [
-      "ctex"
+      "ctex",
+      "fontspec",
+      "l3kernel",
+      "l3packages"
     ]
   },
   {
