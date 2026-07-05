@@ -5122,7 +5122,8 @@
   {
     "name": "booktabstabular",
     "depend": [
-      "booktabs"
+      "booktabs",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -5938,6 +5939,14 @@
   {
     "name": "carolmin-ps",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "carom",
+    "depend": [
+      "pgf",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -8549,6 +8558,7 @@
     "tl_depend": [
       "bartel-chess-fonts",
       "cardgame",
+      "carom",
       "chess",
       "chess-problem-diagrams",
       "chessboard",
@@ -8575,6 +8585,7 @@
       "logicpuzzle",
       "magicthegathering",
       "mahjong",
+      "mahjong-tiles",
       "mathador",
       "maze",
       "multi-sudoku",
@@ -12279,6 +12290,7 @@
       "pst-am",
       "pst-antiprism",
       "pst-arrow",
+      "pst-art",
       "pst-asr",
       "pst-bar",
       "pst-barcode",
@@ -13881,6 +13893,8 @@
       "fontawesome5",
       "fontawesome6",
       "fontawesome7",
+      "lucide-icons",
+      "psnfss",
       "simplekv",
       "tcolorbox",
       "twemojis",
@@ -29920,6 +29934,18 @@
     "tl_depend": []
   },
   {
+    "name": "mahjong-tiles",
+    "depend": [
+      "graphics",
+      "l3kernel",
+      "l3packages",
+      "pgf",
+      "stackengine",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mailing",
     "depend": [],
     "tl_depend": []
@@ -36684,13 +36710,14 @@
     "name": "plantuml",
     "depend": [
       "adjustbox",
+      "capt-of",
       "fancyvrb",
+      "iftex",
       "l3packages",
       "latex",
       "luacode",
       "pdftexcmds",
-      "pgf",
-      "pythontex"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -37880,6 +37907,35 @@
     "name": "pst-arrow",
     "depend": [
       "pstricks"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pst-art",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "bookmark",
+      "colortbl",
+      "enumitem",
+      "fancyhdr",
+      "fancyvrb",
+      "fp",
+      "graphics",
+      "hyperref",
+      "jknapltx",
+      "latex",
+      "mathtools",
+      "multirow",
+      "pst-blur",
+      "pst-hsb",
+      "pst-slpe",
+      "pstricks",
+      "pstricks-add",
+      "siunitx",
+      "tools",
+      "xcolor",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -41191,7 +41247,6 @@
       "euler-math",
       "fontawesome",
       "garamond-math",
-      "gentium-sil",
       "iwona",
       "kpfonts-otf",
       "kurier",
@@ -41201,6 +41256,7 @@
       "lua-widow-control",
       "marvosym",
       "oldstandard",
+      "pennstander-otf",
       "pgf",
       "pgfplots",
       "plex",
@@ -43990,7 +44046,6 @@
       "pgf",
       "qrcode",
       "standalone",
-      "thmtools",
       "tools",
       "xcolor"
     ],
@@ -51470,6 +51525,7 @@
   {
     "name": "xymtex",
     "depend": [
+      "carom",
       "eepic",
       "latex",
       "pgf",
@@ -51887,9 +51943,8 @@
     "name": "zhlineskip",
     "depend": [
       "etoolbox",
-      "kvoptions",
-      "mathtools",
-      "xint"
+      "l3kernel",
+      "mathtools"
     ],
     "tl_depend": []
   },
