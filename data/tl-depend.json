@@ -5942,7 +5942,7 @@
     "tl_depend": []
   },
   {
-    "name": "carom",
+    "name": "carom-billiards",
     "depend": [
       "pgf",
       "xcolor"
@@ -8558,7 +8558,7 @@
     "tl_depend": [
       "bartel-chess-fonts",
       "cardgame",
-      "carom",
+      "carom-billiards",
       "chess",
       "chess-problem-diagrams",
       "chessboard",
@@ -9945,6 +9945,7 @@
       "dynamicnumber",
       "dynblocks",
       "ean13isbn",
+      "easter",
       "easy",
       "easy-todo",
       "easybook",
@@ -10788,6 +10789,7 @@
       "resmes",
       "responsive",
       "returntogrid",
+      "revbadge",
       "rgltxdoc",
       "rjlparshap",
       "rlepsf",
@@ -11371,6 +11373,7 @@
       "minim-mp",
       "minim-pdf",
       "minim-xmp",
+      "monoref",
       "newpax",
       "nodetree",
       "odsfile",
@@ -12835,8 +12838,9 @@
   {
     "name": "color-edits",
     "depend": [
+      "etoolbox",
       "graphics",
-      "latex"
+      "pdfcolfoot"
     ],
     "tl_depend": []
   },
@@ -16334,6 +16338,13 @@
     "tl_depend": []
   },
   {
+    "name": "easter",
+    "depend": [
+      "datenumber"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "easy",
     "depend": [],
     "tl_depend": []
@@ -19226,6 +19237,7 @@
       "listings",
       "pgfopts",
       "tcolorbox",
+      "tools",
       "xcolor"
     ],
     "tl_depend": [
@@ -20784,7 +20796,8 @@
       "memoir",
       "tools",
       "ulem",
-      "xcolor"
+      "xcolor",
+      "zhlineskip"
     ],
     "tl_depend": []
   },
@@ -23563,6 +23576,7 @@
       "iftex",
       "l3packages",
       "listings",
+      "minted-code",
       "pgf",
       "standalone",
       "tcolorbox",
@@ -24541,6 +24555,7 @@
     "name": "iexec",
     "depend": [
       "l3kernel",
+      "pdftexcmds",
       "pgf",
       "pgfopts",
       "tools"
@@ -31981,6 +31996,14 @@
     "tl_depend": []
   },
   {
+    "name": "monoref",
+    "depend": [
+      "iftex",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "montex",
     "depend": [
       "diagnose",
@@ -33762,9 +33785,7 @@
     "name": "novabeamer-theme",
     "depend": [
       "comment",
-      "graphics",
-      "pgf",
-      "xcolor"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -33962,6 +33983,7 @@
       "l3kernel",
       "l3packages",
       "luacode",
+      "pdfrender",
       "pgf",
       "pgfplots",
       "siunitx",
@@ -40295,6 +40317,16 @@
       "eso-pic",
       "l3packages",
       "zref"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "revbadge",
+    "depend": [
+      "cleveref",
+      "hyperref",
+      "tcolorbox",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -50042,8 +50074,7 @@
       "graphics",
       "latex",
       "simplekv",
-      "tools",
-      "xstring"
+      "tools"
     ],
     "tl_depend": []
   },
@@ -51525,7 +51556,6 @@
   {
     "name": "xymtex",
     "depend": [
-      "carom",
       "eepic",
       "latex",
       "pgf",
