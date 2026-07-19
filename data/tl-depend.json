@@ -10225,6 +10225,7 @@
       "handin",
       "handout",
       "handoutwithnotes",
+      "handstroke",
       "hang",
       "hanging",
       "hardwrap",
@@ -10522,6 +10523,7 @@
       "moresize",
       "moreverb",
       "morewrites",
+      "morse-simple",
       "movement-arrows",
       "movie15",
       "mparhack",
@@ -11298,6 +11300,7 @@
       "ekdosis",
       "emoji",
       "emojicite",
+      "emojinames",
       "enigma",
       "fancymag",
       "farbe",
@@ -15697,6 +15700,7 @@
       "graphics",
       "iexec",
       "iftex",
+      "l3kernel",
       "pdftexcmds",
       "pgf",
       "pgfopts",
@@ -15705,9 +15709,13 @@
     "tl_depend": [
       "fancyvrb",
       "iexec",
+      "lineno",
+      "listings",
+      "minted",
       "pdfcrop",
+      "pdftexcmds",
       "pgf",
-      "pgf-blur"
+      "pgfopts"
     ]
   },
   {
@@ -17325,6 +17333,15 @@
     "tl_depend": []
   },
   {
+    "name": "emojinames",
+    "depend": [
+      "etoolbox",
+      "fontspec",
+      "kvoptions"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "emotion",
     "depend": [
       "fontspec",
@@ -18361,6 +18378,7 @@
       "unicode-math",
       "varwidth",
       "wrapstuff",
+      "xcolor",
       "xecjk"
     ],
     "tl_depend": []
@@ -22276,6 +22294,15 @@
   {
     "name": "hands",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "handstroke",
+    "depend": [
+      "pgf",
+      "pgfopts",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -32106,6 +32133,13 @@
     "tl_depend": []
   },
   {
+    "name": "morse-simple",
+    "depend": [
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "movement-arrows",
     "depend": [
       "etoolbox",
@@ -36460,6 +36494,7 @@
     "name": "piano",
     "depend": [
       "graphics",
+      "hyperref",
       "latex",
       "xargs"
     ],
@@ -46526,6 +46561,7 @@
     "name": "tikz-kalender",
     "depend": [
       "babel",
+      "easter",
       "etoolbox",
       "fontspec",
       "geometry",
