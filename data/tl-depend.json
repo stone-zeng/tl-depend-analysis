@@ -8660,6 +8660,7 @@
       "lexref",
       "ling-macros",
       "linguex",
+      "linguexx",
       "linguistix",
       "liturg",
       "liturgy-cw",
@@ -9820,6 +9821,7 @@
       "crumbs",
       "csquotes",
       "css-colors",
+      "cssyntax",
       "csvmerge",
       "csvsimple",
       "cuisine",
@@ -10979,6 +10981,7 @@
       "tagging",
       "tagpair",
       "talk",
+      "talkpal",
       "tamefloats",
       "tangocolors",
       "tasks",
@@ -10998,6 +11001,7 @@
       "testidx",
       "tex-label",
       "tex-locale",
+      "texecole",
       "texlogos",
       "texmate",
       "texments",
@@ -11317,6 +11321,7 @@
       "longmath",
       "lparse",
       "lt3luabridge",
+      "lua-calendrica",
       "lua-list-hyphen",
       "lua-placeholders",
       "lua-tinyyaml",
@@ -11326,6 +11331,7 @@
       "lua-visual-debug",
       "lua-widow-control",
       "luaaddplot",
+      "luabreakurl",
       "luacas",
       "luacensor",
       "luacode",
@@ -11567,6 +11573,7 @@
       "karnaugh",
       "karnaugh-map",
       "karnaughmap",
+      "kbordermatrix",
       "keytheorems",
       "kvmap",
       "letterswitharrows",
@@ -11585,6 +11592,7 @@
       "mathcommand",
       "mathcomp",
       "mathfixs",
+      "mathformule",
       "mathlig",
       "mathpartir",
       "mathpunctspace",
@@ -11675,6 +11683,7 @@
       "scratchx",
       "seqcalc",
       "sesamanuel",
+      "setbuilder",
       "sfg",
       "shuffle",
       "simplebnf",
@@ -12528,6 +12537,7 @@
       "hitszthesis",
       "hobete",
       "hu-berlin-bundle",
+      "hust-beamer",
       "hustthesis",
       "hustvisual",
       "iacrj",
@@ -12622,6 +12632,7 @@
       "powerdot-tuliplab",
       "pracjourn",
       "prociagssymp",
+      "promec-ufrgs",
       "proposal",
       "prtec",
       "ptptex",
@@ -12696,6 +12707,7 @@
       "tugboat-plain",
       "tui",
       "turabian",
+      "tvthesis",
       "uaclasses",
       "uafthesis",
       "ualberta",
@@ -13089,9 +13101,7 @@
   },
   {
     "name": "comment2tex",
-    "depend": [
-      "listings"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -14194,6 +14204,20 @@
       "xcolor"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "cssyntax",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "xifthen"
+    ],
+    "tl_depend": [
+      "l3kernel",
+      "l3packages",
+      "l3packages",
+      "xifthen"
+    ]
   },
   {
     "name": "cstex",
@@ -23553,6 +23577,17 @@
     "tl_depend": []
   },
   {
+    "name": "hust-beamer",
+    "depend": [
+      "etoolbox",
+      "graphics",
+      "moloch",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "hustthesis",
     "depend": [
       "amsmath",
@@ -25634,7 +25669,9 @@
       "graphics",
       "latex"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "rsfs"
+    ]
   },
   {
     "name": "jlabels",
@@ -26099,6 +26136,11 @@
       "circuitikz",
       "pgf"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "kbordermatrix",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -28215,6 +28257,14 @@
     "tl_depend": []
   },
   {
+    "name": "linguexx",
+    "depend": [
+      "graphics",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "linguisticspro",
     "depend": [
       "fontaxes",
@@ -29030,6 +29080,11 @@
     "tl_depend": []
   },
   {
+    "name": "lua-calendrica",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "lua-check-hyphen",
     "depend": [
       "graphics",
@@ -29153,6 +29208,13 @@
   {
     "name": "luabidi",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "luabreakurl",
+    "depend": [
+      "hyperref"
+    ],
     "tl_depend": []
   },
   {
@@ -30470,6 +30532,11 @@
       "fontspec",
       "luaotfload"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "mathformule",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -37650,6 +37717,56 @@
     ]
   },
   {
+    "name": "promec-ufrgs",
+    "depend": [
+      "abntex2",
+      "adjustbox",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "booktabs",
+      "breakurl",
+      "capt-of",
+      "caption",
+      "cleveref",
+      "colortbl",
+      "doublestroke",
+      "epstopdf-pkg",
+      "float",
+      "glossaries",
+      "glossaries-extra",
+      "graphics",
+      "import",
+      "l3packages",
+      "latex",
+      "lipsum",
+      "listings",
+      "lm",
+      "longfigure",
+      "makecell",
+      "mathtools",
+      "mfirstuc",
+      "microtype",
+      "multirow",
+      "ncctools",
+      "nomencl",
+      "pdfpages",
+      "pgf",
+      "pgfgantt",
+      "pgfplots",
+      "siunitx",
+      "soul",
+      "standalone",
+      "svg",
+      "tabulary",
+      "threeparttable",
+      "tools",
+      "url",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "pronunciation",
     "depend": [
       "l3packages",
@@ -42343,6 +42460,13 @@
     "tl_depend": []
   },
   {
+    "name": "setbuilder",
+    "depend": [
+      "mathtools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "setdeck",
     "depend": [
       "pgf",
@@ -45070,6 +45194,18 @@
     "tl_depend": []
   },
   {
+    "name": "talkpal",
+    "depend": [
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "lastpage",
+      "psnfss"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "talos",
     "depend": [],
     "tl_depend": []
@@ -45653,6 +45789,34 @@
     "name": "texdraw",
     "depend": [
       "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "texecole",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "enumitem",
+      "extsizes",
+      "fontspec",
+      "footmisc",
+      "geometry",
+      "graphics",
+      "iftex",
+      "kvoptions",
+      "needspace",
+      "pgfplots",
+      "ragged2e",
+      "tabularray",
+      "tcolorbox",
+      "titlesec",
+      "tkz-tab",
+      "tools",
+      "ulem",
+      "unicode-math",
+      "xcolor",
+      "xstring"
     ],
     "tl_depend": []
   },
@@ -48150,6 +48314,34 @@
       "psnfss",
       "setspace",
       "ulem"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tvthesis",
+    "depend": [
+      "amsmath",
+      "booktabs",
+      "cantarell",
+      "caption",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "floatrow",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "inconsolata",
+      "latex",
+      "libertine",
+      "libertinust1math",
+      "microtype",
+      "pgf",
+      "setspace",
+      "titlesec",
+      "xkeyval"
     ],
     "tl_depend": []
   },
@@ -51747,6 +51939,7 @@
       "footmisc",
       "geometry",
       "graphics",
+      "handstroke",
       "href-ul",
       "imakeidx",
       "l3packages",
