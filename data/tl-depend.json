@@ -7436,6 +7436,16 @@
     "tl_depend": []
   },
   {
+    "name": "cmgraded",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "kvoptions",
+      "latex"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "cmll",
     "depend": [
       "graphics",
@@ -8163,6 +8173,7 @@
       "cmathbb",
       "cmbright",
       "cmexb",
+      "cmgraded",
       "cmll",
       "cmpica",
       "cmsrb",
@@ -9785,6 +9796,7 @@
       "competences",
       "concepts",
       "concprog",
+      "concrete-vec",
       "conditext",
       "constants",
       "continue",
@@ -10509,6 +10521,7 @@
       "mlist",
       "mmap",
       "mnotes",
+      "modernclassnotes",
       "moderncv",
       "modernposter",
       "modernruler",
@@ -10898,6 +10911,7 @@
       "smartnotes",
       "smartref",
       "smartunits",
+      "smileghost",
       "snapshot",
       "snaptodo",
       "snotez",
@@ -11351,6 +11365,7 @@
       "lualibs",
       "lualinalg",
       "lualineno",
+      "luamathaccents",
       "luamathalign",
       "luamaths",
       "luamml",
@@ -11635,6 +11650,7 @@
       "oubraces",
       "overarrows",
       "pascaltriangle",
+      "pdfmathaccents",
       "perfectcut",
       "pfdicons",
       "physconst",
@@ -12053,6 +12069,7 @@
       "tikz-bayesnet",
       "tikz-bbox",
       "tikz-bpmn",
+      "tikz-catan",
       "tikz-cd",
       "tikz-cookingsymbols",
       "tikz-decofonts",
@@ -12504,6 +12521,7 @@
       "elteiktdk",
       "elteikthesis",
       "emisa",
+      "enslyonstage",
       "erdc",
       "estcpmm",
       "etsvthor",
@@ -13230,6 +13248,18 @@
   {
     "name": "concrete",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "concrete-vec",
+    "depend": [
+      "etoolbox",
+      "kvoptions",
+      "latex",
+      "lm",
+      "mathastext",
+      "pdfrender"
+    ],
     "tl_depend": []
   },
   {
@@ -17501,6 +17531,44 @@
     "tl_depend": []
   },
   {
+    "name": "enslyonstage",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "catchfile",
+      "cleveref",
+      "csquotes",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "lastpage",
+      "latex",
+      "lettrine",
+      "lipsum",
+      "mhchem",
+      "microtype",
+      "pgf",
+      "placeins",
+      "preprint",
+      "psnfss",
+      "siunitx",
+      "sttools",
+      "textpos",
+      "titlesec",
+      "tools",
+      "wallpaper",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "ensps-colorscheme",
     "depend": [
       "pgf",
@@ -20831,10 +20899,14 @@
     "name": "gbt9704",
     "depend": [
       "booktabs",
+      "bxcoloremoji",
       "caption",
       "ctex",
+      "fcolumn",
       "fontspec",
       "graphics",
+      "iftex",
+      "latex",
       "memoir",
       "tools",
       "ulem",
@@ -29438,6 +29510,13 @@
     "tl_depend": []
   },
   {
+    "name": "luamathaccents",
+    "depend": [
+      "iftex"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "luamathalign",
     "depend": [
       "iftex"
@@ -31871,6 +31950,30 @@
       "soul",
       "tools",
       "ulem"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "modernclassnotes",
+    "depend": [
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "booktabs",
+      "caption",
+      "etoolbox",
+      "fancyhdr",
+      "geometry",
+      "hyperref",
+      "iftex",
+      "kvoptions",
+      "latex",
+      "listings",
+      "mathdesign",
+      "parskip",
+      "psnfss",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -35655,6 +35758,13 @@
     "name": "pdfmarginpar",
     "depend": [
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pdfmathaccents",
+    "depend": [
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -43493,6 +43603,13 @@
     "tl_depend": []
   },
   {
+    "name": "smileghost",
+    "depend": [
+      "pict2e"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "snapshot",
     "depend": [],
     "tl_depend": []
@@ -46628,6 +46745,13 @@
       "pgf",
       "tools",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikz-catan",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
