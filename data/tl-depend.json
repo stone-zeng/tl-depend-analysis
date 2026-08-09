@@ -1376,6 +1376,30 @@
     "tl_depend": []
   },
   {
+    "name": "arabdoc",
+    "depend": [
+      "amiri",
+      "biblatex",
+      "bidi",
+      "booktabs",
+      "enumitem",
+      "fancyhdr",
+      "float",
+      "fontspec",
+      "geometry",
+      "glossaries",
+      "hyperref",
+      "latex",
+      "pdftexcmds",
+      "polyglossia",
+      "setspace",
+      "titlesec",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "arabi",
     "depend": [
       "amsfonts",
@@ -3939,6 +3963,13 @@
     "depend": [
       "csquotes",
       "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "biblatex-asa",
+    "depend": [
+      "biblatex"
     ],
     "tl_depend": []
   },
@@ -7793,6 +7824,7 @@
       "biblatex-apa6",
       "biblatex-archaeology",
       "biblatex-arthistory-bonn",
+      "biblatex-asa",
       "biblatex-bath",
       "biblatex-bookinarticle",
       "biblatex-bookinother",
@@ -8626,6 +8658,7 @@
       "tangramtikz",
       "thematicpuzzle",
       "tictactoe",
+      "tikz-catan",
       "tikz-triminos",
       "trivialpursuit",
       "twoxtwogame",
@@ -8711,6 +8744,7 @@
       "alkalami",
       "alpha-persian",
       "amiri",
+      "arabdoc",
       "arabi",
       "arabi-add",
       "arabic-book",
@@ -8723,6 +8757,7 @@
       "dad",
       "fariscovernew",
       "ghab",
+      "hadith",
       "hvarabic",
       "hyphen-arabic",
       "hyphen-farsi",
@@ -11669,6 +11704,7 @@
       "proof-at-the-end",
       "proofgraph",
       "prooftrees",
+      "propositions",
       "pseudo",
       "pseudocode",
       "pythonhighlight",
@@ -11725,6 +11761,7 @@
       "structmech",
       "struktex",
       "substances",
+      "substnote",
       "subsupscripts",
       "subtext",
       "susy",
@@ -11744,6 +11781,7 @@
       "thermodynamics",
       "thmbox",
       "thmtools",
+      "tikz-chemlab",
       "tiscreen",
       "tkz-interval",
       "transition-metals",
@@ -12069,7 +12107,6 @@
       "tikz-bayesnet",
       "tikz-bbox",
       "tikz-bpmn",
-      "tikz-catan",
       "tikz-cd",
       "tikz-cookingsymbols",
       "tikz-decofonts",
@@ -12506,6 +12543,7 @@
       "dccpaper",
       "delvierre",
       "deutschesmuseum",
+      "dfg-crc",
       "dithesis",
       "dlrg-templates",
       "ebook",
@@ -12688,6 +12726,7 @@
       "seuthesix",
       "sfee",
       "shortmathj",
+      "siicusp-abstracts",
       "smflatex",
       "soton",
       "sphdthesis",
@@ -15357,6 +15396,42 @@
       "natbib",
       "tools",
       "unicode-math",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "dfg-crc",
+    "depend": [
+      "academicons",
+      "babel",
+      "biblatex",
+      "biblatex-ext",
+      "caption",
+      "cleveref",
+      "csquotes",
+      "datatool",
+      "enumitem",
+      "etoolbox",
+      "fontawesome5",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hvfloat",
+      "hyperref",
+      "koma-script",
+      "marginalia",
+      "microtype",
+      "mwe",
+      "pgf",
+      "pgfgantt",
+      "placeins",
+      "psnfss",
+      "qrcode",
+      "ragged2e",
+      "tabularray",
+      "tcolorbox",
+      "tools",
       "xcolor"
     ],
     "tl_depend": []
@@ -22272,6 +22347,17 @@
   {
     "name": "hacm",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "hadith",
+    "depend": [
+      "bidi",
+      "iftex",
+      "l3packages",
+      "xkeyval",
+      "xstring"
+    ],
     "tl_depend": []
   },
   {
@@ -29241,6 +29327,7 @@
   {
     "name": "lua-unicode-math",
     "depend": [
+      "amsfonts",
       "lua-uni-algos"
     ],
     "tl_depend": []
@@ -31961,17 +32048,26 @@
       "amsmath",
       "booktabs",
       "caption",
+      "enumitem",
       "etoolbox",
       "fancyhdr",
+      "fira",
       "geometry",
       "hyperref",
       "iftex",
+      "kpfonts",
       "kvoptions",
+      "l3packages",
       "latex",
+      "libertine",
       "listings",
-      "mathdesign",
+      "lm",
+      "newtx",
       "parskip",
       "psnfss",
+      "sourcesans",
+      "sourceserif",
+      "tex-gyre",
       "tools",
       "xcolor"
     ],
@@ -37905,6 +38001,7 @@
       "etoolbox",
       "graphics",
       "kvoptions",
+      "pdftexcmds",
       "xstring"
     ],
     "tl_depend": []
@@ -37964,6 +38061,13 @@
       "wasysym",
       "wrapfig",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "propositions",
+    "depend": [
+      "tools"
     ],
     "tl_depend": []
   },
@@ -43013,6 +43117,20 @@
     "tl_depend": []
   },
   {
+    "name": "siicusp-abstracts",
+    "depend": [
+      "babel",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "iftex",
+      "latex",
+      "lm",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "silence",
     "depend": [],
     "tl_depend": []
@@ -43758,7 +43876,6 @@
       "centeredline",
       "latex",
       "psnfss",
-      "setspace",
       "tools"
     ],
     "tl_depend": []
@@ -44629,6 +44746,11 @@
       "l3packages",
       "siunitx"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "substnote",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -46757,6 +46879,13 @@
   },
   {
     "name": "tikz-cd",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "tikz-chemlab",
     "depend": [
       "pgf"
     ],
