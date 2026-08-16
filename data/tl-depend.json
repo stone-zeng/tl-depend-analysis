@@ -8992,7 +8992,6 @@
       "tex-overview",
       "tex-vpat",
       "texbytopic",
-      "texonly",
       "titlepages",
       "tlc2",
       "tlc3-examples",
@@ -10389,7 +10388,6 @@
       "korigamik",
       "ktbox",
       "ktv-texdata",
-      "l3backend-dev",
       "l3build",
       "l3kernel-dev",
       "labbook",
@@ -11350,6 +11348,7 @@
       "countwords",
       "cstypo",
       "ctablestack",
+      "dichromacy",
       "ekdosis",
       "emoji",
       "emojicite",
@@ -11782,6 +11781,7 @@
       "thmbox",
       "thmtools",
       "tikz-chemlab",
+      "tikzphysics",
       "tiscreen",
       "tkz-interval",
       "transition-metals",
@@ -11945,6 +11945,7 @@
       "curve2e",
       "curves",
       "dcpic",
+      "dental-palmer",
       "diagmac2",
       "ditaa",
       "doc-pictex",
@@ -12658,6 +12659,7 @@
       "nddiss",
       "ndsu-thesis",
       "ndsu-thesis-2022",
+      "nehgs-register",
       "nih",
       "nihbiosketch",
       "njustthesis",
@@ -15368,6 +15370,14 @@
     "tl_depend": []
   },
   {
+    "name": "dental-palmer",
+    "depend": [
+      "l3kernel",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "derivative",
     "depend": [
       "l3kernel",
@@ -15524,6 +15534,15 @@
     "depend": [
       "latex",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "dichromacy",
+    "depend": [
+      "graphics",
+      "iftex",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -20280,7 +20299,6 @@
   {
     "name": "fontspec",
     "depend": [
-      "l3packages",
       "latex",
       "luaotfload"
     ],
@@ -26965,11 +26983,6 @@
     "tl_depend": []
   },
   {
-    "name": "l3backend-dev",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "l3build",
     "depend": [],
     "tl_depend": [
@@ -27035,7 +27048,6 @@
       "underscore"
     ],
     "tl_depend": [
-      "l3backend-dev",
       "lua-uni-algos"
     ]
   },
@@ -27301,7 +27313,6 @@
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
-      "l3backend-dev",
       "l3kernel-dev",
       "latex-base-dev",
       "latex-bin-dev.ARCH",
@@ -33279,6 +33290,20 @@
     "tl_depend": []
   },
   {
+    "name": "nehgs-register",
+    "depend": [
+      "datetime2",
+      "enumitem",
+      "etoolbox",
+      "graphics",
+      "hyperref",
+      "imakeidx",
+      "l3packages",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "neoschool",
     "depend": [
       "adforn",
@@ -37079,7 +37104,6 @@
       "hyphen-base",
       "knuth-lib",
       "l3backend",
-      "l3backend-dev",
       "l3kernel",
       "l3kernel-dev",
       "latex",
@@ -41838,7 +41862,6 @@
       "hyphen-portuguese",
       "hyphen-spanish",
       "hyphen-swedish",
-      "l3backend-dev",
       "l3kernel-dev",
       "latex-amsmath-dev",
       "latex-base-dev",
@@ -46238,11 +46261,6 @@
     "tl_depend": []
   },
   {
-    "name": "texonly",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "texosquery",
     "depend": [],
     "tl_depend": [
@@ -47394,6 +47412,13 @@
     "tl_depend": []
   },
   {
+    "name": "tikzphysics",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikzpingus",
     "depend": [
       "etoolbox",
@@ -47772,6 +47797,7 @@
     "depend": [
       "appendix",
       "bookmark",
+      "catchfile",
       "csvsimple",
       "enumitem",
       "fancyhdr",
@@ -47784,8 +47810,10 @@
       "listings",
       "lm",
       "makecell",
+      "multirow",
       "pdflscape",
       "pdfpages",
+      "pgf-pie",
       "spverbatim",
       "titling",
       "tocloft",
@@ -47860,7 +47888,9 @@
   },
   {
     "name": "tocloft",
-    "depend": [],
+    "depend": [
+      "etoolbox"
+    ],
     "tl_depend": []
   },
   {
@@ -49834,7 +49864,6 @@
       "hyphen-base",
       "knuth-lib",
       "l3backend",
-      "l3backend-dev",
       "l3kernel",
       "l3kernel-dev",
       "latex",
@@ -51279,8 +51308,10 @@
   {
     "name": "xecjk",
     "depend": [
+      "accsupp",
       "ctex",
       "fontspec",
+      "l3experimental",
       "l3kernel",
       "l3packages",
       "listings",
@@ -51337,7 +51368,6 @@
       "cm",
       "hyphen-base",
       "knuth-lib",
-      "l3backend-dev",
       "l3kernel-dev",
       "latex-base-dev",
       "latex-firstaid-dev",
