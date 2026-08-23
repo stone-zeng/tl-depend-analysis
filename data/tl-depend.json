@@ -3944,6 +3944,15 @@
     "tl_depend": []
   },
   {
+    "name": "biblatex-apa-zh",
+    "depend": [
+      "biblatex",
+      "etoolbox",
+      "kvoptions"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "biblatex-apa6",
     "depend": [],
     "tl_depend": []
@@ -6346,6 +6355,21 @@
     "tl_depend": []
   },
   {
+    "name": "chatui",
+    "depend": [
+      "amsfonts",
+      "etoolbox",
+      "graphics",
+      "kvoptions",
+      "l3packages",
+      "pgf",
+      "psnfss",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "chbibref",
     "depend": [],
     "tl_depend": []
@@ -7821,6 +7845,7 @@
       "biblatex-ams",
       "biblatex-anonymous",
       "biblatex-apa",
+      "biblatex-apa-zh",
       "biblatex-apa6",
       "biblatex-archaeology",
       "biblatex-arthistory-bonn",
@@ -8062,6 +8087,7 @@
       "tex4ebook",
       "texaccents",
       "texblend",
+      "texchanges",
       "texcount",
       "texdef",
       "texdiff",
@@ -8423,6 +8449,7 @@
       "phaistos",
       "phonetic",
       "pigpen",
+      "pl46-fonts",
       "playfair",
       "plex",
       "plex-otf",
@@ -9520,7 +9547,6 @@
       "kvdefinekeys",
       "kvoptions",
       "kvsetkeys",
-      "l3backend",
       "l3kernel",
       "l3packages",
       "latex",
@@ -9762,6 +9788,7 @@
       "changes",
       "chappg",
       "chapterfolder",
+      "chatui",
       "cheatsheet",
       "checkend",
       "chet",
@@ -10081,8 +10108,10 @@
       "everypage",
       "exam",
       "exam-lite",
+      "exam-ltr",
       "exam-n",
       "exam-randomizechoices",
+      "exam-rtl",
       "examdesign",
       "example",
       "examplep",
@@ -11209,6 +11238,7 @@
       "xint-regression",
       "xkcdcolors",
       "xkeymask",
+      "xlistings",
       "xltabular",
       "xmeaning",
       "xmpincl",
@@ -11648,6 +11678,7 @@
       "mathsemantics",
       "matlab-prettifier",
       "matrix-skeleton",
+      "matrixdiagrams",
       "mattens",
       "mecaso",
       "medmath",
@@ -11687,6 +11718,7 @@
       "pdfmathaccents",
       "perfectcut",
       "pfdicons",
+      "phtitration",
       "physconst",
       "physics",
       "physics-patch",
@@ -18512,6 +18544,16 @@
     "tl_depend": []
   },
   {
+    "name": "exam-ltr",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "tcolorbox",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "exam-n",
     "depend": [
       "amsmath",
@@ -18532,6 +18574,19 @@
       "environ",
       "etoolbox",
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "exam-rtl",
+    "depend": [
+      "bidi",
+      "fontspec",
+      "l3kernel",
+      "l3packages",
+      "polyglossia",
+      "tcolorbox",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -22823,10 +22878,12 @@
     "name": "hep-acronym",
     "depend": [
       "amsmath",
+      "enumitem",
       "everyhook",
       "glossaries-extra",
       "kvoptions",
       "l3packages",
+      "titlesec",
       "tools"
     ],
     "tl_depend": []
@@ -22870,7 +22927,6 @@
       "pdftexcmds",
       "silence",
       "slantsc",
-      "units",
       "xpatch"
     ],
     "tl_depend": []
@@ -22897,8 +22953,9 @@
       "l3packages",
       "mathtools",
       "mleftright",
+      "siunitx",
       "soul",
-      "units",
+      "xfrac",
       "xpatch"
     ],
     "tl_depend": []
@@ -22916,6 +22973,7 @@
       "mnsymbol",
       "pdftexcmds",
       "tools",
+      "xpatch",
       "xstring"
     ],
     "tl_depend": []
@@ -22964,6 +23022,7 @@
       "foreign",
       "kvoptions",
       "l3packages",
+      "noindentafter",
       "pdftexcmds",
       "relsize",
       "soul"
@@ -22977,6 +23036,7 @@
       "atbegshi",
       "environ",
       "etoolbox",
+      "orcidlink",
       "picture",
       "preprint",
       "titling",
@@ -25721,7 +25781,6 @@
       "kvdefinekeys",
       "kvoptions",
       "kvsetkeys",
-      "l3backend",
       "l3kernel",
       "latex",
       "latex-fonts",
@@ -26978,11 +27037,6 @@
     "tl_depend": []
   },
   {
-    "name": "l3backend",
-    "depend": [],
-    "tl_depend": []
-  },
-  {
     "name": "l3build",
     "depend": [],
     "tl_depend": [
@@ -27021,7 +27075,6 @@
       "underscore"
     ],
     "tl_depend": [
-      "l3backend",
       "lua-uni-algos"
     ]
   },
@@ -27286,7 +27339,6 @@
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "latex",
       "latex-bin.ARCH",
@@ -30816,6 +30868,15 @@
     "tl_depend": []
   },
   {
+    "name": "matrixdiagrams",
+    "depend": [
+      "l3packages",
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mattens",
     "depend": [
       "amsmath"
@@ -31799,13 +31860,13 @@
       "esvect",
       "etoolbox",
       "ibrackets",
-      "iftex",
       "l3packages",
       "latex",
       "mathtools",
       "mleftright",
       "tools",
-      "xkeyval"
+      "xkeyval",
+      "xpunctuate"
     ],
     "tl_depend": []
   },
@@ -31823,6 +31884,7 @@
   {
     "name": "mitthesis",
     "depend": [
+      "amsfonts",
       "doi",
       "etoolbox",
       "geometry",
@@ -31935,7 +31997,6 @@
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "latex",
       "latex-fonts",
@@ -36737,6 +36798,16 @@
     ]
   },
   {
+    "name": "phtitration",
+    "depend": [
+      "etoolbox",
+      "pgf",
+      "pgfplots",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "physconst",
     "depend": [
       "physunits"
@@ -37002,6 +37073,14 @@
     "tl_depend": []
   },
   {
+    "name": "pl46-fonts",
+    "depend": [
+      "iftex",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "placeat",
     "depend": [
       "atbegshi",
@@ -37103,7 +37182,6 @@
       "firstaid",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "l3kernel-dev",
       "latex",
@@ -40715,6 +40793,7 @@
     "depend": [
       "cleveref",
       "hyperref",
+      "soul",
       "tcolorbox",
       "xcolor"
     ],
@@ -41601,38 +41680,6 @@
     "tl_depend": [
       "collection-basic",
       "collection-latex"
-    ]
-  },
-  {
-    "name": "scheme-bookpub",
-    "depend": [],
-    "tl_depend": [
-      "barcodes",
-      "biber",
-      "biblatex",
-      "bookcover",
-      "caption",
-      "collection-basic",
-      "collection-latex",
-      "enumitem",
-      "fontspec",
-      "latexmk",
-      "lipsum",
-      "listings",
-      "markdown",
-      "memoir",
-      "microtype",
-      "minted",
-      "novel",
-      "octavo",
-      "pdfpages",
-      "pgf",
-      "qrcode",
-      "shapes",
-      "titlesec",
-      "tocloft",
-      "tufte-latex",
-      "willowtreebook"
     ]
   },
   {
@@ -45990,6 +46037,20 @@
     "tl_depend": []
   },
   {
+    "name": "texchanges",
+    "depend": [
+      "l3packages",
+      "soul",
+      "todonotes",
+      "truncate",
+      "ulem",
+      "xcolor"
+    ],
+    "tl_depend": [
+      "texchanges.ARCH"
+    ]
+  },
+  {
     "name": "texcount",
     "depend": [],
     "tl_depend": [
@@ -49863,7 +49924,6 @@
       "firstaid",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "l3kernel-dev",
       "latex",
@@ -51446,7 +51506,6 @@
       "firstaid",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "latex",
       "latex-fonts",
@@ -51679,6 +51738,21 @@
     "tl_depend": []
   },
   {
+    "name": "xlistings",
+    "depend": [
+      "accsupp",
+      "etoolbox",
+      "kvoptions",
+      "listings",
+      "listingsutf8",
+      "lstaddons",
+      "needspace",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "xlop",
     "depend": [],
     "tl_depend": []
@@ -51730,7 +51804,6 @@
       "hyph-utf8",
       "hyphen-base",
       "knuth-lib",
-      "l3backend",
       "l3kernel",
       "latex",
       "latex-fonts",
