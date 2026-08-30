@@ -1535,6 +1535,13 @@
     "tl_depend": []
   },
   {
+    "name": "arcs2",
+    "depend": [
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "arev",
     "depend": [
       "amsfonts",
@@ -1701,6 +1708,11 @@
   },
   {
     "name": "ascii-chart",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "ascii-emoticon",
     "depend": [],
     "tl_depend": []
   },
@@ -6095,6 +6107,19 @@
     "tl_depend": []
   },
   {
+    "name": "causalmodels",
+    "depend": [
+      "amsmath",
+      "oberdiek",
+      "pgf"
+    ],
+    "tl_depend": [
+      "amsmath",
+      "oberdiek",
+      "pgf"
+    ]
+  },
+  {
     "name": "causets",
     "depend": [
       "pgf"
@@ -8056,6 +8081,7 @@
       "listings-ext",
       "ltxfileinfo",
       "ltximg",
+      "make-paper-tarball",
       "make4ht",
       "match_parens",
       "mflua",
@@ -8321,6 +8347,7 @@
       "frimurer",
       "garamond-libre",
       "garamond-math",
+      "geist-font",
       "gelasio",
       "gelasiomath",
       "genealogy",
@@ -8448,6 +8475,7 @@
       "pennstander-otf",
       "phaistos",
       "phonetic",
+      "phosphoricons",
       "pigpen",
       "pl46-fonts",
       "playfair",
@@ -8649,6 +8677,7 @@
       "hexgame",
       "hmtrump",
       "horoscop",
+      "integramme",
       "jeuxcartes",
       "jigsaw",
       "labyrinth",
@@ -9627,11 +9656,13 @@
       "apptools",
       "arabicfront",
       "arcs",
+      "arcs2",
       "argumentation",
       "arraycols",
       "arrayjobx",
       "arraysort",
       "arydshln",
+      "ascii-emoticon",
       "asciilist",
       "askinclude",
       "assignment",
@@ -10718,6 +10749,7 @@
       "papermas",
       "papertex",
       "paracol",
+      "paracolrule",
       "parades",
       "paralist",
       "paramcalc",
@@ -11540,6 +11572,7 @@
       "calculation",
       "cartonaugh",
       "cascade",
+      "causalmodels",
       "causets",
       "ccfonts",
       "ccool",
@@ -11916,6 +11949,7 @@
       "lilyglyphs",
       "lyluatex",
       "m-tx",
+      "mousik",
       "musical",
       "musicography",
       "musixguit",
@@ -12111,6 +12145,7 @@
       "realhats",
       "reotex",
       "robotarm",
+      "robotkarol",
       "rviewport",
       "sa-tikz",
       "sacsymb",
@@ -21095,6 +21130,18 @@
     "tl_depend": []
   },
   {
+    "name": "geist-font",
+    "depend": [
+      "figureversions",
+      "fontspec",
+      "iftex",
+      "latex",
+      "tools",
+      "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "gelasio",
     "depend": [
       "fontaxes",
@@ -25315,6 +25362,13 @@
     "tl_depend": []
   },
   {
+    "name": "integramme",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "inter",
     "depend": [
       "fontaxes",
@@ -28025,7 +28079,10 @@
   {
     "name": "lete-sans-math",
     "depend": [
+      "amsfonts",
+      "fontspec",
       "iftex",
+      "lua-unicode-math",
       "unicode-math"
     ],
     "tl_depend": []
@@ -30338,6 +30395,13 @@
     "tl_depend": []
   },
   {
+    "name": "make-paper-tarball",
+    "depend": [],
+    "tl_depend": [
+      "make-paper-tarball.ARCH"
+    ]
+  },
+  {
     "name": "make4ht",
     "depend": [
       "luaxml"
@@ -32474,6 +32538,15 @@
     "name": "morse-simple",
     "depend": [
       "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "mousik",
+    "depend": [
+      "harmony",
+      "musixtex",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -35466,6 +35539,16 @@
     "tl_depend": []
   },
   {
+    "name": "paracolrule",
+    "depend": [
+      "etoolbox",
+      "l3packages",
+      "paracol",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "parades",
     "depend": [],
     "tl_depend": []
@@ -36731,6 +36814,15 @@
   {
     "name": "phonrule",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "phosphoricons",
+    "depend": [
+      "l3kernel",
+      "l3packages",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -40965,6 +41057,18 @@
     "name": "robotarm",
     "depend": [
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "robotkarol",
+    "depend": [
+      "fontspec",
+      "graphics",
+      "l3kernel",
+      "listings",
+      "pgf",
+      "struktex"
     ],
     "tl_depend": []
   },
