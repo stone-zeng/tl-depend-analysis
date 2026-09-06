@@ -2488,6 +2488,13 @@
     "tl_depend": []
   },
   {
+    "name": "babel-malagasy",
+    "depend": [
+      "babel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "babel-malay",
     "depend": [],
     "tl_depend": []
@@ -3220,7 +3227,8 @@
   {
     "name": "beamertheme-mirage",
     "depend": [
-      "fontawesome5",
+      "beamertheme-tcolorbox",
+      "fontawesome7",
       "microtype",
       "pgf",
       "regexpatch",
@@ -6525,6 +6533,13 @@
     "tl_depend": []
   },
   {
+    "name": "chemidentifier",
+    "depend": [
+      "l3kernel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "chemmacros",
     "depend": [
       "acro",
@@ -7694,6 +7709,7 @@
       "fontawesome5",
       "l3kernel",
       "l3packages",
+      "listings",
       "tcolorbox",
       "varwidth",
       "xcolor"
@@ -8321,6 +8337,7 @@
       "euler-math",
       "eulervm",
       "euxm",
+      "fantasquesansmono-otf",
       "fbb",
       "fdsymbol",
       "fetamont",
@@ -8685,6 +8702,7 @@
       "magicthegathering",
       "mahjong",
       "mahjong-tiles",
+      "mahjonggame",
       "mathador",
       "maze",
       "multi-sudoku",
@@ -9415,6 +9433,7 @@
       "babel-hebrew",
       "babel-indonesian",
       "babel-interlingua",
+      "babel-malagasy",
       "babel-malay",
       "babel-sorbian",
       "babel-thai",
@@ -10420,6 +10439,7 @@
       "isotope",
       "issuulinks",
       "iwonamath",
+      "jiffy",
       "jlabels",
       "jmsdelim",
       "jobname-suffix",
@@ -10645,6 +10665,7 @@
       "multibbl",
       "multicap",
       "multicolrule",
+      "multicoltab",
       "multidef",
       "multienv",
       "multiexpand",
@@ -11583,6 +11604,7 @@
       "chemformula",
       "chemformula-ru",
       "chemgreek",
+      "chemidentifier",
       "chemmacros",
       "chemnum",
       "chemobabel",
@@ -11661,6 +11683,7 @@
       "glmatrix",
       "glosmathtools",
       "gotoh",
+      "graph-theory-symbol",
       "grundgesetze",
       "gu",
       "helmholtz-ellis-ji-notation",
@@ -11675,6 +11698,7 @@
       "hideproofs",
       "ibrackets",
       "includernw",
+      "inspirehep",
       "interval",
       "intexgral",
       "ionumbers",
@@ -12255,6 +12279,7 @@
       "tkzexample",
       "tonevalue",
       "tqft",
+      "trainmap",
       "tsemlines",
       "tufte-latex",
       "twemojis",
@@ -12627,6 +12652,7 @@
       "elteiktdk",
       "elteikthesis",
       "emisa",
+      "enslyonreview",
       "enslyonstage",
       "erdc",
       "estcpmm",
@@ -12823,6 +12849,7 @@
       "thuthesis",
       "tidyres",
       "tiet-question-paper",
+      "tietreport",
       "timbreicmc",
       "tlc-article",
       "topletter",
@@ -17692,6 +17719,41 @@
     "tl_depend": []
   },
   {
+    "name": "enslyonreview",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "biblatex",
+      "booktabs",
+      "caption",
+      "cleveref",
+      "csquotes",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "float",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "lastpage",
+      "latex",
+      "mhchem",
+      "multirow",
+      "newtx",
+      "preprint",
+      "psnfss",
+      "ragged2e",
+      "siunitx",
+      "stix2-type1",
+      "sttools",
+      "titlesec",
+      "tools",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "enslyonstage",
     "depend": [
       "amsfonts",
@@ -17860,7 +17922,9 @@
       "qrcode",
       "xstring"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "calculator"
+    ]
   },
   {
     "name": "epigrafica",
@@ -18080,6 +18144,7 @@
   {
     "name": "erewhon-math",
     "depend": [
+      "amsfonts",
       "fontspec",
       "fourier",
       "iftex",
@@ -19165,6 +19230,15 @@
   {
     "name": "fandol",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "fantasquesansmono-otf",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "xkeyval"
+    ],
     "tl_depend": []
   },
   {
@@ -21963,6 +22037,18 @@
       "tools",
       "ulem",
       "wrapfig",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "graph-theory-symbol",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "fdsymbol",
+      "graphics",
+      "lua-unicode-math",
       "xcolor"
     ],
     "tl_depend": []
@@ -25345,6 +25431,14 @@
     "tl_depend": []
   },
   {
+    "name": "inspirehep",
+    "depend": [
+      "l3packages",
+      "pgfplots"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "install-latex-guide-zh-cn",
     "depend": [],
     "tl_depend": []
@@ -25928,6 +26022,18 @@
   {
     "name": "jieeetran",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "jiffy",
+    "depend": [
+      "iftex",
+      "nextpage",
+      "pdflscape",
+      "pgf",
+      "pgfopts",
+      "xcolor"
+    ],
     "tl_depend": []
   },
   {
@@ -29533,7 +29639,6 @@
   {
     "name": "luacolor",
     "depend": [
-      "atbegshi",
       "graphics"
     ],
     "tl_depend": []
@@ -30336,6 +30441,17 @@
     "tl_depend": []
   },
   {
+    "name": "mahjonggame",
+    "depend": [
+      "ctex",
+      "l3kernel",
+      "l3packages",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mailing",
     "depend": [],
     "tl_depend": []
@@ -30934,6 +31050,7 @@
   {
     "name": "matrixdiagrams",
     "depend": [
+      "kvoptions",
       "l3packages",
       "pgf",
       "tools"
@@ -32807,6 +32924,15 @@
       "tools",
       "xcolor",
       "xpatch"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "multicoltab",
+    "depend": [
+      "graphics",
+      "l3packages",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -38196,6 +38322,7 @@
       "graphics",
       "kvoptions",
       "pdftexcmds",
+      "tools",
       "xstring"
     ],
     "tl_depend": []
@@ -40840,6 +40967,7 @@
       "fancyvrb",
       "hyperref",
       "jknapltx",
+      "kvoptions",
       "l3packages",
       "latex",
       "lipsum",
@@ -41065,6 +41193,7 @@
     "depend": [
       "fontspec",
       "graphics",
+      "hyperref",
       "l3kernel",
       "listings",
       "pgf",
@@ -47005,6 +47134,20 @@
     "tl_depend": []
   },
   {
+    "name": "tietreport",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "fancyhdr",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "latex",
+      "titlesec"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz-3dplot",
     "depend": [
       "latex",
@@ -48274,6 +48417,13 @@
       "l3kernel",
       "l3packages",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "trainmap",
+    "depend": [
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -51275,6 +51425,7 @@
   {
     "name": "xcharter-math",
     "depend": [
+      "amsfonts",
       "fontspec",
       "iftex",
       "lua-unicode-math",
@@ -52577,13 +52728,10 @@
   {
     "name": "ysabeau",
     "depend": [
-      "carlisle",
-      "etoolbox",
       "fontaxes",
       "latex",
       "mweights",
-      "xkeyval",
-      "xstring"
+      "xkeyval"
     ],
     "tl_depend": []
   },
