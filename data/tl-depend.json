@@ -8437,6 +8437,7 @@
       "linguisticspro",
       "lobster2",
       "logix",
+      "lora",
       "luciole",
       "luwiantype",
       "lxfonts",
@@ -8851,6 +8852,7 @@
       "simurgh",
       "texnegar",
       "tram",
+      "unipersian",
       "xepersian",
       "xepersian-hm",
       "xindy-persian"
@@ -9474,6 +9476,7 @@
       "latino-sine-flexione",
       "lshort-thai",
       "lshort-vietnamese",
+      "malagasy-numberwords",
       "marathi",
       "ntheorem-vn",
       "quran-bn",
@@ -10588,6 +10591,7 @@
       "mathfam256",
       "mathfont",
       "mathgreeks",
+      "mayanumber",
       "maybemath",
       "mcaption",
       "mceinleger",
@@ -12682,6 +12686,7 @@
       "heria",
       "hfutexam",
       "hfutthesis",
+      "hicite",
       "hithesis",
       "hitszbeamer",
       "hitszthesis",
@@ -23408,6 +23413,16 @@
     "tl_depend": []
   },
   {
+    "name": "hicite",
+    "depend": [
+      "biblatex",
+      "etoolbox",
+      "graphics",
+      "iftex"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "hideanswer",
     "depend": [
       "graphics",
@@ -29085,6 +29100,14 @@
     "tl_depend": []
   },
   {
+    "name": "lora",
+    "depend": [
+      "fontspec",
+      "l3packages"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lparse",
     "depend": [],
     "tl_depend": []
@@ -30179,7 +30202,10 @@
   {
     "name": "luciole",
     "depend": [
+      "amsfonts",
+      "fontspec",
       "iftex",
+      "lua-unicode-math",
       "unicode-math"
     ],
     "tl_depend": []
@@ -30632,6 +30658,13 @@
     "tl_depend": []
   },
   {
+    "name": "malagasy-numberwords",
+    "depend": [
+      "fmtcount"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mandi",
     "depend": [
       "amsmath",
@@ -31061,6 +31094,15 @@
     "name": "mattens",
     "depend": [
       "amsmath"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "mayanumber",
+    "depend": [
+      "fontspec",
+      "iftex",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -34142,6 +34184,7 @@
     "name": "nodepthtext",
     "depend": [
       "graphics",
+      "latex",
       "tools",
       "xstring"
     ],
@@ -35805,6 +35848,7 @@
   {
     "name": "pas-tableur",
     "depend": [
+      "customenvs",
       "pgf",
       "psnfss",
       "xkeyval",
@@ -40724,24 +40768,17 @@
   {
     "name": "regulatory",
     "depend": [
-      "attachfile2",
       "enumitem",
       "fmtcount",
       "glossaries",
       "glossaries-extra",
-      "graphics",
       "hyperref",
       "koma-script",
+      "latex",
       "markdown",
-      "pgf",
-      "pgfopts",
       "titlesec",
-      "tools",
       "translations",
-      "xassoccnt",
       "xcolor",
-      "xifthen",
-      "xpatch",
       "xstring",
       "zref",
       "zref-clever"
@@ -49901,6 +49938,19 @@
       "kvoptions",
       "luacode",
       "luatexbase"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "unipersian",
+    "depend": [
+      "babel",
+      "fontspec",
+      "iftex",
+      "l3packages",
+      "latex",
+      "listings",
+      "xkeyval"
     ],
     "tl_depend": []
   },
