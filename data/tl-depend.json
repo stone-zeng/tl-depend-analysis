@@ -157,6 +157,31 @@
     "tl_depend": []
   },
   {
+    "name": "abntexto-ufc",
+    "depend": [
+      "abntexto",
+      "algpseudocodex",
+      "babel",
+      "biblatex",
+      "etoolbox",
+      "fontspec",
+      "glossaries",
+      "iftex",
+      "imakeidx",
+      "latex",
+      "listings",
+      "microtype",
+      "minted",
+      "newtx",
+      "pdfpages",
+      "ragged2e",
+      "tabularray-abnt",
+      "unicode-math",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "aboensis",
     "depend": [
       "fontspec",
@@ -9973,6 +9998,7 @@
       "datatool-regions",
       "datax",
       "dateiliste",
+      "datemultical",
       "datenumber",
       "datestamp",
       "datetime",
@@ -11874,6 +11900,7 @@
       "thmbox",
       "thmtools",
       "tikz-chemlab",
+      "tikz-tensor-networks",
       "tikzphysics",
       "tiscreen",
       "tkz-interval",
@@ -12579,6 +12606,7 @@
       "abntex2",
       "abntexto",
       "abntexto-uece",
+      "abntexto-ufc",
       "acmart",
       "acmconf",
       "active-conf",
@@ -14701,6 +14729,7 @@
       "pgf",
       "randomlist",
       "simplekv",
+      "tablericons",
       "tabularray",
       "tcolorbox",
       "tikz-3dplot",
@@ -14954,6 +14983,15 @@
       "carlisle",
       "rcsinfo",
       "svninfo"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "datemultical",
+    "depend": [
+      "iftex",
+      "l3kernel",
+      "l3packages"
     ],
     "tl_depend": []
   },
@@ -21148,6 +21186,7 @@
   {
     "name": "gbt7714",
     "depend": [
+      "l3packages",
       "natbib",
       "url"
     ],
@@ -26696,6 +26735,7 @@
     "depend": [
       "aliascnt",
       "amscls",
+      "amsmath",
       "refcount",
       "tcolorbox",
       "thmtools",
@@ -28658,8 +28698,8 @@
   {
     "name": "linguexx",
     "depend": [
-      "graphics",
-      "pgf"
+      "pgf",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -47520,6 +47560,17 @@
     "tl_depend": []
   },
   {
+    "name": "tikz-tensor-networks",
+    "depend": [
+      "pgf"
+    ],
+    "tl_depend": [
+      "hobby",
+      "pgf",
+      "spath3"
+    ]
+  },
+  {
     "name": "tikz-timing",
     "depend": [
       "amsmath",
@@ -52931,7 +52982,6 @@
   {
     "name": "zref",
     "depend": [
-      "atbegshi",
       "auxhook",
       "etexcmds",
       "gettitlestring",
