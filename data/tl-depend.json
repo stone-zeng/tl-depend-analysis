@@ -240,14 +240,6 @@
     "tl_depend": []
   },
   {
-    "name": "accessibility",
-    "depend": [
-      "latex",
-      "xkeyval"
-    ],
-    "tl_depend": []
-  },
-  {
     "name": "accfonts",
     "depend": [],
     "tl_depend": [
@@ -1508,6 +1500,13 @@
       "latex"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "arabtex-granada",
+    "depend": [],
+    "tl_depend": [
+      "arabtex"
+    ]
   },
   {
     "name": "arabxetex",
@@ -8850,6 +8849,7 @@
       "arabic-book",
       "arabluatex",
       "arabtex",
+      "arabtex-granada",
       "awami",
       "bidi",
       "bidihl",
@@ -9665,7 +9665,6 @@
       "abraces",
       "abspos",
       "abstract",
-      "accessibility",
       "accsupp",
       "achemso",
       "acro",
@@ -11237,6 +11236,7 @@
       "underlin",
       "underoverlap",
       "undolabl",
+      "unhook",
       "uni-titlepage",
       "unicode-math-input",
       "unicodefonttable",
@@ -11527,6 +11527,7 @@
       "luaquotes",
       "luarandom",
       "luaset",
+      "luatagging",
       "luatbls",
       "luatex-type-definitions",
       "luatex85",
@@ -11753,6 +11754,7 @@
       "lplfitch",
       "lstbayes",
       "lua-regression",
+      "luacoolprop",
       "luanumint",
       "math-operator",
       "mathcommand",
@@ -12171,6 +12173,7 @@
       "pgfopts",
       "pgfornament",
       "pgfplots",
+      "pgfplots-autonode",
       "pgfplotsthemebeamer",
       "picinpar",
       "pict2e",
@@ -24245,6 +24248,7 @@
       "atbegshi",
       "auxhook",
       "bitset",
+      "bookmark",
       "etexcmds",
       "gettitlestring",
       "hycolor",
@@ -27669,13 +27673,17 @@
       "tagpdf",
       "tools"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "luamml",
+      "pdfmanagement"
+    ]
   },
   {
     "name": "latex-lab-dev",
     "depend": [
       "amsmath",
       "bigfoot",
+      "etoolbox",
       "graphics",
       "latex-lab",
       "luamml",
@@ -29619,7 +29627,9 @@
       "amsfonts",
       "lua-uni-algos"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "unicode-math"
+    ]
   },
   {
     "name": "lua-visual-debug",
@@ -29715,6 +29725,17 @@
       "xkeyval"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "luacoolprop",
+    "depend": [
+      "pgfplots",
+      "pgfplots-autonode",
+      "siunitx"
+    ],
+    "tl_depend": [
+      "pgf"
+    ]
   },
   {
     "name": "luadraw",
@@ -30050,6 +30071,13 @@
       "psnfss",
       "tools",
       "xkeyval"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "luatagging",
+    "depend": [
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -34799,18 +34827,24 @@
   {
     "name": "nxtlatex",
     "depend": [
-      "amsfonts",
+      "accsupp",
+      "acro",
       "amsmath",
       "babel",
       "booktabs",
+      "colorprofiles",
       "etoolbox",
+      "fancyhdr",
       "fontspec",
+      "geometry",
       "graphics",
       "hyperref",
-      "koma-script",
       "kvoptions",
       "latex",
+      "parskip",
       "ragged2e",
+      "setspace",
+      "tools",
       "unicode-math",
       "xcolor"
     ],
@@ -36227,7 +36261,9 @@
       "l3experimental",
       "tagpdf"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "tagpdf"
+    ]
   },
   {
     "name": "pdfmarginpar",
@@ -36798,6 +36834,15 @@
     "tl_depend": [
       "pgf"
     ]
+  },
+  {
+    "name": "pgfplots-autonode",
+    "depend": [
+      "iftex",
+      "pgf",
+      "pgfplots"
+    ],
+    "tl_depend": []
   },
   {
     "name": "pgfplotsthemebeamer",
@@ -49838,6 +49883,11 @@
   },
   {
     "name": "unfonts-extra",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "unhook",
     "depend": [],
     "tl_depend": []
   },
