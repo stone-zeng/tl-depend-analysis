@@ -2318,7 +2318,8 @@
     "name": "babel",
     "depend": [
       "fontspec",
-      "luatexbase"
+      "luatexbase",
+      "unibidi-lua"
     ],
     "tl_depend": []
   },
@@ -3390,6 +3391,7 @@
       "babel",
       "caption",
       "carlisle",
+      "colortbl",
       "etoolbox",
       "fontspec",
       "hyperref",
@@ -8916,6 +8918,7 @@
       "texproposal",
       "tlmgr-intro-zh-cn",
       "upzhkinsoku",
+      "xjyutping",
       "xpinyin",
       "xtuthesis",
       "zhlineskip",
@@ -10861,6 +10864,7 @@
       "piff",
       "pkginfograb",
       "pkgloader",
+      "pkgmeta",
       "placeins",
       "plantslabels",
       "plates",
@@ -11696,6 +11700,7 @@
       "extpfeil",
       "faktor",
       "fascicules",
+      "fddiagram",
       "fitch",
       "fits-astro",
       "fixdif",
@@ -11781,6 +11786,7 @@
       "mismath",
       "mohelper",
       "moremath",
+      "mpformulation",
       "multiobjective",
       "mystyletau",
       "naive-ebnf",
@@ -11797,6 +11803,7 @@
       "numerica-tables",
       "numodel-bundle",
       "objectz",
+      "oddsmath",
       "odesandpdes",
       "oplotsymbl",
       "orbitals",
@@ -12067,6 +12074,7 @@
       "curve",
       "curve2e",
       "curves",
+      "data-driven-visualization",
       "dcpic",
       "dental-palmer",
       "diagmac2",
@@ -12825,6 +12833,7 @@
       "ptptex",
       "qrbill",
       "quantumarticle",
+      "rasti-journal",
       "rebuttal",
       "regulatory",
       "resphilosophica",
@@ -12868,6 +12877,7 @@
       "sshrc-insight",
       "stellenbosch",
       "stellenbosch-2",
+      "suai-report",
       "suftesi",
       "sugconf",
       "sysuthesis",
@@ -12993,6 +13003,7 @@
       "font-change-xetex",
       "fontbook",
       "fontwrap",
+      "impe-framework",
       "interchar",
       "na-position",
       "philokalia",
@@ -14917,6 +14928,15 @@
     "depend": [
       "l3packages",
       "ulem"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "data-driven-visualization",
+    "depend": [
+      "datatool",
+      "wheelchart",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -17937,6 +17957,7 @@
       "pgfopts",
       "stmaryrd",
       "tools",
+      "was",
       "xcolor",
       "xstring"
     ],
@@ -19469,6 +19490,14 @@
     "depend": [
       "graphics",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "fddiagram",
+    "depend": [
+      "l3packages",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -25259,6 +25288,51 @@
   {
     "name": "impatient-fr",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "impe-framework",
+    "depend": [
+      "adjustbox",
+      "amscls",
+      "amsfonts",
+      "amsmath",
+      "beamer",
+      "biblatex",
+      "bidi",
+      "bookmark",
+      "booktabs",
+      "caption",
+      "csquotes",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "imakeidx",
+      "import",
+      "jknapltx",
+      "l3kernel",
+      "l3packages",
+      "latex",
+      "mathtools",
+      "mlmodern",
+      "multirow",
+      "pdflscape",
+      "pdftexcmds",
+      "ragged2e",
+      "setspace",
+      "standalone",
+      "threeparttable",
+      "tools",
+      "unicode-math",
+      "xecjk",
+      "xstring",
+      "zhnumber"
+    ],
     "tl_depend": []
   },
   {
@@ -32849,6 +32923,14 @@
     "tl_depend": []
   },
   {
+    "name": "mpformulation",
+    "depend": [
+      "amsmath",
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "mpgraphics",
     "depend": [
       "graphics",
@@ -33689,6 +33771,7 @@
       "carlisle",
       "changepage",
       "colortbl",
+      "diagbox",
       "enumitem",
       "environ",
       "esvect",
@@ -33740,6 +33823,7 @@
       "pstricks",
       "pstricks-add",
       "qrcode",
+      "scratch3",
       "setspace",
       "silence",
       "siunitx",
@@ -34999,6 +35083,13 @@
   {
     "name": "octavo",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "oddsmath",
+    "depend": [
+      "l3packages"
+    ],
     "tl_depend": []
   },
   {
@@ -37387,6 +37478,13 @@
       "l3packages",
       "lt3graph",
       "withargs"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "pkgmeta",
+    "depend": [
+      "fileinfo"
     ],
     "tl_depend": []
   },
@@ -40530,6 +40628,17 @@
       "pgf",
       "pgfopts",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "rasti-journal",
+    "depend": [
+      "geometry",
+      "graphics",
+      "hyperref",
+      "natbib",
+      "tools"
     ],
     "tl_depend": []
   },
@@ -45090,6 +45199,34 @@
     "tl_depend": []
   },
   {
+    "name": "suai-report",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "babel",
+      "bookmark",
+      "caption",
+      "csquotes",
+      "enumitem",
+      "float",
+      "fontspec",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "listings",
+      "microtype",
+      "setspace",
+      "titlesec",
+      "tocloft",
+      "tools",
+      "xcolor",
+      "xltabular",
+      "xurl"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "suanpan",
     "depend": [],
     "tl_depend": []
@@ -47350,6 +47487,7 @@
   {
     "name": "tikz-decofonts",
     "depend": [
+      "amsmath",
       "latex",
       "listofitems",
       "oberdiek",
@@ -52122,6 +52260,14 @@
     "tl_depend": []
   },
   {
+    "name": "xjyutping",
+    "depend": [
+      "luatexja",
+      "xecjk"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "xkcdcolors",
     "depend": [
       "xcolor"
@@ -52472,7 +52618,6 @@
       "hyperref",
       "iftex",
       "juliamono",
-      "kpfonts-otf",
       "latex",
       "mathtools",
       "microtype",
