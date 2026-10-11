@@ -1112,6 +1112,14 @@
     "tl_depend": []
   },
   {
+    "name": "animategif",
+    "depend": [
+      "animate",
+      "graphics"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "annee-scolaire",
     "depend": [
       "l3kernel",
@@ -3398,6 +3406,7 @@
       "iftex",
       "inter",
       "kvoptions",
+      "kvsetkeys",
       "l3packages",
       "latex",
       "libertinust1math",
@@ -3408,12 +3417,12 @@
       "pgf",
       "plex",
       "psnfss",
-      "silence",
       "stix2-type1",
       "tcolorbox",
       "tex-gyre",
       "tools",
       "unicode-math",
+      "varwidth",
       "xcharter",
       "xstring"
     ],
@@ -5875,6 +5884,13 @@
       "tcolorbox",
       "tools",
       "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "calendar-grid",
+    "depend": [
+      "tools"
     ],
     "tl_depend": []
   },
@@ -8500,6 +8516,7 @@
       "noto-emoji",
       "notomath",
       "nunito",
+      "nycbullets",
       "obnov",
       "ocherokee",
       "ocr-b",
@@ -8728,7 +8745,6 @@
       "logicpuzzle",
       "magicthegathering",
       "mahjong",
-      "mahjong-tiles",
       "mahjonggame",
       "mathador",
       "maze",
@@ -9833,6 +9849,7 @@
       "calctab",
       "calculator",
       "calculatoritems",
+      "calendar-grid",
       "calrsfs",
       "cals",
       "calxxxx-yyyy",
@@ -10585,6 +10602,7 @@
       "lua-check-hyphen",
       "lua-physical",
       "luatodonotes",
+      "lucidcv",
       "lucide-admonitions",
       "macrolist",
       "macroswap",
@@ -10613,6 +10631,7 @@
       "marginfix",
       "marginnote",
       "markdown",
+      "mathaidisclose",
       "mathalpha",
       "mathastext",
       "mathexam",
@@ -10890,6 +10909,7 @@
       "printcolormanager",
       "printfilelist",
       "printlen",
+      "problib",
       "probsoln",
       "profmaquette",
       "program",
@@ -11084,6 +11104,7 @@
       "standalone",
       "standardsectioning",
       "starray",
+      "statusstamp",
       "stdclsdv",
       "stdpage",
       "stealcaps",
@@ -11451,6 +11472,7 @@
     "tl_depend": [
       "addliga",
       "addtoluatexpath",
+      "animategif",
       "auto-pst-pdf-lua",
       "barracuda",
       "bezierplot",
@@ -12111,6 +12133,7 @@
       "getmap",
       "gincltex",
       "gnuplottex",
+      "gradbars",
       "gradientframe",
       "grafcet",
       "graph35",
@@ -12233,6 +12256,7 @@
       "swimgraf",
       "syntaxdi",
       "table-fct",
+      "terminaltrees",
       "texdraw",
       "ticollege",
       "tikz-3dplot",
@@ -12719,6 +12743,7 @@
       "h2020proposal",
       "hagenberg-thesis",
       "har2nat",
+      "hauthesis",
       "hduthesis",
       "hecthese",
       "hep-paper",
@@ -13655,7 +13680,6 @@
     "name": "continue",
     "depend": [
       "atbegshi",
-      "picture",
       "zref"
     ],
     "tl_depend": []
@@ -22043,6 +22067,19 @@
     "tl_depend": []
   },
   {
+    "name": "gradbars",
+    "depend": [
+      "booktabs",
+      "collcell",
+      "colortbl",
+      "l3kernel",
+      "l3packages",
+      "pgf",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "gradient-text",
     "depend": [],
     "tl_depend": []
@@ -22899,6 +22936,33 @@
       "psnfss",
       "tex-gyre",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "hauthesis",
+    "depend": [
+      "algorithmicx",
+      "algorithms",
+      "booktabs",
+      "caption",
+      "ctex",
+      "enumitem",
+      "etoolbox",
+      "fancyhdr",
+      "fancyvrb",
+      "filehook",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "lastpage",
+      "listings",
+      "pgf",
+      "tabularray",
+      "tex-gyre-math",
+      "tools",
+      "unicode-math",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -25241,7 +25305,9 @@
     "depend": [
       "amsmath",
       "cite",
-      "latex"
+      "geometry",
+      "latex",
+      "psnfss"
     ],
     "tl_depend": []
   },
@@ -30321,6 +30387,28 @@
     "tl_depend": []
   },
   {
+    "name": "lucidcv",
+    "depend": [
+      "accsupp",
+      "dashrule",
+      "enumitem",
+      "etoolbox",
+      "extsizes",
+      "fontawesome5",
+      "fontspec",
+      "framed",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "iftex",
+      "paracol",
+      "pgf",
+      "ragged2e",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lucide-admonitions",
     "depend": [
       "lucide-icons",
@@ -30593,18 +30681,6 @@
       "l3kernel",
       "l3packages",
       "stackengine"
-    ],
-    "tl_depend": []
-  },
-  {
-    "name": "mahjong-tiles",
-    "depend": [
-      "graphics",
-      "l3kernel",
-      "l3packages",
-      "pgf",
-      "stackengine",
-      "xcolor"
     ],
     "tl_depend": []
   },
@@ -31038,6 +31114,14 @@
       "pgf",
       "simplekv",
       "tools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "mathaidisclose",
+    "depend": [
+      "cleveref",
+      "hyperref"
     ],
     "tl_depend": []
   },
@@ -33779,7 +33863,6 @@
       "etoolbox",
       "eurosym",
       "fancybox",
-      "fancyhdr",
       "fancyvrb",
       "fontawesome5",
       "fontspec",
@@ -33842,6 +33925,7 @@
       "tools",
       "ulem",
       "unicode-math",
+      "upquote",
       "variations",
       "witharrows",
       "wrapfig",
@@ -34759,6 +34843,7 @@
     "depend": [
       "amsfonts",
       "amsmath",
+      "embedfile",
       "float",
       "l3kernel",
       "l3packages",
@@ -34966,6 +35051,13 @@
       "unicode-math",
       "url",
       "xecjk"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "nycbullets",
+    "depend": [
+      "fontspec"
     ],
     "tl_depend": []
   },
@@ -38240,6 +38332,14 @@
     "name": "proba",
     "depend": [
       "amsfonts"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "problib",
+    "depend": [
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -44909,6 +45009,15 @@
     "tl_depend": []
   },
   {
+    "name": "statusstamp",
+    "depend": [
+      "graphics",
+      "pgf",
+      "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "staves",
     "depend": [],
     "tl_depend": []
@@ -46332,6 +46441,14 @@
       "listings",
       "tcolorbox",
       "xcolor"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "terminaltrees",
+    "depend": [
+      "forest",
+      "needspace"
     ],
     "tl_depend": []
   },
@@ -52159,7 +52276,10 @@
       "latex",
       "tools"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "ifmtarg",
+      "tools"
+    ]
   },
   {
     "name": "xii",
