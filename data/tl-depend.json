@@ -2045,6 +2045,19 @@
     "tl_depend": []
   },
   {
+    "name": "atsresume",
+    "depend": [
+      "fontspec",
+      "geometry",
+      "hyperref",
+      "iftex",
+      "latex",
+      "microtype",
+      "tex-gyre"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "attachfile",
     "depend": [
       "graphics",
@@ -3940,6 +3953,8 @@
     "tl_depend": [
       "bibcop.ARCH",
       "iexec",
+      "iexec",
+      "pgfopts",
       "pgfopts"
     ]
   },
@@ -5271,6 +5286,13 @@
     "tl_depend": []
   },
   {
+    "name": "boolalg",
+    "depend": [
+      "pdftexcmds"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "boolexpr",
     "depend": [],
     "tl_depend": []
@@ -6394,8 +6416,11 @@
     "depend": [
       "l3packages",
       "latex",
+      "lm-math",
+      "lua-unicode-math",
       "nfssext-cfr",
-      "svn-prov"
+      "svn-prov",
+      "unicode-math"
     ],
     "tl_depend": []
   },
@@ -7349,6 +7374,7 @@
       "mparhack",
       "prelim2e",
       "psnfss",
+      "scrtime",
       "textcase",
       "titlesec",
       "tocloft",
@@ -9296,6 +9322,7 @@
       "proflabo",
       "proflycee",
       "profsio",
+      "programmes-cpge",
       "tabvar",
       "tdsfrmath",
       "texlive-fr",
@@ -9652,6 +9679,7 @@
       "latexcheat-esmx",
       "lshort-spanish",
       "quran-es",
+      "spanish-mathml-intent",
       "texlive-es"
     ]
   },
@@ -9786,6 +9814,7 @@
       "association-matrix",
       "atenddvi",
       "atendofenv",
+      "atsresume",
       "attachfile",
       "aurl",
       "authoraftertitle",
@@ -10355,6 +10384,7 @@
       "footmisc",
       "footmisx",
       "footnotebackref",
+      "footnotenosplit",
       "footnoterange",
       "footnpag",
       "forarray",
@@ -11064,9 +11094,11 @@
       "schooldocs",
       "scontents",
       "scrambledenvs",
+      "scrdate",
       "scrhack",
       "scrlayer-fancyhdr",
       "scrlttr2copy",
+      "scrtime",
       "scrwfile",
       "sdaps",
       "sdrt",
@@ -11563,6 +11595,7 @@
       "lparse",
       "lt3luabridge",
       "lua-calendrica",
+      "lua-font-config",
       "lua-list-hyphen",
       "lua-placeholders",
       "lua-tinyyaml",
@@ -11692,6 +11725,7 @@
       "bodeplot",
       "bohr",
       "boldtensors",
+      "boolalg",
       "bosisio",
       "bpchem",
       "bracealign",
@@ -11899,6 +11933,7 @@
       "physics-patch",
       "physics2",
       "physics3",
+      "physketch",
       "physunits",
       "pinoutikz",
       "pm-isomath",
@@ -12357,6 +12392,7 @@
       "tikz-timing",
       "tikz-trackschematic",
       "tikz-truchet",
+      "tikz-umld",
       "tikz2d-fr",
       "tikz3d-fr",
       "tikzbrickfigurines",
@@ -12396,6 +12432,7 @@
       "tkz-elements",
       "tkz-euclide",
       "tkz-fct",
+      "tkz-fn",
       "tkz-graph",
       "tkz-grapheur",
       "tkz-orm",
@@ -13008,6 +13045,7 @@
       "udiss",
       "uestcthesis",
       "ufrgscca",
+      "ugentdocs",
       "uhhassignment",
       "uiucredborder",
       "uiucthesis",
@@ -16003,6 +16041,7 @@
       "latex",
       "pgf",
       "pgfopts",
+      "scrdate",
       "silence",
       "tabularray",
       "tblr-extras",
@@ -19237,7 +19276,10 @@
       "l3packages",
       "relsize"
     ],
-    "tl_depend": []
+    "tl_depend": [
+      "l3packages",
+      "relsize"
+    ]
   },
   {
     "name": "fancybox",
@@ -19328,7 +19370,8 @@
     "depend": [
       "l3packages",
       "pict2e",
-      "qrcode"
+      "qrcode",
+      "standalone"
     ],
     "tl_depend": []
   },
@@ -20695,6 +20738,13 @@
     "tl_depend": []
   },
   {
+    "name": "footnotenosplit",
+    "depend": [
+      "etoolbox"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "footnoterange",
     "depend": [],
     "tl_depend": []
@@ -21183,9 +21233,9 @@
       "draftwatermark",
       "enumitem",
       "fancyhdr",
-      "koma-script",
       "latex",
       "prelim2e",
+      "scrtime",
       "titlesec"
     ],
     "tl_depend": []
@@ -22780,13 +22830,11 @@
       "babel",
       "biblatex",
       "booktabs",
-      "breakurl",
       "caption",
-      "cmap",
       "csquotes",
       "datetime2",
       "enumitem",
-      "epstopdf-pkg",
+      "etoolbox",
       "fancyhdr",
       "float",
       "forloop",
@@ -22813,7 +22861,6 @@
       "subdepth",
       "textpos",
       "titlesec",
-      "titling",
       "tools",
       "upquote",
       "url",
@@ -26879,12 +26926,14 @@
       "anyfontsize",
       "etoolbox",
       "geometry",
+      "graphics",
       "iexec",
       "microtype",
       "pgf",
       "pgfopts",
       "setspace",
       "textpos",
+      "tools",
       "xcolor"
     ]
   },
@@ -27193,6 +27242,7 @@
       "bookmark",
       "booktabs",
       "contract",
+      "defoldfonts",
       "etoolbox",
       "geometry",
       "graphics",
@@ -27206,12 +27256,15 @@
       "mparhack",
       "mwe",
       "oberdiek",
+      "pdfmanagement",
       "pgf",
       "pict2e",
       "picture",
       "protocol",
       "psnfss",
       "ragged2e",
+      "scrdate",
+      "scrtime",
       "setspace",
       "tools",
       "xcolor",
@@ -28084,19 +28137,11 @@
   {
     "name": "latexbangla",
     "depend": [
-      "amscls",
-      "amsfonts",
       "amsmath",
-      "chngcntr",
       "fontspec",
-      "hyperref",
       "iftex",
       "polyglossia",
-      "titlesec",
-      "tools",
-      "ucharclasses",
-      "xkeyval",
-      "xpatch"
+      "ucharclasses"
     ],
     "tl_depend": []
   },
@@ -29805,6 +29850,15 @@
     "tl_depend": []
   },
   {
+    "name": "lua-font-config",
+    "depend": [
+      "l3kernel",
+      "lua-unicode-math",
+      "svn-prov"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "lua-list-hyphen",
     "depend": [],
     "tl_depend": []
@@ -30646,6 +30700,7 @@
       "realscripts",
       "refcount",
       "sauerj",
+      "scrtime",
       "soul",
       "subfig",
       "tagpdf",
@@ -33616,8 +33671,10 @@
   {
     "name": "mystyletau",
     "depend": [
+      "amsfonts",
       "amsmath",
       "fontspec",
+      "graphics",
       "iftex"
     ],
     "tl_depend": []
@@ -33997,6 +34054,7 @@
       "fontspec",
       "forest",
       "fourier",
+      "fouriernc",
       "frenchmath",
       "graphics",
       "iftex",
@@ -34005,6 +34063,9 @@
       "kvoptions",
       "lastpage",
       "latex",
+      "libertinus",
+      "libertinus-fonts",
+      "libertinust1math",
       "lipsum",
       "lm",
       "lm-math",
@@ -34015,10 +34076,13 @@
       "mathastext",
       "mathtools",
       "microtype",
+      "mlmodern",
       "multirow",
       "ncctools",
       "needspace",
+      "newcomputermodern",
       "newpx",
+      "newtx",
       "numprint",
       "pdftexcmds",
       "pgf",
@@ -34039,6 +34103,7 @@
       "setspace",
       "silence",
       "siunitx",
+      "stix2-otf",
       "sttools",
       "tabularray",
       "tasks",
@@ -35633,7 +35698,7 @@
   {
     "name": "orientation",
     "depend": [
-      "everypage"
+      "iftex"
     ],
     "tl_depend": []
   },
@@ -37392,6 +37457,7 @@
       "noto",
       "orcidlink",
       "pgf",
+      "scrtime",
       "tools",
       "xcolor"
     ],
@@ -37539,6 +37605,15 @@
       "fixdif",
       "graphics",
       "mathtools"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "physketch",
+    "depend": [
+      "circuitikz",
+      "l3packages",
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -38377,7 +38452,7 @@
   {
     "name": "prelim2e",
     "depend": [
-      "koma-script"
+      "scrtime"
     ],
     "tl_depend": []
   },
@@ -38666,6 +38741,17 @@
   {
     "name": "program",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "programmes-cpge",
+    "depend": [
+      "amsfonts",
+      "amsmath",
+      "booktabs",
+      "tcolorbox",
+      "tools"
+    ],
     "tl_depend": []
   },
   {
@@ -41145,10 +41231,11 @@
   {
     "name": "refenums",
     "depend": [
-      "cleveref",
       "csquotes",
       "hyperref",
-      "latex"
+      "kvoptions",
+      "latex",
+      "zref-clever"
     ],
     "tl_depend": []
   },
@@ -41898,6 +41985,7 @@
       "latex",
       "numprint",
       "oberdiek",
+      "scrdate",
       "tools"
     ],
     "tl_depend": []
@@ -43002,6 +43090,13 @@
     "tl_depend": []
   },
   {
+    "name": "scrdate",
+    "depend": [
+      "koma-script"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "screenplay",
     "depend": [
       "geometry",
@@ -43063,6 +43158,11 @@
   },
   {
     "name": "scrlttr2copy",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "scrtime",
     "depend": [],
     "tl_depend": []
   },
@@ -44678,6 +44778,15 @@
       "kvoptions"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "spanish-mathml-intent",
+    "depend": [
+      "unicode-math"
+    ],
+    "tl_depend": [
+      "spanish-mathml-intent.ARCH"
+    ]
   },
   {
     "name": "spark-otf",
@@ -48075,6 +48184,18 @@
     "tl_depend": []
   },
   {
+    "name": "tikz-umld",
+    "depend": [
+      "etoolbox",
+      "latex",
+      "pgf",
+      "pgfopts",
+      "tools",
+      "xstring"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tikz2d-fr",
     "depend": [
       "listofitems",
@@ -48554,6 +48675,7 @@
       "framed",
       "koma-script",
       "pgf",
+      "pgfornament",
       "ragged2e",
       "tools"
     ],
@@ -48585,12 +48707,18 @@
     "tl_depend": []
   },
   {
+    "name": "tkz-fn",
+    "depend": [
+      "iftex",
+      "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tkz-graph",
     "depend": [
-      "etex-pkg",
       "latex",
-      "pgf",
-      "xkeyval"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -48630,8 +48758,7 @@
     "name": "tkz-tab",
     "depend": [
       "latex",
-      "pgf",
-      "xkeyval"
+      "pgf"
     ],
     "tl_depend": []
   },
@@ -48640,7 +48767,9 @@
     "depend": [
       "fancyvrb",
       "mdframed",
-      "tools"
+      "pgf",
+      "tools",
+      "xcolor"
     ],
     "tl_depend": []
   },
@@ -49992,6 +50121,47 @@
     "tl_depend": []
   },
   {
+    "name": "ugentdocs",
+    "depend": [
+      "adjustbox",
+      "babel",
+      "background",
+      "beamerposter",
+      "bookcover",
+      "crop",
+      "csquotes",
+      "datetime2",
+      "environ",
+      "etoolbox",
+      "fancyhdr",
+      "fontawesome",
+      "fontspec",
+      "geometry",
+      "graphbox",
+      "graphics",
+      "gs1",
+      "hyphenat",
+      "iftex",
+      "l3kernel",
+      "latex",
+      "ocr-latex",
+      "pagecolor",
+      "pgf",
+      "setspace",
+      "soul",
+      "thumbs",
+      "tikzpagenodes",
+      "titlesec",
+      "tools",
+      "ulem",
+      "unicode-math",
+      "wasysym",
+      "xcolor",
+      "zref"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "uhc",
     "depend": [],
     "tl_depend": []
@@ -50772,7 +50942,6 @@
       "caption",
       "colortbl",
       "draftwatermark",
-      "enumitem",
       "environ",
       "fancyhdr",
       "fontawesome5",
