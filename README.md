@@ -11,6 +11,6 @@ Related works:
 
 ## License
 
-Copyright (C) 2022&ndash;2023 by Xiangdong Zeng.
+Copyright (C) 2022&ndash;2026 by Xiangdong Zeng.
 
 Licensed under the [MIT](LICENSE) License.

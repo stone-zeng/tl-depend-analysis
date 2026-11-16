@@ -7,14 +7,15 @@ from typing import Any
 
 from file_parser import Parser
 
+TLPDB_PATH = "data/texlive.tlpdb"
+TL_DEPEND_PATH = "data/tl-depend.json"
 
-TLPDB_PATH = 'data/texlive.tlpdb'
-TL_DEPEND_PATH = 'data/tl-depend.json'
-
-TEXMFDIST_PATH = subprocess.run(
-    ['kpsewhich', '-var-value', 'TEXMFDIST'],
-    capture_output=True, check=True).stdout.decode().strip()
-# TEXMFDIST_PATH = '/usr/local/texlive/2023/texmf-dist'
+TEXMFDIST_PATH = (
+    subprocess.run(["kpsewhich", "-var-value", "TEXMFDIST"], capture_output=True, check=True)
+    .stdout.decode()
+    .strip()
+)
+# TEXMFDIST_PATH = '/usr/local/texlive/2026/texmf-dist'
 
 
 @dataclasses.dataclass
@@ -28,72 +29,69 @@ class Package:
 
 
 class PackageEncoder(json.JSONEncoder):
-
     def default(self, o):
         if isinstance(o, Package):
             return {
-                'name': o.name,
-                'depend': o.depend,
-                'tl_depend': o.tl_depend,
+                "name": o.name,
+                "depend": o.depend,
+                "tl_depend": o.tl_depend,
             }
             # return dataclasses.asdict(o)
         return json.JSONEncoder.default(self, o)
 
 
 class TLDepend:
-
     def __init__(self):
         self.packages: list[Package] = []
         self.file_mappings: dict[str, str] = {}
 
     def parse_tlpdb(self):
-        with open(TLPDB_PATH, 'r', encoding='utf-8') as fp:
-            items = fp.read().strip().split('\n\n')
+        with open(TLPDB_PATH, "r", encoding="utf-8") as fp:
+            items = fp.read().strip().split("\n\n")
         for item in items:
-            lines = item.split('\n')
+            lines = item.split("\n")
             _, name = lines[0].split()
-            if not name.startswith('00') and '.' not in name:
-                self.packages.append(
-                    Package(name=name, depend=[], **self._parse_tlpdb_item(lines)))
+            if not name.startswith("00") and "." not in name:
+                self.packages.append(Package(name=name, depend=[], **self._parse_tlpdb_item(lines)))
 
     @staticmethod
     def _parse_tlpdb_item(lines: list[str]):
         package: dict[str, Any] = {
-            'tl_depend': [],
-            'runfiles': [],
+            "tl_depend": [],
+            "runfiles": [],
         }
         runfiles_flag = False
         for line in lines:
             key, *value = line.strip().split(maxsplit=1)
             value = value[0] if value else None
             match key:
-                case 'category':
-                    package['category'] = value
-                case 'revision':
-                    package['revision'] = int(value) if value else -1
-                case 'depend':
-                    package['tl_depend'].append(value)
-                case 'runfiles':
+                case "category":
+                    package["category"] = value
+                case "revision":
+                    package["revision"] = int(value) if value else -1
+                case "depend":
+                    package["tl_depend"].append(value)
+                case "runfiles":
                     runfiles_flag = True
                 case _ if runfiles_flag:
-                    if line.startswith(' '):
-                        package['runfiles'].append(line.strip())
+                    if line.startswith(" "):
+                        package["runfiles"].append(line.strip())
                     else:
                         runfiles_flag = False
         return package
 
     def get_file_mappings(self):
         for package in self.packages:
-            if package.name.endswith('-dev'):
-                print('Skip dev package:', package.name, file=sys.stderr)
+            if package.name.endswith("-dev"):
+                print("Skip dev package:", package.name, file=sys.stderr)
                 continue
             for file in package.runfiles:
-                if file.startswith('RELOC') or file.startswith('texmf-dist'):
-                    _, path = file.split('/', maxsplit=1)
+                if file.startswith(("RELOC", "texmf-dist")):
+                    _, path = file.split("/", maxsplit=1)
                     # if path.startswith('fonts'):
                     #     continue
                     if (name := os.path.basename(path)) in self.file_mappings:
-                        print('Duplicate file:', file, file=sys.stderr)
+                        print("Duplicate file:", file, file=sys.stderr)
                     else:
                         self.file_mappings[name] = package.name
 
@@ -107,9 +105,9 @@ class TLDepend:
 
     def _get_depend_from_file(self, file: str):
         depend: set[str] = set()
-        if file.startswith('RELOC') or file.startswith('texmf-dist'):
-            _, path = file.split('/', maxsplit=1)
-            if path.startswith('fonts'):
+        if file.startswith(("RELOC", "texmf-dist")):
+            _, path = file.split("/", maxsplit=1)
+            if path.startswith("fonts"):
                 return depend
             fullpath = os.path.join(TEXMFDIST_PATH, path)
             parser = Parser(fullpath)
@@ -118,7 +116,7 @@ class TLDepend:
                 try:
                     depend.add(self.file_mappings[d])
                 except KeyError:
-                    print('Dependency not found:', d, file=sys.stderr)
+                    print("Dependency not found:", d, file=sys.stderr)
         return depend
 
 
@@ -127,9 +125,9 @@ def main():
     analyzer.parse_tlpdb()
     analyzer.get_file_mappings()
     analyzer.get_depend()
-    with open(TL_DEPEND_PATH, 'w', encoding='utf-8') as fp:
+    with open(TL_DEPEND_PATH, "w", encoding="utf-8") as fp:
         json.dump(analyzer.packages, fp, cls=PackageEncoder, indent=2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
