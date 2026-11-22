@@ -3071,6 +3071,13 @@
     "tl_depend": []
   },
   {
+    "name": "beamer-textbox-emph",
+    "depend": [
+      "tcolorbox"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "beamer-theme-albi",
     "depend": [
       "etoolbox",
@@ -3343,7 +3350,6 @@
   {
     "name": "beamertheme-niederrhein",
     "depend": [
-      "biblatex",
       "graphics",
       "latex",
       "pgf",
@@ -3723,6 +3729,14 @@
   {
     "name": "belleek",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "beltmap",
+    "depend": [
+      "embedfile",
+      "pgf"
+    ],
     "tl_depend": []
   },
   {
@@ -4288,7 +4302,7 @@
   {
     "name": "biblatex-iso690",
     "depend": [
-      "regexpatch"
+      "xpatch"
     ],
     "tl_depend": []
   },
@@ -5937,17 +5951,6 @@
     "tl_depend": [
       "cachepic.ARCH"
     ]
-  },
-  {
-    "name": "cacography",
-    "depend": [
-      "etoolbox",
-      "fontspec",
-      "geometry",
-      "iftex",
-      "unicode-math"
-    ],
-    "tl_depend": []
   },
   {
     "name": "cahierprof",
@@ -8339,6 +8342,7 @@
       "srcredact",
       "sty2dtx",
       "synctex",
+      "tenkana",
       "tex4ebook",
       "texaccents",
       "texblend",
@@ -9057,6 +9061,7 @@
       "hyphen-farsi",
       "imsproc",
       "iran-bibtex",
+      "katibmath",
       "khatalmaqala",
       "kurdishlipsum",
       "lshort-persian",
@@ -9950,6 +9955,7 @@
       "bchart",
       "beamer-reveal",
       "beamer-rl",
+      "beamer-textbox-emph",
       "beamer-theme-albi",
       "beamer-varbox",
       "beamer2thesis",
@@ -10308,6 +10314,7 @@
       "draftcopy",
       "draftfigure",
       "draftwatermark",
+      "drawmgr",
       "dtk",
       "dtxdescribe",
       "dtxgallery",
@@ -10513,6 +10520,7 @@
       "fox-listings",
       "fragments",
       "frame",
+      "framecite",
       "framed",
       "framedsyntax",
       "frankenstein",
@@ -11375,6 +11383,7 @@
       "tamefloats",
       "tangocolors",
       "tasks",
+      "tblnotes",
       "tblr-extras",
       "tcbpagefootnote",
       "tcldoc",
@@ -11531,6 +11540,7 @@
       "wordcount",
       "wordlike",
       "worksheet",
+      "wrapblock",
       "wrapfig",
       "wrapfig2",
       "wrapstuff",
@@ -11687,7 +11697,6 @@
       "barracuda",
       "bezierplot",
       "blopentype",
-      "cacography",
       "char2path",
       "checkcites",
       "chickenize",
@@ -11731,6 +11740,7 @@
       "lua-visual-debug",
       "lua-widow-control",
       "luaaddplot",
+      "luaalignstate",
       "luabreakurl",
       "luacas",
       "luacensor",
@@ -11998,6 +12008,7 @@
       "lpform",
       "lplfitch",
       "lstbayes",
+      "lt3matrix",
       "lua-regression",
       "luacoolprop",
       "luanumint",
@@ -12020,12 +12031,14 @@
       "medmath",
       "membranecomputing",
       "memorygraphs",
+      "mermin-equations",
       "messagepassing",
       "mgltex",
       "mhchem",
       "mhequ",
       "miller",
       "mismath",
+      "moeptikz",
       "mohelper",
       "moremath",
       "mpformulation",
@@ -12159,7 +12172,9 @@
       "transition-metals",
       "turnstile",
       "ulqda",
+      "unicodehat",
       "unitsdef",
+      "uprightsubs",
       "venn",
       "witharrows",
       "xymtex",
@@ -12288,6 +12303,7 @@
       "autoarea",
       "bardiag",
       "beamerswitch",
+      "beltmap",
       "binarytree",
       "blochsphere",
       "bloques",
@@ -13020,6 +13036,7 @@
       "kdpcover",
       "kfupm-math-exam",
       "kluwer",
+      "kpi-thesis",
       "ksp-thesis",
       "ku-template",
       "langsci",
@@ -13167,6 +13184,7 @@
       "tui",
       "turabian",
       "tvthesis",
+      "ua-jecon",
       "uaclasses",
       "uafthesis",
       "ualberta",
@@ -16555,6 +16573,13 @@
     "name": "drawmatrix",
     "depend": [
       "pgf"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "drawmgr",
+    "depend": [
+      "caption"
     ],
     "tl_depend": []
   },
@@ -21129,6 +21154,16 @@
     "tl_depend": []
   },
   {
+    "name": "framecite",
+    "depend": [
+      "beamer",
+      "biblatex",
+      "etoolbox",
+      "tools"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "framed",
     "depend": [],
     "tl_depend": []
@@ -21746,7 +21781,6 @@
   {
     "name": "geometry",
     "depend": [
-      "atbegshi",
       "graphics",
       "iftex"
     ],
@@ -27183,6 +27217,17 @@
     "tl_depend": []
   },
   {
+    "name": "katibmath",
+    "depend": [
+      "amsmath",
+      "fontspec",
+      "graphics",
+      "iftex",
+      "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "kaytannollista-latexia",
     "depend": [],
     "tl_depend": []
@@ -27742,6 +27787,42 @@
       "iftex",
       "realscripts",
       "unicode-math"
+    ],
+    "tl_depend": []
+  },
+  {
+    "name": "kpi-thesis",
+    "depend": [
+      "algorithmicx",
+      "algorithms",
+      "amsmath",
+      "babel",
+      "caption",
+      "cite",
+      "enumitem",
+      "extsizes",
+      "fancyhdr",
+      "float",
+      "fontspec",
+      "fvextra",
+      "geometry",
+      "graphics",
+      "hyperref",
+      "listings",
+      "makecell",
+      "multirow",
+      "needspace",
+      "pdfpages",
+      "pgf",
+      "ragged2e",
+      "setspace",
+      "titlesec",
+      "tools",
+      "totcount",
+      "ulem",
+      "url",
+      "xcolor",
+      "xurl"
     ],
     "tl_depend": []
   },
@@ -30010,6 +30091,11 @@
     "tl_depend": []
   },
   {
+    "name": "lt3matrix",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
     "name": "lt3rawobjects",
     "depend": [
       "l3kernel"
@@ -30299,6 +30385,11 @@
   },
   {
     "name": "luaaddplot",
+    "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "luaalignstate",
     "depend": [],
     "tl_depend": []
   },
@@ -32237,6 +32328,13 @@
     "tl_depend": []
   },
   {
+    "name": "mermin-equations",
+    "depend": [
+      "amsmath"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "merriweather",
     "depend": [
       "fontaxes",
@@ -33284,6 +33382,14 @@
   {
     "name": "modulus",
     "depend": [],
+    "tl_depend": []
+  },
+  {
+    "name": "moeptikz",
+    "depend": [
+      "graphics",
+      "pgf"
+    ],
     "tl_depend": []
   },
   {
@@ -36175,6 +36281,7 @@
       "amsfonts",
       "amsmath",
       "cleveref",
+      "etoolbox",
       "fancyhdr",
       "geometry",
       "graphics",
@@ -36182,6 +36289,10 @@
       "isodate",
       "l3kernel",
       "lastpage",
+      "latex",
+      "pgf",
+      "pgfplots",
+      "siunitx",
       "tools",
       "was",
       "wasysym",
@@ -45945,9 +46056,7 @@
   },
   {
     "name": "sttools",
-    "depend": [
-      "tools"
-    ],
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -46896,6 +47005,13 @@
     "tl_depend": []
   },
   {
+    "name": "tblnotes",
+    "depend": [
+      "l3kernel"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "tblr-extras",
     "depend": [
       "babel",
@@ -47086,6 +47202,13 @@
       "fp"
     ],
     "tl_depend": []
+  },
+  {
+    "name": "tenkana",
+    "depend": [],
+    "tl_depend": [
+      "tenkana.ARCH"
+    ]
   },
   {
     "name": "tensind",
@@ -50260,6 +50383,13 @@
     "tl_depend": []
   },
   {
+    "name": "ua-jecon",
+    "depend": [
+      "natbib"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "uaclasses",
     "depend": [
       "amscls",
@@ -51040,6 +51170,13 @@
     "tl_depend": []
   },
   {
+    "name": "unicodehat",
+    "depend": [
+      "newunicodechar"
+    ],
+    "tl_depend": []
+  },
+  {
     "name": "unifith",
     "depend": [
       "amsmath",
@@ -51457,6 +51594,11 @@
     "depend": [
       "latex"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "uprightsubs",
+    "depend": [],
     "tl_depend": []
   },
   {
@@ -52510,6 +52652,11 @@
       "xcolor",
       "xkeyval"
     ],
+    "tl_depend": []
+  },
+  {
+    "name": "wrapblock",
+    "depend": [],
     "tl_depend": []
   },
   {
